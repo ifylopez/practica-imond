@@ -1,0 +1,3830 @@
+address_id,city,province,postal_code
+1,La Plata,Buenos Aires,1900
+2,Córdoba,Córdoba,5000
+3,Rosario,Santa Fe,2000
+4,Mendoza,Mendoza,5500
+1001,La Plata,Buenos Aires,1900
+1002,Rafaela,Santa Fe,2300
+1003,Santa Fe,Santa Fe,3000
+1004,Córdoba,Córdoba,5000
+1005,Mar del Plata,Buenos Aires,7600
+1006,San Rafael,Mendoza,5600
+1007,Mendoza,Mendoza,5500
+1008,La Plata,Buenos Aires,1900
+1009,Mendoza,Mendoza,5500
+1010,Mendoza,Mendoza,5500
+1011,Mendoza,Mendoza,5500
+1012,Córdoba,Córdoba,5000
+1013,La Plata,Buenos Aires,1900
+1014,Quilmes,Buenos Aires,1878
+1015,Córdoba,Córdoba,5000
+1016,Rafaela,Santa Fe,2300
+1017,Rosario,Santa Fe,2000
+1018,Córdoba,Córdoba,5000
+1019,Quilmes,Buenos Aires,1878
+1020,La Plata,Buenos Aires,1900
+1021,Quilmes,Buenos Aires,1878
+1022,San Isidro,Buenos Aires,1642
+1023,Santa Fe,Santa Fe,3000
+1024,La Plata,Buenos Aires,1900
+1025,San Isidro,Buenos Aires,1642
+1026,Quilmes,Buenos Aires,1878
+1027,Córdoba,Córdoba,5000
+1028,Rafaela,Santa Fe,2300
+1029,San Rafael,Mendoza,5600
+1030,San Isidro,Buenos Aires,1642
+1031,San Isidro,Buenos Aires,1642
+1032,Santa Fe,Santa Fe,3000
+1033,Bahía Blanca,Buenos Aires,8000
+1034,Córdoba,Córdoba,5000
+1035,La Plata,Buenos Aires,1900
+1036,Rosario,Santa Fe,2000
+1037,San Isidro,Buenos Aires,1642
+1038,Bahía Blanca,Buenos Aires,8000
+1039,Río Cuarto,Córdoba,5800
+1040,San Isidro,Buenos Aires,1642
+1041,Mar del Plata,Buenos Aires,7600
+1042,Mar del Plata,Buenos Aires,7600
+1043,La Plata,Buenos Aires,1900
+1044,Córdoba,Córdoba,5000
+1045,Córdoba,Córdoba,5000
+1046,Rosario,Santa Fe,2000
+1047,Quilmes,Buenos Aires,1878
+1048,Córdoba,Córdoba,5000
+1049,Rosario,Santa Fe,2000
+1050,La Plata,Buenos Aires,1900
+1051,San Isidro,Buenos Aires,1642
+1052,Rosario,Santa Fe,2000
+1053,San Rafael,Mendoza,5600
+1054,Quilmes,Buenos Aires,1878
+1055,Bahía Blanca,Buenos Aires,8000
+1056,Córdoba,Córdoba,5000
+1057,La Plata,Buenos Aires,1900
+1058,Quilmes,Buenos Aires,1878
+1059,La Plata,Buenos Aires,1900
+1060,Quilmes,Buenos Aires,1878
+1061,Quilmes,Buenos Aires,1878
+1062,Rosario,Santa Fe,2000
+1063,Mar del Plata,Buenos Aires,7600
+1064,San Rafael,Mendoza,5600
+1065,La Plata,Buenos Aires,1900
+1066,Santa Fe,Santa Fe,3000
+1067,Godoy Cruz,Mendoza,5501
+1068,Bahía Blanca,Buenos Aires,8000
+1069,Mendoza,Mendoza,5500
+1070,Quilmes,Buenos Aires,1878
+1071,Villa Carlos Paz,Córdoba,5152
+1072,Rosario,Santa Fe,2000
+1073,Córdoba,Córdoba,5000
+1074,San Rafael,Mendoza,5600
+1075,La Plata,Buenos Aires,1900
+1076,Villa Carlos Paz,Córdoba,5152
+1077,La Plata,Buenos Aires,1900
+1078,San Rafael,Mendoza,5600
+1079,Córdoba,Córdoba,5000
+1080,Córdoba,Córdoba,5000
+1081,Córdoba,Córdoba,5000
+1082,Quilmes,Buenos Aires,1878
+1083,Mendoza,Mendoza,5500
+1084,Bahía Blanca,Buenos Aires,8000
+1085,Rafaela,Santa Fe,2300
+1086,La Plata,Buenos Aires,1900
+1087,Bahía Blanca,Buenos Aires,8000
+1088,Mar del Plata,Buenos Aires,7600
+1089,Rafaela,Santa Fe,2300
+1090,Quilmes,Buenos Aires,1878
+1091,Villa Carlos Paz,Córdoba,5152
+1092,Río Cuarto,Córdoba,5800
+1093,Villa Carlos Paz,Córdoba,5152
+1094,Santa Fe,Santa Fe,3000
+1095,Río Cuarto,Córdoba,5800
+1096,Quilmes,Buenos Aires,1878
+1097,Córdoba,Córdoba,5000
+1098,Córdoba,Córdoba,5000
+1099,Córdoba,Córdoba,5000
+1100,Rosario,Santa Fe,2000
+1101,Córdoba,Córdoba,5000
+1102,La Plata,Buenos Aires,1900
+1103,La Plata,Buenos Aires,1900
+1104,Córdoba,Córdoba,5000
+1105,Mar del Plata,Buenos Aires,7600
+1106,Mendoza,Mendoza,5500
+1107,Rosario,Santa Fe,2000
+1108,Santa Fe,Santa Fe,3000
+1109,Córdoba,Córdoba,5000
+1110,Mendoza,Mendoza,5500
+1111,Córdoba,Córdoba,5000
+1112,Quilmes,Buenos Aires,1878
+1113,Mar del Plata,Buenos Aires,7600
+1114,Río Cuarto,Córdoba,5800
+1115,La Plata,Buenos Aires,1900
+1116,Bahía Blanca,Buenos Aires,8000
+1117,Córdoba,Córdoba,5000
+1118,Córdoba,Córdoba,5000
+1119,Bahía Blanca,Buenos Aires,8000
+1120,Mendoza,Mendoza,5500
+1121,Córdoba,Córdoba,5000
+1122,Río Cuarto,Córdoba,5800
+1123,Mar del Plata,Buenos Aires,7600
+1124,La Plata,Buenos Aires,1900
+1125,Santa Fe,Santa Fe,3000
+1126,Quilmes,Buenos Aires,1878
+1127,Córdoba,Córdoba,5000
+1128,Bahía Blanca,Buenos Aires,8000
+1129,Córdoba,Córdoba,5000
+1130,Villa Carlos Paz,Córdoba,5152
+1131,Mar del Plata,Buenos Aires,7600
+1132,Córdoba,Córdoba,5000
+1133,La Plata,Buenos Aires,1900
+1134,Córdoba,Córdoba,5000
+1135,La Plata,Buenos Aires,1900
+1136,Mar del Plata,Buenos Aires,7600
+1137,La Plata,Buenos Aires,1900
+1138,Bahía Blanca,Buenos Aires,8000
+1139,Córdoba,Córdoba,5000
+1140,La Plata,Buenos Aires,1900
+1141,Mar del Plata,Buenos Aires,7600
+1142,Mar del Plata,Buenos Aires,7600
+1143,Córdoba,Córdoba,5000
+1144,Córdoba,Córdoba,5000
+1145,Río Cuarto,Córdoba,5800
+1146,Quilmes,Buenos Aires,1878
+1147,San Isidro,Buenos Aires,1642
+1148,Córdoba,Córdoba,5000
+1149,Córdoba,Córdoba,5000
+1150,Santa Fe,Santa Fe,3000
+1151,Mar del Plata,Buenos Aires,7600
+1152,Rosario,Santa Fe,2000
+1153,Córdoba,Córdoba,5000
+1154,Santa Fe,Santa Fe,3000
+1155,Mendoza,Mendoza,5500
+1156,Quilmes,Buenos Aires,1878
+1157,Quilmes,Buenos Aires,1878
+1158,Rosario,Santa Fe,2000
+1159,Rosario,Santa Fe,2000
+1160,Bahía Blanca,Buenos Aires,8000
+1161,Villa Carlos Paz,Córdoba,5152
+1162,Rosario,Santa Fe,2000
+1163,Córdoba,Córdoba,5000
+1164,Mar del Plata,Buenos Aires,7600
+1165,Córdoba,Córdoba,5000
+1166,Rafaela,Santa Fe,2300
+1167,Bahía Blanca,Buenos Aires,8000
+1168,La Plata,Buenos Aires,1900
+1169,La Plata,Buenos Aires,1900
+1170,La Plata,Buenos Aires,1900
+1171,Córdoba,Córdoba,5000
+1172,Córdoba,Córdoba,5000
+1173,Bahía Blanca,Buenos Aires,8000
+1174,Villa Carlos Paz,Córdoba,5152
+1175,Santa Fe,Santa Fe,3000
+1176,Mar del Plata,Buenos Aires,7600
+1177,Rosario,Santa Fe,2000
+1178,Rafaela,Santa Fe,2300
+1179,Santa Fe,Santa Fe,3000
+1180,Córdoba,Córdoba,5000
+1181,La Plata,Buenos Aires,1900
+1182,Mendoza,Mendoza,5500
+1183,La Plata,Buenos Aires,1900
+1184,La Plata,Buenos Aires,1900
+1185,Mar del Plata,Buenos Aires,7600
+1186,La Plata,Buenos Aires,1900
+1187,Río Cuarto,Córdoba,5800
+1188,Rosario,Santa Fe,2000
+1189,Rosario,Santa Fe,2000
+1190,Bahía Blanca,Buenos Aires,8000
+1191,San Rafael,Mendoza,5600
+1192,Santa Fe,Santa Fe,3000
+1193,Córdoba,Córdoba,5000
+1194,Quilmes,Buenos Aires,1878
+1195,Rafaela,Santa Fe,2300
+1196,Quilmes,Buenos Aires,1878
+1197,La Plata,Buenos Aires,1900
+1198,Quilmes,Buenos Aires,1878
+1199,Rosario,Santa Fe,2000
+1200,Mar del Plata,Buenos Aires,7600
+1201,La Plata,Buenos Aires,1900
+1202,Mar del Plata,Buenos Aires,7600
+1203,Villa Carlos Paz,Córdoba,5152
+1204,Córdoba,Córdoba,5000
+1205,Rafaela,Santa Fe,2300
+1206,San Isidro,Buenos Aires,1642
+1207,Quilmes,Buenos Aires,1878
+1208,Rosario,Santa Fe,2000
+1209,La Plata,Buenos Aires,1900
+1210,La Plata,Buenos Aires,1900
+1211,Río Cuarto,Córdoba,5800
+1212,Quilmes,Buenos Aires,1878
+1213,Santa Fe,Santa Fe,3000
+1214,Quilmes,Buenos Aires,1878
+1215,Quilmes,Buenos Aires,1878
+1216,Córdoba,Córdoba,5000
+1217,San Rafael,Mendoza,5600
+1218,Mar del Plata,Buenos Aires,7600
+1219,Santa Fe,Santa Fe,3000
+1220,Quilmes,Buenos Aires,1878
+1221,Quilmes,Buenos Aires,1878
+1222,La Plata,Buenos Aires,1900
+1223,Río Cuarto,Córdoba,5800
+1224,Rosario,Santa Fe,2000
+1225,Quilmes,Buenos Aires,1878
+1226,Quilmes,Buenos Aires,1878
+1227,Rosario,Santa Fe,2000
+1228,Córdoba,Córdoba,5000
+1229,Córdoba,Córdoba,5000
+1230,Villa Carlos Paz,Córdoba,5152
+1231,San Rafael,Mendoza,5600
+1232,Río Cuarto,Córdoba,5800
+1233,Santa Fe,Santa Fe,3000
+1234,Rosario,Santa Fe,2000
+1235,San Isidro,Buenos Aires,1642
+1236,Córdoba,Córdoba,5000
+1237,Quilmes,Buenos Aires,1878
+1238,Rosario,Santa Fe,2000
+1239,Rosario,Santa Fe,2000
+1240,Córdoba,Córdoba,5000
+1241,San Isidro,Buenos Aires,1642
+1242,Rosario,Santa Fe,2000
+1243,Rosario,Santa Fe,2000
+1244,Río Cuarto,Córdoba,5800
+1245,Villa Carlos Paz,Córdoba,5152
+1246,Córdoba,Córdoba,5000
+1247,Quilmes,Buenos Aires,1878
+1248,Rosario,Santa Fe,2000
+1249,Rosario,Santa Fe,2000
+1250,Santa Fe,Santa Fe,3000
+1251,La Plata,Buenos Aires,1900
+1252,Córdoba,Córdoba,5000
+1253,Mendoza,Mendoza,5500
+1254,Río Cuarto,Córdoba,5800
+1255,La Plata,Buenos Aires,1900
+1256,Mar del Plata,Buenos Aires,7600
+1257,Villa Carlos Paz,Córdoba,5152
+1258,Quilmes,Buenos Aires,1878
+1259,Córdoba,Córdoba,5000
+1260,Godoy Cruz,Mendoza,5501
+1261,Córdoba,Córdoba,5000
+1262,Villa Carlos Paz,Córdoba,5152
+1263,Rosario,Santa Fe,2000
+1264,Córdoba,Córdoba,5000
+1265,Quilmes,Buenos Aires,1878
+1266,La Plata,Buenos Aires,1900
+1267,Quilmes,Buenos Aires,1878
+1268,Mendoza,Mendoza,5500
+1269,La Plata,Buenos Aires,1900
+1270,La Plata,Buenos Aires,1900
+1271,Córdoba,Córdoba,5000
+1272,Rosario,Santa Fe,2000
+1273,Santa Fe,Santa Fe,3000
+1274,Villa Carlos Paz,Córdoba,5152
+1275,Rosario,Santa Fe,2000
+1276,Córdoba,Córdoba,5000
+1277,Mar del Plata,Buenos Aires,7600
+1278,Mendoza,Mendoza,5500
+1279,Río Cuarto,Córdoba,5800
+1280,Villa Carlos Paz,Córdoba,5152
+1281,La Plata,Buenos Aires,1900
+1282,Mendoza,Mendoza,5500
+1283,Río Cuarto,Córdoba,5800
+1284,Rosario,Santa Fe,2000
+1285,Córdoba,Córdoba,5000
+1286,Rosario,Santa Fe,2000
+1287,Mar del Plata,Buenos Aires,7600
+1288,Santa Fe,Santa Fe,3000
+1289,Córdoba,Córdoba,5000
+1290,Rosario,Santa Fe,2000
+1291,Córdoba,Córdoba,5000
+1292,Godoy Cruz,Mendoza,5501
+1293,Godoy Cruz,Mendoza,5501
+1294,Rosario,Santa Fe,2000
+1295,Rosario,Santa Fe,2000
+1296,Córdoba,Córdoba,5000
+1297,Rafaela,Santa Fe,2300
+1298,Godoy Cruz,Mendoza,5501
+1299,Rosario,Santa Fe,2000
+1300,Rafaela,Santa Fe,2300
+1301,La Plata,Buenos Aires,1900
+1302,Santa Fe,Santa Fe,3000
+1303,Santa Fe,Santa Fe,3000
+1304,Rosario,Santa Fe,2000
+1305,San Isidro,Buenos Aires,1642
+1306,Quilmes,Buenos Aires,1878
+1307,San Rafael,Mendoza,5600
+1308,Córdoba,Córdoba,5000
+1309,Córdoba,Córdoba,5000
+1310,La Plata,Buenos Aires,1900
+1311,Rosario,Santa Fe,2000
+1312,Santa Fe,Santa Fe,3000
+1313,Villa Carlos Paz,Córdoba,5152
+1314,Córdoba,Córdoba,5000
+1315,Rafaela,Santa Fe,2300
+1316,San Isidro,Buenos Aires,1642
+1317,Córdoba,Córdoba,5000
+1318,Rosario,Santa Fe,2000
+1319,Santa Fe,Santa Fe,3000
+1320,Santa Fe,Santa Fe,3000
+1321,Bahía Blanca,Buenos Aires,8000
+1322,Rosario,Santa Fe,2000
+1323,Mar del Plata,Buenos Aires,7600
+1324,Rosario,Santa Fe,2000
+1325,Córdoba,Córdoba,5000
+1326,Godoy Cruz,Mendoza,5501
+1327,Mendoza,Mendoza,5500
+1328,Córdoba,Córdoba,5000
+1329,Mendoza,Mendoza,5500
+1330,La Plata,Buenos Aires,1900
+1331,Villa Carlos Paz,Córdoba,5152
+1332,Rosario,Santa Fe,2000
+1333,Rosario,Santa Fe,2000
+1334,Mar del Plata,Buenos Aires,7600
+1335,Mendoza,Mendoza,5500
+1336,Mendoza,Mendoza,5500
+1337,Rosario,Santa Fe,2000
+1338,San Isidro,Buenos Aires,1642
+1339,Río Cuarto,Córdoba,5800
+1340,La Plata,Buenos Aires,1900
+1341,Mendoza,Mendoza,5500
+1342,Rosario,Santa Fe,2000
+1343,Córdoba,Córdoba,5000
+1344,Córdoba,Córdoba,5000
+1345,Mendoza,Mendoza,5500
+1346,Godoy Cruz,Mendoza,5501
+1347,Río Cuarto,Córdoba,5800
+1348,Rosario,Santa Fe,2000
+1349,Godoy Cruz,Mendoza,5501
+1350,Mendoza,Mendoza,5500
+1351,Quilmes,Buenos Aires,1878
+1352,Rosario,Santa Fe,2000
+1353,La Plata,Buenos Aires,1900
+1354,Rosario,Santa Fe,2000
+1355,San Rafael,Mendoza,5600
+1356,La Plata,Buenos Aires,1900
+1357,La Plata,Buenos Aires,1900
+1358,Rosario,Santa Fe,2000
+1359,Córdoba,Córdoba,5000
+1360,Rafaela,Santa Fe,2300
+1361,Mar del Plata,Buenos Aires,7600
+1362,Mar del Plata,Buenos Aires,7600
+1363,Córdoba,Córdoba,5000
+1364,Rosario,Santa Fe,2000
+1365,Santa Fe,Santa Fe,3000
+1366,Bahía Blanca,Buenos Aires,8000
+1367,Mar del Plata,Buenos Aires,7600
+1368,Córdoba,Córdoba,5000
+1369,Rosario,Santa Fe,2000
+1370,Godoy Cruz,Mendoza,5501
+1371,Río Cuarto,Córdoba,5800
+1372,Córdoba,Córdoba,5000
+1373,Mendoza,Mendoza,5500
+1374,Bahía Blanca,Buenos Aires,8000
+1375,Santa Fe,Santa Fe,3000
+1376,Godoy Cruz,Mendoza,5501
+1377,Mendoza,Mendoza,5500
+1378,San Rafael,Mendoza,5600
+1379,Mar del Plata,Buenos Aires,7600
+1380,Rosario,Santa Fe,2000
+1381,San Isidro,Buenos Aires,1642
+1382,San Rafael,Mendoza,5600
+1383,Mar del Plata,Buenos Aires,7600
+1384,Rosario,Santa Fe,2000
+1385,Rosario,Santa Fe,2000
+1386,Mendoza,Mendoza,5500
+1387,Córdoba,Córdoba,5000
+1388,Mendoza,Mendoza,5500
+1389,Quilmes,Buenos Aires,1878
+1390,Santa Fe,Santa Fe,3000
+1391,Río Cuarto,Córdoba,5800
+1392,Mendoza,Mendoza,5500
+1393,Quilmes,Buenos Aires,1878
+1394,Mendoza,Mendoza,5500
+1395,San Isidro,Buenos Aires,1642
+1396,San Isidro,Buenos Aires,1642
+1397,Quilmes,Buenos Aires,1878
+1398,La Plata,Buenos Aires,1900
+1399,Rosario,Santa Fe,2000
+1400,Bahía Blanca,Buenos Aires,8000
+1401,Mendoza,Mendoza,5500
+1402,Rosario,Santa Fe,2000
+1403,La Plata,Buenos Aires,1900
+1404,Mar del Plata,Buenos Aires,7600
+1405,Mendoza,Mendoza,5500
+1406,Córdoba,Córdoba,5000
+1407,Mendoza,Mendoza,5500
+1408,La Plata,Buenos Aires,1900
+1409,San Rafael,Mendoza,5600
+1410,Córdoba,Córdoba,5000
+1411,San Isidro,Buenos Aires,1642
+1412,Rafaela,Santa Fe,2300
+1413,Godoy Cruz,Mendoza,5501
+1414,San Isidro,Buenos Aires,1642
+1415,Santa Fe,Santa Fe,3000
+1416,Córdoba,Córdoba,5000
+1417,Godoy Cruz,Mendoza,5501
+1418,Bahía Blanca,Buenos Aires,8000
+1419,Mar del Plata,Buenos Aires,7600
+1420,La Plata,Buenos Aires,1900
+1421,Mar del Plata,Buenos Aires,7600
+1422,Rosario,Santa Fe,2000
+1423,Córdoba,Córdoba,5000
+1424,Mendoza,Mendoza,5500
+1425,Santa Fe,Santa Fe,3000
+1426,La Plata,Buenos Aires,1900
+1427,Rosario,Santa Fe,2000
+1428,Quilmes,Buenos Aires,1878
+1429,Godoy Cruz,Mendoza,5501
+1430,Mendoza,Mendoza,5500
+1431,Quilmes,Buenos Aires,1878
+1432,Godoy Cruz,Mendoza,5501
+1433,La Plata,Buenos Aires,1900
+1434,Mendoza,Mendoza,5500
+1435,Mendoza,Mendoza,5500
+1436,Godoy Cruz,Mendoza,5501
+1437,Mendoza,Mendoza,5500
+1438,Mar del Plata,Buenos Aires,7600
+1439,La Plata,Buenos Aires,1900
+1440,Mendoza,Mendoza,5500
+1441,Córdoba,Córdoba,5000
+1442,Río Cuarto,Córdoba,5800
+1443,San Rafael,Mendoza,5600
+1444,La Plata,Buenos Aires,1900
+1445,Godoy Cruz,Mendoza,5501
+1446,Mendoza,Mendoza,5500
+1447,La Plata,Buenos Aires,1900
+1448,Godoy Cruz,Mendoza,5501
+1449,Mendoza,Mendoza,5500
+1450,Mar del Plata,Buenos Aires,7600
+1451,Mendoza,Mendoza,5500
+1452,Rosario,Santa Fe,2000
+1453,Rosario,Santa Fe,2000
+1454,Villa Carlos Paz,Córdoba,5152
+1455,Córdoba,Córdoba,5000
+1456,Mendoza,Mendoza,5500
+1457,Mendoza,Mendoza,5500
+1458,Quilmes,Buenos Aires,1878
+1459,Rosario,Santa Fe,2000
+1460,La Plata,Buenos Aires,1900
+1461,Rosario,Santa Fe,2000
+1462,Quilmes,Buenos Aires,1878
+1463,Santa Fe,Santa Fe,3000
+1464,Bahía Blanca,Buenos Aires,8000
+1465,Mendoza,Mendoza,5500
+1466,La Plata,Buenos Aires,1900
+1467,Santa Fe,Santa Fe,3000
+1468,La Plata,Buenos Aires,1900
+1469,Rosario,Santa Fe,2000
+1470,Santa Fe,Santa Fe,3000
+1471,Córdoba,Córdoba,5000
+1472,Villa Carlos Paz,Córdoba,5152
+1473,La Plata,Buenos Aires,1900
+1474,Godoy Cruz,Mendoza,5501
+1475,Córdoba,Córdoba,5000
+1476,La Plata,Buenos Aires,1900
+1477,Santa Fe,Santa Fe,3000
+1478,Río Cuarto,Córdoba,5800
+1479,Mar del Plata,Buenos Aires,7600
+1480,Rosario,Santa Fe,2000
+1481,Mendoza,Mendoza,5500
+1482,Villa Carlos Paz,Córdoba,5152
+1483,Quilmes,Buenos Aires,1878
+1484,San Isidro,Buenos Aires,1642
+1485,Santa Fe,Santa Fe,3000
+1486,Córdoba,Córdoba,5000
+1487,Córdoba,Córdoba,5000
+1488,Córdoba,Córdoba,5000
+1489,Quilmes,Buenos Aires,1878
+1490,San Isidro,Buenos Aires,1642
+1491,Córdoba,Córdoba,5000
+1492,Mendoza,Mendoza,5500
+1493,Godoy Cruz,Mendoza,5501
+1494,Mar del Plata,Buenos Aires,7600
+1495,Mendoza,Mendoza,5500
+1496,Mar del Plata,Buenos Aires,7600
+1497,La Plata,Buenos Aires,1900
+1498,San Rafael,Mendoza,5600
+1499,San Isidro,Buenos Aires,1642
+1500,Mendoza,Mendoza,5500
+1501,Córdoba,Córdoba,5000
+1502,Córdoba,Córdoba,5000
+1503,Rosario,Santa Fe,2000
+1504,Mendoza,Mendoza,5500
+1505,Mar del Plata,Buenos Aires,7600
+1506,Rosario,Santa Fe,2000
+1507,Santa Fe,Santa Fe,3000
+1508,Río Cuarto,Córdoba,5800
+1509,Rosario,Santa Fe,2000
+1510,Santa Fe,Santa Fe,3000
+1511,Mendoza,Mendoza,5500
+1512,Córdoba,Córdoba,5000
+1513,Córdoba,Córdoba,5000
+1514,San Rafael,Mendoza,5600
+1515,Rosario,Santa Fe,2000
+1516,Rosario,Santa Fe,2000
+1517,San Rafael,Mendoza,5600
+1518,Córdoba,Córdoba,5000
+1519,Rosario,Santa Fe,2000
+1520,Córdoba,Córdoba,5000
+1521,Godoy Cruz,Mendoza,5501
+1522,Córdoba,Córdoba,5000
+1523,Córdoba,Córdoba,5000
+1524,Rosario,Santa Fe,2000
+1525,Córdoba,Córdoba,5000
+1526,Mendoza,Mendoza,5500
+1527,Rafaela,Santa Fe,2300
+1528,Mendoza,Mendoza,5500
+1529,La Plata,Buenos Aires,1900
+1530,Rosario,Santa Fe,2000
+1531,Godoy Cruz,Mendoza,5501
+1532,Córdoba,Córdoba,5000
+1533,Villa Carlos Paz,Córdoba,5152
+1534,Córdoba,Córdoba,5000
+1535,Mendoza,Mendoza,5500
+1536,Rosario,Santa Fe,2000
+1537,Rosario,Santa Fe,2000
+1538,Mendoza,Mendoza,5500
+1539,Mar del Plata,Buenos Aires,7600
+1540,Mendoza,Mendoza,5500
+1541,Rosario,Santa Fe,2000
+1542,Córdoba,Córdoba,5000
+1543,Córdoba,Córdoba,5000
+1544,Mendoza,Mendoza,5500
+1545,Rosario,Santa Fe,2000
+1546,San Rafael,Mendoza,5600
+1547,Bahía Blanca,Buenos Aires,8000
+1548,Rosario,Santa Fe,2000
+1549,Rosario,Santa Fe,2000
+1550,Córdoba,Córdoba,5000
+1551,Rosario,Santa Fe,2000
+1552,Rosario,Santa Fe,2000
+1553,Rosario,Santa Fe,2000
+1554,Rosario,Santa Fe,2000
+1555,Córdoba,Córdoba,5000
+1556,San Rafael,Mendoza,5600
+1557,Córdoba,Córdoba,5000
+1558,Godoy Cruz,Mendoza,5501
+1559,Villa Carlos Paz,Córdoba,5152
+1560,Córdoba,Córdoba,5000
+1561,Rosario,Santa Fe,2000
+1562,Quilmes,Buenos Aires,1878
+1563,Quilmes,Buenos Aires,1878
+1564,La Plata,Buenos Aires,1900
+1565,Santa Fe,Santa Fe,3000
+1566,Córdoba,Córdoba,5000
+1567,La Plata,Buenos Aires,1900
+1568,La Plata,Buenos Aires,1900
+1569,Godoy Cruz,Mendoza,5501
+1570,Córdoba,Córdoba,5000
+1571,Godoy Cruz,Mendoza,5501
+1572,Santa Fe,Santa Fe,3000
+1573,Bahía Blanca,Buenos Aires,8000
+1574,Mendoza,Mendoza,5500
+1575,Santa Fe,Santa Fe,3000
+1576,Río Cuarto,Córdoba,5800
+1577,Villa Carlos Paz,Córdoba,5152
+1578,Bahía Blanca,Buenos Aires,8000
+1579,Bahía Blanca,Buenos Aires,8000
+1580,Rosario,Santa Fe,2000
+1581,Godoy Cruz,Mendoza,5501
+1582,Córdoba,Córdoba,5000
+1583,Mendoza,Mendoza,5500
+1584,Rafaela,Santa Fe,2300
+1585,Córdoba,Córdoba,5000
+1586,Bahía Blanca,Buenos Aires,8000
+1587,Godoy Cruz,Mendoza,5501
+1588,Córdoba,Córdoba,5000
+1589,Santa Fe,Santa Fe,3000
+1590,La Plata,Buenos Aires,1900
+1591,Godoy Cruz,Mendoza,5501
+1592,San Isidro,Buenos Aires,1642
+1593,Mendoza,Mendoza,5500
+1594,Godoy Cruz,Mendoza,5501
+1595,Rosario,Santa Fe,2000
+1596,Mar del Plata,Buenos Aires,7600
+1597,Córdoba,Córdoba,5000
+1598,Godoy Cruz,Mendoza,5501
+1599,Villa Carlos Paz,Córdoba,5152
+1600,Córdoba,Córdoba,5000
+1601,Godoy Cruz,Mendoza,5501
+1602,San Rafael,Mendoza,5600
+1603,Villa Carlos Paz,Córdoba,5152
+1604,Santa Fe,Santa Fe,3000
+1605,Rosario,Santa Fe,2000
+1606,Mendoza,Mendoza,5500
+1607,Rosario,Santa Fe,2000
+1608,Villa Carlos Paz,Córdoba,5152
+1609,Córdoba,Córdoba,5000
+1610,Mendoza,Mendoza,5500
+1611,San Isidro,Buenos Aires,1642
+1612,Córdoba,Córdoba,5000
+1613,San Rafael,Mendoza,5600
+1614,Rosario,Santa Fe,2000
+1615,Córdoba,Córdoba,5000
+1616,Rosario,Santa Fe,2000
+1617,Mendoza,Mendoza,5500
+1618,Godoy Cruz,Mendoza,5501
+1619,Quilmes,Buenos Aires,1878
+1620,Quilmes,Buenos Aires,1878
+1621,Santa Fe,Santa Fe,3000
+1622,Villa Carlos Paz,Córdoba,5152
+1623,Córdoba,Córdoba,5000
+1624,Bahía Blanca,Buenos Aires,8000
+1625,Rosario,Santa Fe,2000
+1626,La Plata,Buenos Aires,1900
+1627,Santa Fe,Santa Fe,3000
+1628,Rosario,Santa Fe,2000
+1629,La Plata,Buenos Aires,1900
+1630,Godoy Cruz,Mendoza,5501
+1631,Godoy Cruz,Mendoza,5501
+1632,Bahía Blanca,Buenos Aires,8000
+1633,Rosario,Santa Fe,2000
+1634,Godoy Cruz,Mendoza,5501
+1635,San Isidro,Buenos Aires,1642
+1636,Godoy Cruz,Mendoza,5501
+1637,Córdoba,Córdoba,5000
+1638,Córdoba,Córdoba,5000
+1639,Quilmes,Buenos Aires,1878
+1640,La Plata,Buenos Aires,1900
+1641,Santa Fe,Santa Fe,3000
+1642,Rosario,Santa Fe,2000
+1643,Rosario,Santa Fe,2000
+1644,Córdoba,Córdoba,5000
+1645,La Plata,Buenos Aires,1900
+1646,San Rafael,Mendoza,5600
+1647,Rosario,Santa Fe,2000
+1648,Bahía Blanca,Buenos Aires,8000
+1649,Quilmes,Buenos Aires,1878
+1650,Córdoba,Córdoba,5000
+1651,Bahía Blanca,Buenos Aires,8000
+1652,Rosario,Santa Fe,2000
+1653,Mar del Plata,Buenos Aires,7600
+1654,Rosario,Santa Fe,2000
+1655,Córdoba,Córdoba,5000
+1656,Godoy Cruz,Mendoza,5501
+1657,La Plata,Buenos Aires,1900
+1658,La Plata,Buenos Aires,1900
+1659,San Isidro,Buenos Aires,1642
+1660,Santa Fe,Santa Fe,3000
+1661,La Plata,Buenos Aires,1900
+1662,Mendoza,Mendoza,5500
+1663,Santa Fe,Santa Fe,3000
+1664,La Plata,Buenos Aires,1900
+1665,Quilmes,Buenos Aires,1878
+1666,Rosario,Santa Fe,2000
+1667,La Plata,Buenos Aires,1900
+1668,Villa Carlos Paz,Córdoba,5152
+1669,Córdoba,Córdoba,5000
+1670,Córdoba,Córdoba,5000
+1671,Córdoba,Córdoba,5000
+1672,Quilmes,Buenos Aires,1878
+1673,Quilmes,Buenos Aires,1878
+1674,Bahía Blanca,Buenos Aires,8000
+1675,Quilmes,Buenos Aires,1878
+1676,Bahía Blanca,Buenos Aires,8000
+1677,Córdoba,Córdoba,5000
+1678,Mendoza,Mendoza,5500
+1679,Rafaela,Santa Fe,2300
+1680,La Plata,Buenos Aires,1900
+1681,Córdoba,Córdoba,5000
+1682,Rosario,Santa Fe,2000
+1683,La Plata,Buenos Aires,1900
+1684,Rosario,Santa Fe,2000
+1685,Río Cuarto,Córdoba,5800
+1686,Quilmes,Buenos Aires,1878
+1687,Mendoza,Mendoza,5500
+1688,Mendoza,Mendoza,5500
+1689,Quilmes,Buenos Aires,1878
+1690,Santa Fe,Santa Fe,3000
+1691,Rafaela,Santa Fe,2300
+1692,Río Cuarto,Córdoba,5800
+1693,Mar del Plata,Buenos Aires,7600
+1694,San Isidro,Buenos Aires,1642
+1695,Rafaela,Santa Fe,2300
+1696,Rosario,Santa Fe,2000
+1697,Quilmes,Buenos Aires,1878
+1698,Godoy Cruz,Mendoza,5501
+1699,San Isidro,Buenos Aires,1642
+1700,Santa Fe,Santa Fe,3000
+1701,Rafaela,Santa Fe,2300
+1702,Rosario,Santa Fe,2000
+1703,Villa Carlos Paz,Córdoba,5152
+1704,Godoy Cruz,Mendoza,5501
+1705,Santa Fe,Santa Fe,3000
+1706,Rosario,Santa Fe,2000
+1707,Mendoza,Mendoza,5500
+1708,Villa Carlos Paz,Córdoba,5152
+1709,Rosario,Santa Fe,2000
+1710,Mar del Plata,Buenos Aires,7600
+1711,Rafaela,Santa Fe,2300
+1712,Bahía Blanca,Buenos Aires,8000
+1713,Córdoba,Córdoba,5000
+1714,Quilmes,Buenos Aires,1878
+1715,Rosario,Santa Fe,2000
+1716,Rosario,Santa Fe,2000
+1717,Mar del Plata,Buenos Aires,7600
+1718,La Plata,Buenos Aires,1900
+1719,Mendoza,Mendoza,5500
+1720,Córdoba,Córdoba,5000
+1721,Quilmes,Buenos Aires,1878
+1722,Río Cuarto,Córdoba,5800
+1723,La Plata,Buenos Aires,1900
+1724,La Plata,Buenos Aires,1900
+1725,Mar del Plata,Buenos Aires,7600
+1726,Mar del Plata,Buenos Aires,7600
+1727,Río Cuarto,Córdoba,5800
+1728,Rosario,Santa Fe,2000
+1729,Mendoza,Mendoza,5500
+1730,Mar del Plata,Buenos Aires,7600
+1731,Rosario,Santa Fe,2000
+1732,Villa Carlos Paz,Córdoba,5152
+1733,Quilmes,Buenos Aires,1878
+1734,Mar del Plata,Buenos Aires,7600
+1735,Santa Fe,Santa Fe,3000
+1736,Rosario,Santa Fe,2000
+1737,Mar del Plata,Buenos Aires,7600
+1738,Córdoba,Córdoba,5000
+1739,Mar del Plata,Buenos Aires,7600
+1740,La Plata,Buenos Aires,1900
+1741,Santa Fe,Santa Fe,3000
+1742,Mar del Plata,Buenos Aires,7600
+1743,Río Cuarto,Córdoba,5800
+1744,Villa Carlos Paz,Córdoba,5152
+1745,Río Cuarto,Córdoba,5800
+1746,Córdoba,Córdoba,5000
+1747,Córdoba,Córdoba,5000
+1748,Córdoba,Córdoba,5000
+1749,La Plata,Buenos Aires,1900
+1750,Córdoba,Córdoba,5000
+1751,Quilmes,Buenos Aires,1878
+1752,Córdoba,Córdoba,5000
+1753,Rosario,Santa Fe,2000
+1754,Quilmes,Buenos Aires,1878
+1755,Santa Fe,Santa Fe,3000
+1756,La Plata,Buenos Aires,1900
+1757,Rosario,Santa Fe,2000
+1758,La Plata,Buenos Aires,1900
+1759,Quilmes,Buenos Aires,1878
+1760,Santa Fe,Santa Fe,3000
+1761,San Isidro,Buenos Aires,1642
+1762,Córdoba,Córdoba,5000
+1763,San Rafael,Mendoza,5600
+1764,Quilmes,Buenos Aires,1878
+1765,Río Cuarto,Córdoba,5800
+1766,San Isidro,Buenos Aires,1642
+1767,Villa Carlos Paz,Córdoba,5152
+1768,La Plata,Buenos Aires,1900
+1769,La Plata,Buenos Aires,1900
+1770,Río Cuarto,Córdoba,5800
+1771,San Isidro,Buenos Aires,1642
+1772,Villa Carlos Paz,Córdoba,5152
+1773,Mar del Plata,Buenos Aires,7600
+1774,La Plata,Buenos Aires,1900
+1775,Quilmes,Buenos Aires,1878
+1776,Quilmes,Buenos Aires,1878
+1777,Río Cuarto,Córdoba,5800
+1778,La Plata,Buenos Aires,1900
+1779,Mendoza,Mendoza,5500
+1780,Santa Fe,Santa Fe,3000
+1781,Mar del Plata,Buenos Aires,7600
+1782,Río Cuarto,Córdoba,5800
+1783,Santa Fe,Santa Fe,3000
+1784,Rosario,Santa Fe,2000
+1785,Santa Fe,Santa Fe,3000
+1786,Río Cuarto,Córdoba,5800
+1787,Río Cuarto,Córdoba,5800
+1788,La Plata,Buenos Aires,1900
+1789,Mendoza,Mendoza,5500
+1790,Bahía Blanca,Buenos Aires,8000
+1791,La Plata,Buenos Aires,1900
+1792,Bahía Blanca,Buenos Aires,8000
+1793,La Plata,Buenos Aires,1900
+1794,Córdoba,Córdoba,5000
+1795,La Plata,Buenos Aires,1900
+1796,Mendoza,Mendoza,5500
+1797,Quilmes,Buenos Aires,1878
+1798,San Isidro,Buenos Aires,1642
+1799,Mar del Plata,Buenos Aires,7600
+1800,Rosario,Santa Fe,2000
+1801,Quilmes,Buenos Aires,1878
+1802,Mendoza,Mendoza,5500
+1803,Rosario,Santa Fe,2000
+1804,Quilmes,Buenos Aires,1878
+1805,La Plata,Buenos Aires,1900
+1806,Quilmes,Buenos Aires,1878
+1807,Córdoba,Córdoba,5000
+1808,Córdoba,Córdoba,5000
+1809,Quilmes,Buenos Aires,1878
+1810,Rafaela,Santa Fe,2300
+1811,Río Cuarto,Córdoba,5800
+1812,Rosario,Santa Fe,2000
+1813,Quilmes,Buenos Aires,1878
+1814,Rosario,Santa Fe,2000
+1815,Bahía Blanca,Buenos Aires,8000
+1816,Rosario,Santa Fe,2000
+1817,Mendoza,Mendoza,5500
+1818,Mendoza,Mendoza,5500
+1819,Bahía Blanca,Buenos Aires,8000
+1820,San Isidro,Buenos Aires,1642
+1821,Mendoza,Mendoza,5500
+1822,Rosario,Santa Fe,2000
+1823,La Plata,Buenos Aires,1900
+1824,Rosario,Santa Fe,2000
+1825,Mendoza,Mendoza,5500
+1826,La Plata,Buenos Aires,1900
+1827,Mendoza,Mendoza,5500
+1828,Villa Carlos Paz,Córdoba,5152
+1829,Rosario,Santa Fe,2000
+1830,Rosario,Santa Fe,2000
+1831,San Isidro,Buenos Aires,1642
+1832,Córdoba,Córdoba,5000
+1833,Rosario,Santa Fe,2000
+1834,Bahía Blanca,Buenos Aires,8000
+1835,San Isidro,Buenos Aires,1642
+1836,Mar del Plata,Buenos Aires,7600
+1837,San Isidro,Buenos Aires,1642
+1838,Mar del Plata,Buenos Aires,7600
+1839,La Plata,Buenos Aires,1900
+1840,Río Cuarto,Córdoba,5800
+1841,Villa Carlos Paz,Córdoba,5152
+1842,Mendoza,Mendoza,5500
+1843,Mendoza,Mendoza,5500
+1844,La Plata,Buenos Aires,1900
+1845,Quilmes,Buenos Aires,1878
+1846,Rafaela,Santa Fe,2300
+1847,Córdoba,Córdoba,5000
+1848,Mar del Plata,Buenos Aires,7600
+1849,Bahía Blanca,Buenos Aires,8000
+1850,Rosario,Santa Fe,2000
+1851,Mendoza,Mendoza,5500
+1852,Mendoza,Mendoza,5500
+1853,Rosario,Santa Fe,2000
+1854,Godoy Cruz,Mendoza,5501
+1855,San Rafael,Mendoza,5600
+1856,La Plata,Buenos Aires,1900
+1857,Rosario,Santa Fe,2000
+1858,Córdoba,Córdoba,5000
+1859,Santa Fe,Santa Fe,3000
+1860,Córdoba,Córdoba,5000
+1861,Río Cuarto,Córdoba,5800
+1862,Río Cuarto,Córdoba,5800
+1863,La Plata,Buenos Aires,1900
+1864,Mendoza,Mendoza,5500
+1865,Mar del Plata,Buenos Aires,7600
+1866,Rosario,Santa Fe,2000
+1867,Bahía Blanca,Buenos Aires,8000
+1868,San Isidro,Buenos Aires,1642
+1869,Córdoba,Córdoba,5000
+1870,Córdoba,Córdoba,5000
+1871,Rosario,Santa Fe,2000
+1872,San Isidro,Buenos Aires,1642
+1873,La Plata,Buenos Aires,1900
+1874,La Plata,Buenos Aires,1900
+1875,Córdoba,Córdoba,5000
+1876,Mendoza,Mendoza,5500
+1877,Rosario,Santa Fe,2000
+1878,Rosario,Santa Fe,2000
+1879,Rosario,Santa Fe,2000
+1880,Córdoba,Córdoba,5000
+1881,Godoy Cruz,Mendoza,5501
+1882,Córdoba,Córdoba,5000
+1883,Rosario,Santa Fe,2000
+1884,San Isidro,Buenos Aires,1642
+1885,La Plata,Buenos Aires,1900
+1886,Villa Carlos Paz,Córdoba,5152
+1887,Rafaela,Santa Fe,2300
+1888,Córdoba,Córdoba,5000
+1889,La Plata,Buenos Aires,1900
+1890,Bahía Blanca,Buenos Aires,8000
+1891,Godoy Cruz,Mendoza,5501
+1892,Rosario,Santa Fe,2000
+1893,Río Cuarto,Córdoba,5800
+1894,Quilmes,Buenos Aires,1878
+1895,Rosario,Santa Fe,2000
+1896,Santa Fe,Santa Fe,3000
+1897,Córdoba,Córdoba,5000
+1898,La Plata,Buenos Aires,1900
+1899,Bahía Blanca,Buenos Aires,8000
+1900,Godoy Cruz,Mendoza,5501
+1901,San Rafael,Mendoza,5600
+1902,Mar del Plata,Buenos Aires,7600
+1903,Río Cuarto,Córdoba,5800
+1904,Santa Fe,Santa Fe,3000
+1905,Río Cuarto,Córdoba,5800
+1906,Córdoba,Córdoba,5000
+1907,Córdoba,Córdoba,5000
+1908,Rosario,Santa Fe,2000
+1909,Córdoba,Córdoba,5000
+1910,Río Cuarto,Córdoba,5800
+1911,Santa Fe,Santa Fe,3000
+1912,Río Cuarto,Córdoba,5800
+1913,La Plata,Buenos Aires,1900
+1914,Córdoba,Córdoba,5000
+1915,Rafaela,Santa Fe,2300
+1916,Rosario,Santa Fe,2000
+1917,Córdoba,Córdoba,5000
+1918,Villa Carlos Paz,Córdoba,5152
+1919,Mendoza,Mendoza,5500
+1920,Rafaela,Santa Fe,2300
+1921,Quilmes,Buenos Aires,1878
+1922,Godoy Cruz,Mendoza,5501
+1923,Córdoba,Córdoba,5000
+1924,Quilmes,Buenos Aires,1878
+1925,San Rafael,Mendoza,5600
+1926,Quilmes,Buenos Aires,1878
+1927,Mar del Plata,Buenos Aires,7600
+1928,Córdoba,Córdoba,5000
+1929,Santa Fe,Santa Fe,3000
+1930,Córdoba,Córdoba,5000
+1931,Córdoba,Córdoba,5000
+1932,Mar del Plata,Buenos Aires,7600
+1933,Córdoba,Córdoba,5000
+1934,Godoy Cruz,Mendoza,5501
+1935,Quilmes,Buenos Aires,1878
+1936,Córdoba,Córdoba,5000
+1937,Córdoba,Córdoba,5000
+1938,La Plata,Buenos Aires,1900
+1939,San Rafael,Mendoza,5600
+1940,Quilmes,Buenos Aires,1878
+1941,Santa Fe,Santa Fe,3000
+1942,Godoy Cruz,Mendoza,5501
+1943,Río Cuarto,Córdoba,5800
+1944,Villa Carlos Paz,Córdoba,5152
+1945,La Plata,Buenos Aires,1900
+1946,Santa Fe,Santa Fe,3000
+1947,Rafaela,Santa Fe,2300
+1948,Santa Fe,Santa Fe,3000
+1949,San Isidro,Buenos Aires,1642
+1950,Quilmes,Buenos Aires,1878
+1951,Córdoba,Córdoba,5000
+1952,Quilmes,Buenos Aires,1878
+1953,San Isidro,Buenos Aires,1642
+1954,La Plata,Buenos Aires,1900
+1955,Mar del Plata,Buenos Aires,7600
+1956,Mendoza,Mendoza,5500
+1957,Córdoba,Córdoba,5000
+1958,Córdoba,Córdoba,5000
+1959,Bahía Blanca,Buenos Aires,8000
+1960,Rafaela,Santa Fe,2300
+1961,Rafaela,Santa Fe,2300
+1962,La Plata,Buenos Aires,1900
+1963,Quilmes,Buenos Aires,1878
+1964,Río Cuarto,Córdoba,5800
+1965,Rosario,Santa Fe,2000
+1966,Rafaela,Santa Fe,2300
+1967,Bahía Blanca,Buenos Aires,8000
+1968,Santa Fe,Santa Fe,3000
+1969,Quilmes,Buenos Aires,1878
+1970,Godoy Cruz,Mendoza,5501
+1971,Mar del Plata,Buenos Aires,7600
+1972,La Plata,Buenos Aires,1900
+1973,San Isidro,Buenos Aires,1642
+1974,Córdoba,Córdoba,5000
+1975,San Rafael,Mendoza,5600
+1976,Bahía Blanca,Buenos Aires,8000
+1977,Rosario,Santa Fe,2000
+1978,San Isidro,Buenos Aires,1642
+1979,La Plata,Buenos Aires,1900
+1980,Bahía Blanca,Buenos Aires,8000
+1981,San Isidro,Buenos Aires,1642
+1982,Bahía Blanca,Buenos Aires,8000
+1983,Córdoba,Córdoba,5000
+1984,San Isidro,Buenos Aires,1642
+1985,Santa Fe,Santa Fe,3000
+1986,Río Cuarto,Córdoba,5800
+1987,Rosario,Santa Fe,2000
+1988,Rafaela,Santa Fe,2300
+1989,San Isidro,Buenos Aires,1642
+1990,Santa Fe,Santa Fe,3000
+1991,San Isidro,Buenos Aires,1642
+1992,Mar del Plata,Buenos Aires,7600
+1993,Mar del Plata,Buenos Aires,7600
+1994,Río Cuarto,Córdoba,5800
+1995,Villa Carlos Paz,Córdoba,5152
+1996,Quilmes,Buenos Aires,1878
+1997,Santa Fe,Santa Fe,3000
+1998,Río Cuarto,Córdoba,5800
+1999,Córdoba,Córdoba,5000
+2000,Bahía Blanca,Buenos Aires,8000
+2001,La Plata,Buenos Aires,1900
+2002,Bahía Blanca,Buenos Aires,8000
+2003,Córdoba,Córdoba,5000
+2004,Villa Carlos Paz,Córdoba,5152
+2005,Rosario,Santa Fe,2000
+2006,La Plata,Buenos Aires,1900
+2007,Córdoba,Córdoba,5000
+2008,La Plata,Buenos Aires,1900
+2009,Rosario,Santa Fe,2000
+2010,Mar del Plata,Buenos Aires,7600
+2011,Río Cuarto,Córdoba,5800
+2012,Godoy Cruz,Mendoza,5501
+2013,San Isidro,Buenos Aires,1642
+2014,Quilmes,Buenos Aires,1878
+2015,Río Cuarto,Córdoba,5800
+2016,Bahía Blanca,Buenos Aires,8000
+2017,Mar del Plata,Buenos Aires,7600
+2018,Santa Fe,Santa Fe,3000
+2019,Santa Fe,Santa Fe,3000
+2020,Santa Fe,Santa Fe,3000
+2021,Villa Carlos Paz,Córdoba,5152
+2022,Córdoba,Córdoba,5000
+2023,La Plata,Buenos Aires,1900
+2024,Córdoba,Córdoba,5000
+2025,Santa Fe,Santa Fe,3000
+2026,Mendoza,Mendoza,5500
+2027,La Plata,Buenos Aires,1900
+2028,Río Cuarto,Córdoba,5800
+2029,Mar del Plata,Buenos Aires,7600
+2030,Quilmes,Buenos Aires,1878
+2031,Mendoza,Mendoza,5500
+2032,Mendoza,Mendoza,5500
+2033,Río Cuarto,Córdoba,5800
+2034,Santa Fe,Santa Fe,3000
+2035,Rosario,Santa Fe,2000
+2036,Córdoba,Córdoba,5000
+2037,San Isidro,Buenos Aires,1642
+2038,Santa Fe,Santa Fe,3000
+2039,Rafaela,Santa Fe,2300
+2040,Rafaela,Santa Fe,2300
+2041,Mar del Plata,Buenos Aires,7600
+2042,Rosario,Santa Fe,2000
+2043,Rosario,Santa Fe,2000
+2044,Santa Fe,Santa Fe,3000
+2045,Villa Carlos Paz,Córdoba,5152
+2046,Rosario,Santa Fe,2000
+2047,La Plata,Buenos Aires,1900
+2048,Godoy Cruz,Mendoza,5501
+2049,La Plata,Buenos Aires,1900
+2050,Rosario,Santa Fe,2000
+2051,Rosario,Santa Fe,2000
+2052,Rosario,Santa Fe,2000
+2053,Godoy Cruz,Mendoza,5501
+2054,La Plata,Buenos Aires,1900
+2055,Córdoba,Córdoba,5000
+2056,Mar del Plata,Buenos Aires,7600
+2057,La Plata,Buenos Aires,1900
+2058,Quilmes,Buenos Aires,1878
+2059,Godoy Cruz,Mendoza,5501
+2060,Santa Fe,Santa Fe,3000
+2061,Córdoba,Córdoba,5000
+2062,Córdoba,Córdoba,5000
+2063,Córdoba,Córdoba,5000
+2064,Villa Carlos Paz,Córdoba,5152
+2065,Santa Fe,Santa Fe,3000
+2066,San Isidro,Buenos Aires,1642
+2067,Rosario,Santa Fe,2000
+2068,Rosario,Santa Fe,2000
+2069,Córdoba,Córdoba,5000
+2070,Córdoba,Córdoba,5000
+2071,Córdoba,Córdoba,5000
+2072,Rosario,Santa Fe,2000
+2073,La Plata,Buenos Aires,1900
+2074,Bahía Blanca,Buenos Aires,8000
+2075,Córdoba,Córdoba,5000
+2076,Bahía Blanca,Buenos Aires,8000
+2077,San Rafael,Mendoza,5600
+2078,Santa Fe,Santa Fe,3000
+2079,Rosario,Santa Fe,2000
+2080,La Plata,Buenos Aires,1900
+2081,Mar del Plata,Buenos Aires,7600
+2082,San Isidro,Buenos Aires,1642
+2083,La Plata,Buenos Aires,1900
+2084,Mar del Plata,Buenos Aires,7600
+2085,Santa Fe,Santa Fe,3000
+2086,Santa Fe,Santa Fe,3000
+2087,San Isidro,Buenos Aires,1642
+2088,Córdoba,Córdoba,5000
+2089,Córdoba,Córdoba,5000
+2090,Córdoba,Córdoba,5000
+2091,Quilmes,Buenos Aires,1878
+2092,Rosario,Santa Fe,2000
+2093,Córdoba,Córdoba,5000
+2094,Córdoba,Córdoba,5000
+2095,Rosario,Santa Fe,2000
+2096,Rosario,Santa Fe,2000
+2097,Córdoba,Córdoba,5000
+2098,Rosario,Santa Fe,2000
+2099,Bahía Blanca,Buenos Aires,8000
+2100,La Plata,Buenos Aires,1900
+2101,La Plata,Buenos Aires,1900
+2102,Rosario,Santa Fe,2000
+2103,Bahía Blanca,Buenos Aires,8000
+2104,Río Cuarto,Córdoba,5800
+2105,Bahía Blanca,Buenos Aires,8000
+2106,Mar del Plata,Buenos Aires,7600
+2107,Santa Fe,Santa Fe,3000
+2108,Mendoza,Mendoza,5500
+2109,San Rafael,Mendoza,5600
+2110,Rafaela,Santa Fe,2300
+2111,Rosario,Santa Fe,2000
+2112,Rafaela,Santa Fe,2300
+2113,Bahía Blanca,Buenos Aires,8000
+2114,Bahía Blanca,Buenos Aires,8000
+2115,Córdoba,Córdoba,5000
+2116,Mendoza,Mendoza,5500
+2117,Godoy Cruz,Mendoza,5501
+2118,Rafaela,Santa Fe,2300
+2119,Rosario,Santa Fe,2000
+2120,Río Cuarto,Córdoba,5800
+2121,Bahía Blanca,Buenos Aires,8000
+2122,Mendoza,Mendoza,5500
+2123,Rosario,Santa Fe,2000
+2124,Córdoba,Córdoba,5000
+2125,Quilmes,Buenos Aires,1878
+2126,Córdoba,Córdoba,5000
+2127,San Rafael,Mendoza,5600
+2128,Rosario,Santa Fe,2000
+2129,Quilmes,Buenos Aires,1878
+2130,Rosario,Santa Fe,2000
+2131,La Plata,Buenos Aires,1900
+2132,San Isidro,Buenos Aires,1642
+2133,Santa Fe,Santa Fe,3000
+2134,Córdoba,Córdoba,5000
+2135,Rosario,Santa Fe,2000
+2136,Quilmes,Buenos Aires,1878
+2137,Rafaela,Santa Fe,2300
+2138,Quilmes,Buenos Aires,1878
+2139,Rosario,Santa Fe,2000
+2140,Quilmes,Buenos Aires,1878
+2141,San Rafael,Mendoza,5600
+2142,La Plata,Buenos Aires,1900
+2143,Córdoba,Córdoba,5000
+2144,Mar del Plata,Buenos Aires,7600
+2145,Santa Fe,Santa Fe,3000
+2146,Mendoza,Mendoza,5500
+2147,Godoy Cruz,Mendoza,5501
+2148,Córdoba,Córdoba,5000
+2149,La Plata,Buenos Aires,1900
+2150,San Isidro,Buenos Aires,1642
+2151,Bahía Blanca,Buenos Aires,8000
+2152,La Plata,Buenos Aires,1900
+2153,San Isidro,Buenos Aires,1642
+2154,Río Cuarto,Córdoba,5800
+2155,San Rafael,Mendoza,5600
+2156,Bahía Blanca,Buenos Aires,8000
+2157,San Isidro,Buenos Aires,1642
+2158,La Plata,Buenos Aires,1900
+2159,Godoy Cruz,Mendoza,5501
+2160,Mar del Plata,Buenos Aires,7600
+2161,Quilmes,Buenos Aires,1878
+2162,Rosario,Santa Fe,2000
+2163,Bahía Blanca,Buenos Aires,8000
+2164,Villa Carlos Paz,Córdoba,5152
+2165,Mendoza,Mendoza,5500
+2166,San Isidro,Buenos Aires,1642
+2167,Córdoba,Córdoba,5000
+2168,Santa Fe,Santa Fe,3000
+2169,Córdoba,Córdoba,5000
+2170,Córdoba,Córdoba,5000
+2171,Godoy Cruz,Mendoza,5501
+2172,Mendoza,Mendoza,5500
+2173,Santa Fe,Santa Fe,3000
+2174,Rosario,Santa Fe,2000
+2175,San Isidro,Buenos Aires,1642
+2176,La Plata,Buenos Aires,1900
+2177,La Plata,Buenos Aires,1900
+2178,Godoy Cruz,Mendoza,5501
+2179,Quilmes,Buenos Aires,1878
+2180,San Isidro,Buenos Aires,1642
+2181,Quilmes,Buenos Aires,1878
+2182,Mar del Plata,Buenos Aires,7600
+2183,Rafaela,Santa Fe,2300
+2184,La Plata,Buenos Aires,1900
+2185,Córdoba,Córdoba,5000
+2186,Quilmes,Buenos Aires,1878
+2187,Rafaela,Santa Fe,2300
+2188,San Isidro,Buenos Aires,1642
+2189,Villa Carlos Paz,Córdoba,5152
+2190,Quilmes,Buenos Aires,1878
+2191,San Isidro,Buenos Aires,1642
+2192,Mendoza,Mendoza,5500
+2193,La Plata,Buenos Aires,1900
+2194,Santa Fe,Santa Fe,3000
+2195,Rosario,Santa Fe,2000
+2196,Córdoba,Córdoba,5000
+2197,La Plata,Buenos Aires,1900
+2198,La Plata,Buenos Aires,1900
+2199,San Isidro,Buenos Aires,1642
+2200,Rosario,Santa Fe,2000
+2201,Córdoba,Córdoba,5000
+2202,Quilmes,Buenos Aires,1878
+2203,Villa Carlos Paz,Córdoba,5152
+2204,Mendoza,Mendoza,5500
+2205,Mendoza,Mendoza,5500
+2206,Godoy Cruz,Mendoza,5501
+2207,Mendoza,Mendoza,5500
+2208,Quilmes,Buenos Aires,1878
+2209,San Rafael,Mendoza,5600
+2210,La Plata,Buenos Aires,1900
+2211,Santa Fe,Santa Fe,3000
+2212,Córdoba,Córdoba,5000
+2213,Rosario,Santa Fe,2000
+2214,San Rafael,Mendoza,5600
+2215,Mar del Plata,Buenos Aires,7600
+2216,San Isidro,Buenos Aires,1642
+2217,San Isidro,Buenos Aires,1642
+2218,Mendoza,Mendoza,5500
+2219,Mendoza,Mendoza,5500
+2220,Mar del Plata,Buenos Aires,7600
+2221,Córdoba,Córdoba,5000
+2222,Río Cuarto,Córdoba,5800
+2223,Mendoza,Mendoza,5500
+2224,San Isidro,Buenos Aires,1642
+2225,Santa Fe,Santa Fe,3000
+2226,Mar del Plata,Buenos Aires,7600
+2227,Río Cuarto,Córdoba,5800
+2228,Córdoba,Córdoba,5000
+2229,Mar del Plata,Buenos Aires,7600
+2230,Quilmes,Buenos Aires,1878
+2231,La Plata,Buenos Aires,1900
+2232,Córdoba,Córdoba,5000
+2233,Rosario,Santa Fe,2000
+2234,Quilmes,Buenos Aires,1878
+2235,Rosario,Santa Fe,2000
+2236,Córdoba,Córdoba,5000
+2237,San Isidro,Buenos Aires,1642
+2238,Mendoza,Mendoza,5500
+2239,Santa Fe,Santa Fe,3000
+2240,Mendoza,Mendoza,5500
+2241,Córdoba,Córdoba,5000
+2242,Mendoza,Mendoza,5500
+2243,Mar del Plata,Buenos Aires,7600
+2244,Córdoba,Córdoba,5000
+2245,Quilmes,Buenos Aires,1878
+2246,Río Cuarto,Córdoba,5800
+2247,Mendoza,Mendoza,5500
+2248,Córdoba,Córdoba,5000
+2249,Mar del Plata,Buenos Aires,7600
+2250,Mar del Plata,Buenos Aires,7600
+2251,Quilmes,Buenos Aires,1878
+2252,Mar del Plata,Buenos Aires,7600
+2253,Mar del Plata,Buenos Aires,7600
+2254,Córdoba,Córdoba,5000
+2255,Córdoba,Córdoba,5000
+2256,Rafaela,Santa Fe,2300
+2257,Godoy Cruz,Mendoza,5501
+2258,Rosario,Santa Fe,2000
+2259,San Isidro,Buenos Aires,1642
+2260,La Plata,Buenos Aires,1900
+2261,San Rafael,Mendoza,5600
+2262,Córdoba,Córdoba,5000
+2263,Rosario,Santa Fe,2000
+2264,Rafaela,Santa Fe,2300
+2265,Mendoza,Mendoza,5500
+2266,Mar del Plata,Buenos Aires,7600
+2267,Mendoza,Mendoza,5500
+2268,Rosario,Santa Fe,2000
+2269,San Isidro,Buenos Aires,1642
+2270,Río Cuarto,Córdoba,5800
+2271,Rosario,Santa Fe,2000
+2272,Córdoba,Córdoba,5000
+2273,Quilmes,Buenos Aires,1878
+2274,Quilmes,Buenos Aires,1878
+2275,Rosario,Santa Fe,2000
+2276,Rosario,Santa Fe,2000
+2277,Río Cuarto,Córdoba,5800
+2278,Quilmes,Buenos Aires,1878
+2279,Rosario,Santa Fe,2000
+2280,Villa Carlos Paz,Córdoba,5152
+2281,San Isidro,Buenos Aires,1642
+2282,San Isidro,Buenos Aires,1642
+2283,Rosario,Santa Fe,2000
+2284,Quilmes,Buenos Aires,1878
+2285,Rosario,Santa Fe,2000
+2286,Río Cuarto,Córdoba,5800
+2287,La Plata,Buenos Aires,1900
+2288,San Isidro,Buenos Aires,1642
+2289,San Isidro,Buenos Aires,1642
+2290,Mendoza,Mendoza,5500
+2291,Villa Carlos Paz,Córdoba,5152
+2292,Río Cuarto,Córdoba,5800
+2293,Quilmes,Buenos Aires,1878
+2294,Córdoba,Córdoba,5000
+2295,Mendoza,Mendoza,5500
+2296,San Isidro,Buenos Aires,1642
+2297,La Plata,Buenos Aires,1900
+2298,Mendoza,Mendoza,5500
+2299,Rafaela,Santa Fe,2300
+2300,Godoy Cruz,Mendoza,5501
+2301,San Isidro,Buenos Aires,1642
+2302,Mar del Plata,Buenos Aires,7600
+2303,Quilmes,Buenos Aires,1878
+2304,Córdoba,Córdoba,5000
+2305,La Plata,Buenos Aires,1900
+2306,Villa Carlos Paz,Córdoba,5152
+2307,Mar del Plata,Buenos Aires,7600
+2308,Rosario,Santa Fe,2000
+2309,San Rafael,Mendoza,5600
+2310,La Plata,Buenos Aires,1900
+2311,Mar del Plata,Buenos Aires,7600
+2312,San Isidro,Buenos Aires,1642
+2313,La Plata,Buenos Aires,1900
+2314,Mar del Plata,Buenos Aires,7600
+2315,Córdoba,Córdoba,5000
+2316,Córdoba,Córdoba,5000
+2317,Villa Carlos Paz,Córdoba,5152
+2318,Quilmes,Buenos Aires,1878
+2319,Río Cuarto,Córdoba,5800
+2320,Mendoza,Mendoza,5500
+2321,La Plata,Buenos Aires,1900
+2322,Rosario,Santa Fe,2000
+2323,Rosario,Santa Fe,2000
+2324,Mar del Plata,Buenos Aires,7600
+2325,La Plata,Buenos Aires,1900
+2326,Mar del Plata,Buenos Aires,7600
+2327,Rosario,Santa Fe,2000
+2328,Córdoba,Córdoba,5000
+2329,Mendoza,Mendoza,5500
+2330,Mar del Plata,Buenos Aires,7600
+2331,Río Cuarto,Córdoba,5800
+2332,La Plata,Buenos Aires,1900
+2333,Córdoba,Córdoba,5000
+2334,Córdoba,Córdoba,5000
+2335,Córdoba,Córdoba,5000
+2336,San Isidro,Buenos Aires,1642
+2337,Quilmes,Buenos Aires,1878
+2338,Santa Fe,Santa Fe,3000
+2339,La Plata,Buenos Aires,1900
+2340,Rafaela,Santa Fe,2300
+2341,Rafaela,Santa Fe,2300
+2342,Santa Fe,Santa Fe,3000
+2343,Rafaela,Santa Fe,2300
+2344,San Rafael,Mendoza,5600
+2345,Rafaela,Santa Fe,2300
+2346,Rosario,Santa Fe,2000
+2347,Villa Carlos Paz,Córdoba,5152
+2348,Córdoba,Córdoba,5000
+2349,Santa Fe,Santa Fe,3000
+2350,Godoy Cruz,Mendoza,5501
+2351,La Plata,Buenos Aires,1900
+2352,La Plata,Buenos Aires,1900
+2353,La Plata,Buenos Aires,1900
+2354,Mendoza,Mendoza,5500
+2355,Río Cuarto,Córdoba,5800
+2356,Godoy Cruz,Mendoza,5501
+2357,Rosario,Santa Fe,2000
+2358,Rosario,Santa Fe,2000
+2359,Río Cuarto,Córdoba,5800
+2360,Mar del Plata,Buenos Aires,7600
+2361,Mar del Plata,Buenos Aires,7600
+2362,San Isidro,Buenos Aires,1642
+2363,Rosario,Santa Fe,2000
+2364,La Plata,Buenos Aires,1900
+2365,Bahía Blanca,Buenos Aires,8000
+2366,San Isidro,Buenos Aires,1642
+2367,Mar del Plata,Buenos Aires,7600
+2368,Godoy Cruz,Mendoza,5501
+2369,San Isidro,Buenos Aires,1642
+2370,Córdoba,Córdoba,5000
+2371,San Rafael,Mendoza,5600
+2372,La Plata,Buenos Aires,1900
+2373,Quilmes,Buenos Aires,1878
+2374,Quilmes,Buenos Aires,1878
+2375,Córdoba,Córdoba,5000
+2376,Córdoba,Córdoba,5000
+2377,Bahía Blanca,Buenos Aires,8000
+2378,San Rafael,Mendoza,5600
+2379,Godoy Cruz,Mendoza,5501
+2380,Rosario,Santa Fe,2000
+2381,San Isidro,Buenos Aires,1642
+2382,Santa Fe,Santa Fe,3000
+2383,Mendoza,Mendoza,5500
+2384,Villa Carlos Paz,Córdoba,5152
+2385,Córdoba,Córdoba,5000
+2386,La Plata,Buenos Aires,1900
+2387,Quilmes,Buenos Aires,1878
+2388,Rafaela,Santa Fe,2300
+2389,Bahía Blanca,Buenos Aires,8000
+2390,San Isidro,Buenos Aires,1642
+2391,Rosario,Santa Fe,2000
+2392,Mendoza,Mendoza,5500
+2393,Córdoba,Córdoba,5000
+2394,Río Cuarto,Córdoba,5800
+2395,Córdoba,Córdoba,5000
+2396,La Plata,Buenos Aires,1900
+2397,Córdoba,Córdoba,5000
+2398,Córdoba,Córdoba,5000
+2399,Córdoba,Córdoba,5000
+2400,Córdoba,Córdoba,5000
+2401,Mendoza,Mendoza,5500
+2402,La Plata,Buenos Aires,1900
+2403,Quilmes,Buenos Aires,1878
+2404,Bahía Blanca,Buenos Aires,8000
+2405,Quilmes,Buenos Aires,1878
+2406,Mendoza,Mendoza,5500
+2407,Córdoba,Córdoba,5000
+2408,Villa Carlos Paz,Córdoba,5152
+2409,Quilmes,Buenos Aires,1878
+2410,Godoy Cruz,Mendoza,5501
+2411,Santa Fe,Santa Fe,3000
+2412,Córdoba,Córdoba,5000
+2413,Córdoba,Córdoba,5000
+2414,Rafaela,Santa Fe,2300
+2415,San Isidro,Buenos Aires,1642
+2416,San Rafael,Mendoza,5600
+2417,Villa Carlos Paz,Córdoba,5152
+2418,Santa Fe,Santa Fe,3000
+2419,San Isidro,Buenos Aires,1642
+2420,Santa Fe,Santa Fe,3000
+2421,Córdoba,Córdoba,5000
+2422,Quilmes,Buenos Aires,1878
+2423,Mar del Plata,Buenos Aires,7600
+2424,La Plata,Buenos Aires,1900
+2425,Bahía Blanca,Buenos Aires,8000
+2426,San Rafael,Mendoza,5600
+2427,Rosario,Santa Fe,2000
+2428,Villa Carlos Paz,Córdoba,5152
+2429,Mendoza,Mendoza,5500
+2430,Bahía Blanca,Buenos Aires,8000
+2431,Rosario,Santa Fe,2000
+2432,Río Cuarto,Córdoba,5800
+2433,Córdoba,Córdoba,5000
+2434,Bahía Blanca,Buenos Aires,8000
+2435,Rosario,Santa Fe,2000
+2436,Mendoza,Mendoza,5500
+2437,La Plata,Buenos Aires,1900
+2438,Mendoza,Mendoza,5500
+2439,La Plata,Buenos Aires,1900
+2440,San Isidro,Buenos Aires,1642
+2441,Godoy Cruz,Mendoza,5501
+2442,Rosario,Santa Fe,2000
+2443,Quilmes,Buenos Aires,1878
+2444,La Plata,Buenos Aires,1900
+2445,Rafaela,Santa Fe,2300
+2446,San Rafael,Mendoza,5600
+2447,Mar del Plata,Buenos Aires,7600
+2448,Córdoba,Córdoba,5000
+2449,Córdoba,Córdoba,5000
+2450,Rafaela,Santa Fe,2300
+2451,Santa Fe,Santa Fe,3000
+2452,Mar del Plata,Buenos Aires,7600
+2453,La Plata,Buenos Aires,1900
+2454,Bahía Blanca,Buenos Aires,8000
+2455,Rosario,Santa Fe,2000
+2456,Mendoza,Mendoza,5500
+2457,Santa Fe,Santa Fe,3000
+2458,Villa Carlos Paz,Córdoba,5152
+2459,San Isidro,Buenos Aires,1642
+2460,Córdoba,Córdoba,5000
+2461,Villa Carlos Paz,Córdoba,5152
+2462,Santa Fe,Santa Fe,3000
+2463,Quilmes,Buenos Aires,1878
+2464,Rafaela,Santa Fe,2300
+2465,La Plata,Buenos Aires,1900
+2466,Córdoba,Córdoba,5000
+2467,Rosario,Santa Fe,2000
+2468,Rosario,Santa Fe,2000
+2469,San Isidro,Buenos Aires,1642
+2470,La Plata,Buenos Aires,1900
+2471,Mendoza,Mendoza,5500
+2472,La Plata,Buenos Aires,1900
+2473,Godoy Cruz,Mendoza,5501
+2474,San Rafael,Mendoza,5600
+2475,La Plata,Buenos Aires,1900
+2476,Córdoba,Córdoba,5000
+2477,Godoy Cruz,Mendoza,5501
+2478,Córdoba,Córdoba,5000
+2479,Mendoza,Mendoza,5500
+2480,Río Cuarto,Córdoba,5800
+2481,La Plata,Buenos Aires,1900
+2482,La Plata,Buenos Aires,1900
+2483,Santa Fe,Santa Fe,3000
+2484,San Isidro,Buenos Aires,1642
+2485,Mar del Plata,Buenos Aires,7600
+2486,Godoy Cruz,Mendoza,5501
+2487,Godoy Cruz,Mendoza,5501
+2488,Godoy Cruz,Mendoza,5501
+2489,Rosario,Santa Fe,2000
+2490,Córdoba,Córdoba,5000
+2491,Santa Fe,Santa Fe,3000
+2492,Quilmes,Buenos Aires,1878
+2493,Mendoza,Mendoza,5500
+2494,Mendoza,Mendoza,5500
+2495,Quilmes,Buenos Aires,1878
+2496,Córdoba,Córdoba,5000
+2497,Mar del Plata,Buenos Aires,7600
+2498,Quilmes,Buenos Aires,1878
+2499,Santa Fe,Santa Fe,3000
+2500,Córdoba,Córdoba,5000
+2501,La Plata,Buenos Aires,1900
+2502,Rosario,Santa Fe,2000
+2503,San Isidro,Buenos Aires,1642
+2504,Córdoba,Córdoba,5000
+2505,Bahía Blanca,Buenos Aires,8000
+2506,San Isidro,Buenos Aires,1642
+2507,La Plata,Buenos Aires,1900
+2508,San Isidro,Buenos Aires,1642
+2509,La Plata,Buenos Aires,1900
+2510,Rosario,Santa Fe,2000
+2511,Córdoba,Córdoba,5000
+2512,Córdoba,Córdoba,5000
+2513,Córdoba,Córdoba,5000
+2514,Mendoza,Mendoza,5500
+2515,San Isidro,Buenos Aires,1642
+2516,Rafaela,Santa Fe,2300
+2517,La Plata,Buenos Aires,1900
+2518,Mendoza,Mendoza,5500
+2519,Godoy Cruz,Mendoza,5501
+2520,Rosario,Santa Fe,2000
+2521,Mar del Plata,Buenos Aires,7600
+2522,Mendoza,Mendoza,5500
+2523,Rosario,Santa Fe,2000
+2524,Rosario,Santa Fe,2000
+2525,Quilmes,Buenos Aires,1878
+2526,Córdoba,Córdoba,5000
+2527,Santa Fe,Santa Fe,3000
+2528,Santa Fe,Santa Fe,3000
+2529,Quilmes,Buenos Aires,1878
+2530,Rosario,Santa Fe,2000
+2531,La Plata,Buenos Aires,1900
+2532,Rosario,Santa Fe,2000
+2533,Quilmes,Buenos Aires,1878
+2534,Mendoza,Mendoza,5500
+2535,Mar del Plata,Buenos Aires,7600
+2536,Córdoba,Córdoba,5000
+2537,La Plata,Buenos Aires,1900
+2538,Rosario,Santa Fe,2000
+2539,Villa Carlos Paz,Córdoba,5152
+2540,Rosario,Santa Fe,2000
+2541,Río Cuarto,Córdoba,5800
+2542,Rosario,Santa Fe,2000
+2543,Córdoba,Córdoba,5000
+2544,San Isidro,Buenos Aires,1642
+2545,Mendoza,Mendoza,5500
+2546,Mar del Plata,Buenos Aires,7600
+2547,Godoy Cruz,Mendoza,5501
+2548,Santa Fe,Santa Fe,3000
+2549,Córdoba,Córdoba,5000
+2550,Córdoba,Córdoba,5000
+2551,La Plata,Buenos Aires,1900
+2552,Santa Fe,Santa Fe,3000
+2553,Córdoba,Córdoba,5000
+2554,Córdoba,Córdoba,5000
+2555,Mendoza,Mendoza,5500
+2556,Córdoba,Córdoba,5000
+2557,Mar del Plata,Buenos Aires,7600
+2558,San Isidro,Buenos Aires,1642
+2559,Córdoba,Córdoba,5000
+2560,San Rafael,Mendoza,5600
+2561,La Plata,Buenos Aires,1900
+2562,Rosario,Santa Fe,2000
+2563,La Plata,Buenos Aires,1900
+2564,Mendoza,Mendoza,5500
+2565,Río Cuarto,Córdoba,5800
+2566,Rosario,Santa Fe,2000
+2567,Rosario,Santa Fe,2000
+2568,San Isidro,Buenos Aires,1642
+2569,San Rafael,Mendoza,5600
+2570,Córdoba,Córdoba,5000
+2571,La Plata,Buenos Aires,1900
+2572,La Plata,Buenos Aires,1900
+2573,San Rafael,Mendoza,5600
+2574,La Plata,Buenos Aires,1900
+2575,San Isidro,Buenos Aires,1642
+2576,Rosario,Santa Fe,2000
+2577,Villa Carlos Paz,Córdoba,5152
+2578,Quilmes,Buenos Aires,1878
+2579,San Isidro,Buenos Aires,1642
+2580,San Rafael,Mendoza,5600
+2581,San Isidro,Buenos Aires,1642
+2582,La Plata,Buenos Aires,1900
+2583,La Plata,Buenos Aires,1900
+2584,Bahía Blanca,Buenos Aires,8000
+2585,Mendoza,Mendoza,5500
+2586,Córdoba,Córdoba,5000
+2587,Rafaela,Santa Fe,2300
+2588,Villa Carlos Paz,Córdoba,5152
+2589,Rafaela,Santa Fe,2300
+2590,Quilmes,Buenos Aires,1878
+2591,San Isidro,Buenos Aires,1642
+2592,Rafaela,Santa Fe,2300
+2593,La Plata,Buenos Aires,1900
+2594,Rafaela,Santa Fe,2300
+2595,Córdoba,Córdoba,5000
+2596,Rosario,Santa Fe,2000
+2597,Rosario,Santa Fe,2000
+2598,Córdoba,Córdoba,5000
+2599,Rafaela,Santa Fe,2300
+2600,Rosario,Santa Fe,2000
+2601,Córdoba,Córdoba,5000
+2602,Córdoba,Córdoba,5000
+2603,Santa Fe,Santa Fe,3000
+2604,Mar del Plata,Buenos Aires,7600
+2605,Córdoba,Córdoba,5000
+2606,Villa Carlos Paz,Córdoba,5152
+2607,Mar del Plata,Buenos Aires,7600
+2608,Santa Fe,Santa Fe,3000
+2609,Mendoza,Mendoza,5500
+2610,San Isidro,Buenos Aires,1642
+2611,Rosario,Santa Fe,2000
+2612,Córdoba,Córdoba,5000
+2613,Río Cuarto,Córdoba,5800
+2614,Mar del Plata,Buenos Aires,7600
+2615,Mar del Plata,Buenos Aires,7600
+2616,Quilmes,Buenos Aires,1878
+2617,Rosario,Santa Fe,2000
+2618,Córdoba,Córdoba,5000
+2619,San Isidro,Buenos Aires,1642
+2620,Mendoza,Mendoza,5500
+2621,Rafaela,Santa Fe,2300
+2622,Rafaela,Santa Fe,2300
+2623,Quilmes,Buenos Aires,1878
+2624,Santa Fe,Santa Fe,3000
+2625,Villa Carlos Paz,Córdoba,5152
+2626,Quilmes,Buenos Aires,1878
+2627,Bahía Blanca,Buenos Aires,8000
+2628,Rosario,Santa Fe,2000
+2629,Villa Carlos Paz,Córdoba,5152
+2630,San Isidro,Buenos Aires,1642
+2631,Santa Fe,Santa Fe,3000
+2632,Córdoba,Córdoba,5000
+2633,La Plata,Buenos Aires,1900
+2634,Villa Carlos Paz,Córdoba,5152
+2635,Rosario,Santa Fe,2000
+2636,San Isidro,Buenos Aires,1642
+2637,Córdoba,Córdoba,5000
+2638,Santa Fe,Santa Fe,3000
+2639,Santa Fe,Santa Fe,3000
+2640,La Plata,Buenos Aires,1900
+2641,San Isidro,Buenos Aires,1642
+2642,Mar del Plata,Buenos Aires,7600
+2643,Mar del Plata,Buenos Aires,7600
+2644,Córdoba,Córdoba,5000
+2645,La Plata,Buenos Aires,1900
+2646,Mar del Plata,Buenos Aires,7600
+2647,Córdoba,Córdoba,5000
+2648,Rafaela,Santa Fe,2300
+2649,Córdoba,Córdoba,5000
+2650,Villa Carlos Paz,Córdoba,5152
+2651,Santa Fe,Santa Fe,3000
+2652,Mar del Plata,Buenos Aires,7600
+2653,Mendoza,Mendoza,5500
+2654,La Plata,Buenos Aires,1900
+2655,Villa Carlos Paz,Córdoba,5152
+2656,Mendoza,Mendoza,5500
+2657,Santa Fe,Santa Fe,3000
+2658,Mar del Plata,Buenos Aires,7600
+2659,Córdoba,Córdoba,5000
+2660,Mar del Plata,Buenos Aires,7600
+2661,San Isidro,Buenos Aires,1642
+2662,Rosario,Santa Fe,2000
+2663,Río Cuarto,Córdoba,5800
+2664,Rosario,Santa Fe,2000
+2665,Río Cuarto,Córdoba,5800
+2666,Río Cuarto,Córdoba,5800
+2667,Bahía Blanca,Buenos Aires,8000
+2668,Santa Fe,Santa Fe,3000
+2669,San Rafael,Mendoza,5600
+2670,Mendoza,Mendoza,5500
+2671,La Plata,Buenos Aires,1900
+2672,Mar del Plata,Buenos Aires,7600
+2673,Villa Carlos Paz,Córdoba,5152
+2674,Quilmes,Buenos Aires,1878
+2675,La Plata,Buenos Aires,1900
+2676,Quilmes,Buenos Aires,1878
+2677,Rosario,Santa Fe,2000
+2678,La Plata,Buenos Aires,1900
+2679,Villa Carlos Paz,Córdoba,5152
+2680,Río Cuarto,Córdoba,5800
+2681,La Plata,Buenos Aires,1900
+2682,San Isidro,Buenos Aires,1642
+2683,Mendoza,Mendoza,5500
+2684,Quilmes,Buenos Aires,1878
+2685,Córdoba,Córdoba,5000
+2686,Río Cuarto,Córdoba,5800
+2687,Córdoba,Córdoba,5000
+2688,Santa Fe,Santa Fe,3000
+2689,Córdoba,Córdoba,5000
+2690,Rosario,Santa Fe,2000
+2691,Mendoza,Mendoza,5500
+2692,Rosario,Santa Fe,2000
+2693,San Rafael,Mendoza,5600
+2694,Mar del Plata,Buenos Aires,7600
+2695,Mendoza,Mendoza,5500
+2696,Bahía Blanca,Buenos Aires,8000
+2697,Córdoba,Córdoba,5000
+2698,Quilmes,Buenos Aires,1878
+2699,Córdoba,Córdoba,5000
+2700,Mendoza,Mendoza,5500
+2701,Villa Carlos Paz,Córdoba,5152
+2702,Godoy Cruz,Mendoza,5501
+2703,Córdoba,Córdoba,5000
+2704,Rafaela,Santa Fe,2300
+2705,Quilmes,Buenos Aires,1878
+2706,San Isidro,Buenos Aires,1642
+2707,La Plata,Buenos Aires,1900
+2708,Quilmes,Buenos Aires,1878
+2709,Córdoba,Córdoba,5000
+2710,Córdoba,Córdoba,5000
+2711,Santa Fe,Santa Fe,3000
+2712,San Isidro,Buenos Aires,1642
+2713,Bahía Blanca,Buenos Aires,8000
+2714,Villa Carlos Paz,Córdoba,5152
+2715,Quilmes,Buenos Aires,1878
+2716,La Plata,Buenos Aires,1900
+2717,Quilmes,Buenos Aires,1878
+2718,Bahía Blanca,Buenos Aires,8000
+2719,Quilmes,Buenos Aires,1878
+2720,Córdoba,Córdoba,5000
+2721,La Plata,Buenos Aires,1900
+2722,Córdoba,Córdoba,5000
+2723,Córdoba,Córdoba,5000
+2724,Bahía Blanca,Buenos Aires,8000
+2725,Santa Fe,Santa Fe,3000
+2726,Quilmes,Buenos Aires,1878
+2727,San Isidro,Buenos Aires,1642
+2728,Córdoba,Córdoba,5000
+2729,La Plata,Buenos Aires,1900
+2730,Santa Fe,Santa Fe,3000
+2731,San Rafael,Mendoza,5600
+2732,Córdoba,Córdoba,5000
+2733,Córdoba,Córdoba,5000
+2734,Rosario,Santa Fe,2000
+2735,Quilmes,Buenos Aires,1878
+2736,Mendoza,Mendoza,5500
+2737,Mar del Plata,Buenos Aires,7600
+2738,San Rafael,Mendoza,5600
+2739,Mendoza,Mendoza,5500
+2740,Rafaela,Santa Fe,2300
+2741,La Plata,Buenos Aires,1900
+2742,Río Cuarto,Córdoba,5800
+2743,Santa Fe,Santa Fe,3000
+2744,La Plata,Buenos Aires,1900
+2745,Godoy Cruz,Mendoza,5501
+2746,Mendoza,Mendoza,5500
+2747,Quilmes,Buenos Aires,1878
+2748,Mendoza,Mendoza,5500
+2749,Córdoba,Córdoba,5000
+2750,Rosario,Santa Fe,2000
+2751,La Plata,Buenos Aires,1900
+2752,San Isidro,Buenos Aires,1642
+2753,Godoy Cruz,Mendoza,5501
+2754,Rafaela,Santa Fe,2300
+2755,La Plata,Buenos Aires,1900
+2756,Mar del Plata,Buenos Aires,7600
+2757,Mendoza,Mendoza,5500
+2758,Mar del Plata,Buenos Aires,7600
+2759,Córdoba,Córdoba,5000
+2760,Quilmes,Buenos Aires,1878
+2761,San Isidro,Buenos Aires,1642
+2762,San Rafael,Mendoza,5600
+2763,Villa Carlos Paz,Córdoba,5152
+2764,La Plata,Buenos Aires,1900
+2765,Córdoba,Córdoba,5000
+2766,Mar del Plata,Buenos Aires,7600
+2767,Rosario,Santa Fe,2000
+2768,Córdoba,Córdoba,5000
+2769,Córdoba,Córdoba,5000
+2770,Córdoba,Córdoba,5000
+2771,Rafaela,Santa Fe,2300
+2772,Rafaela,Santa Fe,2300
+2773,Córdoba,Córdoba,5000
+2774,Quilmes,Buenos Aires,1878
+2775,Villa Carlos Paz,Córdoba,5152
+2776,Quilmes,Buenos Aires,1878
+2777,Rafaela,Santa Fe,2300
+2778,La Plata,Buenos Aires,1900
+2779,Santa Fe,Santa Fe,3000
+2780,La Plata,Buenos Aires,1900
+2781,Quilmes,Buenos Aires,1878
+2782,Bahía Blanca,Buenos Aires,8000
+2783,San Rafael,Mendoza,5600
+2784,Mar del Plata,Buenos Aires,7600
+2785,Mar del Plata,Buenos Aires,7600
+2786,Río Cuarto,Córdoba,5800
+2787,Mar del Plata,Buenos Aires,7600
+2788,Rosario,Santa Fe,2000
+2789,Córdoba,Córdoba,5000
+2790,Bahía Blanca,Buenos Aires,8000
+2791,San Rafael,Mendoza,5600
+2792,San Isidro,Buenos Aires,1642
+2793,Rosario,Santa Fe,2000
+2794,La Plata,Buenos Aires,1900
+2795,Mar del Plata,Buenos Aires,7600
+2796,Mar del Plata,Buenos Aires,7600
+2797,Córdoba,Córdoba,5000
+2798,San Isidro,Buenos Aires,1642
+2799,Río Cuarto,Córdoba,5800
+2800,Rosario,Santa Fe,2000
+2801,Córdoba,Córdoba,5000
+2802,San Rafael,Mendoza,5600
+2803,Santa Fe,Santa Fe,3000
+2804,Mendoza,Mendoza,5500
+2805,Mendoza,Mendoza,5500
+2806,Rosario,Santa Fe,2000
+2807,Córdoba,Córdoba,5000
+2808,Quilmes,Buenos Aires,1878
+2809,Santa Fe,Santa Fe,3000
+2810,Mar del Plata,Buenos Aires,7600
+2811,Quilmes,Buenos Aires,1878
+2812,Mendoza,Mendoza,5500
+2813,Mar del Plata,Buenos Aires,7600
+2814,La Plata,Buenos Aires,1900
+2815,Mar del Plata,Buenos Aires,7600
+2816,Rosario,Santa Fe,2000
+2817,Rosario,Santa Fe,2000
+2818,Mar del Plata,Buenos Aires,7600
+2819,La Plata,Buenos Aires,1900
+2820,Córdoba,Córdoba,5000
+2821,Córdoba,Córdoba,5000
+2822,Córdoba,Córdoba,5000
+2823,La Plata,Buenos Aires,1900
+2824,La Plata,Buenos Aires,1900
+2825,La Plata,Buenos Aires,1900
+2826,Córdoba,Córdoba,5000
+2827,La Plata,Buenos Aires,1900
+2828,San Isidro,Buenos Aires,1642
+2829,Córdoba,Córdoba,5000
+2830,Rosario,Santa Fe,2000
+2831,Santa Fe,Santa Fe,3000
+2832,Córdoba,Córdoba,5000
+2833,Rafaela,Santa Fe,2300
+2834,Mar del Plata,Buenos Aires,7600
+2835,Bahía Blanca,Buenos Aires,8000
+2836,Mar del Plata,Buenos Aires,7600
+2837,Mar del Plata,Buenos Aires,7600
+2838,Mendoza,Mendoza,5500
+2839,San Isidro,Buenos Aires,1642
+2840,Godoy Cruz,Mendoza,5501
+2841,La Plata,Buenos Aires,1900
+2842,Río Cuarto,Córdoba,5800
+2843,Godoy Cruz,Mendoza,5501
+2844,Bahía Blanca,Buenos Aires,8000
+2845,San Isidro,Buenos Aires,1642
+2846,Mar del Plata,Buenos Aires,7600
+2847,Mendoza,Mendoza,5500
+2848,Villa Carlos Paz,Córdoba,5152
+2849,San Isidro,Buenos Aires,1642
+2850,Villa Carlos Paz,Córdoba,5152
+2851,Córdoba,Córdoba,5000
+2852,Mendoza,Mendoza,5500
+2853,San Isidro,Buenos Aires,1642
+2854,Godoy Cruz,Mendoza,5501
+2855,Mar del Plata,Buenos Aires,7600
+2856,Godoy Cruz,Mendoza,5501
+2857,La Plata,Buenos Aires,1900
+2858,Bahía Blanca,Buenos Aires,8000
+2859,Rosario,Santa Fe,2000
+2860,Río Cuarto,Córdoba,5800
+2861,Villa Carlos Paz,Córdoba,5152
+2862,Santa Fe,Santa Fe,3000
+2863,Rosario,Santa Fe,2000
+2864,La Plata,Buenos Aires,1900
+2865,Córdoba,Córdoba,5000
+2866,Rosario,Santa Fe,2000
+2867,Río Cuarto,Córdoba,5800
+2868,Rosario,Santa Fe,2000
+2869,Mar del Plata,Buenos Aires,7600
+2870,Godoy Cruz,Mendoza,5501
+2871,Mendoza,Mendoza,5500
+2872,Rosario,Santa Fe,2000
+2873,San Isidro,Buenos Aires,1642
+2874,La Plata,Buenos Aires,1900
+2875,Bahía Blanca,Buenos Aires,8000
+2876,Villa Carlos Paz,Córdoba,5152
+2877,Córdoba,Córdoba,5000
+2878,Santa Fe,Santa Fe,3000
+2879,Godoy Cruz,Mendoza,5501
+2880,San Rafael,Mendoza,5600
+2881,Rosario,Santa Fe,2000
+2882,Córdoba,Córdoba,5000
+2883,Rosario,Santa Fe,2000
+2884,Córdoba,Córdoba,5000
+2885,La Plata,Buenos Aires,1900
+2886,San Isidro,Buenos Aires,1642
+2887,Córdoba,Córdoba,5000
+2888,Córdoba,Córdoba,5000
+2889,Quilmes,Buenos Aires,1878
+2890,Santa Fe,Santa Fe,3000
+2891,Córdoba,Córdoba,5000
+2892,San Isidro,Buenos Aires,1642
+2893,San Isidro,Buenos Aires,1642
+2894,La Plata,Buenos Aires,1900
+2895,Rosario,Santa Fe,2000
+2896,La Plata,Buenos Aires,1900
+2897,Mar del Plata,Buenos Aires,7600
+2898,Mar del Plata,Buenos Aires,7600
+2899,Mar del Plata,Buenos Aires,7600
+2900,Rosario,Santa Fe,2000
+2901,Bahía Blanca,Buenos Aires,8000
+2902,Quilmes,Buenos Aires,1878
+2903,Quilmes,Buenos Aires,1878
+2904,Mar del Plata,Buenos Aires,7600
+2905,Quilmes,Buenos Aires,1878
+2906,Córdoba,Córdoba,5000
+2907,Godoy Cruz,Mendoza,5501
+2908,Rosario,Santa Fe,2000
+2909,Rosario,Santa Fe,2000
+2910,Río Cuarto,Córdoba,5800
+2911,Rosario,Santa Fe,2000
+2912,Mendoza,Mendoza,5500
+2913,Córdoba,Córdoba,5000
+2914,Mar del Plata,Buenos Aires,7600
+2915,Santa Fe,Santa Fe,3000
+2916,Quilmes,Buenos Aires,1878
+2917,Rosario,Santa Fe,2000
+2918,Rosario,Santa Fe,2000
+2919,Córdoba,Córdoba,5000
+2920,Córdoba,Córdoba,5000
+2921,Río Cuarto,Córdoba,5800
+2922,Quilmes,Buenos Aires,1878
+2923,La Plata,Buenos Aires,1900
+2924,Villa Carlos Paz,Córdoba,5152
+2925,Godoy Cruz,Mendoza,5501
+2926,Santa Fe,Santa Fe,3000
+2927,Rosario,Santa Fe,2000
+2928,San Isidro,Buenos Aires,1642
+2929,San Isidro,Buenos Aires,1642
+2930,Bahía Blanca,Buenos Aires,8000
+2931,Villa Carlos Paz,Córdoba,5152
+2932,San Rafael,Mendoza,5600
+2933,Santa Fe,Santa Fe,3000
+2934,Santa Fe,Santa Fe,3000
+2935,Mendoza,Mendoza,5500
+2936,Bahía Blanca,Buenos Aires,8000
+2937,Godoy Cruz,Mendoza,5501
+2938,Mar del Plata,Buenos Aires,7600
+2939,La Plata,Buenos Aires,1900
+2940,Córdoba,Córdoba,5000
+2941,La Plata,Buenos Aires,1900
+2942,Córdoba,Córdoba,5000
+2943,Santa Fe,Santa Fe,3000
+2944,San Isidro,Buenos Aires,1642
+2945,Mendoza,Mendoza,5500
+2946,Mar del Plata,Buenos Aires,7600
+2947,Mendoza,Mendoza,5500
+2948,Rosario,Santa Fe,2000
+2949,San Isidro,Buenos Aires,1642
+2950,Godoy Cruz,Mendoza,5501
+2951,Santa Fe,Santa Fe,3000
+2952,Godoy Cruz,Mendoza,5501
+2953,Villa Carlos Paz,Córdoba,5152
+2954,Rafaela,Santa Fe,2300
+2955,La Plata,Buenos Aires,1900
+2956,Godoy Cruz,Mendoza,5501
+2957,Godoy Cruz,Mendoza,5501
+2958,San Isidro,Buenos Aires,1642
+2959,Santa Fe,Santa Fe,3000
+2960,Rosario,Santa Fe,2000
+2961,Mendoza,Mendoza,5500
+2962,Godoy Cruz,Mendoza,5501
+2963,San Isidro,Buenos Aires,1642
+2964,La Plata,Buenos Aires,1900
+2965,Rosario,Santa Fe,2000
+2966,Córdoba,Córdoba,5000
+2967,Córdoba,Córdoba,5000
+2968,Rosario,Santa Fe,2000
+2969,Córdoba,Córdoba,5000
+2970,Quilmes,Buenos Aires,1878
+2971,Rosario,Santa Fe,2000
+2972,La Plata,Buenos Aires,1900
+2973,Córdoba,Córdoba,5000
+2974,Mendoza,Mendoza,5500
+2975,Rosario,Santa Fe,2000
+2976,Mar del Plata,Buenos Aires,7600
+2977,Río Cuarto,Córdoba,5800
+2978,Rosario,Santa Fe,2000
+2979,Mendoza,Mendoza,5500
+2980,Godoy Cruz,Mendoza,5501
+2981,Bahía Blanca,Buenos Aires,8000
+2982,La Plata,Buenos Aires,1900
+2983,Córdoba,Córdoba,5000
+2984,Mar del Plata,Buenos Aires,7600
+2985,La Plata,Buenos Aires,1900
+2986,La Plata,Buenos Aires,1900
+2987,San Isidro,Buenos Aires,1642
+2988,San Rafael,Mendoza,5600
+2989,Santa Fe,Santa Fe,3000
+2990,La Plata,Buenos Aires,1900
+2991,Bahía Blanca,Buenos Aires,8000
+2992,Quilmes,Buenos Aires,1878
+2993,Bahía Blanca,Buenos Aires,8000
+2994,La Plata,Buenos Aires,1900
+2995,San Rafael,Mendoza,5600
+2996,Mendoza,Mendoza,5500
+2997,Rosario,Santa Fe,2000
+2998,Villa Carlos Paz,Córdoba,5152
+2999,Mar del Plata,Buenos Aires,7600
+3000,San Rafael,Mendoza,5600
+3001,Santa Fe,Santa Fe,3000
+3002,San Rafael,Mendoza,5600
+3003,Villa Carlos Paz,Córdoba,5152
+3004,Villa Carlos Paz,Córdoba,5152
+3005,Quilmes,Buenos Aires,1878
+3006,Rosario,Santa Fe,2000
+3007,Santa Fe,Santa Fe,3000
+3008,Mendoza,Mendoza,5500
+3009,Rosario,Santa Fe,2000
+3010,Rosario,Santa Fe,2000
+3011,Rafaela,Santa Fe,2300
+3012,Rosario,Santa Fe,2000
+3013,Mar del Plata,Buenos Aires,7600
+3014,Río Cuarto,Córdoba,5800
+3015,Río Cuarto,Córdoba,5800
+3016,Río Cuarto,Córdoba,5800
+3017,Río Cuarto,Córdoba,5800
+3018,Mar del Plata,Buenos Aires,7600
+3019,Mar del Plata,Buenos Aires,7600
+3020,San Rafael,Mendoza,5600
+3021,La Plata,Buenos Aires,1900
+3022,San Rafael,Mendoza,5600
+3023,Quilmes,Buenos Aires,1878
+3024,Santa Fe,Santa Fe,3000
+3025,Mar del Plata,Buenos Aires,7600
+3026,Rosario,Santa Fe,2000
+3027,Santa Fe,Santa Fe,3000
+3028,Córdoba,Córdoba,5000
+3029,Santa Fe,Santa Fe,3000
+3030,Rosario,Santa Fe,2000
+3031,Córdoba,Córdoba,5000
+3032,Quilmes,Buenos Aires,1878
+3033,Río Cuarto,Córdoba,5800
+3034,Córdoba,Córdoba,5000
+3035,Villa Carlos Paz,Córdoba,5152
+3036,La Plata,Buenos Aires,1900
+3037,Mendoza,Mendoza,5500
+3038,Villa Carlos Paz,Córdoba,5152
+3039,Rafaela,Santa Fe,2300
+3040,Rosario,Santa Fe,2000
+3041,Córdoba,Córdoba,5000
+3042,Villa Carlos Paz,Córdoba,5152
+3043,Godoy Cruz,Mendoza,5501
+3044,La Plata,Buenos Aires,1900
+3045,Mendoza,Mendoza,5500
+3046,Córdoba,Córdoba,5000
+3047,La Plata,Buenos Aires,1900
+3048,Mendoza,Mendoza,5500
+3049,Rosario,Santa Fe,2000
+3050,Rosario,Santa Fe,2000
+3051,Río Cuarto,Córdoba,5800
+3052,Santa Fe,Santa Fe,3000
+3053,Rafaela,Santa Fe,2300
+3054,Rosario,Santa Fe,2000
+3055,Godoy Cruz,Mendoza,5501
+3056,Mendoza,Mendoza,5500
+3057,Bahía Blanca,Buenos Aires,8000
+3058,Mar del Plata,Buenos Aires,7600
+3059,Mar del Plata,Buenos Aires,7600
+3060,La Plata,Buenos Aires,1900
+3061,Río Cuarto,Córdoba,5800
+3062,Quilmes,Buenos Aires,1878
+3063,Mar del Plata,Buenos Aires,7600
+3064,Mendoza,Mendoza,5500
+3065,San Isidro,Buenos Aires,1642
+3066,San Rafael,Mendoza,5600
+3067,Mendoza,Mendoza,5500
+3068,Godoy Cruz,Mendoza,5501
+3069,Mar del Plata,Buenos Aires,7600
+3070,Quilmes,Buenos Aires,1878
+3071,Río Cuarto,Córdoba,5800
+3072,Quilmes,Buenos Aires,1878
+3073,Córdoba,Córdoba,5000
+3074,Mar del Plata,Buenos Aires,7600
+3075,Córdoba,Córdoba,5000
+3076,La Plata,Buenos Aires,1900
+3077,La Plata,Buenos Aires,1900
+3078,Córdoba,Córdoba,5000
+3079,Córdoba,Córdoba,5000
+3080,Bahía Blanca,Buenos Aires,8000
+3081,Godoy Cruz,Mendoza,5501
+3082,Córdoba,Córdoba,5000
+3083,La Plata,Buenos Aires,1900
+3084,Córdoba,Córdoba,5000
+3085,La Plata,Buenos Aires,1900
+3086,Bahía Blanca,Buenos Aires,8000
+3087,Córdoba,Córdoba,5000
+3088,Córdoba,Córdoba,5000
+3089,La Plata,Buenos Aires,1900
+3090,Córdoba,Córdoba,5000
+3091,Córdoba,Córdoba,5000
+3092,Bahía Blanca,Buenos Aires,8000
+3093,La Plata,Buenos Aires,1900
+3094,Córdoba,Córdoba,5000
+3095,Córdoba,Córdoba,5000
+3096,Rosario,Santa Fe,2000
+3097,Rafaela,Santa Fe,2300
+3098,La Plata,Buenos Aires,1900
+3099,San Rafael,Mendoza,5600
+3100,Quilmes,Buenos Aires,1878
+3101,Río Cuarto,Córdoba,5800
+3102,Rosario,Santa Fe,2000
+3103,Villa Carlos Paz,Córdoba,5152
+3104,Mar del Plata,Buenos Aires,7600
+3105,Córdoba,Córdoba,5000
+3106,San Isidro,Buenos Aires,1642
+3107,San Isidro,Buenos Aires,1642
+3108,La Plata,Buenos Aires,1900
+3109,Quilmes,Buenos Aires,1878
+3110,Mendoza,Mendoza,5500
+3111,Bahía Blanca,Buenos Aires,8000
+3112,Córdoba,Córdoba,5000
+3113,Rosario,Santa Fe,2000
+3114,Mar del Plata,Buenos Aires,7600
+3115,La Plata,Buenos Aires,1900
+3116,Córdoba,Córdoba,5000
+3117,San Isidro,Buenos Aires,1642
+3118,Villa Carlos Paz,Córdoba,5152
+3119,Río Cuarto,Córdoba,5800
+3120,Mar del Plata,Buenos Aires,7600
+3121,Santa Fe,Santa Fe,3000
+3122,La Plata,Buenos Aires,1900
+3123,Godoy Cruz,Mendoza,5501
+3124,Godoy Cruz,Mendoza,5501
+3125,Bahía Blanca,Buenos Aires,8000
+3126,Quilmes,Buenos Aires,1878
+3127,San Isidro,Buenos Aires,1642
+3128,Rafaela,Santa Fe,2300
+3129,La Plata,Buenos Aires,1900
+3130,Rosario,Santa Fe,2000
+3131,Rosario,Santa Fe,2000
+3132,La Plata,Buenos Aires,1900
+3133,Quilmes,Buenos Aires,1878
+3134,San Rafael,Mendoza,5600
+3135,Río Cuarto,Córdoba,5800
+3136,Bahía Blanca,Buenos Aires,8000
+3137,Mendoza,Mendoza,5500
+3138,Córdoba,Córdoba,5000
+3139,Rosario,Santa Fe,2000
+3140,Mar del Plata,Buenos Aires,7600
+3141,Mendoza,Mendoza,5500
+3142,Rosario,Santa Fe,2000
+3143,Córdoba,Córdoba,5000
+3144,La Plata,Buenos Aires,1900
+3145,Córdoba,Córdoba,5000
+3146,Mar del Plata,Buenos Aires,7600
+3147,Mar del Plata,Buenos Aires,7600
+3148,La Plata,Buenos Aires,1900
+3149,Santa Fe,Santa Fe,3000
+3150,San Isidro,Buenos Aires,1642
+3151,Bahía Blanca,Buenos Aires,8000
+3152,Mendoza,Mendoza,5500
+3153,Mar del Plata,Buenos Aires,7600
+3154,Córdoba,Córdoba,5000
+3155,Villa Carlos Paz,Córdoba,5152
+3156,Quilmes,Buenos Aires,1878
+3157,Rosario,Santa Fe,2000
+3158,San Isidro,Buenos Aires,1642
+3159,Santa Fe,Santa Fe,3000
+3160,San Isidro,Buenos Aires,1642
+3161,Rosario,Santa Fe,2000
+3162,Quilmes,Buenos Aires,1878
+3163,Godoy Cruz,Mendoza,5501
+3164,La Plata,Buenos Aires,1900
+3165,Bahía Blanca,Buenos Aires,8000
+3166,San Isidro,Buenos Aires,1642
+3167,Mar del Plata,Buenos Aires,7600
+3168,Rosario,Santa Fe,2000
+3169,Córdoba,Córdoba,5000
+3170,Río Cuarto,Córdoba,5800
+3171,Córdoba,Córdoba,5000
+3172,Córdoba,Córdoba,5000
+3173,Córdoba,Córdoba,5000
+3174,Rafaela,Santa Fe,2300
+3175,Mar del Plata,Buenos Aires,7600
+3176,Rosario,Santa Fe,2000
+3177,Córdoba,Córdoba,5000
+3178,La Plata,Buenos Aires,1900
+3179,San Isidro,Buenos Aires,1642
+3180,Santa Fe,Santa Fe,3000
+3181,Quilmes,Buenos Aires,1878
+3182,Quilmes,Buenos Aires,1878
+3183,Córdoba,Córdoba,5000
+3184,San Isidro,Buenos Aires,1642
+3185,Bahía Blanca,Buenos Aires,8000
+3186,Mendoza,Mendoza,5500
+3187,Rosario,Santa Fe,2000
+3188,Rosario,Santa Fe,2000
+3189,La Plata,Buenos Aires,1900
+3190,Rosario,Santa Fe,2000
+3191,Mar del Plata,Buenos Aires,7600
+3192,Rafaela,Santa Fe,2300
+3193,Córdoba,Córdoba,5000
+3194,La Plata,Buenos Aires,1900
+3195,Santa Fe,Santa Fe,3000
+3196,Quilmes,Buenos Aires,1878
+3197,Quilmes,Buenos Aires,1878
+3198,Mar del Plata,Buenos Aires,7600
+3199,Mendoza,Mendoza,5500
+3200,Rosario,Santa Fe,2000
+3201,Villa Carlos Paz,Córdoba,5152
+3202,San Isidro,Buenos Aires,1642
+3203,Mendoza,Mendoza,5500
+3204,Córdoba,Córdoba,5000
+3205,Bahía Blanca,Buenos Aires,8000
+3206,Río Cuarto,Córdoba,5800
+3207,Rosario,Santa Fe,2000
+3208,Mar del Plata,Buenos Aires,7600
+3209,Quilmes,Buenos Aires,1878
+3210,Godoy Cruz,Mendoza,5501
+3211,Rosario,Santa Fe,2000
+3212,Córdoba,Córdoba,5000
+3213,Río Cuarto,Córdoba,5800
+3214,Mendoza,Mendoza,5500
+3215,Mendoza,Mendoza,5500
+3216,Mar del Plata,Buenos Aires,7600
+3217,Bahía Blanca,Buenos Aires,8000
+3218,La Plata,Buenos Aires,1900
+3219,Rosario,Santa Fe,2000
+3220,Villa Carlos Paz,Córdoba,5152
+3221,Quilmes,Buenos Aires,1878
+3222,Córdoba,Córdoba,5000
+3223,Rosario,Santa Fe,2000
+3224,Quilmes,Buenos Aires,1878
+3225,Córdoba,Córdoba,5000
+3226,Rosario,Santa Fe,2000
+3227,La Plata,Buenos Aires,1900
+3228,Godoy Cruz,Mendoza,5501
+3229,San Isidro,Buenos Aires,1642
+3230,Córdoba,Córdoba,5000
+3231,Mar del Plata,Buenos Aires,7600
+3232,Mar del Plata,Buenos Aires,7600
+3233,Godoy Cruz,Mendoza,5501
+3234,La Plata,Buenos Aires,1900
+3235,Rosario,Santa Fe,2000
+3236,Santa Fe,Santa Fe,3000
+3237,Bahía Blanca,Buenos Aires,8000
+3238,San Isidro,Buenos Aires,1642
+3239,La Plata,Buenos Aires,1900
+3240,Quilmes,Buenos Aires,1878
+3241,San Isidro,Buenos Aires,1642
+3242,Villa Carlos Paz,Córdoba,5152
+3243,Mendoza,Mendoza,5500
+3244,Mendoza,Mendoza,5500
+3245,San Isidro,Buenos Aires,1642
+3246,Godoy Cruz,Mendoza,5501
+3247,Mendoza,Mendoza,5500
+3248,Quilmes,Buenos Aires,1878
+3249,La Plata,Buenos Aires,1900
+3250,Córdoba,Córdoba,5000
+3251,Córdoba,Córdoba,5000
+3252,Rosario,Santa Fe,2000
+3253,Río Cuarto,Córdoba,5800
+3254,Rafaela,Santa Fe,2300
+3255,Córdoba,Córdoba,5000
+3256,Córdoba,Córdoba,5000
+3257,Villa Carlos Paz,Córdoba,5152
+3258,La Plata,Buenos Aires,1900
+3259,Córdoba,Córdoba,5000
+3260,Mar del Plata,Buenos Aires,7600
+3261,Rosario,Santa Fe,2000
+3262,Mendoza,Mendoza,5500
+3263,Villa Carlos Paz,Córdoba,5152
+3264,La Plata,Buenos Aires,1900
+3265,Río Cuarto,Córdoba,5800
+3266,La Plata,Buenos Aires,1900
+3267,Santa Fe,Santa Fe,3000
+3268,San Isidro,Buenos Aires,1642
+3269,Córdoba,Córdoba,5000
+3270,San Rafael,Mendoza,5600
+3271,Santa Fe,Santa Fe,3000
+3272,La Plata,Buenos Aires,1900
+3273,Córdoba,Córdoba,5000
+3274,Bahía Blanca,Buenos Aires,8000
+3275,Mendoza,Mendoza,5500
+3276,Santa Fe,Santa Fe,3000
+3277,Santa Fe,Santa Fe,3000
+3278,Rosario,Santa Fe,2000
+3279,Córdoba,Córdoba,5000
+3280,Mendoza,Mendoza,5500
+3281,Río Cuarto,Córdoba,5800
+3282,Quilmes,Buenos Aires,1878
+3283,San Rafael,Mendoza,5600
+3284,Córdoba,Córdoba,5000
+3285,Córdoba,Córdoba,5000
+3286,La Plata,Buenos Aires,1900
+3287,Rosario,Santa Fe,2000
+3288,La Plata,Buenos Aires,1900
+3289,Quilmes,Buenos Aires,1878
+3290,Rosario,Santa Fe,2000
+3291,Santa Fe,Santa Fe,3000
+3292,Mar del Plata,Buenos Aires,7600
+3293,La Plata,Buenos Aires,1900
+3294,La Plata,Buenos Aires,1900
+3295,Rosario,Santa Fe,2000
+3296,Córdoba,Córdoba,5000
+3297,Mendoza,Mendoza,5500
+3298,Santa Fe,Santa Fe,3000
+3299,Godoy Cruz,Mendoza,5501
+3300,Villa Carlos Paz,Córdoba,5152
+3301,Quilmes,Buenos Aires,1878
+3302,La Plata,Buenos Aires,1900
+3303,Rosario,Santa Fe,2000
+3304,Río Cuarto,Córdoba,5800
+3305,Río Cuarto,Córdoba,5800
+3306,La Plata,Buenos Aires,1900
+3307,La Plata,Buenos Aires,1900
+3308,Quilmes,Buenos Aires,1878
+3309,Bahía Blanca,Buenos Aires,8000
+3310,Rosario,Santa Fe,2000
+3311,Rosario,Santa Fe,2000
+3312,Córdoba,Córdoba,5000
+3313,Rosario,Santa Fe,2000
+3314,San Isidro,Buenos Aires,1642
+3315,Rosario,Santa Fe,2000
+3316,San Isidro,Buenos Aires,1642
+3317,La Plata,Buenos Aires,1900
+3318,Rosario,Santa Fe,2000
+3319,Quilmes,Buenos Aires,1878
+3320,Río Cuarto,Córdoba,5800
+3321,Mar del Plata,Buenos Aires,7600
+3322,San Rafael,Mendoza,5600
+3323,Córdoba,Córdoba,5000
+3324,Santa Fe,Santa Fe,3000
+3325,La Plata,Buenos Aires,1900
+3326,Quilmes,Buenos Aires,1878
+3327,La Plata,Buenos Aires,1900
+3328,Quilmes,Buenos Aires,1878
+3329,Rosario,Santa Fe,2000
+3330,Mar del Plata,Buenos Aires,7600
+3331,Godoy Cruz,Mendoza,5501
+3332,Córdoba,Córdoba,5000
+3333,La Plata,Buenos Aires,1900
+3334,Mendoza,Mendoza,5500
+3335,Villa Carlos Paz,Córdoba,5152
+3336,La Plata,Buenos Aires,1900
+3337,Río Cuarto,Córdoba,5800
+3338,Villa Carlos Paz,Córdoba,5152
+3339,Río Cuarto,Córdoba,5800
+3340,Río Cuarto,Córdoba,5800
+3341,Quilmes,Buenos Aires,1878
+3342,Mendoza,Mendoza,5500
+3343,Mar del Plata,Buenos Aires,7600
+3344,Rosario,Santa Fe,2000
+3345,La Plata,Buenos Aires,1900
+3346,Rafaela,Santa Fe,2300
+3347,Rosario,Santa Fe,2000
+3348,Rosario,Santa Fe,2000
+3349,La Plata,Buenos Aires,1900
+3350,Mendoza,Mendoza,5500
+3351,La Plata,Buenos Aires,1900
+3352,Mar del Plata,Buenos Aires,7600
+3353,La Plata,Buenos Aires,1900
+3354,Córdoba,Córdoba,5000
+3355,San Isidro,Buenos Aires,1642
+3356,Villa Carlos Paz,Córdoba,5152
+3357,Córdoba,Córdoba,5000
+3358,Mar del Plata,Buenos Aires,7600
+3359,Mar del Plata,Buenos Aires,7600
+3360,Quilmes,Buenos Aires,1878
+3361,Mendoza,Mendoza,5500
+3362,Santa Fe,Santa Fe,3000
+3363,Rosario,Santa Fe,2000
+3364,Quilmes,Buenos Aires,1878
+3365,San Isidro,Buenos Aires,1642
+3366,Quilmes,Buenos Aires,1878
+3367,Bahía Blanca,Buenos Aires,8000
+3368,Quilmes,Buenos Aires,1878
+3369,La Plata,Buenos Aires,1900
+3370,Rosario,Santa Fe,2000
+3371,Quilmes,Buenos Aires,1878
+3372,Mar del Plata,Buenos Aires,7600
+3373,La Plata,Buenos Aires,1900
+3374,Córdoba,Córdoba,5000
+3375,Rosario,Santa Fe,2000
+3376,Santa Fe,Santa Fe,3000
+3377,Córdoba,Córdoba,5000
+3378,Mendoza,Mendoza,5500
+3379,Mar del Plata,Buenos Aires,7600
+3380,Quilmes,Buenos Aires,1878
+3381,San Rafael,Mendoza,5600
+3382,Bahía Blanca,Buenos Aires,8000
+3383,La Plata,Buenos Aires,1900
+3384,Mar del Plata,Buenos Aires,7600
+3385,Mendoza,Mendoza,5500
+3386,Rosario,Santa Fe,2000
+3387,Córdoba,Córdoba,5000
+3388,San Isidro,Buenos Aires,1642
+3389,Santa Fe,Santa Fe,3000
+3390,Córdoba,Córdoba,5000
+3391,Bahía Blanca,Buenos Aires,8000
+3392,Mendoza,Mendoza,5500
+3393,Córdoba,Córdoba,5000
+3394,Santa Fe,Santa Fe,3000
+3395,Quilmes,Buenos Aires,1878
+3396,Mar del Plata,Buenos Aires,7600
+3397,San Isidro,Buenos Aires,1642
+3398,La Plata,Buenos Aires,1900
+3399,Mendoza,Mendoza,5500
+3400,La Plata,Buenos Aires,1900
+3401,Córdoba,Córdoba,5000
+3402,Bahía Blanca,Buenos Aires,8000
+3403,Quilmes,Buenos Aires,1878
+3404,Godoy Cruz,Mendoza,5501
+3405,Quilmes,Buenos Aires,1878
+3406,La Plata,Buenos Aires,1900
+3407,Córdoba,Córdoba,5000
+3408,Santa Fe,Santa Fe,3000
+3409,Mar del Plata,Buenos Aires,7600
+3410,La Plata,Buenos Aires,1900
+3411,San Isidro,Buenos Aires,1642
+3412,Mar del Plata,Buenos Aires,7600
+3413,Quilmes,Buenos Aires,1878
+3414,Rosario,Santa Fe,2000
+3415,Rosario,Santa Fe,2000
+3416,Santa Fe,Santa Fe,3000
+3417,La Plata,Buenos Aires,1900
+3418,San Rafael,Mendoza,5600
+3419,Mendoza,Mendoza,5500
+3420,La Plata,Buenos Aires,1900
+3421,Quilmes,Buenos Aires,1878
+3422,La Plata,Buenos Aires,1900
+3423,Mar del Plata,Buenos Aires,7600
+3424,Rosario,Santa Fe,2000
+3425,Quilmes,Buenos Aires,1878
+3426,La Plata,Buenos Aires,1900
+3427,Quilmes,Buenos Aires,1878
+3428,Río Cuarto,Córdoba,5800
+3429,San Isidro,Buenos Aires,1642
+3430,Córdoba,Córdoba,5000
+3431,Mar del Plata,Buenos Aires,7600
+3432,San Isidro,Buenos Aires,1642
+3433,Río Cuarto,Córdoba,5800
+3434,La Plata,Buenos Aires,1900
+3435,Mendoza,Mendoza,5500
+3436,Mendoza,Mendoza,5500
+3437,Santa Fe,Santa Fe,3000
+3438,Mar del Plata,Buenos Aires,7600
+3439,San Isidro,Buenos Aires,1642
+3440,Godoy Cruz,Mendoza,5501
+3441,San Rafael,Mendoza,5600
+3442,Santa Fe,Santa Fe,3000
+3443,Río Cuarto,Córdoba,5800
+3444,Córdoba,Córdoba,5000
+3445,Mar del Plata,Buenos Aires,7600
+3446,Santa Fe,Santa Fe,3000
+3447,San Isidro,Buenos Aires,1642
+3448,Bahía Blanca,Buenos Aires,8000
+3449,Quilmes,Buenos Aires,1878
+3450,Rosario,Santa Fe,2000
+3451,Córdoba,Córdoba,5000
+3452,Rosario,Santa Fe,2000
+3453,Córdoba,Córdoba,5000
+3454,Rosario,Santa Fe,2000
+3455,Mar del Plata,Buenos Aires,7600
+3456,San Isidro,Buenos Aires,1642
+3457,Rosario,Santa Fe,2000
+3458,Bahía Blanca,Buenos Aires,8000
+3459,Córdoba,Córdoba,5000
+3460,Quilmes,Buenos Aires,1878
+3461,Godoy Cruz,Mendoza,5501
+3462,Quilmes,Buenos Aires,1878
+3463,Córdoba,Córdoba,5000
+3464,Rosario,Santa Fe,2000
+3465,Rosario,Santa Fe,2000
+3466,Rosario,Santa Fe,2000
+3467,Mendoza,Mendoza,5500
+3468,La Plata,Buenos Aires,1900
+3469,Santa Fe,Santa Fe,3000
+3470,La Plata,Buenos Aires,1900
+3471,La Plata,Buenos Aires,1900
+3472,San Isidro,Buenos Aires,1642
+3473,Villa Carlos Paz,Córdoba,5152
+3474,Córdoba,Córdoba,5000
+3475,Córdoba,Córdoba,5000
+3476,Mar del Plata,Buenos Aires,7600
+3477,Rosario,Santa Fe,2000
+3478,La Plata,Buenos Aires,1900
+3479,San Isidro,Buenos Aires,1642
+3480,La Plata,Buenos Aires,1900
+3481,San Rafael,Mendoza,5600
+3482,Rosario,Santa Fe,2000
+3483,Villa Carlos Paz,Córdoba,5152
+3484,Bahía Blanca,Buenos Aires,8000
+3485,San Isidro,Buenos Aires,1642
+3486,Rosario,Santa Fe,2000
+3487,Rosario,Santa Fe,2000
+3488,Mendoza,Mendoza,5500
+3489,Godoy Cruz,Mendoza,5501
+3490,Santa Fe,Santa Fe,3000
+3491,Rosario,Santa Fe,2000
+3492,Mendoza,Mendoza,5500
+3493,Córdoba,Córdoba,5000
+3494,Santa Fe,Santa Fe,3000
+3495,Mendoza,Mendoza,5500
+3496,La Plata,Buenos Aires,1900
+3497,Bahía Blanca,Buenos Aires,8000
+3498,Santa Fe,Santa Fe,3000
+3499,La Plata,Buenos Aires,1900
+3500,Córdoba,Córdoba,5000
+3501,San Rafael,Mendoza,5600
+3502,Río Cuarto,Córdoba,5800
+3503,La Plata,Buenos Aires,1900
+3504,Córdoba,Córdoba,5000
+3505,Rosario,Santa Fe,2000
+3506,La Plata,Buenos Aires,1900
+3507,Rosario,Santa Fe,2000
+3508,Mar del Plata,Buenos Aires,7600
+3509,Quilmes,Buenos Aires,1878
+3510,La Plata,Buenos Aires,1900
+3511,San Isidro,Buenos Aires,1642
+3512,San Isidro,Buenos Aires,1642
+3513,Mendoza,Mendoza,5500
+3514,Bahía Blanca,Buenos Aires,8000
+3515,Mendoza,Mendoza,5500
+3516,Rafaela,Santa Fe,2300
+3517,Rosario,Santa Fe,2000
+3518,Mendoza,Mendoza,5500
+3519,Santa Fe,Santa Fe,3000
+3520,Santa Fe,Santa Fe,3000
+3521,La Plata,Buenos Aires,1900
+3522,Córdoba,Córdoba,5000
+3523,La Plata,Buenos Aires,1900
+3524,La Plata,Buenos Aires,1900
+3525,Quilmes,Buenos Aires,1878
+3526,La Plata,Buenos Aires,1900
+3527,Mar del Plata,Buenos Aires,7600
+3528,Río Cuarto,Córdoba,5800
+3529,Córdoba,Córdoba,5000
+3530,Bahía Blanca,Buenos Aires,8000
+3531,Santa Fe,Santa Fe,3000
+3532,Quilmes,Buenos Aires,1878
+3533,Santa Fe,Santa Fe,3000
+3534,Rafaela,Santa Fe,2300
+3535,Bahía Blanca,Buenos Aires,8000
+3536,Río Cuarto,Córdoba,5800
+3537,Bahía Blanca,Buenos Aires,8000
+3538,Godoy Cruz,Mendoza,5501
+3539,Godoy Cruz,Mendoza,5501
+3540,Rosario,Santa Fe,2000
+3541,Córdoba,Córdoba,5000
+3542,Córdoba,Córdoba,5000
+3543,Río Cuarto,Córdoba,5800
+3544,Córdoba,Córdoba,5000
+3545,San Isidro,Buenos Aires,1642
+3546,Santa Fe,Santa Fe,3000
+3547,La Plata,Buenos Aires,1900
+3548,Mar del Plata,Buenos Aires,7600
+3549,La Plata,Buenos Aires,1900
+3550,Mendoza,Mendoza,5500
+3551,Santa Fe,Santa Fe,3000
+3552,La Plata,Buenos Aires,1900
+3553,Godoy Cruz,Mendoza,5501
+3554,Córdoba,Córdoba,5000
+3555,Mar del Plata,Buenos Aires,7600
+3556,Quilmes,Buenos Aires,1878
+3557,Mendoza,Mendoza,5500
+3558,Quilmes,Buenos Aires,1878
+3559,Rosario,Santa Fe,2000
+3560,Mendoza,Mendoza,5500
+3561,San Rafael,Mendoza,5600
+3562,Córdoba,Córdoba,5000
+3563,Rosario,Santa Fe,2000
+3564,Quilmes,Buenos Aires,1878
+3565,La Plata,Buenos Aires,1900
+3566,La Plata,Buenos Aires,1900
+3567,Santa Fe,Santa Fe,3000
+3568,Córdoba,Córdoba,5000
+3569,Mar del Plata,Buenos Aires,7600
+3570,Córdoba,Córdoba,5000
+3571,Córdoba,Córdoba,5000
+3572,Rosario,Santa Fe,2000
+3573,Mendoza,Mendoza,5500
+3574,Godoy Cruz,Mendoza,5501
+3575,Córdoba,Córdoba,5000
+3576,Córdoba,Córdoba,5000
+3577,San Isidro,Buenos Aires,1642
+3578,Quilmes,Buenos Aires,1878
+3579,La Plata,Buenos Aires,1900
+3580,Río Cuarto,Córdoba,5800
+3581,Rosario,Santa Fe,2000
+3582,La Plata,Buenos Aires,1900
+3583,Mendoza,Mendoza,5500
+3584,Mendoza,Mendoza,5500
+3585,Córdoba,Córdoba,5000
+3586,Bahía Blanca,Buenos Aires,8000
+3587,Bahía Blanca,Buenos Aires,8000
+3588,Rosario,Santa Fe,2000
+3589,Mendoza,Mendoza,5500
+3590,Villa Carlos Paz,Córdoba,5152
+3591,Córdoba,Córdoba,5000
+3592,Rosario,Santa Fe,2000
+3593,San Isidro,Buenos Aires,1642
+3594,La Plata,Buenos Aires,1900
+3595,Bahía Blanca,Buenos Aires,8000
+3596,Santa Fe,Santa Fe,3000
+3597,Córdoba,Córdoba,5000
+3598,La Plata,Buenos Aires,1900
+3599,Río Cuarto,Córdoba,5800
+3600,Villa Carlos Paz,Córdoba,5152
+3601,Córdoba,Córdoba,5000
+3602,La Plata,Buenos Aires,1900
+3603,Rosario,Santa Fe,2000
+3604,Mar del Plata,Buenos Aires,7600
+3605,Mendoza,Mendoza,5500
+3606,Córdoba,Córdoba,5000
+3607,Mar del Plata,Buenos Aires,7600
+3608,La Plata,Buenos Aires,1900
+3609,Rosario,Santa Fe,2000
+3610,Quilmes,Buenos Aires,1878
+3611,La Plata,Buenos Aires,1900
+3612,La Plata,Buenos Aires,1900
+3613,Mendoza,Mendoza,5500
+3614,La Plata,Buenos Aires,1900
+3615,Santa Fe,Santa Fe,3000
+3616,Bahía Blanca,Buenos Aires,8000
+3617,Mar del Plata,Buenos Aires,7600
+3618,Córdoba,Córdoba,5000
+3619,Rosario,Santa Fe,2000
+3620,Rosario,Santa Fe,2000
+3621,Rafaela,Santa Fe,2300
+3622,Santa Fe,Santa Fe,3000
+3623,Mendoza,Mendoza,5500
+3624,Bahía Blanca,Buenos Aires,8000
+3625,Mar del Plata,Buenos Aires,7600
+3626,La Plata,Buenos Aires,1900
+3627,Godoy Cruz,Mendoza,5501
+3628,Mendoza,Mendoza,5500
+3629,La Plata,Buenos Aires,1900
+3630,La Plata,Buenos Aires,1900
+3631,Mendoza,Mendoza,5500
+3632,Córdoba,Córdoba,5000
+3633,Mendoza,Mendoza,5500
+3634,Mendoza,Mendoza,5500
+3635,La Plata,Buenos Aires,1900
+3636,Córdoba,Córdoba,5000
+3637,Quilmes,Buenos Aires,1878
+3638,San Rafael,Mendoza,5600
+3639,Quilmes,Buenos Aires,1878
+3640,Córdoba,Córdoba,5000
+3641,Mendoza,Mendoza,5500
+3642,Santa Fe,Santa Fe,3000
+3643,Quilmes,Buenos Aires,1878
+3644,Godoy Cruz,Mendoza,5501
+3645,Villa Carlos Paz,Córdoba,5152
+3646,Villa Carlos Paz,Córdoba,5152
+3647,Quilmes,Buenos Aires,1878
+3648,Santa Fe,Santa Fe,3000
+3649,Rosario,Santa Fe,2000
+3650,Rosario,Santa Fe,2000
+3651,San Isidro,Buenos Aires,1642
+3652,Córdoba,Córdoba,5000
+3653,Córdoba,Córdoba,5000
+3654,Rosario,Santa Fe,2000
+3655,Villa Carlos Paz,Córdoba,5152
+3656,Bahía Blanca,Buenos Aires,8000
+3657,Quilmes,Buenos Aires,1878
+3658,Córdoba,Córdoba,5000
+3659,San Rafael,Mendoza,5600
+3660,Godoy Cruz,Mendoza,5501
+3661,Mendoza,Mendoza,5500
+3662,San Rafael,Mendoza,5600
+3663,Bahía Blanca,Buenos Aires,8000
+3664,Quilmes,Buenos Aires,1878
+3665,Córdoba,Córdoba,5000
+3666,Villa Carlos Paz,Córdoba,5152
+3667,Quilmes,Buenos Aires,1878
+3668,La Plata,Buenos Aires,1900
+3669,San Isidro,Buenos Aires,1642
+3670,Santa Fe,Santa Fe,3000
+3671,Santa Fe,Santa Fe,3000
+3672,Rosario,Santa Fe,2000
+3673,Córdoba,Córdoba,5000
+3674,Quilmes,Buenos Aires,1878
+3675,Mar del Plata,Buenos Aires,7600
+3676,La Plata,Buenos Aires,1900
+3677,Rafaela,Santa Fe,2300
+3678,Río Cuarto,Córdoba,5800
+3679,Mendoza,Mendoza,5500
+3680,Godoy Cruz,Mendoza,5501
+3681,Godoy Cruz,Mendoza,5501
+3682,Córdoba,Córdoba,5000
+3683,Bahía Blanca,Buenos Aires,8000
+3684,San Isidro,Buenos Aires,1642
+3685,Rosario,Santa Fe,2000
+3686,Godoy Cruz,Mendoza,5501
+3687,Mar del Plata,Buenos Aires,7600
+3688,La Plata,Buenos Aires,1900
+3689,Rosario,Santa Fe,2000
+3690,Quilmes,Buenos Aires,1878
+3691,Bahía Blanca,Buenos Aires,8000
+3692,San Isidro,Buenos Aires,1642
+3693,Córdoba,Córdoba,5000
+3694,Córdoba,Córdoba,5000
+3695,Mar del Plata,Buenos Aires,7600
+3696,San Isidro,Buenos Aires,1642
+3697,Córdoba,Córdoba,5000
+3698,Rafaela,Santa Fe,2300
+3699,Godoy Cruz,Mendoza,5501
+3700,Río Cuarto,Córdoba,5800
+3701,Córdoba,Córdoba,5000
+3702,Quilmes,Buenos Aires,1878
+3703,Mar del Plata,Buenos Aires,7600
+3704,Mar del Plata,Buenos Aires,7600
+3705,Córdoba,Córdoba,5000
+3706,Rafaela,Santa Fe,2300
+3707,Godoy Cruz,Mendoza,5501
+3708,Santa Fe,Santa Fe,3000
+3709,Villa Carlos Paz,Córdoba,5152
+3710,Córdoba,Córdoba,5000
+3711,Río Cuarto,Córdoba,5800
+3712,San Isidro,Buenos Aires,1642
+3713,Mar del Plata,Buenos Aires,7600
+3714,Mendoza,Mendoza,5500
+3715,Mar del Plata,Buenos Aires,7600
+3716,Rosario,Santa Fe,2000
+3717,Quilmes,Buenos Aires,1878
+3718,La Plata,Buenos Aires,1900
+3719,La Plata,Buenos Aires,1900
+3720,Quilmes,Buenos Aires,1878
+3721,La Plata,Buenos Aires,1900
+3722,Córdoba,Córdoba,5000
+3723,San Rafael,Mendoza,5600
+3724,La Plata,Buenos Aires,1900
+3725,Rosario,Santa Fe,2000
+3726,Córdoba,Córdoba,5000
+3727,San Isidro,Buenos Aires,1642
+3728,Mar del Plata,Buenos Aires,7600
+3729,Bahía Blanca,Buenos Aires,8000
+3730,La Plata,Buenos Aires,1900
+3731,Rosario,Santa Fe,2000
+3732,Córdoba,Córdoba,5000
+3733,Bahía Blanca,Buenos Aires,8000
+3734,Bahía Blanca,Buenos Aires,8000
+3735,Mendoza,Mendoza,5500
+3736,Córdoba,Córdoba,5000
+3737,Santa Fe,Santa Fe,3000
+3738,Godoy Cruz,Mendoza,5501
+3739,Santa Fe,Santa Fe,3000
+3740,Bahía Blanca,Buenos Aires,8000
+3741,Mendoza,Mendoza,5500
+3742,Villa Carlos Paz,Córdoba,5152
+3743,Santa Fe,Santa Fe,3000
+3744,Mendoza,Mendoza,5500
+3745,Villa Carlos Paz,Córdoba,5152
+3746,Córdoba,Córdoba,5000
+3747,Rafaela,Santa Fe,2300
+3748,Rosario,Santa Fe,2000
+3749,Córdoba,Córdoba,5000
+3750,Mendoza,Mendoza,5500
+3751,La Plata,Buenos Aires,1900
+3752,La Plata,Buenos Aires,1900
+3753,La Plata,Buenos Aires,1900
+3754,Córdoba,Córdoba,5000
+3755,Rafaela,Santa Fe,2300
+3756,Río Cuarto,Córdoba,5800
+3757,Rosario,Santa Fe,2000
+3758,Córdoba,Córdoba,5000
+3759,Rosario,Santa Fe,2000
+3760,Santa Fe,Santa Fe,3000
+3761,Mendoza,Mendoza,5500
+3762,San Isidro,Buenos Aires,1642
+3763,Santa Fe,Santa Fe,3000
+3764,Santa Fe,Santa Fe,3000
+3765,San Rafael,Mendoza,5600
+3766,Santa Fe,Santa Fe,3000
+3767,Rosario,Santa Fe,2000
+3768,Santa Fe,Santa Fe,3000
+3769,Bahía Blanca,Buenos Aires,8000
+3770,Rafaela,Santa Fe,2300
+3771,Córdoba,Córdoba,5000
+3772,La Plata,Buenos Aires,1900
+3773,San Isidro,Buenos Aires,1642
+3774,Mar del Plata,Buenos Aires,7600
+3775,San Rafael,Mendoza,5600
+3776,Rosario,Santa Fe,2000
+3777,Rosario,Santa Fe,2000
+3778,Mar del Plata,Buenos Aires,7600
+3779,Mendoza,Mendoza,5500
+3780,Bahía Blanca,Buenos Aires,8000
+3781,Villa Carlos Paz,Córdoba,5152
+3782,Bahía Blanca,Buenos Aires,8000
+3783,Córdoba,Córdoba,5000
+3784,Mar del Plata,Buenos Aires,7600
+3785,Rafaela,Santa Fe,2300
+3786,Godoy Cruz,Mendoza,5501
+3787,Mendoza,Mendoza,5500
+3788,Quilmes,Buenos Aires,1878
+3789,Villa Carlos Paz,Córdoba,5152
+3790,La Plata,Buenos Aires,1900
+3791,Mendoza,Mendoza,5500
+3792,Mar del Plata,Buenos Aires,7600
+3793,Rosario,Santa Fe,2000
+3794,Córdoba,Córdoba,5000
+3795,Mendoza,Mendoza,5500
+3796,Villa Carlos Paz,Córdoba,5152
+3797,Quilmes,Buenos Aires,1878
+3798,Santa Fe,Santa Fe,3000
+3799,Santa Fe,Santa Fe,3000
+3800,Mendoza,Mendoza,5500
+3801,La Plata,Buenos Aires,1900
+3802,San Isidro,Buenos Aires,1642
+3803,Santa Fe,Santa Fe,3000
+3804,Mar del Plata,Buenos Aires,7600
+3805,Mendoza,Mendoza,5500
+3806,Córdoba,Córdoba,5000
+3807,La Plata,Buenos Aires,1900
+3808,Rosario,Santa Fe,2000
+3809,Mar del Plata,Buenos Aires,7600
+3810,Córdoba,Córdoba,5000
+3811,San Isidro,Buenos Aires,1642
+3812,Río Cuarto,Córdoba,5800
+3813,Córdoba,Córdoba,5000
+3814,Santa Fe,Santa Fe,3000
+3815,Rosario,Santa Fe,2000
+3816,Mar del Plata,Buenos Aires,7600
+3817,Rafaela,Santa Fe,2300
+3818,Mendoza,Mendoza,5500
+3819,Quilmes,Buenos Aires,1878
+3820,Córdoba,Córdoba,5000
+3821,Quilmes,Buenos Aires,1878
+3822,Bahía Blanca,Buenos Aires,8000
+3823,Mendoza,Mendoza,5500
+3824,Mar del Plata,Buenos Aires,7600
+3825,San Isidro,Buenos Aires,1642
+3826,Mendoza,Mendoza,5500
+3827,San Isidro,Buenos Aires,1642
+3828,Mar del Plata,Buenos Aires,7600
+3829,Córdoba,Córdoba,5000
+3830,Rosario,Santa Fe,2000
+3831,Rosario,Santa Fe,2000
+3832,Rosario,Santa Fe,2000
+3833,Quilmes,Buenos Aires,1878
+3834,Rosario,Santa Fe,2000
+3835,Mendoza,Mendoza,5500
+3836,Quilmes,Buenos Aires,1878
+3837,La Plata,Buenos Aires,1900
+3838,La Plata,Buenos Aires,1900
+3839,Godoy Cruz,Mendoza,5501
+3840,Mar del Plata,Buenos Aires,7600
+3841,Mendoza,Mendoza,5500
+3842,Mendoza,Mendoza,5500
+3843,Bahía Blanca,Buenos Aires,8000
+3844,Santa Fe,Santa Fe,3000
+3845,Godoy Cruz,Mendoza,5501
+3846,Rosario,Santa Fe,2000
+3847,La Plata,Buenos Aires,1900
+3848,Mar del Plata,Buenos Aires,7600
+3849,San Rafael,Mendoza,5600
+3850,Santa Fe,Santa Fe,3000
+3851,Mendoza,Mendoza,5500
+3852,San Isidro,Buenos Aires,1642
+3853,Rosario,Santa Fe,2000
+3854,Rosario,Santa Fe,2000
+3855,Córdoba,Córdoba,5000
+3856,Mar del Plata,Buenos Aires,7600
+3857,Rosario,Santa Fe,2000
+3858,San Isidro,Buenos Aires,1642
+3859,Rosario,Santa Fe,2000
+3860,Rafaela,Santa Fe,2300
+3861,San Isidro,Buenos Aires,1642
+3862,Mendoza,Mendoza,5500
+3863,Córdoba,Córdoba,5000
+3864,Santa Fe,Santa Fe,3000
+3865,Santa Fe,Santa Fe,3000
+3866,Quilmes,Buenos Aires,1878
+3867,Bahía Blanca,Buenos Aires,8000
+3868,La Plata,Buenos Aires,1900
+3869,Santa Fe,Santa Fe,3000
+3870,Mendoza,Mendoza,5500
+3871,Río Cuarto,Córdoba,5800
+3872,Santa Fe,Santa Fe,3000
+3873,Río Cuarto,Córdoba,5800
+3874,Santa Fe,Santa Fe,3000
+3875,La Plata,Buenos Aires,1900
+3876,Córdoba,Córdoba,5000
+3877,Córdoba,Córdoba,5000
+3878,Santa Fe,Santa Fe,3000
+3879,Córdoba,Córdoba,5000
+3880,Córdoba,Córdoba,5000
+3881,Rosario,Santa Fe,2000
+3882,La Plata,Buenos Aires,1900
+3883,Rosario,Santa Fe,2000
+3884,Santa Fe,Santa Fe,3000
+3885,Córdoba,Córdoba,5000
+3886,Villa Carlos Paz,Córdoba,5152
+3887,La Plata,Buenos Aires,1900
+3888,Rosario,Santa Fe,2000
+3889,Rosario,Santa Fe,2000
+3890,Godoy Cruz,Mendoza,5501
+3891,Mar del Plata,Buenos Aires,7600
+3892,San Isidro,Buenos Aires,1642
+3893,Córdoba,Córdoba,5000
+3894,Mendoza,Mendoza,5500
+3895,Quilmes,Buenos Aires,1878
+3896,Río Cuarto,Córdoba,5800
+3897,Rafaela,Santa Fe,2300
+3898,Rosario,Santa Fe,2000
+3899,Quilmes,Buenos Aires,1878
+3900,Rosario,Santa Fe,2000
+3901,Quilmes,Buenos Aires,1878
+3902,San Isidro,Buenos Aires,1642
+3903,Godoy Cruz,Mendoza,5501
+3904,Rafaela,Santa Fe,2300
+3905,Mendoza,Mendoza,5500
+3906,La Plata,Buenos Aires,1900
+3907,San Rafael,Mendoza,5600
+3908,Bahía Blanca,Buenos Aires,8000
+3909,Santa Fe,Santa Fe,3000
+3910,Rafaela,Santa Fe,2300
+3911,La Plata,Buenos Aires,1900
+3912,La Plata,Buenos Aires,1900
+3913,Quilmes,Buenos Aires,1878
+3914,Rafaela,Santa Fe,2300
+3915,San Isidro,Buenos Aires,1642
+3916,Quilmes,Buenos Aires,1878
+3917,Mar del Plata,Buenos Aires,7600
+3918,Córdoba,Córdoba,5000
+3919,Mar del Plata,Buenos Aires,7600
+3920,Rafaela,Santa Fe,2300
+3921,Córdoba,Córdoba,5000
+3922,Córdoba,Córdoba,5000
+3923,Córdoba,Córdoba,5000
+3924,La Plata,Buenos Aires,1900
+3925,Córdoba,Córdoba,5000
+3926,Quilmes,Buenos Aires,1878
+3927,Córdoba,Córdoba,5000
+3928,Córdoba,Córdoba,5000
+3929,Villa Carlos Paz,Córdoba,5152
+3930,Mar del Plata,Buenos Aires,7600
+3931,Santa Fe,Santa Fe,3000
+3932,Mar del Plata,Buenos Aires,7600
+3933,Mar del Plata,Buenos Aires,7600
+3934,San Isidro,Buenos Aires,1642
+3935,Villa Carlos Paz,Córdoba,5152
+3936,Rosario,Santa Fe,2000
+3937,Rosario,Santa Fe,2000
+3938,Córdoba,Córdoba,5000
+3939,Bahía Blanca,Buenos Aires,8000
+3940,San Rafael,Mendoza,5600
+3941,Mar del Plata,Buenos Aires,7600
+3942,Quilmes,Buenos Aires,1878
+3943,La Plata,Buenos Aires,1900
+3944,Córdoba,Córdoba,5000
+3945,Rosario,Santa Fe,2000
+3946,Quilmes,Buenos Aires,1878
+3947,San Rafael,Mendoza,5600
+3948,Mendoza,Mendoza,5500
+3949,San Rafael,Mendoza,5600
+3950,Bahía Blanca,Buenos Aires,8000
+3951,Rosario,Santa Fe,2000
+3952,Villa Carlos Paz,Córdoba,5152
+3953,La Plata,Buenos Aires,1900
+3954,La Plata,Buenos Aires,1900
+3955,San Isidro,Buenos Aires,1642
+3956,Rafaela,Santa Fe,2300
+3957,Mar del Plata,Buenos Aires,7600
+3958,Mendoza,Mendoza,5500
+3959,Córdoba,Córdoba,5000
+3960,Mendoza,Mendoza,5500
+3961,Quilmes,Buenos Aires,1878
+3962,Córdoba,Córdoba,5000
+3963,Río Cuarto,Córdoba,5800
+3964,La Plata,Buenos Aires,1900
+3965,Quilmes,Buenos Aires,1878
+3966,La Plata,Buenos Aires,1900
+3967,Villa Carlos Paz,Córdoba,5152
+3968,La Plata,Buenos Aires,1900
+3969,Bahía Blanca,Buenos Aires,8000
+3970,San Isidro,Buenos Aires,1642
+3971,Rafaela,Santa Fe,2300
+3972,Quilmes,Buenos Aires,1878
+3973,San Isidro,Buenos Aires,1642
+3974,Rafaela,Santa Fe,2300
+3975,Río Cuarto,Córdoba,5800
+3976,Quilmes,Buenos Aires,1878
+3977,Rosario,Santa Fe,2000
+3978,San Isidro,Buenos Aires,1642
+3979,Villa Carlos Paz,Córdoba,5152
+3980,San Isidro,Buenos Aires,1642
+3981,Santa Fe,Santa Fe,3000
+3982,Córdoba,Córdoba,5000
+3983,San Rafael,Mendoza,5600
+3984,Santa Fe,Santa Fe,3000
+3985,Córdoba,Córdoba,5000
+3986,Godoy Cruz,Mendoza,5501
+3987,Godoy Cruz,Mendoza,5501
+3988,Río Cuarto,Córdoba,5800
+3989,Villa Carlos Paz,Córdoba,5152
+3990,Santa Fe,Santa Fe,3000
+3991,Quilmes,Buenos Aires,1878
+3992,Bahía Blanca,Buenos Aires,8000
+3993,Córdoba,Córdoba,5000
+3994,Mar del Plata,Buenos Aires,7600
+3995,Córdoba,Córdoba,5000
+3996,Rosario,Santa Fe,2000
+3997,La Plata,Buenos Aires,1900
+3998,Rosario,Santa Fe,2000
+3999,La Plata,Buenos Aires,1900
+4000,Bahía Blanca,Buenos Aires,8000
+4001,Córdoba,Córdoba,5000
+4002,San Isidro,Buenos Aires,1642
+4003,San Isidro,Buenos Aires,1642
+4004,Quilmes,Buenos Aires,1878
+4005,La Plata,Buenos Aires,1900
+4006,Rafaela,Santa Fe,2300
+4007,Rosario,Santa Fe,2000
+4008,Córdoba,Córdoba,5000
+4009,Mar del Plata,Buenos Aires,7600
+4010,La Plata,Buenos Aires,1900
+4011,Bahía Blanca,Buenos Aires,8000
+4012,Mar del Plata,Buenos Aires,7600
+4013,Mar del Plata,Buenos Aires,7600
+4014,Rafaela,Santa Fe,2300
+4015,Río Cuarto,Córdoba,5800
+4016,Rosario,Santa Fe,2000
+4017,La Plata,Buenos Aires,1900
+4018,San Isidro,Buenos Aires,1642
+4019,Mar del Plata,Buenos Aires,7600
+4020,Río Cuarto,Córdoba,5800
+4021,Rosario,Santa Fe,2000
+4022,San Isidro,Buenos Aires,1642
+4023,La Plata,Buenos Aires,1900
+4024,Godoy Cruz,Mendoza,5501
+4025,Santa Fe,Santa Fe,3000
+4026,Mendoza,Mendoza,5500
+4027,Mendoza,Mendoza,5500
+4028,Godoy Cruz,Mendoza,5501
+4029,Rosario,Santa Fe,2000
+4030,Godoy Cruz,Mendoza,5501
+4031,Rosario,Santa Fe,2000
+4032,Bahía Blanca,Buenos Aires,8000
+4033,Godoy Cruz,Mendoza,5501
+4034,Mar del Plata,Buenos Aires,7600
+4035,La Plata,Buenos Aires,1900
+4036,Río Cuarto,Córdoba,5800
+4037,San Isidro,Buenos Aires,1642
+4038,La Plata,Buenos Aires,1900
+4039,Quilmes,Buenos Aires,1878
+4040,La Plata,Buenos Aires,1900
+4041,Quilmes,Buenos Aires,1878
+4042,Mar del Plata,Buenos Aires,7600
+4043,Mar del Plata,Buenos Aires,7600
+4044,Santa Fe,Santa Fe,3000
+4045,Bahía Blanca,Buenos Aires,8000
+4046,Mar del Plata,Buenos Aires,7600
+4047,Córdoba,Córdoba,5000
+4048,Quilmes,Buenos Aires,1878
+4049,Quilmes,Buenos Aires,1878
+4050,Rafaela,Santa Fe,2300
+4051,Mendoza,Mendoza,5500
+4052,Córdoba,Córdoba,5000
+4053,Santa Fe,Santa Fe,3000
+4054,Mendoza,Mendoza,5500
+4055,Río Cuarto,Córdoba,5800
+4056,Río Cuarto,Córdoba,5800
+4057,Santa Fe,Santa Fe,3000
+4058,Rosario,Santa Fe,2000
+4059,Santa Fe,Santa Fe,3000
+4060,Córdoba,Córdoba,5000
+4061,San Isidro,Buenos Aires,1642
+4062,Rosario,Santa Fe,2000
+4063,Rafaela,Santa Fe,2300
+4064,Rosario,Santa Fe,2000
+4065,Córdoba,Córdoba,5000
+4066,La Plata,Buenos Aires,1900
+4067,Córdoba,Córdoba,5000
+4068,Bahía Blanca,Buenos Aires,8000
+4069,Villa Carlos Paz,Córdoba,5152
+4070,Quilmes,Buenos Aires,1878
+4071,Rosario,Santa Fe,2000
+4072,Quilmes,Buenos Aires,1878
+4073,Quilmes,Buenos Aires,1878
+4074,Río Cuarto,Córdoba,5800
+4075,Río Cuarto,Córdoba,5800
+4076,Mendoza,Mendoza,5500
+4077,Córdoba,Córdoba,5000
+4078,San Rafael,Mendoza,5600
+4079,Córdoba,Córdoba,5000
+4080,Villa Carlos Paz,Córdoba,5152
+4081,Córdoba,Córdoba,5000
+4082,Villa Carlos Paz,Córdoba,5152
+4083,La Plata,Buenos Aires,1900
+4084,Quilmes,Buenos Aires,1878
+4085,Villa Carlos Paz,Córdoba,5152
+4086,Mendoza,Mendoza,5500
+4087,Rosario,Santa Fe,2000
+4088,Mar del Plata,Buenos Aires,7600
+4089,Villa Carlos Paz,Córdoba,5152
+4090,La Plata,Buenos Aires,1900
+4091,Córdoba,Córdoba,5000
+4092,La Plata,Buenos Aires,1900
+4093,Quilmes,Buenos Aires,1878
+4094,San Isidro,Buenos Aires,1642
+4095,Córdoba,Córdoba,5000
+4096,La Plata,Buenos Aires,1900
+4097,Rosario,Santa Fe,2000
+4098,Santa Fe,Santa Fe,3000
+4099,Bahía Blanca,Buenos Aires,8000
+4100,Bahía Blanca,Buenos Aires,8000
+4101,Quilmes,Buenos Aires,1878
+4102,Villa Carlos Paz,Córdoba,5152
+4103,Río Cuarto,Córdoba,5800
+4104,Córdoba,Córdoba,5000
+4105,Rosario,Santa Fe,2000
+4106,La Plata,Buenos Aires,1900
+4107,Córdoba,Córdoba,5000
+4108,Mar del Plata,Buenos Aires,7600
+4109,Mar del Plata,Buenos Aires,7600
+4110,Rosario,Santa Fe,2000
+4111,Godoy Cruz,Mendoza,5501
+4112,Santa Fe,Santa Fe,3000
+4113,La Plata,Buenos Aires,1900
+4114,Córdoba,Córdoba,5000
+4115,Quilmes,Buenos Aires,1878
+4116,Río Cuarto,Córdoba,5800
+4117,Bahía Blanca,Buenos Aires,8000
+4118,Bahía Blanca,Buenos Aires,8000
+4119,La Plata,Buenos Aires,1900
+4120,Córdoba,Córdoba,5000
+4121,Rosario,Santa Fe,2000
+4122,Quilmes,Buenos Aires,1878
+4123,Córdoba,Córdoba,5000
+4124,Bahía Blanca,Buenos Aires,8000
+4125,Mendoza,Mendoza,5500
+4126,Córdoba,Córdoba,5000
+4127,La Plata,Buenos Aires,1900
+4128,La Plata,Buenos Aires,1900
+4129,La Plata,Buenos Aires,1900
+4130,Mar del Plata,Buenos Aires,7600
+4131,San Isidro,Buenos Aires,1642
+4132,Santa Fe,Santa Fe,3000
+4133,Quilmes,Buenos Aires,1878
+4134,Rosario,Santa Fe,2000
+4135,Quilmes,Buenos Aires,1878
+4136,Santa Fe,Santa Fe,3000
+4137,La Plata,Buenos Aires,1900
+4138,Rafaela,Santa Fe,2300
+4139,Río Cuarto,Córdoba,5800
+4140,Godoy Cruz,Mendoza,5501
+4141,Río Cuarto,Córdoba,5800
+4142,Quilmes,Buenos Aires,1878
+4143,Santa Fe,Santa Fe,3000
+4144,Rosario,Santa Fe,2000
+4145,Mar del Plata,Buenos Aires,7600
+4146,La Plata,Buenos Aires,1900
+4147,San Isidro,Buenos Aires,1642
+4148,Mendoza,Mendoza,5500
+4149,Mar del Plata,Buenos Aires,7600
+4150,Mar del Plata,Buenos Aires,7600
+4151,La Plata,Buenos Aires,1900
+4152,San Isidro,Buenos Aires,1642
+4153,Santa Fe,Santa Fe,3000
+4154,Córdoba,Córdoba,5000
+4155,Rafaela,Santa Fe,2300
+4156,Rosario,Santa Fe,2000
+4157,Córdoba,Córdoba,5000
+4158,Mar del Plata,Buenos Aires,7600
+4159,La Plata,Buenos Aires,1900
+4160,La Plata,Buenos Aires,1900
+4161,La Plata,Buenos Aires,1900
+4162,La Plata,Buenos Aires,1900
+4163,Río Cuarto,Córdoba,5800
+4164,Santa Fe,Santa Fe,3000
+4165,Córdoba,Córdoba,5000
+4166,Quilmes,Buenos Aires,1878
+4167,Rosario,Santa Fe,2000
+4168,Mendoza,Mendoza,5500
+4169,La Plata,Buenos Aires,1900
+4170,Río Cuarto,Córdoba,5800
+4171,Córdoba,Córdoba,5000
+4172,Córdoba,Córdoba,5000
+4173,La Plata,Buenos Aires,1900
+4174,La Plata,Buenos Aires,1900
+4175,Río Cuarto,Córdoba,5800
+4176,Rosario,Santa Fe,2000
+4177,Córdoba,Córdoba,5000
+4178,La Plata,Buenos Aires,1900
+4179,San Isidro,Buenos Aires,1642
+4180,Rosario,Santa Fe,2000
+4181,Rosario,Santa Fe,2000
+4182,La Plata,Buenos Aires,1900
+4183,La Plata,Buenos Aires,1900
+4184,Córdoba,Córdoba,5000
+4185,Santa Fe,Santa Fe,3000
+4186,La Plata,Buenos Aires,1900
+4187,La Plata,Buenos Aires,1900
+4188,Mar del Plata,Buenos Aires,7600
+4189,Córdoba,Córdoba,5000
+4190,Quilmes,Buenos Aires,1878
+4191,Mendoza,Mendoza,5500
+4192,La Plata,Buenos Aires,1900
+4193,Córdoba,Córdoba,5000
+4194,Godoy Cruz,Mendoza,5501
+4195,Santa Fe,Santa Fe,3000
+4196,Santa Fe,Santa Fe,3000
+4197,Rosario,Santa Fe,2000
+4198,Córdoba,Córdoba,5000
+4199,Godoy Cruz,Mendoza,5501
+4200,Santa Fe,Santa Fe,3000
+4201,San Rafael,Mendoza,5600
+4202,Rosario,Santa Fe,2000
+4203,La Plata,Buenos Aires,1900
+4204,La Plata,Buenos Aires,1900
+4205,Río Cuarto,Córdoba,5800
+4206,Mar del Plata,Buenos Aires,7600
+4207,Rafaela,Santa Fe,2300
+4208,Santa Fe,Santa Fe,3000
+4209,La Plata,Buenos Aires,1900
+4210,Rosario,Santa Fe,2000
+4211,Río Cuarto,Córdoba,5800
+4212,Bahía Blanca,Buenos Aires,8000
+4213,Quilmes,Buenos Aires,1878
+4214,Quilmes,Buenos Aires,1878
+4215,San Isidro,Buenos Aires,1642
+4216,Rosario,Santa Fe,2000
+4217,Rafaela,Santa Fe,2300
+4218,Santa Fe,Santa Fe,3000
+4219,Córdoba,Córdoba,5000
+4220,Quilmes,Buenos Aires,1878
+4221,Córdoba,Córdoba,5000
+4222,La Plata,Buenos Aires,1900
+4223,Mar del Plata,Buenos Aires,7600
+4224,Córdoba,Córdoba,5000
+4225,La Plata,Buenos Aires,1900
+4226,Mendoza,Mendoza,5500
+4227,Godoy Cruz,Mendoza,5501
+4228,Rafaela,Santa Fe,2300
+4229,Mendoza,Mendoza,5500
+4230,Santa Fe,Santa Fe,3000
+4231,La Plata,Buenos Aires,1900
+4232,Córdoba,Córdoba,5000
+4233,Córdoba,Córdoba,5000
+4234,San Rafael,Mendoza,5600
+4235,Córdoba,Córdoba,5000
+4236,Rosario,Santa Fe,2000
+4237,Córdoba,Córdoba,5000
+4238,Rosario,Santa Fe,2000
+4239,Mar del Plata,Buenos Aires,7600
+4240,Rosario,Santa Fe,2000
+4241,Río Cuarto,Córdoba,5800
+4242,Villa Carlos Paz,Córdoba,5152
+4243,Santa Fe,Santa Fe,3000
+4244,Rafaela,Santa Fe,2300
+4245,Mar del Plata,Buenos Aires,7600
+4246,Rosario,Santa Fe,2000
+4247,Mendoza,Mendoza,5500
+4248,Rosario,Santa Fe,2000
+4249,Córdoba,Córdoba,5000
+4250,Quilmes,Buenos Aires,1878
+4251,Mendoza,Mendoza,5500
+4252,Mar del Plata,Buenos Aires,7600
+4253,Bahía Blanca,Buenos Aires,8000
+4254,La Plata,Buenos Aires,1900
+4255,La Plata,Buenos Aires,1900
+4256,La Plata,Buenos Aires,1900
+4257,Rosario,Santa Fe,2000
+4258,Mar del Plata,Buenos Aires,7600
+4259,Mar del Plata,Buenos Aires,7600
+4260,Santa Fe,Santa Fe,3000
+4261,San Rafael,Mendoza,5600
+4262,La Plata,Buenos Aires,1900
+4263,San Isidro,Buenos Aires,1642
+4264,Rosario,Santa Fe,2000
+4265,Villa Carlos Paz,Córdoba,5152
+4266,Godoy Cruz,Mendoza,5501
+4267,Rafaela,Santa Fe,2300
+4268,Bahía Blanca,Buenos Aires,8000
+4269,Mendoza,Mendoza,5500
+4270,Mendoza,Mendoza,5500
+4271,Córdoba,Córdoba,5000
+4272,Rosario,Santa Fe,2000
+4273,La Plata,Buenos Aires,1900
+4274,Rosario,Santa Fe,2000
+4275,Santa Fe,Santa Fe,3000
+4276,Bahía Blanca,Buenos Aires,8000
+4277,Godoy Cruz,Mendoza,5501
+4278,Santa Fe,Santa Fe,3000
+4279,Rosario,Santa Fe,2000
+4280,Santa Fe,Santa Fe,3000
+4281,Bahía Blanca,Buenos Aires,8000
+4282,Santa Fe,Santa Fe,3000
+4283,Rosario,Santa Fe,2000
+4284,Mendoza,Mendoza,5500
+4285,Bahía Blanca,Buenos Aires,8000
+4286,Rosario,Santa Fe,2000
+4287,Quilmes,Buenos Aires,1878
+4288,Rafaela,Santa Fe,2300
+4289,Córdoba,Córdoba,5000
+4290,Godoy Cruz,Mendoza,5501
+4291,Santa Fe,Santa Fe,3000
+4292,Rafaela,Santa Fe,2300
+4293,Santa Fe,Santa Fe,3000
+4294,Rafaela,Santa Fe,2300
+4295,Rosario,Santa Fe,2000
+4296,Rosario,Santa Fe,2000
+4297,Santa Fe,Santa Fe,3000
+4298,Rosario,Santa Fe,2000
+4299,Mar del Plata,Buenos Aires,7600
+4300,Mendoza,Mendoza,5500
+4301,Rosario,Santa Fe,2000
+4302,Quilmes,Buenos Aires,1878
+4303,Mendoza,Mendoza,5500
+4304,Villa Carlos Paz,Córdoba,5152
+4305,Bahía Blanca,Buenos Aires,8000
+4306,Godoy Cruz,Mendoza,5501
+4307,Rosario,Santa Fe,2000
+4308,San Rafael,Mendoza,5600
+4309,Godoy Cruz,Mendoza,5501
+4310,La Plata,Buenos Aires,1900
+4311,Mendoza,Mendoza,5500
+4312,Mendoza,Mendoza,5500
+4313,Santa Fe,Santa Fe,3000
+4314,Villa Carlos Paz,Córdoba,5152
+4315,Bahía Blanca,Buenos Aires,8000
+4316,Mendoza,Mendoza,5500
+4317,Mendoza,Mendoza,5500
+4318,La Plata,Buenos Aires,1900
+4319,Rosario,Santa Fe,2000
+4320,Córdoba,Córdoba,5000
+4321,Mendoza,Mendoza,5500
+4322,Córdoba,Córdoba,5000
+4323,San Isidro,Buenos Aires,1642
+4324,Quilmes,Buenos Aires,1878
+4325,Mendoza,Mendoza,5500
+4326,La Plata,Buenos Aires,1900
+4327,La Plata,Buenos Aires,1900
+4328,Río Cuarto,Córdoba,5800
+4329,Mendoza,Mendoza,5500
+4330,Córdoba,Córdoba,5000
+4331,Rosario,Santa Fe,2000
+4332,Rosario,Santa Fe,2000
+4333,Córdoba,Córdoba,5000
+4334,Mar del Plata,Buenos Aires,7600
+4335,Mar del Plata,Buenos Aires,7600
+4336,La Plata,Buenos Aires,1900
+4337,Quilmes,Buenos Aires,1878
+4338,San Isidro,Buenos Aires,1642
+4339,Quilmes,Buenos Aires,1878
+4340,Mar del Plata,Buenos Aires,7600
+4341,Villa Carlos Paz,Córdoba,5152
+4342,Mar del Plata,Buenos Aires,7600
+4343,Rosario,Santa Fe,2000
+4344,Mendoza,Mendoza,5500
+4345,Río Cuarto,Córdoba,5800
+4346,San Rafael,Mendoza,5600
+4347,Bahía Blanca,Buenos Aires,8000
+4348,Córdoba,Córdoba,5000
+4349,La Plata,Buenos Aires,1900
+4350,Quilmes,Buenos Aires,1878
+4351,Córdoba,Córdoba,5000
+4352,Rosario,Santa Fe,2000
+4353,Córdoba,Córdoba,5000
+4354,Mar del Plata,Buenos Aires,7600
+4355,Mendoza,Mendoza,5500
+4356,La Plata,Buenos Aires,1900
+4357,Quilmes,Buenos Aires,1878
+4358,Godoy Cruz,Mendoza,5501
+4359,Santa Fe,Santa Fe,3000
+4360,San Rafael,Mendoza,5600
+4361,La Plata,Buenos Aires,1900
+4362,Mar del Plata,Buenos Aires,7600
+4363,La Plata,Buenos Aires,1900
+4364,Santa Fe,Santa Fe,3000
+4365,Córdoba,Córdoba,5000
+4366,Santa Fe,Santa Fe,3000
+4367,Córdoba,Córdoba,5000
+4368,Córdoba,Córdoba,5000
+4369,Rosario,Santa Fe,2000
+4370,Quilmes,Buenos Aires,1878
+4371,La Plata,Buenos Aires,1900
+4372,La Plata,Buenos Aires,1900
+4373,Quilmes,Buenos Aires,1878
+4374,Río Cuarto,Córdoba,5800
+4375,La Plata,Buenos Aires,1900
+4376,Córdoba,Córdoba,5000
+4377,San Rafael,Mendoza,5600
+4378,San Rafael,Mendoza,5600
+4379,Rosario,Santa Fe,2000
+4380,Mar del Plata,Buenos Aires,7600
+4381,Córdoba,Córdoba,5000
+4382,Quilmes,Buenos Aires,1878
+4383,La Plata,Buenos Aires,1900
+4384,San Rafael,Mendoza,5600
+4385,San Rafael,Mendoza,5600
+4386,Rafaela,Santa Fe,2300
+4387,San Isidro,Buenos Aires,1642
+4388,Mar del Plata,Buenos Aires,7600
+4389,San Isidro,Buenos Aires,1642
+4390,San Isidro,Buenos Aires,1642
+4391,Bahía Blanca,Buenos Aires,8000
+4392,Villa Carlos Paz,Córdoba,5152
+4393,La Plata,Buenos Aires,1900
+4394,Córdoba,Córdoba,5000
+4395,Santa Fe,Santa Fe,3000
+4396,Mar del Plata,Buenos Aires,7600
+4397,La Plata,Buenos Aires,1900
+4398,Río Cuarto,Córdoba,5800
+4399,Córdoba,Córdoba,5000
+4400,Rafaela,Santa Fe,2300
+4401,La Plata,Buenos Aires,1900
+4402,Mar del Plata,Buenos Aires,7600
+4403,La Plata,Buenos Aires,1900
+4404,Rosario,Santa Fe,2000
+4405,Villa Carlos Paz,Córdoba,5152
+4406,Godoy Cruz,Mendoza,5501
+4407,Córdoba,Córdoba,5000
+4408,Quilmes,Buenos Aires,1878
+4409,Córdoba,Córdoba,5000
+4410,Rafaela,Santa Fe,2300
+4411,Córdoba,Córdoba,5000
+4412,Villa Carlos Paz,Córdoba,5152
+4413,Villa Carlos Paz,Córdoba,5152
+4414,Córdoba,Córdoba,5000
+4415,Córdoba,Córdoba,5000
+4416,Rosario,Santa Fe,2000
+4417,Córdoba,Córdoba,5000
+4418,San Isidro,Buenos Aires,1642
+4419,Mar del Plata,Buenos Aires,7600
+4420,Córdoba,Córdoba,5000
+4421,Santa Fe,Santa Fe,3000
+4422,Córdoba,Córdoba,5000
+4423,San Isidro,Buenos Aires,1642
+4424,La Plata,Buenos Aires,1900
+4425,Bahía Blanca,Buenos Aires,8000
+4426,La Plata,Buenos Aires,1900
+4427,Rosario,Santa Fe,2000
+4428,Córdoba,Córdoba,5000
+4429,Mendoza,Mendoza,5500
+4430,Rafaela,Santa Fe,2300
+4431,San Isidro,Buenos Aires,1642
+4432,Bahía Blanca,Buenos Aires,8000
+4433,Mar del Plata,Buenos Aires,7600
+4434,Godoy Cruz,Mendoza,5501
+4435,Quilmes,Buenos Aires,1878
+4436,La Plata,Buenos Aires,1900
+4437,Mendoza,Mendoza,5500
+4438,Santa Fe,Santa Fe,3000
+4439,San Rafael,Mendoza,5600
+4440,Rosario,Santa Fe,2000
+4441,Rosario,Santa Fe,2000
+4442,Bahía Blanca,Buenos Aires,8000
+4443,San Isidro,Buenos Aires,1642
+4444,Mar del Plata,Buenos Aires,7600
+4445,La Plata,Buenos Aires,1900
+4446,Córdoba,Córdoba,5000
+4447,Río Cuarto,Córdoba,5800
+4448,San Isidro,Buenos Aires,1642
+4449,Mar del Plata,Buenos Aires,7600
+4450,Córdoba,Córdoba,5000
+4451,La Plata,Buenos Aires,1900
+4452,Bahía Blanca,Buenos Aires,8000
+4453,La Plata,Buenos Aires,1900
+4454,San Isidro,Buenos Aires,1642
+4455,Rafaela,Santa Fe,2300
+4456,La Plata,Buenos Aires,1900
+4457,Rosario,Santa Fe,2000
+4458,Rosario,Santa Fe,2000
+4459,La Plata,Buenos Aires,1900
+4460,Córdoba,Córdoba,5000
+4461,Bahía Blanca,Buenos Aires,8000
+4462,Córdoba,Córdoba,5000
+4463,Córdoba,Córdoba,5000
+4464,Córdoba,Córdoba,5000
+4465,Rosario,Santa Fe,2000
+4466,Rosario,Santa Fe,2000
+4467,Villa Carlos Paz,Córdoba,5152
+4468,Río Cuarto,Córdoba,5800
+4469,Quilmes,Buenos Aires,1878
+4470,Mendoza,Mendoza,5500
+4471,Río Cuarto,Córdoba,5800
+4472,Rosario,Santa Fe,2000
+4473,Santa Fe,Santa Fe,3000
+4474,Córdoba,Córdoba,5000
+4475,Rosario,Santa Fe,2000
+4476,Córdoba,Córdoba,5000
+4477,Rafaela,Santa Fe,2300
+4478,La Plata,Buenos Aires,1900
+4479,Rosario,Santa Fe,2000
+4480,Mar del Plata,Buenos Aires,7600
+4481,Mendoza,Mendoza,5500
+4482,Mendoza,Mendoza,5500
+4483,Río Cuarto,Córdoba,5800
+4484,Córdoba,Córdoba,5000
+4485,Mar del Plata,Buenos Aires,7600
+4486,San Isidro,Buenos Aires,1642
+4487,Santa Fe,Santa Fe,3000
+4488,Santa Fe,Santa Fe,3000
+4489,Mar del Plata,Buenos Aires,7600
+4490,La Plata,Buenos Aires,1900
+4491,Quilmes,Buenos Aires,1878
+4492,Quilmes,Buenos Aires,1878
+4493,San Rafael,Mendoza,5600
+4494,Mar del Plata,Buenos Aires,7600
+4495,Godoy Cruz,Mendoza,5501
+4496,Rosario,Santa Fe,2000
+4497,Rosario,Santa Fe,2000
+4498,La Plata,Buenos Aires,1900
+4499,Quilmes,Buenos Aires,1878
+4500,La Plata,Buenos Aires,1900
+4501,Mendoza,Mendoza,5500
+4502,Santa Fe,Santa Fe,3000
+4503,Bahía Blanca,Buenos Aires,8000
+4504,Córdoba,Córdoba,5000
+4505,Córdoba,Córdoba,5000
+4506,Godoy Cruz,Mendoza,5501
+4507,Godoy Cruz,Mendoza,5501
+4508,Bahía Blanca,Buenos Aires,8000
+4509,Bahía Blanca,Buenos Aires,8000
+4510,La Plata,Buenos Aires,1900
+4511,La Plata,Buenos Aires,1900
+4512,Quilmes,Buenos Aires,1878
+4513,Rafaela,Santa Fe,2300
+4514,Córdoba,Córdoba,5000
+4515,La Plata,Buenos Aires,1900
+4516,Godoy Cruz,Mendoza,5501
+4517,Santa Fe,Santa Fe,3000
+4518,Santa Fe,Santa Fe,3000
+4519,Córdoba,Córdoba,5000
+4520,Rosario,Santa Fe,2000
+4521,La Plata,Buenos Aires,1900
+4522,Rosario,Santa Fe,2000
+4523,Rosario,Santa Fe,2000
+4524,Mendoza,Mendoza,5500
+4525,Santa Fe,Santa Fe,3000
+4526,Rafaela,Santa Fe,2300
+4527,Córdoba,Córdoba,5000
+4528,Rosario,Santa Fe,2000
+4529,Mendoza,Mendoza,5500
+4530,Rosario,Santa Fe,2000
+4531,Villa Carlos Paz,Córdoba,5152
+4532,La Plata,Buenos Aires,1900
+4533,La Plata,Buenos Aires,1900
+4534,Mendoza,Mendoza,5500
+4535,La Plata,Buenos Aires,1900
+4536,Rosario,Santa Fe,2000
+4537,Córdoba,Córdoba,5000
+4538,Mar del Plata,Buenos Aires,7600
+4539,Mar del Plata,Buenos Aires,7600
+4540,Córdoba,Córdoba,5000
+4541,La Plata,Buenos Aires,1900
+4542,Rosario,Santa Fe,2000
+4543,Villa Carlos Paz,Córdoba,5152
+4544,Rafaela,Santa Fe,2300
+4545,La Plata,Buenos Aires,1900
+4546,Quilmes,Buenos Aires,1878
+4547,Santa Fe,Santa Fe,3000
+4548,Bahía Blanca,Buenos Aires,8000
+4549,Rosario,Santa Fe,2000
+4550,Rafaela,Santa Fe,2300
+4551,La Plata,Buenos Aires,1900
+4552,Godoy Cruz,Mendoza,5501
+4553,La Plata,Buenos Aires,1900
+4554,Rosario,Santa Fe,2000
+4555,Santa Fe,Santa Fe,3000
+4556,Santa Fe,Santa Fe,3000
+4557,Mar del Plata,Buenos Aires,7600
+4558,Bahía Blanca,Buenos Aires,8000
+4559,La Plata,Buenos Aires,1900
+4560,Córdoba,Córdoba,5000
+4561,Bahía Blanca,Buenos Aires,8000
+4562,La Plata,Buenos Aires,1900
+4563,Santa Fe,Santa Fe,3000
+4564,Bahía Blanca,Buenos Aires,8000
+4565,Mar del Plata,Buenos Aires,7600
+4566,Río Cuarto,Córdoba,5800
+4567,Mendoza,Mendoza,5500
+4568,Villa Carlos Paz,Córdoba,5152
+4569,Quilmes,Buenos Aires,1878
+4570,Mendoza,Mendoza,5500
+4571,Río Cuarto,Córdoba,5800
+4572,Quilmes,Buenos Aires,1878
+4573,Quilmes,Buenos Aires,1878
+4574,Rosario,Santa Fe,2000
+4575,Godoy Cruz,Mendoza,5501
+4576,Rosario,Santa Fe,2000
+4577,Río Cuarto,Córdoba,5800
+4578,Río Cuarto,Córdoba,5800
+4579,Godoy Cruz,Mendoza,5501
+4580,La Plata,Buenos Aires,1900
+4581,La Plata,Buenos Aires,1900
+4582,Rosario,Santa Fe,2000
+4583,Rosario,Santa Fe,2000
+4584,La Plata,Buenos Aires,1900
+4585,Mar del Plata,Buenos Aires,7600
+4586,La Plata,Buenos Aires,1900
+4587,Córdoba,Córdoba,5000
+4588,Mar del Plata,Buenos Aires,7600
+4589,San Rafael,Mendoza,5600
+4590,Mendoza,Mendoza,5500
+4591,San Rafael,Mendoza,5600
+4592,La Plata,Buenos Aires,1900
+4593,San Isidro,Buenos Aires,1642
+4594,Córdoba,Córdoba,5000
+4595,Villa Carlos Paz,Córdoba,5152
+4596,Mar del Plata,Buenos Aires,7600
+4597,Quilmes,Buenos Aires,1878
+4598,San Isidro,Buenos Aires,1642
+4599,Bahía Blanca,Buenos Aires,8000
+4600,Mar del Plata,Buenos Aires,7600
+4601,Córdoba,Córdoba,5000
+4602,Bahía Blanca,Buenos Aires,8000
+4603,Córdoba,Córdoba,5000
+4604,Córdoba,Córdoba,5000
+4605,Mendoza,Mendoza,5500
+4606,Córdoba,Córdoba,5000
+4607,La Plata,Buenos Aires,1900
+4608,Rosario,Santa Fe,2000
+4609,Quilmes,Buenos Aires,1878
+4610,Córdoba,Córdoba,5000
+4611,Godoy Cruz,Mendoza,5501
+4612,Mar del Plata,Buenos Aires,7600
+4613,Quilmes,Buenos Aires,1878
+4614,Rosario,Santa Fe,2000
+4615,Mendoza,Mendoza,5500
+4616,La Plata,Buenos Aires,1900
+4617,San Isidro,Buenos Aires,1642
+4618,Mar del Plata,Buenos Aires,7600
+4619,Rafaela,Santa Fe,2300
+4620,San Isidro,Buenos Aires,1642
+4621,Mendoza,Mendoza,5500
+4622,La Plata,Buenos Aires,1900
+4623,Quilmes,Buenos Aires,1878
+4624,Bahía Blanca,Buenos Aires,8000
+4625,Bahía Blanca,Buenos Aires,8000
+4626,Rafaela,Santa Fe,2300
+4627,La Plata,Buenos Aires,1900
+4628,Rosario,Santa Fe,2000
+4629,Mendoza,Mendoza,5500
+4630,Godoy Cruz,Mendoza,5501
+4631,La Plata,Buenos Aires,1900
+4632,Mendoza,Mendoza,5500
+4633,Córdoba,Córdoba,5000
+4634,Rosario,Santa Fe,2000
+4635,Rosario,Santa Fe,2000
+4636,Córdoba,Córdoba,5000
+4637,Rosario,Santa Fe,2000
+4638,Mendoza,Mendoza,5500
+4639,Córdoba,Córdoba,5000
+4640,Villa Carlos Paz,Córdoba,5152
+4641,Córdoba,Córdoba,5000
+4642,Mendoza,Mendoza,5500
+4643,Godoy Cruz,Mendoza,5501
+4644,Santa Fe,Santa Fe,3000
+4645,Mar del Plata,Buenos Aires,7600
+4646,Villa Carlos Paz,Córdoba,5152
+4647,Santa Fe,Santa Fe,3000
+4648,Rosario,Santa Fe,2000
+4649,Mar del Plata,Buenos Aires,7600
+4650,Rosario,Santa Fe,2000
+4651,Quilmes,Buenos Aires,1878
+4652,Rosario,Santa Fe,2000
+4653,Santa Fe,Santa Fe,3000
+4654,Rosario,Santa Fe,2000
+4655,Santa Fe,Santa Fe,3000
+4656,Godoy Cruz,Mendoza,5501
+4657,Godoy Cruz,Mendoza,5501
+4658,Santa Fe,Santa Fe,3000
+4659,Rosario,Santa Fe,2000
+4660,Mar del Plata,Buenos Aires,7600
+4661,San Isidro,Buenos Aires,1642
+4662,Mendoza,Mendoza,5500
+4663,Rafaela,Santa Fe,2300
+4664,Córdoba,Córdoba,5000
+4665,La Plata,Buenos Aires,1900
+4666,Quilmes,Buenos Aires,1878
+4667,Córdoba,Córdoba,5000
+4668,Santa Fe,Santa Fe,3000
+4669,Mar del Plata,Buenos Aires,7600
+4670,Córdoba,Córdoba,5000
+4671,Córdoba,Córdoba,5000
+4672,Rosario,Santa Fe,2000
+4673,Bahía Blanca,Buenos Aires,8000
+4674,Rosario,Santa Fe,2000
+4675,San Isidro,Buenos Aires,1642
+4676,Rosario,Santa Fe,2000
+4677,Villa Carlos Paz,Córdoba,5152
+4678,Córdoba,Córdoba,5000
+4679,Quilmes,Buenos Aires,1878
+4680,La Plata,Buenos Aires,1900
+4681,La Plata,Buenos Aires,1900
+4682,Córdoba,Córdoba,5000
+4683,Mar del Plata,Buenos Aires,7600
+4684,Rosario,Santa Fe,2000
+4685,Río Cuarto,Córdoba,5800
+4686,La Plata,Buenos Aires,1900
+4687,La Plata,Buenos Aires,1900
+4688,Quilmes,Buenos Aires,1878
+4689,Rosario,Santa Fe,2000
+4690,Mendoza,Mendoza,5500
+4691,Mendoza,Mendoza,5500
+4692,Villa Carlos Paz,Córdoba,5152
+4693,Rosario,Santa Fe,2000
+4694,Quilmes,Buenos Aires,1878
+4695,Rafaela,Santa Fe,2300
+4696,Mendoza,Mendoza,5500
+4697,Córdoba,Córdoba,5000
+4698,La Plata,Buenos Aires,1900
+4699,Rosario,Santa Fe,2000
+4700,Santa Fe,Santa Fe,3000
+4701,Mar del Plata,Buenos Aires,7600
+4702,La Plata,Buenos Aires,1900
+4703,San Isidro,Buenos Aires,1642
+4704,Mendoza,Mendoza,5500
+4705,Mendoza,Mendoza,5500
+4706,La Plata,Buenos Aires,1900
+4707,Mar del Plata,Buenos Aires,7600
+4708,Río Cuarto,Córdoba,5800
+4709,Quilmes,Buenos Aires,1878
+4710,Río Cuarto,Córdoba,5800
+4711,Rafaela,Santa Fe,2300
+4712,Córdoba,Córdoba,5000
+4713,Río Cuarto,Córdoba,5800
+4714,La Plata,Buenos Aires,1900
+4715,Mendoza,Mendoza,5500
+4716,Godoy Cruz,Mendoza,5501
+4717,Rafaela,Santa Fe,2300
+4718,Mar del Plata,Buenos Aires,7600
+4719,Villa Carlos Paz,Córdoba,5152
+4720,Rosario,Santa Fe,2000
+4721,Godoy Cruz,Mendoza,5501
+4722,Quilmes,Buenos Aires,1878
+4723,Córdoba,Córdoba,5000
+4724,Mendoza,Mendoza,5500
+4725,Córdoba,Córdoba,5000
+4726,Godoy Cruz,Mendoza,5501
+4727,Quilmes,Buenos Aires,1878
+4728,Córdoba,Córdoba,5000
+4729,Godoy Cruz,Mendoza,5501
+4730,Quilmes,Buenos Aires,1878
+4731,Quilmes,Buenos Aires,1878
+4732,Rosario,Santa Fe,2000
+4733,Río Cuarto,Córdoba,5800
+4734,Mar del Plata,Buenos Aires,7600
+4735,Córdoba,Córdoba,5000
+4736,Santa Fe,Santa Fe,3000
+4737,Córdoba,Córdoba,5000
+4738,San Isidro,Buenos Aires,1642
+4739,Santa Fe,Santa Fe,3000
+4740,Quilmes,Buenos Aires,1878
+4741,San Rafael,Mendoza,5600
+4742,La Plata,Buenos Aires,1900
+4743,Villa Carlos Paz,Córdoba,5152
+4744,Rosario,Santa Fe,2000
+4745,Rosario,Santa Fe,2000
+4746,Córdoba,Córdoba,5000
+4747,Mendoza,Mendoza,5500
+4748,Villa Carlos Paz,Córdoba,5152
+4749,San Isidro,Buenos Aires,1642
+4750,Mar del Plata,Buenos Aires,7600
+4751,Rosario,Santa Fe,2000
+4752,Mendoza,Mendoza,5500
+4753,Mar del Plata,Buenos Aires,7600
+4754,Mendoza,Mendoza,5500
+4755,San Isidro,Buenos Aires,1642
+4756,Córdoba,Córdoba,5000
+4757,Mar del Plata,Buenos Aires,7600
+4758,Villa Carlos Paz,Córdoba,5152
+4759,Godoy Cruz,Mendoza,5501
+4760,Córdoba,Córdoba,5000
+4761,Mendoza,Mendoza,5500
+4762,Mar del Plata,Buenos Aires,7600
+4763,Rafaela,Santa Fe,2300
+4764,San Isidro,Buenos Aires,1642
+4765,Córdoba,Córdoba,5000
+4766,Córdoba,Córdoba,5000
+4767,Río Cuarto,Córdoba,5800
+4768,La Plata,Buenos Aires,1900
+4769,Río Cuarto,Córdoba,5800
+4770,Mar del Plata,Buenos Aires,7600
+4771,Godoy Cruz,Mendoza,5501
+4772,Bahía Blanca,Buenos Aires,8000
+4773,La Plata,Buenos Aires,1900
+4774,Mendoza,Mendoza,5500
+4775,Quilmes,Buenos Aires,1878
+4776,La Plata,Buenos Aires,1900
+4777,Santa Fe,Santa Fe,3000
+4778,Rosario,Santa Fe,2000
+4779,Rosario,Santa Fe,2000
+4780,Córdoba,Córdoba,5000
+4781,Villa Carlos Paz,Córdoba,5152
+4782,Río Cuarto,Córdoba,5800
+4783,Mendoza,Mendoza,5500
+4784,Godoy Cruz,Mendoza,5501
+4785,Mendoza,Mendoza,5500
+4786,La Plata,Buenos Aires,1900
+4787,Mar del Plata,Buenos Aires,7600
+4788,Santa Fe,Santa Fe,3000
+4789,Quilmes,Buenos Aires,1878
+4790,Quilmes,Buenos Aires,1878
+4791,San Isidro,Buenos Aires,1642
+4792,Rosario,Santa Fe,2000
+4793,Río Cuarto,Córdoba,5800
+4794,La Plata,Buenos Aires,1900
+4795,San Rafael,Mendoza,5600
+4796,Mar del Plata,Buenos Aires,7600
+4797,Bahía Blanca,Buenos Aires,8000
+4798,Mendoza,Mendoza,5500
+4799,Córdoba,Córdoba,5000
+4800,La Plata,Buenos Aires,1900
+4801,Godoy Cruz,Mendoza,5501
+4802,Córdoba,Córdoba,5000
+4803,Quilmes,Buenos Aires,1878
+4804,Córdoba,Córdoba,5000
+4805,Bahía Blanca,Buenos Aires,8000
+4806,La Plata,Buenos Aires,1900
+4807,Rosario,Santa Fe,2000
+4808,Rafaela,Santa Fe,2300
+4809,Rosario,Santa Fe,2000
+4810,Mar del Plata,Buenos Aires,7600
+4811,Quilmes,Buenos Aires,1878
+4812,Córdoba,Córdoba,5000
+4813,Córdoba,Córdoba,5000
+4814,Mendoza,Mendoza,5500
+4815,San Isidro,Buenos Aires,1642
+4816,Rosario,Santa Fe,2000
+4817,Quilmes,Buenos Aires,1878
+4818,Rosario,Santa Fe,2000
+4819,Mendoza,Mendoza,5500
+4820,Córdoba,Córdoba,5000
+4821,Córdoba,Córdoba,5000
+4822,Córdoba,Córdoba,5000
+4823,Mar del Plata,Buenos Aires,7600
+4824,San Isidro,Buenos Aires,1642
+4825,Santa Fe,Santa Fe,3000
