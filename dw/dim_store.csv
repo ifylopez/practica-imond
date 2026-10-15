@@ -1,5 +1,6 @@
-store_id,name,city,province
-1,Tienda BA,La Plata,Buenos Aires
-2,Tienda CBA,Córdoba,Córdoba
-3,Tienda SF,Rosario,Santa Fe
-4,Tienda MZA,Mendoza,Mendoza
+store_key,store_id,name,city,province
+-1,,Sin tienda (online),,
+1,1,Tienda BA,La Plata,Buenos Aires
+2,2,Tienda CBA,Córdoba,Córdoba
+3,3,Tienda SF,Rosario,Santa Fe
+4,4,Tienda MZA,Mendoza,Mendoza
