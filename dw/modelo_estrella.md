@@ -5,6 +5,7 @@ Generado por `run_sql.py` a partir de las tablas de `warehouse.duckdb`.
 ```mermaid
 erDiagram
     dim_address ||--o{ fact_sales_order : "shipping_address_id"
+    dim_address ||--o{ fact_sales_order_item : "shipping_address_id"
     dim_channel ||--o{ fact_nps_response : "channel_id"
     dim_channel ||--o{ fact_sales_order : "channel_id"
     dim_channel ||--o{ fact_sales_order_item : "channel_id"
@@ -98,6 +99,7 @@ erDiagram
         INTEGER date_key FK
         INTEGER customer_id FK
         INTEGER channel_id FK
+        INTEGER shipping_address_id FK
         BOOLEAN is_sale
         INTEGER quantity
         DECIMAL unit_price
