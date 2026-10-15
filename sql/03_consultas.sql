@@ -48,3 +48,84 @@ SELECT c.code AS canal, COUNT(*) AS pedidos, COUNT(f.store_id) AS con_tienda
 FROM fact_sales_order AS f
 JOIN dim_channel AS c ON c.channel_id = f.channel_id
 GROUP BY c.code;
+
+-- =====================================================================
+-- KPIs (solo desde el data warehouse)
+-- =====================================================================
+
+-- K1. VENTAS por mes ($M) — pedidos PAID o FULFILLED
+SELECT
+    d.year,
+    d.month,
+    ROUND(SUM(f.total_amount) / 1e6, 2) AS ventas_millones
+FROM fact_sales_order AS f
+JOIN dim_date AS d ON d.date_key = f.date_key
+WHERE f.is_sale
+GROUP BY d.year, d.month
+ORDER BY d.year, d.month;
+
+-- K2. USUARIOS ACTIVOS por mes (nK)
+SELECT
+    d.year,
+    d.month,
+    COUNT(DISTINCT f.customer_id)                     AS usuarios_activos,
+    COUNT(*) FILTER (WHERE f.customer_id IS NULL)     AS sesiones_anonimas
+FROM fact_web_session AS f
+JOIN dim_date AS d ON d.date_key = f.date_key
+GROUP BY d.year, d.month
+ORDER BY d.year, d.month;
+
+-- K3. TICKET PROMEDIO por mes ($K)  ← TU TURNO
+SELECT
+    d.year,
+    d.month,
+    COUNT(*)                                          AS pedidos,
+    ROUND(SUM(f.total_amount) / COUNT(*) / 1e3, 1)    AS ticket_promedio_miles
+FROM fact_sales_order AS f
+JOIN dim_date AS d ON d.date_key = f.date_key
+WHERE f.is_sale
+GROUP BY d.year, d.month
+ORDER BY d.year, d.month;
+
+
+-- K4. NPS por mes y canal
+SELECT
+    d.year,
+    d.month,
+    c.code AS canal,
+    COUNT(*) AS respuestas,
+    ROUND((SUM(f.is_promoter) - SUM(f.is_detractor)) * 100.0 / COUNT(*), 1) AS nps
+FROM fact_nps_response AS f
+JOIN dim_date    AS d ON d.date_key   = f.date_key
+JOIN dim_channel AS c ON c.channel_id = f.channel_id
+GROUP BY d.year, d.month, c.code
+ORDER BY d.year, d.month, c.code;
+
+-- K5. VENTAS POR PROVINCIA (total del período)
+SELECT
+    a.province,
+    ROUND(SUM(f.total_amount) / 1e6, 2) AS ventas_millones,
+    ROUND(SUM(f.total_amount) * 100.0 / SUM(SUM(f.total_amount)) OVER (), 1) AS porcentaje
+FROM fact_sales_order AS f
+JOIN dim_address AS a ON a.address_id = f.shipping_address_id
+WHERE f.is_sale
+GROUP BY a.province
+ORDER BY ventas_millones DESC;
+
+-- K6. RANKING MENSUAL POR PRODUCTO
+SELECT
+    d.year,
+    d.month,
+    p.name AS producto,
+    SUM(f.quantity)                       AS unidades,
+    ROUND(SUM(f.line_total) / 1e6, 2)     AS ventas_millones,
+    RANK() OVER (
+        PARTITION BY d.year, d.month
+        ORDER BY SUM(f.line_total) DESC
+    ) AS ranking
+FROM fact_sales_order_item AS f
+JOIN dim_date    AS d ON d.date_key    = f.date_key
+JOIN dim_product AS p ON p.product_key = f.product_key
+WHERE f.is_sale
+GROUP BY d.year, d.month, p.name
+ORDER BY d.year, d.month, ranking;
