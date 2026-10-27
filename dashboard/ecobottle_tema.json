@@ -1,0 +1,79 @@
+{
+  "name": "EcoBottle Noche",
+  "dataColors": [
+    "#B9A7F2",
+    "#5FD3C6",
+    "#7AA7FF",
+    "#F2A7C8",
+    "#F4D58D",
+    "#9EE493",
+    "#8C7AE6",
+    "#4FB3BF"
+  ],
+  "foreground": "#F2F0FF",
+  "tableAccent": "#B9A7F2",
+  "good": "#5FD3C6",
+  "neutral": "#F4D58D",
+  "bad": "#F28B8B",
+  "textClasses": {
+    "callout": { "fontSize": 26, "fontFace": "Segoe UI Semibold", "color": "#FFFFFF" },
+    "title":   { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#FFFFFF" },
+    "header":  { "fontSize": 11, "fontFace": "Segoe UI Semibold", "color": "#FFFFFF" },
+    "label":   { "fontSize": 10, "fontFace": "Segoe UI", "color": "#D9D4F5" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          { "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 88 }
+        ],
+        "border": [
+          { "show": true, "color": { "solid": { "color": "#C9BFFF" } }, "radius": 10 }
+        ],
+        "dropShadow": [ { "show": false } ],
+        "title": [
+          { "show": true, "fontColor": { "solid": { "color": "#FFFFFF" } }, "fontSize": 12 }
+        ],
+        "subTitle": [
+          { "fontColor": { "solid": { "color": "#C9C3E8" } } }
+        ],
+        "categoryAxis": [
+          { "labelColor": { "solid": { "color": "#D9D4F5" } }, "gridlineShow": false }
+        ],
+        "valueAxis": [
+          { "labelColor": { "solid": { "color": "#D9D4F5" } }, "gridlineColor": { "solid": { "color": "#5A5E85" } } }
+        ],
+        "legend": [
+          { "labelColor": { "solid": { "color": "#D9D4F5" } } }
+        ],
+        "labels": [
+          { "color": { "solid": { "color": "#FFFFFF" } } }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [ { "color": { "solid": { "color": "#FFFFFF" } }, "fontSize": 26 } ],
+        "categoryLabels": [ { "color": { "solid": { "color": "#C9C3E8" } } } ]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "columnHeaders": [
+          { "fontColor": { "solid": { "color": "#FFFFFF" } }, "backColor": { "solid": { "color": "#3A3566" } } }
+        ],
+        "rowHeaders": [
+          { "fontColor": { "solid": { "color": "#F2F0FF" } }, "backColor": { "solid": { "color": "#2B2F55" } } }
+        ],
+        "values": [
+          {
+            "fontColorPrimary": { "solid": { "color": "#F2F0FF" } },
+            "backColorPrimary": { "solid": { "color": "#2B2F55" } },
+            "fontColorSecondary": { "solid": { "color": "#F2F0FF" } },
+            "backColorSecondary": { "solid": { "color": "#323661" } }
+          }
+        ]
+      }
+    }
+  }
+}
