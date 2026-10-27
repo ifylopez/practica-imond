@@ -133,6 +133,8 @@ Las 4 de atributos (estado del pedido, pago, estado del envío, tráfico) sacan 
 hechos los atributos descriptivos que antes quedaban como texto suelto. El diagrama completo se genera en
 [`dw/modelo_estrella.md`](dw/modelo_estrella.md).
 
+En el diagrama, las tablas `mart_*` y `filtro_*` aparecen sin relaciones: son la capa de presentación, derivada de los hechos con `CREATE TABLE ... AS SELECT`, y sus relaciones se definen en Power BI.
+
 ### Granos
 
 | Hecho | Grano: una fila representa… | Tipo |
