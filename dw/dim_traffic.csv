@@ -1,0 +1,14 @@
+traffic_key,source,source_desc,device
+-1,,Desconocido,
+1,ads,Publicidad en redes,desktop
+2,ads,Publicidad en redes,mobile
+3,ads,Publicidad en redes,tablet
+4,direct,Directo / newsletter,desktop
+5,direct,Directo / newsletter,mobile
+6,direct,Directo / newsletter,tablet
+7,organic,Buscadores,desktop
+8,organic,Buscadores,mobile
+9,organic,Buscadores,tablet
+10,referral,Otro sitio / newsletter,desktop
+11,referral,Otro sitio / newsletter,mobile
+12,referral,Otro sitio / newsletter,tablet

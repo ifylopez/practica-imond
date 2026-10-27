@@ -1,0 +1,13 @@
+payment_key,method,method_desc,payment_status,status_desc
+-1,,Sin pago,,Sin pago
+1,CARD,Tarjeta,FAILED,Rechazado
+2,CARD,Tarjeta,PAID,Pagado
+3,CARD,Tarjeta,REFUNDED,Reembolsado
+4,CASH,Efectivo,PAID,Pagado
+5,CASH,Efectivo,REFUNDED,Reembolsado
+6,GATEWAY,Pasarela de pago,FAILED,Rechazado
+7,GATEWAY,Pasarela de pago,PAID,Pagado
+8,GATEWAY,Pasarela de pago,PENDING,Pendiente
+9,GATEWAY,Pasarela de pago,REFUNDED,Reembolsado
+10,TRANSFER,Transferencia,PAID,Pagado
+11,TRANSFER,Transferencia,REFUNDED,Reembolsado

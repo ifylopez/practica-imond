@@ -47,7 +47,17 @@ GROUP BY c.code;
 -- V5. ¿Cuántas filas apuntan al miembro "Desconocido" (-1)? (informativo)
 SELECT 'pedidos sin dirección'  AS caso, COUNT(*) AS filas FROM fact_sales_order  WHERE shipping_address_key = -1
 UNION ALL SELECT 'sesiones anónimas',   COUNT(*) FROM fact_web_session  WHERE customer_key = -1
-UNION ALL SELECT 'respuestas NPS anónimas', COUNT(*) FROM fact_nps_response WHERE customer_key = -1;
+UNION ALL SELECT 'respuestas NPS anónimas', COUNT(*) FROM fact_nps_response WHERE customer_key = -1
+UNION ALL SELECT 'pedidos sin pago',        COUNT(*) FROM fact_sales_order  WHERE payment_key = -1
+UNION ALL SELECT 'pedidos sin envío',       COUNT(*) FROM fact_sales_order  WHERE shipment_status_key = -1
+UNION ALL SELECT 'sesiones sin fuente',     COUNT(*) FROM fact_web_session  WHERE traffic_key = -1;
+
+-- V6. ¿Pago concretado <=> venta? (las dos columnas tienen que dar igual)
+SELECT
+    COUNT(*) FILTER (WHERE f.is_sale)                    AS ventas,
+    COUNT(*) FILTER (WHERE p.payment_status = 'PAID')    AS pagos_concretados
+FROM fact_sales_order AS f
+JOIN dim_payment AS p ON p.payment_key = f.payment_key;
 
 
 -- =====================================================================
@@ -129,3 +139,56 @@ JOIN dim_product AS p ON p.product_key = f.product_key
 WHERE f.is_sale
 GROUP BY d.year, d.month, p.name
 ORDER BY d.year, d.month, ranking;
+
+
+-- =====================================================================
+-- CONSULTAS ADICIONALES (con las dimensiones de atributos)
+-- =====================================================================
+
+-- A1. Embudo de estados del pedido
+SELECT
+    s.status_desc                                         AS estado,
+    COUNT(*)                                              AS pedidos,
+    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1)   AS porcentaje
+FROM fact_sales_order AS f
+JOIN dim_order_status AS s ON s.order_status_key = f.order_status_key
+GROUP BY s.status_desc, s.sort_order
+ORDER BY s.sort_order;
+
+-- A2. Mix de medios de pago por canal (solo ventas)
+SELECT
+    c.code          AS canal,
+    p.method_desc   AS medio_de_pago,
+    COUNT(*)        AS ventas,
+    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY c.code), 1) AS porcentaje_del_canal
+FROM fact_sales_order AS f
+JOIN dim_channel AS c ON c.channel_key = f.channel_key
+JOIN dim_payment AS p ON p.payment_key = f.payment_key
+WHERE f.is_sale
+GROUP BY c.code, p.method_desc
+ORDER BY c.code, ventas DESC;
+
+-- A3. Tráfico web por fuente y dispositivo
+SELECT
+    t.source_desc   AS fuente,
+    t.device        AS dispositivo,
+    COUNT(*)        AS sesiones,
+    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS porcentaje
+FROM fact_web_session AS f
+JOIN dim_traffic AS t ON t.traffic_key = f.traffic_key
+GROUP BY t.source_desc, t.device
+ORDER BY sesiones DESC;
+
+-- A4. Los 93 pedidos cancelados con pago reembolsado: ¿tuvieron envío cancelado?
+SELECT
+    s.status_desc   AS estado_pedido,
+    p.status_desc   AS estado_pago,
+    e.status_desc   AS estado_envio,
+    COUNT(*)        AS pedidos
+FROM fact_sales_order AS f
+JOIN dim_order_status    AS s ON s.order_status_key    = f.order_status_key
+JOIN dim_payment         AS p ON p.payment_key         = f.payment_key
+JOIN dim_shipment_status AS e ON e.shipment_status_key = f.shipment_status_key
+WHERE s.status = 'CANCELLED'
+GROUP BY s.status_desc, p.status_desc, e.status_desc
+ORDER BY pedidos DESC;

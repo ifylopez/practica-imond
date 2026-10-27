@@ -17,8 +17,12 @@ erDiagram
     dim_date ||--o{ fact_sales_order : "date_key"
     dim_date ||--o{ fact_sales_order_item : "date_key"
     dim_date ||--o{ fact_web_session : "date_key"
+    dim_order_status ||--o{ fact_sales_order : "order_status_key"
+    dim_payment ||--o{ fact_sales_order : "payment_key"
     dim_product ||--o{ fact_sales_order_item : "product_key"
+    dim_shipment_status ||--o{ fact_sales_order : "shipment_status_key"
     dim_store ||--o{ fact_sales_order : "store_key"
+    dim_traffic ||--o{ fact_web_session : "traffic_key"
     dim_address {
         INTEGER address_key PK
         INTEGER address_id
@@ -59,6 +63,20 @@ erDiagram
         VARCHAR weekday_name
         BOOLEAN is_weekend
     }
+    dim_order_status {
+        INTEGER order_status_key PK
+        VARCHAR status
+        VARCHAR status_desc
+        BOOLEAN is_sale
+        INTEGER sort_order
+    }
+    dim_payment {
+        INTEGER payment_key PK
+        VARCHAR method
+        VARCHAR method_desc
+        VARCHAR payment_status
+        VARCHAR status_desc
+    }
     dim_product {
         INTEGER product_key PK
         INTEGER product_id
@@ -68,12 +86,23 @@ erDiagram
         VARCHAR family
         DECIMAL list_price
     }
+    dim_shipment_status {
+        INTEGER shipment_status_key PK
+        VARCHAR status
+        VARCHAR status_desc
+    }
     dim_store {
         INTEGER store_key PK
         INTEGER store_id
         VARCHAR name
         VARCHAR city
         VARCHAR province
+    }
+    dim_traffic {
+        INTEGER traffic_key PK
+        VARCHAR source
+        VARCHAR source_desc
+        VARCHAR device
     }
     fact_nps_response {
         BIGINT nps_id PK
@@ -92,17 +121,16 @@ erDiagram
         INTEGER channel_key FK
         INTEGER store_key FK
         INTEGER shipping_address_key FK
+        INTEGER order_status_key FK
+        INTEGER payment_key FK
+        INTEGER shipment_status_key FK
         TIMESTAMP order_date
-        VARCHAR status
         BOOLEAN is_sale
         DECIMAL subtotal
         DECIMAL tax_amount
         DECIMAL shipping_fee
         DECIMAL total_amount
-        VARCHAR payment_method
-        VARCHAR payment_status
         TIMESTAMP paid_at
-        VARCHAR shipment_status
         TIMESTAMP shipped_at
         TIMESTAMP delivered_at
     }
@@ -124,10 +152,9 @@ erDiagram
         BIGINT session_id PK
         INTEGER date_key FK
         INTEGER customer_key FK
+        INTEGER traffic_key FK
         TIMESTAMP started_at
         TIMESTAMP ended_at
-        VARCHAR source
-        VARCHAR device
     }
     filtro_canal {
         VARCHAR canal

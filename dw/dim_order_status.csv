@@ -1,0 +1,6 @@
+order_status_key,status,status_desc,is_sale,sort_order
+1,CREATED,Creado (sin pagar),false,1
+2,PAID,Pagado (sin entregar),true,2
+3,FULFILLED,Entregado,true,3
+4,CANCELLED,Cancelado,false,4
+5,REFUNDED,Reembolsado,false,5

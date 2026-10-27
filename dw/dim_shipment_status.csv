@@ -1,0 +1,6 @@
+shipment_status_key,status,status_desc
+-1,,Sin envío
+1,READY,En preparación
+2,SHIPPED,En viaje
+3,DELIVERED,Entregado
+4,CANCELLED,Cancelado
