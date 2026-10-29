@@ -1,0 +1,224 @@
+mes,canal,provincia,estado_envio,envios,entregados,dias_entrega_suma,entregas_mas_7_dias
+2024-01-01,OFFLINE,Buenos Aires,Entregado,4,4,15,0
+2024-01-01,OFFLINE,Córdoba,Entregado,2,2,8,0
+2024-01-01,OFFLINE,Mendoza,Entregado,4,4,12,0
+2024-01-01,OFFLINE,Santa Fe,Entregado,1,1,4,0
+2024-01-01,ONLINE,Buenos Aires,Cancelado,3,0,,0
+2024-01-01,ONLINE,Buenos Aires,Entregado,96,96,317,0
+2024-01-01,ONLINE,Córdoba,Cancelado,2,0,,0
+2024-01-01,ONLINE,Córdoba,Entregado,64,64,384,8
+2024-01-01,ONLINE,Mendoza,Entregado,30,30,151,1
+2024-01-01,ONLINE,Santa Fe,Entregado,72,72,363,1
+2024-02-01,OFFLINE,Buenos Aires,Entregado,6,6,24,0
+2024-02-01,OFFLINE,Córdoba,Entregado,1,1,4,0
+2024-02-01,OFFLINE,Mendoza,Entregado,3,3,11,0
+2024-02-01,OFFLINE,Santa Fe,Entregado,6,6,23,0
+2024-02-01,ONLINE,Buenos Aires,Cancelado,3,0,,0
+2024-02-01,ONLINE,Buenos Aires,Entregado,110,110,384,0
+2024-02-01,ONLINE,Córdoba,Entregado,82,82,453,13
+2024-02-01,ONLINE,Mendoza,Entregado,40,40,224,4
+2024-02-01,ONLINE,Santa Fe,Cancelado,3,0,,0
+2024-02-01,ONLINE,Santa Fe,Entregado,63,63,337,5
+2024-03-01,OFFLINE,Buenos Aires,Entregado,3,3,7,0
+2024-03-01,OFFLINE,Córdoba,Entregado,2,2,4,0
+2024-03-01,OFFLINE,Mendoza,Entregado,5,5,20,0
+2024-03-01,OFFLINE,Santa Fe,Entregado,2,2,6,0
+2024-03-01,ONLINE,Buenos Aires,Entregado,115,115,394,0
+2024-03-01,ONLINE,Córdoba,Entregado,54,54,295,7
+2024-03-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2024-03-01,ONLINE,Mendoza,Entregado,31,31,179,5
+2024-03-01,ONLINE,Santa Fe,Cancelado,4,0,,0
+2024-03-01,ONLINE,Santa Fe,Entregado,62,62,324,3
+2024-04-01,OFFLINE,Buenos Aires,Entregado,3,3,9,0
+2024-04-01,OFFLINE,Córdoba,Entregado,3,3,13,0
+2024-04-01,OFFLINE,Santa Fe,Entregado,1,1,2,0
+2024-04-01,ONLINE,Buenos Aires,Cancelado,1,0,,0
+2024-04-01,ONLINE,Buenos Aires,Entregado,107,107,392,0
+2024-04-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2024-04-01,ONLINE,Córdoba,Entregado,51,51,293,10
+2024-04-01,ONLINE,Mendoza,Entregado,33,33,174,4
+2024-04-01,ONLINE,Santa Fe,Cancelado,2,0,,0
+2024-04-01,ONLINE,Santa Fe,Entregado,62,62,360,11
+2024-05-01,OFFLINE,Buenos Aires,Entregado,6,6,20,0
+2024-05-01,OFFLINE,Mendoza,Entregado,2,2,5,0
+2024-05-01,OFFLINE,Santa Fe,Entregado,1,1,5,0
+2024-05-01,ONLINE,Buenos Aires,Cancelado,1,0,,0
+2024-05-01,ONLINE,Buenos Aires,Entregado,125,125,484,1
+2024-05-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2024-05-01,ONLINE,Córdoba,Entregado,62,62,377,13
+2024-05-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2024-05-01,ONLINE,Mendoza,Entregado,41,41,252,5
+2024-05-01,ONLINE,Santa Fe,Cancelado,1,0,,0
+2024-05-01,ONLINE,Santa Fe,Entregado,71,71,396,9
+2024-06-01,OFFLINE,Buenos Aires,Entregado,3,3,25,2
+2024-06-01,OFFLINE,Córdoba,Entregado,2,2,6,0
+2024-06-01,OFFLINE,Mendoza,Entregado,1,1,5,0
+2024-06-01,OFFLINE,Santa Fe,Entregado,3,3,5,0
+2024-06-01,ONLINE,Buenos Aires,Entregado,127,127,474,6
+2024-06-01,ONLINE,Córdoba,Entregado,65,65,372,8
+2024-06-01,ONLINE,Mendoza,Entregado,47,47,273,7
+2024-06-01,ONLINE,Santa Fe,Entregado,75,75,427,7
+2024-07-01,OFFLINE,Buenos Aires,Entregado,3,3,22,2
+2024-07-01,OFFLINE,Córdoba,Entregado,1,1,10,1
+2024-07-01,OFFLINE,Mendoza,Entregado,4,4,35,3
+2024-07-01,OFFLINE,Santa Fe,Entregado,4,4,32,2
+2024-07-01,ONLINE,Buenos Aires,Cancelado,1,0,,0
+2024-07-01,ONLINE,Buenos Aires,Entregado,95,95,777,63
+2024-07-01,ONLINE,Córdoba,Entregado,38,38,384,32
+2024-07-01,ONLINE,Mendoza,Entregado,27,27,276,25
+2024-07-01,ONLINE,Santa Fe,Cancelado,1,0,,0
+2024-07-01,ONLINE,Santa Fe,Entregado,56,56,577,48
+2024-08-01,OFFLINE,Buenos Aires,Entregado,2,2,14,1
+2024-08-01,OFFLINE,Córdoba,Entregado,3,3,22,1
+2024-08-01,OFFLINE,Mendoza,Entregado,3,3,29,2
+2024-08-01,OFFLINE,Santa Fe,Entregado,4,4,32,2
+2024-08-01,ONLINE,Buenos Aires,Entregado,123,123,1001,69
+2024-08-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2024-08-01,ONLINE,Córdoba,Entregado,58,58,576,49
+2024-08-01,ONLINE,Mendoza,Entregado,24,24,228,21
+2024-08-01,ONLINE,Santa Fe,Cancelado,2,0,,0
+2024-08-01,ONLINE,Santa Fe,Entregado,59,59,591,52
+2024-09-01,OFFLINE,Buenos Aires,Entregado,5,5,18,0
+2024-09-01,OFFLINE,Córdoba,Entregado,2,2,8,0
+2024-09-01,OFFLINE,Mendoza,Entregado,4,4,9,0
+2024-09-01,ONLINE,Buenos Aires,Cancelado,2,0,,0
+2024-09-01,ONLINE,Buenos Aires,Entregado,105,105,351,0
+2024-09-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2024-09-01,ONLINE,Córdoba,Entregado,58,58,292,3
+2024-09-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2024-09-01,ONLINE,Mendoza,Entregado,28,28,154,1
+2024-09-01,ONLINE,Santa Fe,Entregado,65,65,310,1
+2024-10-01,OFFLINE,Buenos Aires,Entregado,3,3,8,0
+2024-10-01,OFFLINE,Córdoba,Entregado,2,2,7,0
+2024-10-01,OFFLINE,Mendoza,Entregado,2,2,5,0
+2024-10-01,OFFLINE,Santa Fe,Entregado,5,5,18,0
+2024-10-01,ONLINE,Buenos Aires,Cancelado,3,0,,0
+2024-10-01,ONLINE,Buenos Aires,Entregado,119,119,402,0
+2024-10-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2024-10-01,ONLINE,Córdoba,Entregado,75,75,424,8
+2024-10-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2024-10-01,ONLINE,Mendoza,Entregado,51,51,291,7
+2024-10-01,ONLINE,Santa Fe,Cancelado,3,0,,0
+2024-10-01,ONLINE,Santa Fe,Entregado,82,82,433,3
+2024-11-01,OFFLINE,Buenos Aires,Entregado,2,2,9,0
+2024-11-01,OFFLINE,Córdoba,Entregado,2,2,10,0
+2024-11-01,OFFLINE,Mendoza,Entregado,4,4,14,0
+2024-11-01,OFFLINE,Santa Fe,Entregado,3,3,18,0
+2024-11-01,ONLINE,Buenos Aires,Cancelado,2,0,,0
+2024-11-01,ONLINE,Buenos Aires,Entregado,159,159,636,1
+2024-11-01,ONLINE,Córdoba,Cancelado,2,0,,0
+2024-11-01,ONLINE,Córdoba,Entregado,89,89,552,14
+2024-11-01,ONLINE,Mendoza,Entregado,53,53,316,7
+2024-11-01,ONLINE,Santa Fe,Cancelado,4,0,,0
+2024-11-01,ONLINE,Santa Fe,Entregado,72,72,426,12
+2024-12-01,OFFLINE,Buenos Aires,Entregado,3,3,20,0
+2024-12-01,OFFLINE,Córdoba,Entregado,7,7,31,0
+2024-12-01,OFFLINE,Mendoza,Entregado,2,2,13,0
+2024-12-01,OFFLINE,Santa Fe,Entregado,2,2,16,1
+2024-12-01,ONLINE,Buenos Aires,Cancelado,1,0,,0
+2024-12-01,ONLINE,Buenos Aires,Entregado,220,220,1103,19
+2024-12-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2024-12-01,ONLINE,Córdoba,Entregado,93,93,697,42
+2024-12-01,ONLINE,Mendoza,Cancelado,4,0,,0
+2024-12-01,ONLINE,Mendoza,Entregado,70,70,484,29
+2024-12-01,ONLINE,Santa Fe,Cancelado,1,0,,0
+2024-12-01,ONLINE,Santa Fe,Entregado,111,111,810,52
+2025-01-01,OFFLINE,Buenos Aires,Entregado,4,4,13,0
+2025-01-01,OFFLINE,Córdoba,Entregado,3,3,13,0
+2025-01-01,OFFLINE,Mendoza,Entregado,2,2,9,0
+2025-01-01,OFFLINE,Santa Fe,Entregado,4,4,14,0
+2025-01-01,ONLINE,Buenos Aires,Cancelado,2,0,,0
+2025-01-01,ONLINE,Buenos Aires,Entregado,145,145,492,0
+2025-01-01,ONLINE,Córdoba,Entregado,75,75,419,5
+2025-01-01,ONLINE,Mendoza,Cancelado,2,0,,0
+2025-01-01,ONLINE,Mendoza,Entregado,50,50,266,1
+2025-01-01,ONLINE,Santa Fe,Cancelado,1,0,,0
+2025-01-01,ONLINE,Santa Fe,Entregado,71,71,379,4
+2025-02-01,OFFLINE,Buenos Aires,Entregado,4,4,16,0
+2025-02-01,OFFLINE,Córdoba,Entregado,3,3,9,0
+2025-02-01,OFFLINE,Mendoza,Entregado,2,2,8,0
+2025-02-01,OFFLINE,Santa Fe,Entregado,2,2,8,0
+2025-02-01,ONLINE,Buenos Aires,Cancelado,1,0,,0
+2025-02-01,ONLINE,Buenos Aires,Entregado,156,156,542,0
+2025-02-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2025-02-01,ONLINE,Córdoba,Entregado,76,76,433,7
+2025-02-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2025-02-01,ONLINE,Mendoza,Entregado,50,50,275,3
+2025-02-01,ONLINE,Santa Fe,Entregado,69,69,360,3
+2025-03-01,OFFLINE,Buenos Aires,Entregado,9,9,29,0
+2025-03-01,OFFLINE,Córdoba,Entregado,3,3,11,0
+2025-03-01,OFFLINE,Mendoza,Entregado,3,3,7,0
+2025-03-01,OFFLINE,Santa Fe,Entregado,1,1,3,0
+2025-03-01,ONLINE,Buenos Aires,Cancelado,4,0,,0
+2025-03-01,ONLINE,Buenos Aires,Entregado,145,145,511,1
+2025-03-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2025-03-01,ONLINE,Córdoba,Entregado,68,68,372,6
+2025-03-01,ONLINE,Mendoza,Entregado,66,66,345,4
+2025-03-01,ONLINE,Santa Fe,Cancelado,1,0,,0
+2025-03-01,ONLINE,Santa Fe,Entregado,70,70,362,5
+2025-04-01,OFFLINE,Buenos Aires,Entregado,4,4,12,0
+2025-04-01,OFFLINE,Córdoba,Entregado,1,1,4,0
+2025-04-01,OFFLINE,Mendoza,Entregado,1,1,2,0
+2025-04-01,OFFLINE,Santa Fe,Entregado,2,2,8,0
+2025-04-01,ONLINE,Buenos Aires,Cancelado,3,0,,0
+2025-04-01,ONLINE,Buenos Aires,Entregado,136,136,488,0
+2025-04-01,ONLINE,Córdoba,Cancelado,4,0,,0
+2025-04-01,ONLINE,Córdoba,Entregado,72,72,452,16
+2025-04-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2025-04-01,ONLINE,Mendoza,Entregado,35,35,195,6
+2025-04-01,ONLINE,Santa Fe,Cancelado,1,0,,0
+2025-04-01,ONLINE,Santa Fe,Entregado,80,80,445,8
+2025-05-01,OFFLINE,Buenos Aires,Entregado,5,5,15,0
+2025-05-01,OFFLINE,Córdoba,Entregado,5,5,22,0
+2025-05-01,OFFLINE,Mendoza,Entregado,2,2,5,0
+2025-05-01,ONLINE,Buenos Aires,Cancelado,3,0,,0
+2025-05-01,ONLINE,Buenos Aires,Entregado,181,181,727,3
+2025-05-01,ONLINE,Córdoba,Entregado,85,85,541,21
+2025-05-01,ONLINE,Mendoza,Entregado,53,53,321,10
+2025-05-01,ONLINE,Santa Fe,Cancelado,2,0,,0
+2025-05-01,ONLINE,Santa Fe,Entregado,84,84,492,13
+2025-06-01,OFFLINE,Buenos Aires,Entregado,4,4,11,0
+2025-06-01,OFFLINE,Córdoba,Entregado,5,5,17,0
+2025-06-01,OFFLINE,Santa Fe,Entregado,5,5,16,0
+2025-06-01,ONLINE,Buenos Aires,Cancelado,2,0,,0
+2025-06-01,ONLINE,Buenos Aires,Entregado,135,135,452,0
+2025-06-01,ONLINE,Córdoba,Entregado,66,66,339,5
+2025-06-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2025-06-01,ONLINE,Mendoza,Entregado,60,60,291,2
+2025-06-01,ONLINE,Santa Fe,Entregado,75,75,374,4
+2025-07-01,OFFLINE,Buenos Aires,Entregado,1,1,2,0
+2025-07-01,OFFLINE,Córdoba,Entregado,3,3,11,0
+2025-07-01,OFFLINE,Mendoza,Entregado,3,3,10,0
+2025-07-01,OFFLINE,Santa Fe,Entregado,2,2,8,0
+2025-07-01,ONLINE,Buenos Aires,Cancelado,1,0,,0
+2025-07-01,ONLINE,Buenos Aires,Entregado,122,122,459,0
+2025-07-01,ONLINE,Córdoba,Cancelado,1,0,,0
+2025-07-01,ONLINE,Córdoba,Entregado,51,51,282,4
+2025-07-01,ONLINE,Mendoza,Entregado,41,41,212,3
+2025-07-01,ONLINE,Santa Fe,Entregado,64,64,348,6
+2025-08-01,OFFLINE,Buenos Aires,Entregado,4,4,9,0
+2025-08-01,OFFLINE,Córdoba,Entregado,1,1,3,0
+2025-08-01,OFFLINE,Mendoza,Entregado,3,3,12,0
+2025-08-01,OFFLINE,Santa Fe,Entregado,4,4,12,0
+2025-08-01,ONLINE,Buenos Aires,Entregado,142,142,475,0
+2025-08-01,ONLINE,Córdoba,Cancelado,2,0,,0
+2025-08-01,ONLINE,Córdoba,Entregado,82,82,462,7
+2025-08-01,ONLINE,Mendoza,Entregado,48,48,266,6
+2025-08-01,ONLINE,Santa Fe,Entregado,81,81,432,5
+2025-09-01,OFFLINE,Buenos Aires,En preparación,1,0,,0
+2025-09-01,OFFLINE,Córdoba,Entregado,1,1,2,0
+2025-09-01,OFFLINE,Santa Fe,Entregado,2,2,5,0
+2025-09-01,ONLINE,Buenos Aires,Cancelado,1,0,,0
+2025-09-01,ONLINE,Buenos Aires,En preparación,4,0,,0
+2025-09-01,ONLINE,Buenos Aires,En viaje,13,0,,0
+2025-09-01,ONLINE,Buenos Aires,Entregado,116,116,389,0
+2025-09-01,ONLINE,Córdoba,En preparación,1,0,,0
+2025-09-01,ONLINE,Córdoba,En viaje,18,0,,0
+2025-09-01,ONLINE,Córdoba,Entregado,66,66,368,7
+2025-09-01,ONLINE,Mendoza,Cancelado,1,0,,0
+2025-09-01,ONLINE,Mendoza,En preparación,2,0,,0
+2025-09-01,ONLINE,Mendoza,En viaje,7,0,,0
+2025-09-01,ONLINE,Mendoza,Entregado,41,41,222,1
+2025-09-01,ONLINE,Santa Fe,En preparación,1,0,,0
+2025-09-01,ONLINE,Santa Fe,En viaje,13,0,,0
+2025-09-01,ONLINE,Santa Fe,Entregado,50,50,254,2

@@ -98,7 +98,8 @@ SELECT
     a.country_code,
     a.address_id IN (SELECT address_id FROM raw.store) AS is_store
 FROM raw.address AS a
-LEFT JOIN raw.province AS p ON p.province_id = a.province_id;
+LEFT JOIN raw.province AS p ON p.province_id = a.province_id
+ORDER BY a.address_id;
 
 
 -- ---------------------------------------------------------------------

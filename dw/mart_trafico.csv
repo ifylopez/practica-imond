@@ -1,0 +1,253 @@
+mes,fuente,fuente_desc,dispositivo,sesiones,sesiones_identificadas,sesiones_con_fin,minutos_suma
+2024-01-01,ads,Publicidad en redes,desktop,155,33,149,1180
+2024-01-01,ads,Publicidad en redes,mobile,790,153,753,5549
+2024-01-01,ads,Publicidad en redes,tablet,56,9,53,396
+2024-01-01,direct,Directo / newsletter,desktop,436,105,425,3143
+2024-01-01,direct,Directo / newsletter,mobile,666,176,651,4902
+2024-01-01,direct,Directo / newsletter,tablet,75,21,70,575
+2024-01-01,organic,Buscadores,desktop,452,84,440,3225
+2024-01-01,organic,Buscadores,mobile,601,130,586,4509
+2024-01-01,organic,Buscadores,tablet,87,15,83,570
+2024-01-01,referral,Otro sitio / newsletter,desktop,288,54,280,1842
+2024-01-01,referral,Otro sitio / newsletter,mobile,427,73,411,2655
+2024-01-01,referral,Otro sitio / newsletter,tablet,55,9,54,513
+2024-02-01,ads,Publicidad en redes,desktop,128,37,125,917
+2024-02-01,ads,Publicidad en redes,mobile,766,166,745,5712
+2024-02-01,ads,Publicidad en redes,tablet,38,7,38,203
+2024-02-01,direct,Directo / newsletter,desktop,484,141,474,4014
+2024-02-01,direct,Directo / newsletter,mobile,678,154,660,4936
+2024-02-01,direct,Directo / newsletter,tablet,68,16,67,404
+2024-02-01,organic,Buscadores,desktop,427,94,415,3179
+2024-02-01,organic,Buscadores,mobile,550,104,532,3986
+2024-02-01,organic,Buscadores,tablet,63,12,60,432
+2024-02-01,referral,Otro sitio / newsletter,desktop,279,65,274,2146
+2024-02-01,referral,Otro sitio / newsletter,mobile,375,88,357,2659
+2024-02-01,referral,Otro sitio / newsletter,tablet,49,10,46,309
+2024-03-01,ads,Publicidad en redes,desktop,150,35,144,1122
+2024-03-01,ads,Publicidad en redes,mobile,841,193,818,6150
+2024-03-01,ads,Publicidad en redes,tablet,57,16,54,375
+2024-03-01,direct,Directo / newsletter,desktop,482,135,468,3551
+2024-03-01,direct,Directo / newsletter,mobile,716,204,695,5266
+2024-03-01,direct,Directo / newsletter,tablet,60,20,60,459
+2024-03-01,organic,Buscadores,desktop,401,88,391,2965
+2024-03-01,organic,Buscadores,mobile,568,95,550,3822
+2024-03-01,organic,Buscadores,tablet,65,13,63,379
+2024-03-01,referral,Otro sitio / newsletter,desktop,276,64,269,1957
+2024-03-01,referral,Otro sitio / newsletter,mobile,408,89,397,2563
+2024-03-01,referral,Otro sitio / newsletter,tablet,40,9,39,271
+2024-04-01,ads,Publicidad en redes,desktop,136,25,134,799
+2024-04-01,ads,Publicidad en redes,mobile,741,155,727,5132
+2024-04-01,ads,Publicidad en redes,tablet,49,9,46,278
+2024-04-01,direct,Directo / newsletter,desktop,432,119,416,3130
+2024-04-01,direct,Directo / newsletter,mobile,672,208,647,4777
+2024-04-01,direct,Directo / newsletter,tablet,67,27,67,453
+2024-04-01,organic,Buscadores,desktop,388,100,380,2963
+2024-04-01,organic,Buscadores,mobile,563,142,546,4102
+2024-04-01,organic,Buscadores,tablet,58,21,58,529
+2024-04-01,referral,Otro sitio / newsletter,desktop,261,72,255,1920
+2024-04-01,referral,Otro sitio / newsletter,mobile,346,82,337,2203
+2024-04-01,referral,Otro sitio / newsletter,tablet,42,11,40,170
+2024-05-01,ads,Publicidad en redes,desktop,176,45,172,1317
+2024-05-01,ads,Publicidad en redes,mobile,996,210,971,6984
+2024-05-01,ads,Publicidad en redes,tablet,59,12,58,501
+2024-05-01,direct,Directo / newsletter,desktop,494,162,471,3664
+2024-05-01,direct,Directo / newsletter,mobile,689,195,667,5408
+2024-05-01,direct,Directo / newsletter,tablet,72,21,72,509
+2024-05-01,organic,Buscadores,desktop,389,99,382,2849
+2024-05-01,organic,Buscadores,mobile,615,137,599,4481
+2024-05-01,organic,Buscadores,tablet,68,15,66,494
+2024-05-01,referral,Otro sitio / newsletter,desktop,272,63,269,1875
+2024-05-01,referral,Otro sitio / newsletter,mobile,433,86,416,2980
+2024-05-01,referral,Otro sitio / newsletter,tablet,45,7,41,244
+2024-06-01,ads,Publicidad en redes,desktop,184,49,178,1356
+2024-06-01,ads,Publicidad en redes,mobile,823,217,804,5496
+2024-06-01,ads,Publicidad en redes,tablet,44,9,44,307
+2024-06-01,direct,Directo / newsletter,desktop,486,154,467,3778
+2024-06-01,direct,Directo / newsletter,mobile,757,233,734,5388
+2024-06-01,direct,Directo / newsletter,tablet,68,21,64,407
+2024-06-01,organic,Buscadores,desktop,439,115,430,3178
+2024-06-01,organic,Buscadores,mobile,637,160,623,4626
+2024-06-01,organic,Buscadores,tablet,62,14,60,511
+2024-06-01,referral,Otro sitio / newsletter,desktop,335,83,326,2362
+2024-06-01,referral,Otro sitio / newsletter,mobile,446,100,423,2785
+2024-06-01,referral,Otro sitio / newsletter,tablet,57,7,53,308
+2024-07-01,ads,Publicidad en redes,desktop,173,57,166,1603
+2024-07-01,ads,Publicidad en redes,mobile,728,206,708,4603
+2024-07-01,ads,Publicidad en redes,tablet,42,3,39,183
+2024-07-01,direct,Directo / newsletter,desktop,427,142,413,2861
+2024-07-01,direct,Directo / newsletter,mobile,656,218,642,4513
+2024-07-01,direct,Directo / newsletter,tablet,67,31,65,505
+2024-07-01,organic,Buscadores,desktop,360,100,351,2542
+2024-07-01,organic,Buscadores,mobile,541,136,522,3492
+2024-07-01,organic,Buscadores,tablet,51,16,51,402
+2024-07-01,referral,Otro sitio / newsletter,desktop,248,63,243,1637
+2024-07-01,referral,Otro sitio / newsletter,mobile,393,103,380,2615
+2024-07-01,referral,Otro sitio / newsletter,tablet,45,11,44,343
+2024-08-01,ads,Publicidad en redes,desktop,142,39,138,996
+2024-08-01,ads,Publicidad en redes,mobile,790,210,771,5255
+2024-08-01,ads,Publicidad en redes,tablet,52,8,50,294
+2024-08-01,direct,Directo / newsletter,desktop,476,165,455,3491
+2024-08-01,direct,Directo / newsletter,mobile,729,237,693,5069
+2024-08-01,direct,Directo / newsletter,tablet,60,21,60,460
+2024-08-01,organic,Buscadores,desktop,384,103,368,2583
+2024-08-01,organic,Buscadores,mobile,592,157,579,4402
+2024-08-01,organic,Buscadores,tablet,69,15,67,346
+2024-08-01,referral,Otro sitio / newsletter,desktop,260,71,257,1657
+2024-08-01,referral,Otro sitio / newsletter,mobile,374,119,363,2525
+2024-08-01,referral,Otro sitio / newsletter,tablet,37,10,37,256
+2024-09-01,ads,Publicidad en redes,desktop,153,46,147,1161
+2024-09-01,ads,Publicidad en redes,mobile,829,217,801,5559
+2024-09-01,ads,Publicidad en redes,tablet,42,17,42,361
+2024-09-01,direct,Directo / newsletter,desktop,448,135,440,2873
+2024-09-01,direct,Directo / newsletter,mobile,717,236,693,4793
+2024-09-01,direct,Directo / newsletter,tablet,74,27,72,520
+2024-09-01,organic,Buscadores,desktop,472,139,453,3338
+2024-09-01,organic,Buscadores,mobile,617,170,595,4043
+2024-09-01,organic,Buscadores,tablet,68,20,64,395
+2024-09-01,referral,Otro sitio / newsletter,desktop,268,69,267,1728
+2024-09-01,referral,Otro sitio / newsletter,mobile,426,117,411,3090
+2024-09-01,referral,Otro sitio / newsletter,tablet,57,20,53,487
+2024-10-01,ads,Publicidad en redes,desktop,141,48,140,1142
+2024-10-01,ads,Publicidad en redes,mobile,917,263,886,6026
+2024-10-01,ads,Publicidad en redes,tablet,59,19,57,379
+2024-10-01,direct,Directo / newsletter,desktop,525,169,505,3937
+2024-10-01,direct,Directo / newsletter,mobile,785,275,766,5783
+2024-10-01,direct,Directo / newsletter,tablet,96,26,91,595
+2024-10-01,organic,Buscadores,desktop,494,147,484,3386
+2024-10-01,organic,Buscadores,mobile,711,214,688,4888
+2024-10-01,organic,Buscadores,tablet,76,14,73,468
+2024-10-01,referral,Otro sitio / newsletter,desktop,340,98,329,2360
+2024-10-01,referral,Otro sitio / newsletter,mobile,526,146,509,3552
+2024-10-01,referral,Otro sitio / newsletter,tablet,51,16,49,317
+2024-11-01,ads,Publicidad en redes,desktop,244,62,239,1694
+2024-11-01,ads,Publicidad en redes,mobile,1303,319,1269,9060
+2024-11-01,ads,Publicidad en redes,tablet,77,24,75,461
+2024-11-01,direct,Directo / newsletter,desktop,582,196,559,4153
+2024-11-01,direct,Directo / newsletter,mobile,862,275,839,5831
+2024-11-01,direct,Directo / newsletter,tablet,98,31,97,828
+2024-11-01,organic,Buscadores,desktop,491,146,477,3544
+2024-11-01,organic,Buscadores,mobile,700,172,680,5143
+2024-11-01,organic,Buscadores,tablet,71,22,68,576
+2024-11-01,referral,Otro sitio / newsletter,desktop,374,83,361,2537
+2024-11-01,referral,Otro sitio / newsletter,mobile,538,144,513,4200
+2024-11-01,referral,Otro sitio / newsletter,tablet,48,8,47,299
+2024-12-01,ads,Publicidad en redes,desktop,244,60,241,1646
+2024-12-01,ads,Publicidad en redes,mobile,1307,336,1268,9319
+2024-12-01,ads,Publicidad en redes,tablet,101,21,101,705
+2024-12-01,direct,Directo / newsletter,desktop,752,236,730,5210
+2024-12-01,direct,Directo / newsletter,mobile,1163,377,1128,8621
+2024-12-01,direct,Directo / newsletter,tablet,132,38,128,1040
+2024-12-01,organic,Buscadores,desktop,694,176,672,5234
+2024-12-01,organic,Buscadores,mobile,1033,242,1010,7093
+2024-12-01,organic,Buscadores,tablet,83,19,78,521
+2024-12-01,referral,Otro sitio / newsletter,desktop,501,121,481,3617
+2024-12-01,referral,Otro sitio / newsletter,mobile,723,188,695,5188
+2024-12-01,referral,Otro sitio / newsletter,tablet,73,20,72,547
+2025-01-01,ads,Publicidad en redes,desktop,189,49,185,1257
+2025-01-01,ads,Publicidad en redes,mobile,1017,276,988,7326
+2025-01-01,ads,Publicidad en redes,tablet,67,19,62,378
+2025-01-01,direct,Directo / newsletter,desktop,649,216,624,4568
+2025-01-01,direct,Directo / newsletter,mobile,870,303,844,6008
+2025-01-01,direct,Directo / newsletter,tablet,97,30,94,537
+2025-01-01,organic,Buscadores,desktop,592,168,569,4113
+2025-01-01,organic,Buscadores,mobile,812,221,778,5151
+2025-01-01,organic,Buscadores,tablet,92,29,89,719
+2025-01-01,referral,Otro sitio / newsletter,desktop,385,110,374,2676
+2025-01-01,referral,Otro sitio / newsletter,mobile,593,167,576,3556
+2025-01-01,referral,Otro sitio / newsletter,tablet,64,26,62,716
+2025-02-01,ads,Publicidad en redes,desktop,167,43,164,1011
+2025-02-01,ads,Publicidad en redes,mobile,1026,311,991,7396
+2025-02-01,ads,Publicidad en redes,tablet,72,21,69,448
+2025-02-01,direct,Directo / newsletter,desktop,577,220,559,4115
+2025-02-01,direct,Directo / newsletter,mobile,905,322,879,6744
+2025-02-01,direct,Directo / newsletter,tablet,89,33,87,727
+2025-02-01,organic,Buscadores,desktop,508,155,493,3543
+2025-02-01,organic,Buscadores,mobile,686,204,661,4859
+2025-02-01,organic,Buscadores,tablet,91,30,86,728
+2025-02-01,referral,Otro sitio / newsletter,desktop,384,116,370,2836
+2025-02-01,referral,Otro sitio / newsletter,mobile,501,131,487,3813
+2025-02-01,referral,Otro sitio / newsletter,tablet,55,12,55,451
+2025-03-01,ads,Publicidad en redes,desktop,182,57,179,1275
+2025-03-01,ads,Publicidad en redes,mobile,1027,315,1000,7094
+2025-03-01,ads,Publicidad en redes,tablet,66,16,65,559
+2025-03-01,direct,Directo / newsletter,desktop,619,226,598,4357
+2025-03-01,direct,Directo / newsletter,mobile,913,333,884,6699
+2025-03-01,direct,Directo / newsletter,tablet,109,34,106,853
+2025-03-01,organic,Buscadores,desktop,575,156,558,3505
+2025-03-01,organic,Buscadores,mobile,816,248,787,5417
+2025-03-01,organic,Buscadores,tablet,87,23,86,647
+2025-03-01,referral,Otro sitio / newsletter,desktop,393,113,381,3009
+2025-03-01,referral,Otro sitio / newsletter,mobile,570,183,560,3989
+2025-03-01,referral,Otro sitio / newsletter,tablet,56,16,54,400
+2025-04-01,ads,Publicidad en redes,desktop,199,66,190,1405
+2025-04-01,ads,Publicidad en redes,mobile,955,310,935,7095
+2025-04-01,ads,Publicidad en redes,tablet,73,23,70,495
+2025-04-01,direct,Directo / newsletter,desktop,555,213,543,3901
+2025-04-01,direct,Directo / newsletter,mobile,847,325,821,6270
+2025-04-01,direct,Directo / newsletter,tablet,98,31,97,703
+2025-04-01,organic,Buscadores,desktop,503,163,491,3838
+2025-04-01,organic,Buscadores,mobile,750,244,720,5522
+2025-04-01,organic,Buscadores,tablet,78,32,74,546
+2025-04-01,referral,Otro sitio / newsletter,desktop,335,107,330,2243
+2025-04-01,referral,Otro sitio / newsletter,mobile,496,153,477,3344
+2025-04-01,referral,Otro sitio / newsletter,tablet,46,17,45,434
+2025-05-01,ads,Publicidad en redes,desktop,242,70,233,1549
+2025-05-01,ads,Publicidad en redes,mobile,1318,383,1285,9284
+2025-05-01,ads,Publicidad en redes,tablet,96,20,94,615
+2025-05-01,direct,Directo / newsletter,desktop,674,263,654,4892
+2025-05-01,direct,Directo / newsletter,mobile,893,351,864,6291
+2025-05-01,direct,Directo / newsletter,tablet,92,42,86,804
+2025-05-01,organic,Buscadores,desktop,516,166,502,3845
+2025-05-01,organic,Buscadores,mobile,820,252,800,5693
+2025-05-01,organic,Buscadores,tablet,87,26,85,476
+2025-05-01,referral,Otro sitio / newsletter,desktop,356,105,347,2449
+2025-05-01,referral,Otro sitio / newsletter,mobile,582,174,567,3983
+2025-05-01,referral,Otro sitio / newsletter,tablet,58,19,57,404
+2025-06-01,ads,Publicidad en redes,desktop,193,58,187,1215
+2025-06-01,ads,Publicidad en redes,mobile,1015,317,986,6813
+2025-06-01,ads,Publicidad en redes,tablet,55,17,55,363
+2025-06-01,direct,Directo / newsletter,desktop,644,224,627,4387
+2025-06-01,direct,Directo / newsletter,mobile,921,330,890,6500
+2025-06-01,direct,Directo / newsletter,tablet,106,34,104,696
+2025-06-01,organic,Buscadores,desktop,511,146,495,3628
+2025-06-01,organic,Buscadores,mobile,802,238,778,5809
+2025-06-01,organic,Buscadores,tablet,101,27,100,712
+2025-06-01,referral,Otro sitio / newsletter,desktop,335,116,330,2338
+2025-06-01,referral,Otro sitio / newsletter,mobile,524,169,510,3656
+2025-06-01,referral,Otro sitio / newsletter,tablet,62,12,61,277
+2025-07-01,ads,Publicidad en redes,desktop,166,53,161,976
+2025-07-01,ads,Publicidad en redes,mobile,937,290,913,6891
+2025-07-01,ads,Publicidad en redes,tablet,56,12,53,359
+2025-07-01,direct,Directo / newsletter,desktop,631,276,609,4410
+2025-07-01,direct,Directo / newsletter,mobile,804,337,785,5475
+2025-07-01,direct,Directo / newsletter,tablet,87,37,85,793
+2025-07-01,organic,Buscadores,desktop,488,152,470,3333
+2025-07-01,organic,Buscadores,mobile,692,232,675,4759
+2025-07-01,organic,Buscadores,tablet,62,24,61,389
+2025-07-01,referral,Otro sitio / newsletter,desktop,319,111,310,2414
+2025-07-01,referral,Otro sitio / newsletter,mobile,502,161,485,3357
+2025-07-01,referral,Otro sitio / newsletter,tablet,52,9,48,370
+2025-08-01,ads,Publicidad en redes,desktop,165,57,160,1254
+2025-08-01,ads,Publicidad en redes,mobile,996,343,962,6805
+2025-08-01,ads,Publicidad en redes,tablet,60,22,58,487
+2025-08-01,direct,Directo / newsletter,desktop,597,232,579,4297
+2025-08-01,direct,Directo / newsletter,mobile,893,355,863,6415
+2025-08-01,direct,Directo / newsletter,tablet,122,50,120,935
+2025-08-01,organic,Buscadores,desktop,527,186,506,3684
+2025-08-01,organic,Buscadores,mobile,804,270,786,5807
+2025-08-01,organic,Buscadores,tablet,90,25,87,611
+2025-08-01,referral,Otro sitio / newsletter,desktop,342,111,324,2291
+2025-08-01,referral,Otro sitio / newsletter,mobile,536,184,514,3750
+2025-08-01,referral,Otro sitio / newsletter,tablet,55,20,55,354
+2025-09-01,ads,Publicidad en redes,desktop,191,53,184,1155
+2025-09-01,ads,Publicidad en redes,mobile,1035,317,1002,7058
+2025-09-01,ads,Publicidad en redes,tablet,67,23,66,503
+2025-09-01,direct,Directo / newsletter,desktop,649,244,632,4919
+2025-09-01,direct,Directo / newsletter,mobile,867,330,838,6104
+2025-09-01,direct,Directo / newsletter,tablet,107,39,105,735
+2025-09-01,organic,Buscadores,desktop,554,193,533,3736
+2025-09-01,organic,Buscadores,mobile,766,256,740,5106
+2025-09-01,organic,Buscadores,tablet,67,20,63,529
+2025-09-01,referral,Otro sitio / newsletter,desktop,373,111,362,2383
+2025-09-01,referral,Otro sitio / newsletter,mobile,562,166,546,3715
+2025-09-01,referral,Otro sitio / newsletter,tablet,63,29,61,309

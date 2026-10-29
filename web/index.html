@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resumen | EcoBottle AR</title>
+  <meta name="description" content="Tablero comercial de EcoBottle AR: ventas, productos, clientes, NPS y operaciones, construido sobre un data warehouse en estrella.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M13 3h8v4l3 4.5V28a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3V11.5L13 7z' fill='%2325A898'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside id="lateral" class="lateral"></aside>
+  <div class="contenido">
+    <div id="filtros" class="filtros" role="region" aria-label="Filtros"></div>
+    <main id="contenido-pagina" class="pagina">
+
+      <header class="encabezado">
+        <h1 id="titular">EcoBottle AR en números</h1>
+        <p id="bajada">Ventas, clientes y experiencia de una marca de botellas reutilizables que vende en tiendas propias y en su sitio web.</p>
+      </header>
+
+      <section class="kpis" aria-label="Indicadores principales">
+        <div class="tarjeta kpi" id="k-ventas">
+          <span class="kpi-nombre">Ventas</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-delta"></span>
+          <div class="kpi-chispa" id="k-ventas-chispa"></div>
+          <span class="kpi-nota">Pedidos pagados o entregados. Responde a período, canal y provincia.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-pedidos">
+          <span class="kpi-nombre">Pedidos vendidos</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-delta"></span>
+          <div class="kpi-chispa" id="k-pedidos-chispa"></div>
+          <span class="kpi-nota">Responde a período, canal y provincia.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-ticket">
+          <span class="kpi-nombre">Ticket promedio</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-delta"></span>
+          <div class="kpi-chispa" id="k-ticket-chispa"></div>
+          <span class="kpi-nota">Ventas ÷ pedidos, después de sumar.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-nps">
+          <span class="kpi-nombre">NPS</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-delta"></span>
+          <div class="kpi-chispa" id="k-nps-chispa"></div>
+          <span class="kpi-nota">Responde a período y canal.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-usuarios">
+          <span class="kpi-nombre">Usuarios activos por mes</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-delta"></span>
+          <div class="kpi-chispa" id="k-usuarios-chispa"></div>
+          <span class="kpi-nota">Promedio mensual. Responde solo a período.</span>
+        </div>
+      </section>
+      <p class="kpis-nota" id="kpis-nota"></p>
+
+      <div class="grilla">
+        <article class="tarjeta ancho-8" data-aplica="mes canal provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-mensual">Ventas mensuales por canal</h2>
+            <p class="bajada">Millones de pesos por mes. Diciembre marca el pico de cada año.</p>
+          </div></div>
+          <div class="grafico" id="g-mensual" role="img" aria-label="Barras apiladas de ventas mensuales por canal"></div>
+        </article>
+
+        <article class="tarjeta ancho-4" data-aplica="mes canal provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-canal">Participación de cada canal</h2>
+            <p class="bajada">Porcentaje de las ventas del período.</p>
+          </div></div>
+          <div class="grafico" id="g-canal" role="img" aria-label="Participación de cada canal en las ventas"></div>
+        </article>
+      </div>
+
+      <h2 class="seccion">Lo que muestran los datos</h2>
+      <p class="seccion-bajada">Cuatro hallazgos sobre el período completo, sin filtros. Cada uno lleva a la página donde se analiza.</p>
+      <div class="grilla">
+        <article class="tarjeta hallazgo ancho-3">
+          <span class="hallazgo-cifra" id="h-entrega">…</span>
+          <p id="h-entrega-txt"></p>
+          <a href="experiencia.html">Ver la relación con el NPS</a>
+        </article>
+        <article class="tarjeta hallazgo ancho-3">
+          <span class="hallazgo-cifra" id="h-nps">…</span>
+          <p id="h-nps-txt"></p>
+          <a href="experiencia.html">Ver el NPS por canal</a>
+        </article>
+        <article class="tarjeta hallazgo ancho-3">
+          <span class="hallazgo-cifra" id="h-recurrentes">…</span>
+          <p id="h-recurrentes-txt"></p>
+          <a href="clientes.html">Ver clientes y cohortes</a>
+        </article>
+        <article class="tarjeta hallazgo ancho-3">
+          <span class="hallazgo-cifra" id="h-domingo">…</span>
+          <p id="h-domingo-txt"></p>
+          <a href="ventas.html">Ver ventas por día</a>
+        </article>
+      </div>
+
+    </main>
+  </div>
+</div>
+<script src="assets/vendor/papaparse.min.js"></script>
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/resumen.js"></script>
+</body>
+</html>

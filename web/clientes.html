@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clientes y web | EcoBottle AR</title>
+  <meta name="description" content="Usuarios activos, tráfico del sitio, compradores recurrentes y cohortes de EcoBottle AR.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M13 3h8v4l3 4.5V28a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3V11.5L13 7z' fill='%2325A898'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside id="lateral" class="lateral"></aside>
+  <div class="contenido">
+    <div id="filtros" class="filtros" role="region" aria-label="Filtros"></div>
+    <main id="contenido-pagina" class="pagina">
+
+      <header class="encabezado">
+        <h1>Quién visita el sitio y quién vuelve a comprar</h1>
+        <p>La mayoría de las sesiones web son anónimas, pero los usuarios identificados crecen mes a mes. Entre los compradores, la mayoría ya había comprado antes.</p>
+      </header>
+
+      <section class="kpis" aria-label="Indicadores de clientes y web">
+        <div class="tarjeta kpi" id="k-usuarios">
+          <span class="kpi-nombre">Usuarios activos por mes</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota">Promedio de los meses elegidos. Clientes identificados con al menos una sesión.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-sesiones">
+          <span class="kpi-nombre">Sesiones web</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota">Total del período.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-ident">
+          <span class="kpi-nombre">Sesiones identificadas</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota">El resto son anónimas (cliente desconocido, clave -1).</span>
+        </div>
+        <div class="tarjeta kpi" id="k-minutos">
+          <span class="kpi-nombre">Duración media de la sesión</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota">Minutos ÷ sesiones con hora de fin.</span>
+        </div>
+      </section>
+
+      <div class="grilla" style="margin-top:18px">
+        <article class="tarjeta ancho-6" data-aplica="mes">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-usuarios">Usuarios activos por mes</h2>
+            <p class="bajada">Conteo de clientes distintos, calculado en el ETL para cada mes.</p>
+          </div></div>
+          <div class="grafico" id="g-usuarios" role="img" aria-label="Barras de usuarios activos por mes"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-anon">Sesiones identificadas y anónimas</h2>
+            <p class="bajada">Cantidad de sesiones por mes.</p>
+          </div></div>
+          <div class="grafico" id="g-anon" role="img" aria-label="Barras apiladas de sesiones identificadas y anónimas"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-fuente">De dónde llegan las visitas</h2>
+            <p class="bajada">Sesiones por fuente de tráfico y dispositivo.</p>
+          </div></div>
+          <div class="grafico" id="g-fuente" role="img" aria-label="Barras horizontales de sesiones por fuente y dispositivo"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes" data-fijo="Cada mes se calcula en el ETL; no se puede abrir por canal ni provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-recurrentes">Compradores nuevos y recurrentes</h2>
+            <p class="bajada">Nuevo: compra por primera vez ese mes. Recurrente: ya había comprado antes.</p>
+          </div></div>
+          <div class="grafico" id="g-recurrentes" role="img" aria-label="Barras apiladas de compradores nuevos y recurrentes por mes"></div>
+        </article>
+
+        <article class="tarjeta ancho-12" data-aplica="">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-cohortes">Retención por cohorte de alta</h2>
+            <p class="bajada">Cada fila es el grupo de clientes que se dio de alta ese mes. Cada celda, el porcentaje de ese grupo que compró N meses después.</p>
+          </div></div>
+          <div class="grafico alto" id="g-cohortes" style="height:600px" role="img" aria-label="Mapa de calor de retención por cohorte"></div>
+        </article>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="assets/vendor/papaparse.min.js"></script>
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/clientes.js"></script>
+</body>
+</html>

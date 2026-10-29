@@ -7,11 +7,17 @@ Trabajo práctico de **Introducción al Marketing Online y los Negocios Digitale
 
 A partir de una foto del sistema de ventas de EcoBottle AR (13 tablas en `raw/`,
 pedidos del 01/01/2024 al 30/09/2025) construimos un **data warehouse con modelo
-estrella (Kimball)** en DuckDB y un **tablero comercial en Power BI** con los KPIs
-que monitorea el management: Ventas, Ticket Promedio, Usuarios Activos, NPS,
-Ventas por Provincia y Ranking mensual por Producto.
+estrella (Kimball)** en DuckDB y un **sitio web interactivo publicado con GitHub
+Pages** con los KPIs que monitorea el management: Ventas, Ticket Promedio, Usuarios
+Activos, NPS, Ventas por Provincia y Ranking mensual por Producto, más páginas de
+clientes, experiencia y operaciones.
 
-![Tablero comercial](dashboard/tablero.png)
+**Tablero en vivo:** https://ifylopez.github.io/practica-imond/web/
+
+![Sitio web del tablero](assets/sitio_resumen.png)
+
+El primer tablero se hizo en Power BI y se conserva como trabajo previo en
+[`dashboard/`](dashboard/README.md).
 
 ---
 
@@ -25,7 +31,7 @@ Ventas por Provincia y Ranking mensual por Producto.
 6. [Supuestos y decisiones de diseño](#supuestos-y-decisiones-de-diseño)
 7. [Validación del modelo](#validación-del-modelo)
 8. [KPIs y consultas clave](#kpis-y-consultas-clave)
-9. [Dashboard](#dashboard)
+9. [Tablero web](#tablero-web)
 10. [Hallazgos](#hallazgos)
 11. [Limitaciones y próximos pasos](#limitaciones-y-próximos-pasos)
 
@@ -41,25 +47,31 @@ Data warehouse (warehouse.duckdb)
    ├── 10 dimensiones  dim_date, dim_customer, dim_channel, dim_store, dim_address, dim_product,
    │                   dim_order_status, dim_payment, dim_shipment_status, dim_traffic
    ├── 4 hechos        fact_sales_order, fact_sales_order_item, fact_web_session, fact_nps_response
-   └── 4 marts         mart_ventas, mart_productos, mart_usuarios, mart_nps  (+ 4 tablas filtro_*)
+   └── 12 marts        04_marts.sql:     mart_ventas, mart_productos, mart_usuarios, mart_nps
+                       05_marts_web.sql: mart_estados, mart_pagos, mart_logistica, mart_trafico,
+                                         mart_nps_puntajes, mart_dia_semana, mart_clientes_mes,
+                                         mart_cohortes                       (+ 4 tablas filtro_*)
    │   exportado a CSV
    ▼
-dw/*.csv  ──►  Power BI (dashboard/ecobottle.pbix)
+dw/*.csv  ──►  sitio web (web/, GitHub Pages)
+          └─►  Power BI (dashboard/ecobottle.pbix, trabajo previo)
 ```
 
 Principios que seguimos:
 
 - **raw solo lo lee el ETL.** Todas las consultas de KPIs y el tablero leen
   exclusivamente tablas del data warehouse (`dim_`, `fact_`, `mart_`).
-- **Los cálculos se hacen en el ETL, no en la visualización.** Los marts llegan a
-  Power BI ya agregados por mes y con los nombres de las dimensiones resueltos.
-  Power BI solo suma y hace la división final de los KPIs que son cocientes
-  (ver [Marts](#marts-capa-de-presentación)).
+- **Los cálculos se hacen en el ETL, no en la visualización.** Los marts llegan al
+  sitio ya agregados por mes y con los nombres de las dimensiones resueltos. El
+  navegador solo filtra, suma y hace la división final de los KPIs que son cocientes,
+  igual que hacían las medidas DAX en Power BI
+  (ver [Marts](#marts-capa-de-presentación) y [Tablero web](#tablero-web)).
 
 > **Nota sobre la consigna:** la consigna original propone transformaciones en
 > Python y tablero en LookerStudio. Siguiendo las indicaciones del repositorio de
-> la práctica, implementamos el ETL en **SQL sobre DuckDB** y el tablero en
-> **Power BI**.
+> la práctica, implementamos el ETL en **SQL sobre DuckDB**. El tablero se hizo
+> primero en **Power BI** y después, a pedido del docente, se reemplazó por un
+> **sitio web estático en GitHub Pages** que lee los mismos marts.
 
 ---
 
@@ -74,12 +86,25 @@ sql/
   02_hechos.sql          Plantilla de la cátedra (sin sentencias)
   02a..02d_fact_*.sql    Las 4 tablas de hechos
   03_consultas.sql       Validaciones del modelo y KPIs
-  04_marts.sql           Marts y tablas de filtro para el tablero
+  04_marts.sql           Marts y tablas de filtro del tablero original
+  05_marts_web.sql       Marts adicionales para las páginas nuevas del sitio
 dw/                      Data warehouse exportado a CSV + diagrama del modelo
-dashboard/
-  ecobottle.pbix         Tablero de Power BI
+web/                     Sitio web del tablero (se publica con GitHub Pages)
+  index.html … modelo.html   Las 7 páginas
+  assets/css/style.css   Estilos
+  assets/js/core.js      Carga de CSV, filtros, formatos y tema de los gráficos
+  assets/js/<página>.js  Gráficos de cada página
+  assets/vendor/         ECharts y PapaParse (copias locales + licencias)
+  assets/fonts/          Tipografías (copias locales + licencia OFL)
+  assets/data/           Mapa de provincias (Natural Earth, dominio público)
+dashboard/               Trabajo previo en Power BI (ver dashboard/README.md)
+  ecobottle.pbix         Tablero de Power BI (archivo binario)
   ecobottle_tema.json    Tema visual del tablero
   tablero.png            Captura del tablero
+assets/                  Imágenes del README
+index.html               Redirige la raíz de GitHub Pages a web/
+.nojekyll                Le indica a GitHub Pages que publique los archivos tal cual
+.gitattributes           Marca los archivos binarios para que Git no intente compararlos
 run_sql.py               Ejecuta los SQL en orden y exporta dw/
 requirements.txt         Dependencias (DuckDB)
 ```
@@ -116,11 +141,18 @@ Otros modos:
 - `python run_sql.py --explorar` — abre DuckDB con las tablas `raw` para explorar.
 - `python run_sql.py --ui` — arma el DW y lo abre en DuckDB.
 
-**Tablero:** abrir `dashboard/ecobottle.pbix` con Power BI Desktop. Si se volvió a
-correr `run_sql.py`, usar **Inicio → Actualizar** para recargar los CSV de `dw/`.
-Al importar CSV en Power BI con configuración regional en español, la configuración
-regional de importación del archivo debe estar en *Inglés (Estados Unidos)*: los CSV
-usan punto decimal.
+**Tablero web en la computadora:** el sitio lee los CSV con `fetch`, y los
+navegadores bloquean eso si se abre `index.html` con doble clic. Hay que servir la
+carpeta del repo con un servidor local:
+
+```bash
+python -m http.server 8000
+```
+
+y entrar a `http://localhost:8000/web/`. Si se vuelve a correr `run_sql.py`, alcanza
+con recargar la página.
+
+**Tablero de Power BI (trabajo previo):** ver [`dashboard/README.md`](dashboard/README.md).
 
 ---
 
@@ -369,14 +401,28 @@ aunque alguno no tenga pedidos.
 | `mart_productos` | mes × canal × provincia × producto | `unidades`, `ventas_productos` |
 | `mart_usuarios` | mes | `usuarios_activos`, `sesiones`, `sesiones_anonimas` |
 | `mart_nps` | mes × canal | `respuestas`, `promotores`, `detractores` |
+| `mart_dia_semana` | mes × canal × provincia × día de la semana (solo ventas) | `pedidos`, `ventas` |
+| `mart_estados` | mes × canal × provincia × estado del pedido | `pedidos`, `monto` |
+| `mart_pagos` | mes × canal × provincia × medio × estado del pago × estado del pedido | `pagos`, `monto` |
+| `mart_logistica` | mes × canal × provincia × estado del envío (solo pedidos con envío) | `envios`, `entregados`, `dias_entrega_suma`, `entregas_mas_7_dias` |
+| `mart_trafico` | mes × fuente × dispositivo | `sesiones`, `sesiones_identificadas`, `sesiones_con_fin`, `minutos_suma` |
+| `mart_nps_puntajes` | mes × canal × puntaje (0 a 10) | `respuestas` |
+| `mart_clientes_mes` | mes (fijo) | `compradores`, `compradores_nuevos`, `compradores_recurrentes` |
+| `mart_cohortes` | cohorte de alta × meses desde el alta (fijo) | `tamano_cohorte`, `clientes_compradores` |
 
 Los marts guardan solo **medidas aditivas** (sumas y conteos). Los KPIs que son
 cocientes (Ticket, NPS) se dividen en el tablero **después** de sumar: un promedio de
 promedios daría mal al filtrar varios meses, canales o provincias. La excepción es
 `usuarios_activos`, que es un `COUNT(DISTINCT)` (no aditivo) y por eso se calcula
-terminado por mes. Las tablas `filtro_mes`, `filtro_canal`, `filtro_provincia` y
-`filtro_producto` contienen los valores de cada filtro y se relacionan 1:\* con los
-marts en Power BI.
+terminado por mes. Lo mismo pasa con `mart_clientes_mes` y `mart_cohortes`: cuentan
+clientes distintos, así que se guardan a un grano fijo y no se pueden filtrar. Los
+promedios (días de entrega, minutos por sesión) se guardan como **suma + cantidad**
+para que el sitio divida después de sumar. Las tablas `filtro_mes`, `filtro_canal`,
+`filtro_provincia` y `filtro_producto` contienen los valores de cada filtro: el sitio
+arma con ellas los desplegables (en Power BI se relacionaban 1:\* con los marts).
+
+Todos los marts terminan en `ORDER BY`, así cada corrida de `run_sql.py` produce
+exactamente los mismos CSV y el `git diff` muestra solo cambios reales.
 
 ---
 
@@ -514,44 +560,52 @@ ORDER BY c.code, ventas DESC;
 
 ---
 
-## Dashboard
+## Tablero web
 
-Archivo: `dashboard/ecobottle.pbix` (Power BI Desktop). Fuente: los CSV `mart_*` y
-`filtro_*` de `dw/`.
+**Dirección:** https://ifylopez.github.io/practica-imond/web/
 
-**Filtros:** producto, provincia, canal y rango de fechas.
+Sitio estático (HTML, CSS y JavaScript, sin servidor) publicado con GitHub Pages
+desde la raíz de la rama `main`. Lee directamente los CSV de `dw/`, así que siempre
+muestra lo último que generó `run_sql.py` y se subió al repo.
 
-**Vistas:**
+| Página | Qué muestra | Marts |
+|---|---|---|
+| Resumen | KPIs con variación interanual, ventas mensuales por canal, participación por canal, 4 hallazgos | ventas, nps, usuarios, logistica, clientes_mes, dia_semana |
+| Ventas | Mapa de provincias (clic para filtrar), ventas y ticket por provincia, día de la semana, estacionalidad 2024 vs 2025, pedidos y ticket mensual | ventas, dia_semana |
+| Productos | Facturación, unidades y precio medio; participación; unidades contra facturación; ranking mensual | productos |
+| Clientes y web | Usuarios activos, sesiones identificadas y anónimas, fuente y dispositivo, compradores nuevos y recurrentes, retención por cohorte | usuarios, trafico, clientes_mes, cohortes |
+| Experiencia (NPS) | NPS online contra días de entrega, NPS mensual por canal, distribución de puntajes, promotores/pasivos/detractores | nps, nps_puntajes, logistica |
+| Operaciones | Estados del pedido, pago de los cancelados, medios de pago por canal, rechazos por medio, días de entrega por provincia, entregas lentas | estados, pagos, logistica |
+| Acerca del modelo | Arquitectura, hechos, dimensiones, marts y qué calcula el navegador | todos |
 
-| Vista | Visual |
+**Filtros:** período (desde/hasta), canal, provincia y producto. Se guardan en el
+navegador y se mantienen al cambiar de página. Cada gráfico dice al pie a qué filtros
+responde (reemplaza al botón ⓘ de Power BI) y tiene **Ver tabla** con los números.
+
+| Filtro | Marts a los que aplica |
 |---|---|
-| Total Ventas, Ticket Promedio, Usuarios Activos, NPS | Tarjetas |
-| Ventas por mes y canal | Líneas |
-| Ventas por provincia | Barras horizontales |
-| NPS por mes y canal | Líneas |
-| Ventas por producto por mes | Columnas agrupadas |
-| Ranking mensual por producto | Matriz (1 / 2 por mes) |
-| Usuarios activos por mes | Líneas |
+| Período | todos menos `mart_cohortes` |
+| Canal | ventas, productos, nps, nps_puntajes, dia_semana, estados, pagos, logistica |
+| Provincia | ventas, productos, dia_semana, estados, pagos, logistica |
+| Producto | productos |
 
-**Medidas DAX** (Power BI solo suma y divide; el resto viene calculado del ETL):
+**Qué calcula el navegador** (lo mismo que las medidas DAX del tablero anterior):
 
 ```
-Total Ventas     = SUM(mart_ventas[ventas])
-Total Pedidos    = SUM(mart_ventas[pedidos])
-Ticket Promedio  = DIVIDE([Total Ventas], [Total Pedidos])
-Ventas Productos = SUM(mart_productos[ventas_productos])
-Ranking Producto = RANKX(ALL(filtro_producto[producto]), [Ventas Productos])
-Respuestas NPS   = SUM(mart_nps[respuestas])
-NPS              = DIVIDE(SUM(mart_nps[promotores]) - SUM(mart_nps[detractores]), [Respuestas NPS]) * 100
-Usuarios Activos (prom. mensual) = AVERAGE(mart_usuarios[usuarios_activos])
+Ticket promedio  = suma(ventas) / suma(pedidos)
+NPS              = (suma(promotores) - suma(detractores)) / suma(respuestas) * 100
+Usuarios activos = promedio de mart_usuarios.usuarios_activos en los meses elegidos
+Días de entrega  = suma(dias_entrega_suma) / suma(entregados)
+Ranking producto = ordenar la facturación de cada mes (como RANKX)
+Variación anual  = período elegido contra los mismos meses del año anterior
 ```
 
-La tarjeta de Usuarios Activos muestra el **promedio mensual** del período elegido:
-los usuarios activos no se pueden sumar entre meses (un cliente activo en enero y en
-febrero contaría dos veces).
+Siempre se suma primero y se divide al final; nunca se promedian promedios.
 
-El botón ⓘ junto al título explica qué filtros no aplican a cada vista
-(ver [Limitaciones](#limitaciones-y-próximos-pasos)).
+**Librerías:** [Apache ECharts](https://echarts.apache.org/) 5.5.1 para los gráficos y
+[PapaParse](https://www.papaparse.com/) 5.4.1 para leer los CSV. Están copiadas en
+`web/assets/vendor/` (con sus licencias) en vez de cargarse desde un CDN: el sitio no
+depende de servicios externos y siempre usa la misma versión.
 
 ---
 
@@ -596,6 +650,19 @@ El botón ⓘ junto al título explica qué filtros no aplican a cada vista
     sesiones son mobile, pero en `ads` la proporción sube al **80%** (20.157 de 25.165
     sesiones), contra ~56% en las demás fuentes. Por fuente: directo 30%, buscadores
     26%, publicidad en redes 25% y referidos 18%.
+12. **Las entregas lentas explican la crisis del NPS online (confirma el hallazgo 4).**
+    Los días promedio entre pedido y entrega rondan 4,7 en un mes normal, pero
+    subieron a **9,3 en julio y 9,1 en agosto de 2024**: en esos meses tardó más de 7 días el 77% y
+    el 71% de las entregas, respectivamente. Son exactamente los meses en que el NPS
+    online cayó a −6 y −26,5.
+13. **Las tiendas no abren los domingos.** OFFLINE no registra ventas en domingo y su
+    mejor día es el sábado ($40,3M en el período). La web vende todos los días, con
+    pico el martes ($38,9M).
+14. **El negocio se sostiene en clientes que vuelven.** El 69% de los compradores de
+    cada mes ya había comprado antes. En las cohortes, alrededor de 1 de cada 5
+    clientes vuelve a comprar al mes siguiente del alta.
+15. **Las entregas a Buenos Aires son las más rápidas** (4,0 días en promedio); a
+    Córdoba (6,1), Santa Fe (5,8) y Mendoza (5,8) tardan casi dos días más.
 
 ---
 
@@ -616,13 +683,10 @@ El botón ⓘ junto al título explica qué filtros no aplican a cada vista
 
 ### Próximas ideas para el tablero
 
-- **Tiempo de entrega vs NPS online:** `fact_sales_order` ya tiene `shipped_at` y
-  `delivered_at`. Cruzar días de entrega con el NPS online por mes permitiría
-  confirmar la hipótesis del hallazgo 4.
 - **Tasa de conversión web:** pedidos online / sesiones por mes y por fuente
-  (`dim_traffic`) para medir el retorno de cada canal de adquisición.
-- **Análisis de cohortes:** con `dim_customer.cohort_month`, medir recompra de los
-  clientes según su mes de alta (por ejemplo, los captados en diciembre).
-- **Mix de medios de pago** y **origen del tráfico** en el tablero, con
-  `dim_payment` y `dim_traffic` (las consultas A2 y A3 ya los calculan).
-- **Ventas por día de la semana / fin de semana** con `dim_date.is_weekend`.
+  (`dim_traffic`) para medir el retorno de cada canal de adquisición. Requiere unir
+  sesiones con pedidos del mismo cliente en el ETL.
+- **NPS por tiempo de entrega a nivel cliente:** la encuesta no tiene `order_id`; si
+  se agregara, se podría medir el NPS según los días que tardó cada pedido.
+- **Ya implementado en el sitio web:** tiempo de entrega contra NPS, cohortes, mix de
+  medios de pago, origen del tráfico y ventas por día de la semana.

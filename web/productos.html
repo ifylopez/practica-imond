@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos | EcoBottle AR</title>
+  <meta name="description" content="Facturación, unidades y ranking mensual de los productos de EcoBottle AR.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M13 3h8v4l3 4.5V28a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3V11.5L13 7z' fill='%2325A898'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside id="lateral" class="lateral"></aside>
+  <div class="contenido">
+    <div id="filtros" class="filtros" role="region" aria-label="Filtros"></div>
+    <main id="contenido-pagina" class="pagina">
+
+      <header class="encabezado">
+        <h1 id="titular">Dos botellas, dos roles</h1>
+        <p id="bajada">Facturación sin IVA ni envío de cada producto. Sale de las líneas de pedido (fact_sales_order_item), por eso no coincide exactamente con el total de ventas.</p>
+      </header>
+
+      <section class="kpis" aria-label="Indicadores de productos">
+        <div class="tarjeta kpi" id="k-fact">
+          <span class="kpi-nombre">Facturación de productos</span>
+          <span class="kpi-valor">…</span>
+          <div class="kpi-chispa" id="k-fact-chispa"></div>
+          <span class="kpi-nota">Sin IVA ni envío. Responde a todos los filtros.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-unid">
+          <span class="kpi-nombre">Unidades vendidas</span>
+          <span class="kpi-valor">…</span>
+          <div class="kpi-chispa" id="k-unid-chispa"></div>
+          <span class="kpi-nota">Responde a todos los filtros.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-precio">
+          <span class="kpi-nombre">Precio medio por unidad</span>
+          <span class="kpi-valor">…</span>
+          <div class="kpi-chispa" id="k-precio-chispa"></div>
+          <span class="kpi-nota">Facturación ÷ unidades, después de sumar.</span>
+        </div>
+      </section>
+
+      <div class="grilla" style="margin-top:18px">
+        <article class="tarjeta ancho-8" data-aplica="mes canal provincia producto">
+          <div class="tarjeta-cabeza"><div>
+            <h2>Facturación mensual por producto</h2>
+            <p class="bajada">Millones de pesos por mes.</p>
+          </div></div>
+          <div class="grafico" id="g-mensual" role="img" aria-label="Líneas de facturación mensual por producto"></div>
+        </article>
+
+        <article class="tarjeta ancho-4" data-aplica="mes canal provincia producto">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-share">Participación en la facturación</h2>
+            <p class="bajada">Porcentaje del período elegido.</p>
+          </div></div>
+          <div class="grafico" id="g-share" role="img" aria-label="Participación de cada producto en la facturación"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes canal provincia producto">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-mix">Unidades contra facturación</h2>
+            <p class="bajada">Qué parte de las unidades y qué parte de la plata aporta cada producto. Si las barras no coinciden, los precios son distintos.</p>
+          </div></div>
+          <div class="grafico" id="g-mix" role="img" aria-label="Barras 100% de unidades y facturación por producto"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes canal provincia" data-fijo="Compara siempre todos los productos, igual que RANKX en Power BI">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-ranking">Ranking mensual por facturación</h2>
+            <p class="bajada">Cada columna es un mes: arriba el producto que más facturó, abajo el segundo.</p>
+          </div></div>
+          <div class="grafico medio" id="g-ranking" role="img" aria-label="Ranking mensual de productos"></div>
+          <div class="leyenda" id="ley-ranking"></div>
+        </article>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="assets/vendor/papaparse.min.js"></script>
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/productos.js"></script>
+</body>
+</html>

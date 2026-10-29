@@ -168,12 +168,69 @@ erDiagram
     filtro_provincia {
         VARCHAR provincia
     }
+    mart_clientes_mes {
+        DATE mes
+        BIGINT compradores
+        BIGINT compradores_nuevos
+        BIGINT compradores_recurrentes
+    }
+    mart_cohortes {
+        VARCHAR cohorte
+        INTEGER meses_desde_alta
+        BIGINT tamano_cohorte
+        BIGINT clientes_compradores
+    }
+    mart_dia_semana {
+        DATE mes
+        VARCHAR canal
+        VARCHAR provincia
+        INTEGER dia_num
+        VARCHAR dia
+        BIGINT pedidos
+        DECIMAL ventas
+    }
+    mart_estados {
+        DATE mes
+        VARCHAR canal
+        VARCHAR provincia
+        VARCHAR estado
+        VARCHAR estado_desc
+        INTEGER orden
+        BIGINT pedidos
+        DECIMAL monto
+    }
+    mart_logistica {
+        DATE mes
+        VARCHAR canal
+        VARCHAR provincia
+        VARCHAR estado_envio
+        BIGINT envios
+        BIGINT entregados
+        HUGEINT dias_entrega_suma
+        BIGINT entregas_mas_7_dias
+    }
     mart_nps {
         DATE mes
         VARCHAR canal
         BIGINT respuestas
         HUGEINT promotores
         HUGEINT detractores
+    }
+    mart_nps_puntajes {
+        DATE mes
+        VARCHAR canal
+        SMALLINT puntaje
+        BIGINT respuestas
+    }
+    mart_pagos {
+        DATE mes
+        VARCHAR canal
+        VARCHAR provincia
+        VARCHAR medio
+        VARCHAR estado_pago
+        VARCHAR estado_pedido
+        BIGINT pagos
+        DECIMAL monto
     }
     mart_productos {
         DATE mes
@@ -182,6 +239,16 @@ erDiagram
         VARCHAR producto
         HUGEINT unidades
         DECIMAL ventas_productos
+    }
+    mart_trafico {
+        DATE mes
+        VARCHAR fuente
+        VARCHAR fuente_desc
+        VARCHAR dispositivo
+        BIGINT sesiones
+        BIGINT sesiones_identificadas
+        BIGINT sesiones_con_fin
+        HUGEINT minutos_suma
     }
     mart_usuarios {
         DATE mes
