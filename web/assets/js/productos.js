@@ -65,9 +65,9 @@ EB.pagina({
     });
     EB.tabla("g-mix", ["Producto", "% de unidades", "% de facturación"], porProd.map((p) => [p.producto, fmt.pct(p.unidades / unid), fmt.pct(p.ventas_productos / fact)]));
     const caro = porProd.slice().sort((a, b) => b.ventas_productos / b.unidades - a.ventas_productos / a.unidades)[0];
-    if (porProd.length > 1) {
-      document.getElementById("t-mix").textContent = caro.producto + " pesa más en la plata que en las unidades";
-    }
+    document.getElementById("t-mix").textContent = porProd.length > 1
+      ? caro.producto + " pesa más en la facturación que en las unidades"
+      : "Unidades contra facturación";
 
     // ---- Ranking mensual (siempre con todos los productos, como RANKX) ----
     const todos = EB.filtrar(d.mart_productos, DIMS, { ignorar: ["producto"] });

@@ -98,8 +98,9 @@ ORDER BY mes, canal;
 
 -- ---------------------------------------------------------------------
 -- TABLAS DE FILTRO (una lista de valores por filtro del tablero)
--- En Power BI se relacionan con los marts para que un mismo filtro
--- afecte a todos los gráficos a la vez.
+-- El sitio web arma con ellas los desplegables de los filtros (en Power BI
+-- se relacionaban con los marts para que un filtro afectara a todos los
+-- gráficos a la vez).
 -- ---------------------------------------------------------------------
 CREATE TABLE filtro_mes AS
 SELECT DISTINCT CAST(DATE_TRUNC('month', date) AS DATE) AS mes

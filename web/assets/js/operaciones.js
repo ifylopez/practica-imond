@@ -43,7 +43,9 @@ EB.pagina({
     });
     EB.tabla("g-estados", ["Estado", "Pedidos", "% del total", "Monto"], porEstado.slice().reverse().map((e) => [e.estado_desc, fmt.entero(e.pedidos), fmt.pct(e.pedidos / totPed), fmt.millones(e.monto)]));
     const ent = porEstado.find((e) => e.estado === "FULFILLED");
-    if (ent) document.getElementById("t-estados").textContent = fmt.pct(ent.pedidos / totPed, 0) + " de los pedidos llegan a entregarse";
+    document.getElementById("t-estados").textContent = ent
+      ? fmt.pct(ent.pedidos / totPed, 0) + " de los pedidos llegan a entregarse"
+      : "Cómo terminan los pedidos";
 
     // ---- Cancelados según el pago ----
     const porPagoCancel = EB.agruparLista(cancel, "estado_pago", ["pagos", "monto"]).sort((a, b) => a.pagos - b.pagos);
@@ -60,7 +62,9 @@ EB.pagina({
       }],
     });
     EB.tabla("g-cancel", ["Estado del pago", "Pedidos cancelados", "Monto"], porPagoCancel.slice().reverse().map((e) => [e.estado_pago, fmt.entero(e.pagos), fmt.millones(e.monto)]));
-    document.getElementById("t-cancel").textContent = fmt.entero(cancelReemb) + " cancelados tuvieron el pago reembolsado";
+    document.getElementById("t-cancel").textContent = cancelReemb > 0
+      ? fmt.entero(cancelReemb) + " cancelados tuvieron el pago reembolsado"
+      : "Qué pasó con el pago de los cancelados";
 
     // ---- Medios de pago por canal (pagos concretados) ----
     const concretados = pagos.filter((f) => f.estado_pago === "Pagado");
@@ -109,7 +113,9 @@ EB.pagina({
     });
     EB.tabla("g-rechazo", ["Medio", "Intentos", "Rechazados", "% rechazado"], tasas.slice().reverse().map((m) => [m.medio, fmt.entero(m.intentos), fmt.entero(m.rechazados), fmt.pct(m.tasa)]));
     const peorMedio = tasas[tasas.length - 1];
-    if (peorMedio) document.getElementById("t-rechazo").textContent = peorMedio.medio + " es el medio con más rechazos (" + fmt.pct(peorMedio.tasa, 0) + ")";
+    document.getElementById("t-rechazo").textContent = peorMedio && peorMedio.tasa > 0
+      ? peorMedio.medio + " es el medio con más rechazos (" + fmt.pct(peorMedio.tasa, 0) + ")"
+      : "Pagos rechazados por medio";
 
     // ---- Días de entrega por provincia (todas las provincias) ----
     const logTodas = EB.filtrar(d.mart_logistica, DIMS, { ignorar: ["provincia"] });
@@ -130,7 +136,9 @@ EB.pagina({
     });
     EB.tabla("g-prov", ["Provincia", "Entregas", "Días promedio", "% más de 7 días"], porProv.slice().reverse().map((p) => [p.provincia, fmt.entero(p.entregados), fmt.dec(p.dias), fmt.pct(p.entregas_mas_7_dias / p.entregados)]));
     const lenta = porProv[porProv.length - 1], rapida = porProv[0];
-    if (lenta && rapida && lenta !== rapida) document.getElementById("t-prov").textContent = "A " + rapida.provincia + " se entrega en " + fmt.dec(rapida.dias) + " días; a " + lenta.provincia + ", en " + fmt.dec(lenta.dias);
+    document.getElementById("t-prov").textContent = lenta && rapida && lenta !== rapida
+      ? "A " + rapida.provincia + " se entrega en " + fmt.dec(rapida.dias) + " días; a " + lenta.provincia + ", en " + fmt.dec(lenta.dias)
+      : "Días de entrega por provincia";
 
     // ---- Entregas lentas por mes ----
     const pctLentas = EB.serieMensual(log, (f) => { const e = EB.suma(f, "entregados"); return e ? EB.suma(f, "entregas_mas_7_dias") / e * 100 : null; });
@@ -147,6 +155,8 @@ EB.pagina({
     });
     EB.tabla("g-lentas", ["Mes", "% de entregas de más de 7 días"], meses.map((m, i) => [EB.etiquetaMes(m), pctLentas[i] == null ? "sin datos" : fmt.dec(pctLentas[i]) + "%"]));
     const iMax = pctLentas.indexOf(max);
-    if (iMax >= 0) document.getElementById("t-lentas").textContent = "En " + EB.etiquetaMesLarga(meses[iMax]) + " el " + fmt.dec(max, 0) + "% de las entregas tardó más de 7 días";
+    document.getElementById("t-lentas").textContent = iMax >= 0 && max > 0
+      ? "En " + EB.etiquetaMesLarga(meses[iMax]) + " el " + fmt.dec(max, 0) + "% de las entregas tardó más de 7 días"
+      : "Ninguna entrega tardó más de 7 días en el período";
   },
 });

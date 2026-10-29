@@ -29,10 +29,9 @@ EB.pagina({
       series: [{ name: "Usuarios activos", type: "bar", barMaxWidth: 28, itemStyle: { color: COLOR.azul, borderRadius: [4, 4, 0, 0] }, data: usuarios }],
     });
     EB.tabla("g-usuarios", ["Mes", "Usuarios activos"], meses.map((m, i) => [EB.etiquetaMes(m), fmt.entero(usuarios[i])]));
-    if (usuarios.length > 1 && usuarios[0]) {
-      document.getElementById("t-usuarios").textContent =
-        "Los usuarios activos pasaron de " + fmt.entero(usuarios[0]) + " a " + fmt.entero(usuarios[usuarios.length - 1]) + " por mes";
-    }
+    document.getElementById("t-usuarios").textContent = usuarios.length > 1 && usuarios[0]
+      ? "Los usuarios activos pasaron de " + fmt.entero(usuarios[0]) + " a " + fmt.entero(usuarios[usuarios.length - 1]) + " por mes"
+      : "Usuarios activos por mes";
 
     // ---- Identificadas vs anónimas ----
     const sesIdent = EB.serieMensual(traf, (f) => EB.suma(f, "sesiones_identificadas"));

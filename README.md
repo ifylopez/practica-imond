@@ -162,10 +162,12 @@ Esquema estrella según Kimball: **4 tablas de hechos** y **10 dimensiones**.
 Las 6 principales (fecha, cliente, canal, tienda, dirección, producto) son
 **dimensiones conformadas**: las comparten varios hechos con el mismo significado.
 Las 4 de atributos (estado del pedido, pago, estado del envío, tráfico) sacan de los
-hechos los atributos descriptivos que antes quedaban como texto suelto. El diagrama completo se genera en
-[`dw/modelo_estrella.md`](dw/modelo_estrella.md).
+hechos los atributos descriptivos que antes quedaban como texto suelto. El diagrama
+completo se genera en [`dw/modelo_estrella.md`](dw/modelo_estrella.md).
 
-En el diagrama, las tablas `mart_*` y `filtro_*` aparecen sin relaciones: son la capa de presentación, derivada de los hechos con `CREATE TABLE ... AS SELECT`, y sus relaciones se definen en Power BI.
+En el diagrama, las tablas `mart_*` y `filtro_*` aparecen sin relaciones: son la
+capa de presentación, derivada de los hechos con `CREATE TABLE ... AS SELECT`. Cada
+mart ya trae los nombres de sus dimensiones, así que el sitio no necesita unir tablas.
 
 ### Granos
 
@@ -652,9 +654,9 @@ depende de servicios externos y siempre usa la misma versión.
     26%, publicidad en redes 25% y referidos 18%.
 12. **Las entregas lentas explican la crisis del NPS online (confirma el hallazgo 4).**
     Los días promedio entre pedido y entrega rondan 4,7 en un mes normal, pero
-    subieron a **9,3 en julio y 9,1 en agosto de 2024**: en esos meses tardó más de 7 días el 77% y
-    el 71% de las entregas, respectivamente. Son exactamente los meses en que el NPS
-    online cayó a −6 y −26,5.
+    subieron a **9,3 en julio y 9,1 en agosto de 2024**: en esos meses tardó más de
+    7 días el 77% y el 71% de las entregas, respectivamente. Son exactamente los meses
+    en que el NPS online cayó a −6 y −26,5.
 13. **Las tiendas no abren los domingos.** OFFLINE no registra ventas en domingo y su
     mejor día es el sábado ($40,3M en el período). La web vende todos los días, con
     pico el martes ($38,9M).
@@ -671,11 +673,11 @@ depende de servicios externos y siempre usa la misma versión.
 ### Limitaciones
 
 - **NPS sin pedido:** la encuesta no tiene `order_id`, así que el NPS **no se puede
-  cortar por producto ni por provincia**. En el tablero, esos filtros no afectan las
-  vistas de NPS.
+  cortar por producto ni por provincia**. Por eso la página de NPS solo ofrece los
+  filtros de período y canal.
 - **Ventas y Ticket no se filtran por producto:** son KPIs a nivel pedido, y un
-  pedido puede tener varios productos. El filtro de producto aplica solo a las vistas
-  de productos y al ranking.
+  pedido puede tener varios productos. El filtro de producto aplica solo a la página
+  Productos; el ranking mensual siempre compara los dos productos.
 - **Usuarios Activos** solo se filtra por fecha (las sesiones no tienen provincia ni
   producto y siempre son del canal online) y cuenta solo clientes identificados.
 - **NPS con pocas respuestas:** algunos meses tienen menos de 30 respuestas por canal
@@ -686,7 +688,6 @@ depende de servicios externos y siempre usa la misma versión.
 - **Tasa de conversión web:** pedidos online / sesiones por mes y por fuente
   (`dim_traffic`) para medir el retorno de cada canal de adquisición. Requiere unir
   sesiones con pedidos del mismo cliente en el ETL.
-- **NPS por tiempo de entrega a nivel cliente:** la encuesta no tiene `order_id`; si
-  se agregara, se podría medir el NPS según los días que tardó cada pedido.
-- **Ya implementado en el sitio web:** tiempo de entrega contra NPS, cohortes, mix de
-  medios de pago, origen del tráfico y ventas por día de la semana.
+- **NPS por tiempo de entrega a nivel pedido:** hoy la relación entre entregas y NPS
+  se ve por mes. Si la encuesta tuviera `order_id`, se podría medir el NPS según los
+  días que tardó cada pedido.
