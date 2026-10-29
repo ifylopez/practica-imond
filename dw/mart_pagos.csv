@@ -1,0 +1,874 @@
+mes,canal,provincia,medio,estado_pago,estado_pedido,pagos,monto
+2024-01-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,23,807786.00
+2024-01-01,OFFLINE,Buenos Aires,Efectivo,Reembolsado,Reembolsado,2,67155.00
+2024-01-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,42,1376718.00
+2024-01-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,36300.00
+2024-01-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,8,273450.00
+2024-01-01,OFFLINE,Buenos Aires,Transferencia,Reembolsado,Reembolsado,1,16335.00
+2024-01-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,22,819291.00
+2024-01-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,20,638880.00
+2024-01-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,45060.00
+2024-01-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,10,304920.00
+2024-01-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,15,497643.00
+2024-01-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,20,613440.00
+2024-01-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,5,163350.00
+2024-01-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,20,763800.00
+2024-01-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,22,820380.00
+2024-01-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,32670.00
+2024-01-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,2,83490.00
+2024-01-01,OFFLINE,Santa Fe,Transferencia,Reembolsado,Reembolsado,1,83490.00
+2024-01-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,46,1440427.50
+2024-01-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,6,158460.00
+2024-01-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,1,30240.00
+2024-01-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,2,91950.00
+2024-01-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,47,1734487.50
+2024-01-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,6,220966.50
+2024-01-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,2,75000.00
+2024-01-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,15720.00
+2024-01-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,23,957913.50
+2024-01-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,4,125790.00
+2024-01-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,41,1570737.00
+2024-01-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,16020.00
+2024-01-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,2,34944.00
+2024-01-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,12,437250.00
+2024-01-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,1,38100.00
+2024-01-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,17,694935.00
+2024-01-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,76230.00
+2024-01-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,19950.00
+2024-01-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,22,779995.50
+2024-01-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,5,190996.50
+2024-01-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,5,301845.00
+2024-01-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,43,1186570.50
+2024-01-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,19650.00
+2024-01-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,2,35670.00
+2024-02-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,32,1590091.50
+2024-02-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,35,1202115.00
+2024-02-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,29040.00
+2024-02-01,OFFLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,14520.00
+2024-02-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,10,250833.00
+2024-02-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,17,579711.00
+2024-02-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,25,988086.00
+2024-02-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,37800.00
+2024-02-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,9,265038.00
+2024-02-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,17,541581.00
+2024-02-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,1,14520.00
+2024-02-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,24,711828.00
+2024-02-01,OFFLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,32670.00
+2024-02-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,4,168780.00
+2024-02-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,17,624408.00
+2024-02-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,31,1134289.50
+2024-02-01,OFFLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,2,30855.00
+2024-02-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,8,312180.00
+2024-02-01,OFFLINE,Santa Fe,Transferencia,Reembolsado,Reembolsado,1,14568.00
+2024-02-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,45,1850970.00
+2024-02-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,2,56850.00
+2024-02-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,2,35070.00
+2024-02-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,2,48682.50
+2024-02-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,59,2115780.00
+2024-02-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,56850.00
+2024-02-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,15720.00
+2024-02-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,4,91920.00
+2024-02-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,36,1098474.00
+2024-02-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,3,69840.00
+2024-02-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,45,1527102.00
+2024-02-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,4,124290.00
+2024-02-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,48690.00
+2024-02-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,17,474382.50
+2024-02-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,21,838653.00
+2024-02-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,3,96150.00
+2024-02-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,2,50790.00
+2024-02-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,24,871663.50
+2024-02-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,2,169932.00
+2024-02-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,1,45060.00
+2024-02-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,54450.00
+2024-02-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,37,1231914.00
+2024-02-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,3,143070.00
+2024-02-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,2,35670.00
+2024-02-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,54450.00
+2024-03-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,27,952623.00
+2024-03-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,35,1276893.00
+2024-03-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,50820.00
+2024-03-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,5,152460.00
+2024-03-01,OFFLINE,Buenos Aires,Transferencia,Reembolsado,Reembolsado,1,36300.00
+2024-03-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,21,649770.00
+2024-03-01,OFFLINE,Córdoba,Efectivo,Reembolsado,Reembolsado,1,14520.00
+2024-03-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,36,1303218.00
+2024-03-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,36300.00
+2024-03-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,81360.00
+2024-03-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,9,251922.00
+2024-03-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,13,278043.00
+2024-03-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,20,707442.00
+2024-03-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,2,99810.00
+2024-03-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,19,651948.00
+2024-03-01,OFFLINE,Santa Fe,Efectivo,Reembolsado,Reembolsado,1,32670.00
+2024-03-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,34,1208112.00
+2024-03-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,29040.00
+2024-03-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,8,218526.00
+2024-03-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,43,1542168.00
+2024-03-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,4,102810.00
+2024-03-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,2,35070.00
+2024-03-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,68,2281470.00
+2024-03-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,5,96750.00
+2024-03-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,2,56850.00
+2024-03-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,23,802368.00
+2024-03-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,2,43656.00
+2024-03-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,29,1166878.50
+2024-03-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,2,53820.00
+2024-03-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,61080.00
+2024-03-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,11,351960.00
+2024-03-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,1,16320.00
+2024-03-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,19,779862.00
+2024-03-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,1,45360.00
+2024-03-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,65340.00
+2024-03-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,22,904237.50
+2024-03-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,4,171480.00
+2024-03-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,3,48060.00
+2024-03-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,16020.00
+2024-03-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,38,1528762.50
+2024-03-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,2,82860.00
+2024-03-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,1,16020.00
+2024-03-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,16020.00
+2024-04-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,15,534336.00
+2024-04-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,25,809460.00
+2024-04-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,9,257730.00
+2024-04-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,17,585204.00
+2024-04-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,19,684303.00
+2024-04-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,14520.00
+2024-04-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,5,235950.00
+2024-04-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,17,660660.00
+2024-04-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,1,32670.00
+2024-04-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,21,611655.00
+2024-04-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,4,130680.00
+2024-04-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,20,791340.00
+2024-04-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,35,1377585.00
+2024-04-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,7,134310.00
+2024-04-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,45,1430122.50
+2024-04-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,4,91920.00
+2024-04-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,1,101640.00
+2024-04-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,2,56850.00
+2024-04-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,56,1934088.00
+2024-04-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,3,76200.00
+2024-04-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,4,148800.00
+2024-04-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,19,561966.00
+2024-04-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,1,30540.00
+2024-04-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,31,1172820.00
+2024-04-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,61710.00
+2024-04-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,19650.00
+2024-04-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,27636.00
+2024-04-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,12,456352.50
+2024-04-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,2,78030.00
+2024-04-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,20,661509.00
+2024-04-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,45360.00
+2024-04-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,20,825360.00
+2024-04-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,3,87264.00
+2024-04-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,1,16020.00
+2024-04-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,41,1388377.50
+2024-04-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,30540.00
+2024-04-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,1,16020.00
+2024-04-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,37800.00
+2024-05-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,26,939303.00
+2024-05-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,26,965580.00
+2024-05-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,3,97395.00
+2024-05-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,22,590964.00
+2024-05-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,27,1292280.00
+2024-05-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,18150.00
+2024-05-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,5,170610.00
+2024-05-01,OFFLINE,Córdoba,Transferencia,Reembolsado,Reembolsado,1,14520.00
+2024-05-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,13,470796.00
+2024-05-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,17,519075.00
+2024-05-01,OFFLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,16335.00
+2024-05-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,7,239943.00
+2024-05-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,10,468318.00
+2024-05-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,24,835626.00
+2024-05-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,43560.00
+2024-05-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,9,241395.00
+2024-05-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,49,1542106.50
+2024-05-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,9,315750.00
+2024-05-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,72,2416848.00
+2024-05-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,14520.00
+2024-05-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,19350.00
+2024-05-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,4,95328.00
+2024-05-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,23,846958.50
+2024-05-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,3,65436.00
+2024-05-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,1,55176.00
+2024-05-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,36,1053382.50
+2024-05-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,2,50190.00
+2024-05-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,15294.00
+2024-05-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,32040.00
+2024-05-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,16,628218.00
+2024-05-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,2,92550.00
+2024-05-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,23,697128.00
+2024-05-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,1,16320.00
+2024-05-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,2,52620.00
+2024-05-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,31,1147074.00
+2024-05-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,4,138810.00
+2024-05-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,1,16020.00
+2024-05-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,19650.00
+2024-05-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,35,1169505.00
+2024-05-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,3,79908.00
+2024-05-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,4,70518.00
+2024-06-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,33,1285131.00
+2024-06-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,38,1311630.00
+2024-06-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,14520.00
+2024-06-01,OFFLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,94380.00
+2024-06-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,4,185130.00
+2024-06-01,OFFLINE,Buenos Aires,Transferencia,Reembolsado,Reembolsado,1,18150.00
+2024-06-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,20,718425.00
+2024-06-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,47,1593570.00
+2024-06-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,43560.00
+2024-06-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,65340.00
+2024-06-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,9,285681.00
+2024-06-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,20,634524.00
+2024-06-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,1,14520.00
+2024-06-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,21,817642.50
+2024-06-01,OFFLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,16335.00
+2024-06-01,OFFLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,14520.00
+2024-06-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,2,83490.00
+2024-06-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,18,680673.00
+2024-06-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,29,885768.00
+2024-06-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,9,262860.00
+2024-06-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,53,2402952.00
+2024-06-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,4,113700.00
+2024-06-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,1,87120.00
+2024-06-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,72,2571577.50
+2024-06-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,35070.00
+2024-06-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,37500.00
+2024-06-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,21,869790.00
+2024-06-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,4,173610.00
+2024-06-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,43,1358488.50
+2024-06-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,16020.00
+2024-06-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,34170.00
+2024-06-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,18,490702.50
+2024-06-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,3,62754.00
+2024-06-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,38100.00
+2024-06-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,28,820942.50
+2024-06-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,3,70740.00
+2024-06-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,39,1533300.00
+2024-06-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,2,70470.00
+2024-06-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,2,103140.00
+2024-06-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,31,952270.50
+2024-06-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,4,329566.50
+2024-06-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,3,159768.00
+2024-07-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,23,933021.00
+2024-07-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,28,801000.00
+2024-07-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,14520.00
+2024-07-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,5,242484.00
+2024-07-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,21,850146.00
+2024-07-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,24,859947.00
+2024-07-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,29040.00
+2024-07-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,3,61710.00
+2024-07-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,15,505644.00
+2024-07-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,20,604380.00
+2024-07-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,5,170958.00
+2024-07-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,14,379020.00
+2024-07-01,OFFLINE,Santa Fe,Efectivo,Reembolsado,Reembolsado,1,14520.00
+2024-07-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,22,663345.00
+2024-07-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,5,148830.00
+2024-07-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,31,1080270.00
+2024-07-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,1,243754.50
+2024-07-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,2,49590.00
+2024-07-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,61,2169715.50
+2024-07-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,30240.00
+2024-07-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,30240.00
+2024-07-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,19350.00
+2024-07-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,18,645408.00
+2024-07-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,8,175713.00
+2024-07-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,2,32040.00
+2024-07-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,17,448710.00
+2024-07-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,2,35670.00
+2024-07-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,16020.00
+2024-07-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,8,241290.00
+2024-07-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,2,70770.00
+2024-07-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,19950.00
+2024-07-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,16,917892.00
+2024-07-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,2,31188.00
+2024-07-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,23,792930.00
+2024-07-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,1,19650.00
+2024-07-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,16020.00
+2024-07-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,28,1094604.00
+2024-07-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,3,155460.00
+2024-07-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,1,15294.00
+2024-07-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,4,148248.00
+2024-08-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,20,758418.00
+2024-08-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,29,1019778.00
+2024-08-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,32670.00
+2024-08-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,5,174240.00
+2024-08-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,20,662160.00
+2024-08-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,23,796470.00
+2024-08-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,50820.00
+2024-08-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,54450.00
+2024-08-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,5,116886.00
+2024-08-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,16,768108.00
+2024-08-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,30,1027986.00
+2024-08-01,OFFLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,101640.00
+2024-08-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,3,73326.00
+2024-08-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,22,630360.00
+2024-08-01,OFFLINE,Santa Fe,Efectivo,Reembolsado,Reembolsado,1,65340.00
+2024-08-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,21,668646.00
+2024-08-01,OFFLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,14520.00
+2024-08-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,5,221430.00
+2024-08-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,51,2033358.00
+2024-08-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,1,15720.00
+2024-08-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,1,33870.00
+2024-08-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,65,1974412.50
+2024-08-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,3,107670.00
+2024-08-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,6,229860.00
+2024-08-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,22,782862.00
+2024-08-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,1,16020.00
+2024-08-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,33,1071238.50
+2024-08-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,2,50190.00
+2024-08-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,45060.00
+2024-08-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,3,144570.00
+2024-08-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,12,446536.50
+2024-08-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,48990.00
+2024-08-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,10,321120.00
+2024-08-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,2,70770.00
+2024-08-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,30840.00
+2024-08-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,22,526680.00
+2024-08-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,3,119160.00
+2024-08-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,2,60354.00
+2024-08-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,3,80730.00
+2024-08-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,30,930528.00
+2024-08-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,4,82230.00
+2024-09-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,29,1032594.00
+2024-09-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,25,827388.00
+2024-09-01,OFFLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,3,58080.00
+2024-09-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,3,110100.00
+2024-09-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,18,568506.00
+2024-09-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,28,879234.00
+2024-09-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,36300.00
+2024-09-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,4,128502.00
+2024-09-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,19,466062.00
+2024-09-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,21,654459.00
+2024-09-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,5,145200.00
+2024-09-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,12,390225.00
+2024-09-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,23,755040.00
+2024-09-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,8,354288.00
+2024-09-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,44,1531974.00
+2024-09-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,3,169380.00
+2024-09-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,2,113730.00
+2024-09-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,2,53220.00
+2024-09-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,58,2043028.50
+2024-09-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,5,142740.00
+2024-09-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,58080.00
+2024-09-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,26,942582.00
+2024-09-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,3,151830.00
+2024-09-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,32,972961.50
+2024-09-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,16020.00
+2024-09-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,11,473610.00
+2024-09-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Cancelado,1,19042.50
+2024-09-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,16320.00
+2024-09-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,14,398197.50
+2024-09-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,2,156090.00
+2024-09-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,23,811080.00
+2024-09-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,2,70470.00
+2024-09-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,16020.00
+2024-09-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,40,1434756.00
+2024-09-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,37800.00
+2024-09-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,45060.00
+2024-10-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,23,957090.00
+2024-10-01,OFFLINE,Buenos Aires,Efectivo,Reembolsado,Reembolsado,1,39204.00
+2024-10-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,34,1118766.00
+2024-10-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,14520.00
+2024-10-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,8,243684.00
+2024-10-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,24,699138.00
+2024-10-01,OFFLINE,Córdoba,Efectivo,Reembolsado,Reembolsado,1,14520.00
+2024-10-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,25,925927.50
+2024-10-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,3,141570.00
+2024-10-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,42471.00
+2024-10-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,4,123420.00
+2024-10-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,16,676980.00
+2024-10-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,26,823995.00
+2024-10-01,OFFLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,83490.00
+2024-10-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,4,177870.00
+2024-10-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,22,634161.00
+2024-10-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,29,846297.00
+2024-10-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,6,202650.00
+2024-10-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,55,1887079.50
+2024-10-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,7,228630.00
+2024-10-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,3,108870.00
+2024-10-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,61,1931698.50
+2024-10-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,4,221400.00
+2024-10-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,3,108870.00
+2024-10-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,30,1200819.00
+2024-10-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,2,103140.00
+2024-10-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,1,30540.00
+2024-10-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,44,1332181.50
+2024-10-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,16020.00
+2024-10-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,30540.00
+2024-10-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,21,823407.00
+2024-10-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,4,105210.00
+2024-10-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,29,1176349.50
+2024-10-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,2,67125.00
+2024-10-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,1,16320.00
+2024-10-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,54450.00
+2024-10-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,39,1320048.00
+2024-10-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,3,73470.00
+2024-10-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,2,71970.00
+2024-10-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,3,80730.00
+2024-10-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,39,1172440.50
+2024-10-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,3,97380.00
+2024-10-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,1,19650.00
+2024-10-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,16020.00
+2024-11-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,32,832944.00
+2024-11-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,28,902781.00
+2024-11-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,30603.00
+2024-11-01,OFFLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,14520.00
+2024-11-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,11,249018.00
+2024-11-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,21,574314.00
+2024-11-01,OFFLINE,Córdoba,Efectivo,Reembolsado,Reembolsado,3,83490.00
+2024-11-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,12,447579.00
+2024-11-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,32670.00
+2024-11-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,11,729448.50
+2024-11-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,15,580770.00
+2024-11-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,1,19950.00
+2024-11-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,15,565554.00
+2024-11-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,5,210540.00
+2024-11-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,31,1119540.00
+2024-11-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,18,428388.00
+2024-11-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,18150.00
+2024-11-01,OFFLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,36300.00
+2024-11-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,6,181500.00
+2024-11-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,61,1785136.50
+2024-11-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,8,286458.00
+2024-11-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,96,3289984.50
+2024-11-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,7,270949.50
+2024-11-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,2,51405.00
+2024-11-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,2,44034.00
+2024-11-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,38,1030545.00
+2024-11-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,4,133050.00
+2024-11-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,1,43197.00
+2024-11-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,50,1748943.00
+2024-11-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,2,114030.00
+2024-11-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,27,852220.50
+2024-11-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,5,125916.00
+2024-11-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,26,910390.50
+2024-11-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,29,962232.00
+2024-11-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,3,59761.50
+2024-11-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,2,45834.00
+2024-11-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,40,1347070.50
+2024-11-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,3,122790.00
+2024-11-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,2,33855.00
+2024-11-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,3,114937.50
+2024-12-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,45,1469898.00
+2024-12-01,OFFLINE,Buenos Aires,Efectivo,Reembolsado,Reembolsado,2,32670.00
+2024-12-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,48,1700151.00
+2024-12-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,61710.00
+2024-12-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,11,439956.00
+2024-12-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,29,957690.00
+2024-12-01,OFFLINE,Córdoba,Efectivo,Reembolsado,Reembolsado,2,58080.00
+2024-12-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,52,1566441.00
+2024-12-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,2,29040.00
+2024-12-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,36300.00
+2024-12-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,13,385506.00
+2024-12-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,31,1163763.00
+2024-12-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,22,650118.00
+2024-12-01,OFFLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,14520.00
+2024-12-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,8,363000.00
+2024-12-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,21,728178.00
+2024-12-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,26,1126437.00
+2024-12-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,2,83490.00
+2024-12-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,6,152460.00
+2024-12-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,85,2959645.50
+2024-12-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,6,180240.00
+2024-12-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,4,139473.00
+2024-12-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,127,5224617.00
+2024-12-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,10,305193.00
+2024-12-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,19350.00
+2024-12-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,4,136387.50
+2024-12-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,27,1057786.50
+2024-12-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,5,103332.00
+2024-12-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Cancelado,1,37800.00
+2024-12-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,2,117660.00
+2024-12-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,62,2289385.50
+2024-12-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,4,140262.00
+2024-12-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,88620.00
+2024-12-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,26,993397.50
+2024-12-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,4,157860.00
+2024-12-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Cancelado,1,17227.50
+2024-12-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,19950.00
+2024-12-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,42,1445500.50
+2024-12-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,2,76200.00
+2024-12-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,3,121560.00
+2024-12-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,19950.00
+2024-12-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,43,1392162.00
+2024-12-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,6,268086.00
+2024-12-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,3,151830.00
+2024-12-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,61,2382409.50
+2024-12-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,3,84360.00
+2024-12-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,1,62073.00
+2024-12-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,4,97294.50
+2025-01-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,29,1150710.00
+2025-01-01,OFFLINE,Buenos Aires,Efectivo,Reembolsado,Reembolsado,2,32670.00
+2025-01-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,43,1411929.00
+2025-01-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,14520.00
+2025-01-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,11,369171.00
+2025-01-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,28,1126485.00
+2025-01-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,28,950745.00
+2025-01-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,36300.00
+2025-01-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,8,268620.00
+2025-01-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,19,865740.00
+2025-01-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,1,79860.00
+2025-01-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,21,700575.00
+2025-01-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,2,32670.00
+2025-01-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,17,593553.00
+2025-01-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,34,1143861.00
+2025-01-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,2,103455.00
+2025-01-01,OFFLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,2,65340.00
+2025-01-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,17,531528.00
+2025-01-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,66,2158695.00
+2025-01-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,5,246810.00
+2025-01-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,1,30240.00
+2025-01-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,1,54450.00
+2025-01-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,76,2348968.50
+2025-01-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,6,345949.50
+2025-01-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,15720.00
+2025-01-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,2,70170.00
+2025-01-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,31,972636.00
+2025-01-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,6,143310.00
+2025-01-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,40,1359519.00
+2025-01-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,2,95880.00
+2025-01-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,4,138810.00
+2025-01-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,20,849588.00
+2025-01-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,4,117204.00
+2025-01-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,30,1171026.00
+2025-01-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,2,103440.00
+2025-01-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,2,38992.50
+2025-01-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,27,940767.00
+2025-01-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,5,162090.00
+2025-01-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,44,1629868.50
+2025-01-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,1,19650.00
+2025-02-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,29,908448.00
+2025-02-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,46,1701492.00
+2025-02-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,12,425436.00
+2025-02-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,26,1001116.50
+2025-02-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,38,1258884.00
+2025-02-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,5,116160.00
+2025-02-01,OFFLINE,Córdoba,Transferencia,Reembolsado,Reembolsado,1,50820.00
+2025-02-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,22,842871.00
+2025-02-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,26,817098.00
+2025-02-01,OFFLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,47190.00
+2025-02-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,2,27588.00
+2025-02-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,20,675954.00
+2025-02-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,32,1176120.00
+2025-02-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,7,193890.00
+2025-02-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,68,2088495.00
+2025-02-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,8,215310.00
+2025-02-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,2,120990.00
+2025-02-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,85,3140964.00
+2025-02-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,6,273420.00
+2025-02-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,33870.00
+2025-02-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,37500.00
+2025-02-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,33,1087440.00
+2025-02-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,4,206328.00
+2025-02-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,42,1750107.00
+2025-02-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,34170.00
+2025-02-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,72600.00
+2025-02-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,14,430338.00
+2025-02-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,6,207576.00
+2025-02-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,30840.00
+2025-02-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,35,1356277.50
+2025-02-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,3,125190.00
+2025-02-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,1,16320.00
+2025-02-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,29,1155081.00
+2025-02-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,1,30540.00
+2025-02-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,19650.00
+2025-02-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,37,1500352.50
+2025-02-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,5,77922.00
+2025-02-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,2,124920.00
+2025-03-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,25,904818.00
+2025-03-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,44,1543587.00
+2025-03-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,50820.00
+2025-03-01,OFFLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,14520.00
+2025-03-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,11,343146.00
+2025-03-01,OFFLINE,Buenos Aires,Transferencia,Reembolsado,Reembolsado,1,14520.00
+2025-03-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,23,888987.00
+2025-03-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,33,1042995.00
+2025-03-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,7,246840.00
+2025-03-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,18,626175.00
+2025-03-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,3,70770.00
+2025-03-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,26,889713.00
+2025-03-01,OFFLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,14520.00
+2025-03-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,6,194916.00
+2025-03-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,14,321255.00
+2025-03-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,31,1089048.00
+2025-03-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,6,162261.00
+2025-03-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,58,1827376.50
+2025-03-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,10,410130.00
+2025-03-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,3,54420.00
+2025-03-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,1,30240.00
+2025-03-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,82,2928306.00
+2025-03-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,84690.00
+2025-03-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,61710.00
+2025-03-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,4,62880.00
+2025-03-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,25,1194322.50
+2025-03-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,1,16020.00
+2025-03-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,2,68340.00
+2025-03-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,40,1262331.00
+2025-03-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,34170.00
+2025-03-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,52320.00
+2025-03-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,72600.00
+2025-03-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,27,936724.50
+2025-03-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,2,52786.50
+2025-03-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,16320.00
+2025-03-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,37,1196316.00
+2025-03-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,3,96150.00
+2025-03-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,18135.00
+2025-03-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,28,916638.00
+2025-03-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,2,110400.00
+2025-03-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,40,1469412.00
+2025-03-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,2,46560.00
+2025-03-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Cancelado,1,58080.00
+2025-03-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,2,103140.00
+2025-04-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,28,1115610.00
+2025-04-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,31,1179609.00
+2025-04-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,8,192390.00
+2025-04-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,18,600450.00
+2025-04-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,29,851235.00
+2025-04-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,243210.00
+2025-04-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,3,43560.00
+2025-04-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,11,427251.00
+2025-04-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,15,395655.00
+2025-04-01,OFFLINE,Mendoza,Tarjeta,Rechazado,Cancelado,2,58443.00
+2025-04-01,OFFLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,2,30855.00
+2025-04-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,2,76230.00
+2025-04-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,17,595320.00
+2025-04-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,17,452031.00
+2025-04-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,6,152460.00
+2025-04-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,48,1584982.50
+2025-04-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,11,308460.00
+2025-04-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,1,15720.00
+2025-04-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,3,72570.00
+2025-04-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,81,2834229.00
+2025-04-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,5,146118.00
+2025-04-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,2,91950.00
+2025-04-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,4,159690.00
+2025-04-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,24,713758.50
+2025-04-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,5,185092.50
+2025-04-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Cancelado,1,30540.00
+2025-04-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,2,50190.00
+2025-04-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,44,1765993.50
+2025-04-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,3,119160.00
+2025-04-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,3,113400.00
+2025-04-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,86490.00
+2025-04-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,14,497856.00
+2025-04-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,2,72948.00
+2025-04-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,21,680884.50
+2025-04-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,45360.00
+2025-04-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,1,34470.00
+2025-04-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,31,1216476.00
+2025-04-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,6,161460.00
+2025-04-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,1,19650.00
+2025-04-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,47,1684921.50
+2025-04-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,2,124920.00
+2025-04-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,2,103140.00
+2025-05-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,23,656415.00
+2025-05-01,OFFLINE,Buenos Aires,Efectivo,Reembolsado,Reembolsado,1,16335.00
+2025-05-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,28,885690.00
+2025-05-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,1,49005.00
+2025-05-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,8,310365.00
+2025-05-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,15,529350.00
+2025-05-01,OFFLINE,Córdoba,Efectivo,Reembolsado,Reembolsado,1,43560.00
+2025-05-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,31,957594.00
+2025-05-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,3,78045.00
+2025-05-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,5,183000.00
+2025-05-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,13,480960.00
+2025-05-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,13,498399.00
+2025-05-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,5,201450.00
+2025-05-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,19,770286.00
+2025-05-01,OFFLINE,Santa Fe,Efectivo,Reembolsado,Reembolsado,2,94380.00
+2025-05-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,29,995346.00
+2025-05-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,45060.00
+2025-05-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,6,351747.00
+2025-05-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,82,2360149.50
+2025-05-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,9,288918.00
+2025-05-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,3,83530.50
+2025-05-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,97,3022161.00
+2025-05-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,8,226704.00
+2025-05-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,2,37752.00
+2025-05-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,31,1181196.00
+2025-05-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,1,11616.00
+2025-05-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,1,11616.00
+2025-05-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,52,1724868.00
+2025-05-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,3,68340.00
+2025-05-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,19650.00
+2025-05-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,22,668572.50
+2025-05-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,2,36270.00
+2025-05-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,23232.00
+2025-05-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,28,887235.00
+2025-05-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,29040.00
+2025-05-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,2,109626.00
+2025-05-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,40,1364388.00
+2025-05-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,1,49368.00
+2025-05-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Cancelado,2,87846.00
+2025-05-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,16020.00
+2025-05-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,41,1544083.50
+2025-05-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,2,46560.00
+2025-05-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,2,34170.00
+2025-06-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,30,1249375.50
+2025-06-01,OFFLINE,Buenos Aires,Efectivo,Reembolsado,Reembolsado,1,18150.00
+2025-06-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,28,1287127.50
+2025-06-01,OFFLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,119790.00
+2025-06-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,6,228690.00
+2025-06-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,23,708987.00
+2025-06-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,37,1068405.00
+2025-06-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,54450.00
+2025-06-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,7,284640.00
+2025-06-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,17,510741.00
+2025-06-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,1,68970.00
+2025-06-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,16,575718.00
+2025-06-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,10,308550.00
+2025-06-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,25,837900.00
+2025-06-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,31,937725.00
+2025-06-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,3,101640.00
+2025-06-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,57,2589655.50
+2025-06-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,4,195990.00
+2025-06-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,1,33870.00
+2025-06-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,76,3095064.00
+2025-06-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,3,129450.00
+2025-06-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,19350.00
+2025-06-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,2,62658.00
+2025-06-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,27,959605.50
+2025-06-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,4,195390.00
+2025-06-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,1,19650.00
+2025-06-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,36,1375117.50
+2025-06-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,3,77100.00
+2025-06-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,53820.00
+2025-06-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,22,921780.00
+2025-06-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,5,201390.00
+2025-06-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Cancelado,1,16320.00
+2025-06-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,37,1340290.50
+2025-06-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,19950.00
+2025-06-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,28,1255765.50
+2025-06-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,2,92250.00
+2025-06-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,46,1573710.00
+2025-06-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,37800.00
+2025-06-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,54450.00
+2025-07-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,19,631257.00
+2025-07-01,OFFLINE,Buenos Aires,Efectivo,Reembolsado,Reembolsado,1,29040.00
+2025-07-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,12,360570.00
+2025-07-01,OFFLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,1,43560.00
+2025-07-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,9,252285.00
+2025-07-01,OFFLINE,Buenos Aires,Transferencia,Reembolsado,Reembolsado,1,14520.00
+2025-07-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,21,670557.00
+2025-07-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,25,710802.00
+2025-07-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,5,170610.00
+2025-07-01,OFFLINE,Córdoba,Transferencia,Reembolsado,Reembolsado,1,76230.00
+2025-07-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,19,528498.00
+2025-07-01,OFFLINE,Mendoza,Efectivo,Reembolsado,Reembolsado,1,16320.00
+2025-07-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,18,598950.00
+2025-07-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,3,138666.00
+2025-07-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,17,612744.00
+2025-07-01,OFFLINE,Santa Fe,Efectivo,Reembolsado,Reembolsado,2,89661.00
+2025-07-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,20,620778.00
+2025-07-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,2,90750.00
+2025-07-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,55,1745943.00
+2025-07-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,1,61710.00
+2025-07-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,1,30240.00
+2025-07-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,66,2223994.50
+2025-07-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,2,84690.00
+2025-07-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Cancelado,1,15720.00
+2025-07-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,21,655038.00
+2025-07-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,4,127968.00
+2025-07-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Cancelado,1,101640.00
+2025-07-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,29,896902.50
+2025-07-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,3,351843.00
+2025-07-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,19650.00
+2025-07-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,15,529800.00
+2025-07-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,19950.00
+2025-07-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,25,828414.00
+2025-07-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,3,63480.00
+2025-07-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,26,1104709.50
+2025-07-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,5,152700.00
+2025-07-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,37800.00
+2025-07-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,36,1325530.50
+2025-07-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,1,35985.00
+2025-07-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,72600.00
+2025-08-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,23,729630.00
+2025-08-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,31,1153947.00
+2025-08-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,4,98010.00
+2025-08-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,19,660660.00
+2025-08-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,25,689700.00
+2025-08-01,OFFLINE,Córdoba,Tarjeta,Rechazado,Cancelado,2,43560.00
+2025-08-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,3,119790.00
+2025-08-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,9,272250.00
+2025-08-01,OFFLINE,Córdoba,Transferencia,Reembolsado,Reembolsado,1,14520.00
+2025-08-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,10,435963.00
+2025-08-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,27,969543.00
+2025-08-01,OFFLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,14520.00
+2025-08-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,9,297660.00
+2025-08-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,21,618600.00
+2025-08-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,26,861810.00
+2025-08-01,OFFLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,2,94380.00
+2025-08-01,OFFLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,1,29040.00
+2025-08-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,7,297660.00
+2025-08-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,61,2018788.50
+2025-08-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,9,353250.00
+2025-08-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,1,19350.00
+2025-08-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,75,2658486.00
+2025-08-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,9,319672.50
+2025-08-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,5,239550.00
+2025-08-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,26,865626.00
+2025-08-01,ONLINE,Córdoba,Pasarela de pago,Rechazado,Cancelado,2,30588.00
+2025-08-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Cancelado,1,19650.00
+2025-08-01,ONLINE,Córdoba,Pasarela de pago,Reembolsado,Reembolsado,1,58080.00
+2025-08-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,54,1933635.00
+2025-08-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,1,16020.00
+2025-08-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Cancelado,1,16020.00
+2025-08-01,ONLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,1,30540.00
+2025-08-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,21,682351.50
+2025-08-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,1,19950.00
+2025-08-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,26,1374214.50
+2025-08-01,ONLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,54450.00
+2025-08-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,87120.00
+2025-08-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,32,1040250.00
+2025-08-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,4,122160.00
+2025-08-01,ONLINE,Santa Fe,Pasarela de pago,Reembolsado,Reembolsado,1,16020.00
+2025-08-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,45,1568121.00
+2025-08-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,5,142899.00
+2025-08-01,ONLINE,Santa Fe,Tarjeta,Reembolsado,Reembolsado,3,108270.00
+2025-09-01,OFFLINE,Buenos Aires,Efectivo,Pagado,Entregado,18,621456.00
+2025-09-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Entregado,19,511830.00
+2025-09-01,OFFLINE,Buenos Aires,Tarjeta,Pagado,Pagado (sin entregar),1,15720.00
+2025-09-01,OFFLINE,Buenos Aires,Transferencia,Pagado,Entregado,8,370260.00
+2025-09-01,OFFLINE,Córdoba,Efectivo,Pagado,Entregado,18,621141.00
+2025-09-01,OFFLINE,Córdoba,Tarjeta,Pagado,Entregado,23,784080.00
+2025-09-01,OFFLINE,Córdoba,Tarjeta,Reembolsado,Reembolsado,2,54450.00
+2025-09-01,OFFLINE,Córdoba,Transferencia,Pagado,Entregado,6,212718.00
+2025-09-01,OFFLINE,Mendoza,Efectivo,Pagado,Entregado,16,514734.00
+2025-09-01,OFFLINE,Mendoza,Tarjeta,Pagado,Entregado,18,580800.00
+2025-09-01,OFFLINE,Mendoza,Tarjeta,Rechazado,Cancelado,1,65340.00
+2025-09-01,OFFLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,1,18150.00
+2025-09-01,OFFLINE,Mendoza,Transferencia,Pagado,Entregado,2,65340.00
+2025-09-01,OFFLINE,Santa Fe,Efectivo,Pagado,Entregado,13,392451.00
+2025-09-01,OFFLINE,Santa Fe,Tarjeta,Pagado,Entregado,17,521316.00
+2025-09-01,OFFLINE,Santa Fe,Transferencia,Pagado,Entregado,4,90750.00
+2025-09-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Entregado,42,1410076.50
+2025-09-01,ONLINE,Buenos Aires,Pasarela de pago,Pagado,Pagado (sin entregar),6,183144.00
+2025-09-01,ONLINE,Buenos Aires,Pasarela de pago,Pendiente,Creado (sin pagar),1,15720.00
+2025-09-01,ONLINE,Buenos Aires,Pasarela de pago,Rechazado,Cancelado,7,233460.00
+2025-09-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Cancelado,1,15720.00
+2025-09-01,ONLINE,Buenos Aires,Pasarela de pago,Reembolsado,Reembolsado,1,30240.00
+2025-09-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Entregado,69,2353162.50
+2025-09-01,ONLINE,Buenos Aires,Tarjeta,Pagado,Pagado (sin entregar),11,261744.00
+2025-09-01,ONLINE,Buenos Aires,Tarjeta,Rechazado,Cancelado,3,47160.00
+2025-09-01,ONLINE,Buenos Aires,Tarjeta,Reembolsado,Reembolsado,4,139110.00
+2025-09-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Entregado,25,849520.50
+2025-09-01,ONLINE,Córdoba,Pasarela de pago,Pagado,Pagado (sin entregar),9,341604.00
+2025-09-01,ONLINE,Córdoba,Tarjeta,Pagado,Entregado,41,1734994.50
+2025-09-01,ONLINE,Córdoba,Tarjeta,Pagado,Pagado (sin entregar),10,189240.00
+2025-09-01,ONLINE,Córdoba,Tarjeta,Rechazado,Cancelado,3,98880.00
+2025-09-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Entregado,13,400950.00
+2025-09-01,ONLINE,Mendoza,Pasarela de pago,Pagado,Pagado (sin entregar),3,87982.50
+2025-09-01,ONLINE,Mendoza,Pasarela de pago,Rechazado,Cancelado,2,32640.00
+2025-09-01,ONLINE,Mendoza,Pasarela de pago,Reembolsado,Reembolsado,1,45360.00
+2025-09-01,ONLINE,Mendoza,Tarjeta,Pagado,Entregado,25,1073454.00
+2025-09-01,ONLINE,Mendoza,Tarjeta,Pagado,Pagado (sin entregar),6,201390.00
+2025-09-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Cancelado,1,19950.00
+2025-09-01,ONLINE,Mendoza,Tarjeta,Reembolsado,Reembolsado,2,68940.00
+2025-09-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Entregado,14,407910.00
+2025-09-01,ONLINE,Santa Fe,Pasarela de pago,Pagado,Pagado (sin entregar),8,340830.00
+2025-09-01,ONLINE,Santa Fe,Pasarela de pago,Rechazado,Cancelado,5,180240.00
+2025-09-01,ONLINE,Santa Fe,Tarjeta,Pagado,Entregado,36,1259731.50
+2025-09-01,ONLINE,Santa Fe,Tarjeta,Pagado,Pagado (sin entregar),6,248302.50
+2025-09-01,ONLINE,Santa Fe,Tarjeta,Rechazado,Cancelado,4,117078.00

@@ -31,7 +31,8 @@ JOIN dim_date    AS d ON d.date_key   = f.date_key
 JOIN dim_channel AS c ON c.channel_key = f.channel_key
 JOIN dim_address AS a ON a.address_key = f.shipping_address_key
 WHERE f.is_sale
-GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE), c.code, a.province;
+GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE), c.code, a.province
+ORDER BY mes, canal, provincia;
 
 
 -- ---------------------------------------------------------------------
@@ -52,7 +53,8 @@ JOIN dim_channel AS c ON c.channel_key = f.channel_key
 JOIN dim_address AS a ON a.address_key = f.shipping_address_key
 JOIN dim_product AS p ON p.product_key = f.product_key
 WHERE f.is_sale
-GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE), c.code, a.province, p.name;
+GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE), c.code, a.province, p.name
+ORDER BY mes, canal, provincia, producto;
 
 
 -- ---------------------------------------------------------------------
@@ -70,7 +72,8 @@ SELECT
     COUNT(*) FILTER (WHERE f.customer_key = -1)                        AS sesiones_anonimas
 FROM fact_web_session AS f
 JOIN dim_date AS d ON d.date_key = f.date_key
-GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE);
+GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE)
+ORDER BY mes;
 
 
 -- ---------------------------------------------------------------------
@@ -89,7 +92,8 @@ SELECT
 FROM fact_nps_response AS f
 JOIN dim_date    AS d ON d.date_key   = f.date_key
 JOIN dim_channel AS c ON c.channel_key = f.channel_key
-GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE), c.code;
+GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE), c.code
+ORDER BY mes, canal;
 
 
 -- ---------------------------------------------------------------------
@@ -104,13 +108,13 @@ WHERE date BETWEEN DATE '2024-01-01' AND DATE '2025-09-30'   -- período de los 
 ORDER BY mes;
 
 CREATE TABLE filtro_canal AS
-SELECT code AS canal FROM dim_channel;
+SELECT code AS canal FROM dim_channel ORDER BY canal;
 
 CREATE TABLE filtro_provincia AS
-SELECT DISTINCT province AS provincia FROM dim_address WHERE address_key <> -1;
+SELECT DISTINCT province AS provincia FROM dim_address WHERE address_key <> -1 ORDER BY provincia;
 
 CREATE TABLE filtro_producto AS
-SELECT name AS producto FROM dim_product;
+SELECT name AS producto FROM dim_product ORDER BY producto;
 
 
 -- ---------------------------------------------------------------------
