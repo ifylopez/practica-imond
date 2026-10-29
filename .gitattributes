@@ -10,3 +10,9 @@ web/assets/data/*.geojson  -diff linguist-generated
 
 # CSV generados por run_sql.py (se versionan para que el sitio los lea)
 dw/*.csv linguist-generated
+
+# CSV del data warehouse: siempre con finales de línea LF, en cualquier sistema.
+# run_sql.py (DuckDB) los escribe con LF también en Windows; sin esta regla, Git
+# con core.autocrlf=true los bajaba con CRLF y después de cada corrida los marcaba
+# como modificados aunque el contenido fuera idéntico.
+dw/*.csv text eol=lf
