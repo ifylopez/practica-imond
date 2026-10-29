@@ -1,0 +1,12 @@
+# Archivos binarios: Git no calcula diferencias ni toca los finales de línea
+*.pbix  binary
+*.png   binary
+*.jpg   binary
+*.woff2 binary
+
+# Librerías minificadas de terceros: se guardan tal cual y no se comparan
+web/assets/vendor/*.min.js -diff linguist-vendored
+web/assets/data/*.geojson  -diff linguist-generated
+
+# CSV generados por run_sql.py (se versionan para que el sitio los lea)
+dw/*.csv linguist-generated
