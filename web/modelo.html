@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acerca del modelo | EcoBottle AR</title>
+  <meta name="description" content="Arquitectura, modelo estrella y metodología del tablero de EcoBottle AR.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M13 3h8v4l3 4.5V28a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3V11.5L13 7z' fill='%2325A898'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside id="lateral" class="lateral"></aside>
+  <div class="contenido">
+    <div id="filtros" class="filtros" role="region" aria-label="Filtros"></div>
+    <main id="contenido-pagina" class="pagina">
+
+      <header class="encabezado">
+        <h1>Cómo está construido este tablero</h1>
+        <p>Los cálculos viven en el ETL (SQL sobre DuckDB). El sitio solo lee los marts ya armados, filtra, suma y divide, igual que hacían las medidas DAX en el tablero de Power BI anterior.</p>
+      </header>
+
+      <div class="grilla">
+        <article class="tarjeta ancho-12">
+          <h2>Del CSV crudo al gráfico</h2>
+          <p class="bajada">Cada capa lee solo de la anterior. Los marts nunca leen <code>raw</code>: salen del modelo estrella.</p>
+          <svg class="diagrama" viewBox="0 0 1100 230" role="img" aria-label="Flujo: raw, modelo estrella, marts, dw en CSV y sitio web">
+            <defs>
+              <marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#A9A3C9"/></marker>
+            </defs>
+            <g font-family="Manrope, sans-serif">
+              <!-- caja 1 -->
+              <rect x="6" y="40" width="190" height="150" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(196,184,255,0.3)"/>
+              <text x="26" y="74" fill="#EDEAFB" font-size="17" font-weight="700">raw/*.csv</text>
+              <text x="26" y="100" fill="#A9A3C9" font-size="13">13 tablas del sistema</text>
+              <text x="26" y="120" fill="#A9A3C9" font-size="13">transaccional</text>
+              <text x="26" y="160" fill="#7D779F" font-size="12">se cargan como vistas</text>
+              <text x="26" y="177" fill="#7D779F" font-size="12">en el esquema raw</text>
+              <!-- caja 2 -->
+              <rect x="236" y="40" width="230" height="150" rx="14" fill="rgba(147,125,224,0.12)" stroke="#937DE0"/>
+              <text x="256" y="74" fill="#EDEAFB" font-size="17" font-weight="700">Modelo estrella</text>
+              <text x="256" y="100" fill="#A9A3C9" font-size="13">10 dimensiones dim_</text>
+              <text x="256" y="120" fill="#A9A3C9" font-size="13">4 tablas de hechos fact_</text>
+              <text x="256" y="160" fill="#7D779F" font-size="12">sql/01*.sql y sql/02*.sql</text>
+              <text x="256" y="177" fill="#7D779F" font-size="12">claves subrogadas, miembro -1</text>
+              <!-- caja 3 -->
+              <rect x="506" y="40" width="230" height="150" rx="14" fill="rgba(37,168,152,0.12)" stroke="#25A898"/>
+              <text x="526" y="74" fill="#EDEAFB" font-size="17" font-weight="700">Marts</text>
+              <text x="526" y="100" fill="#A9A3C9" font-size="13">12 marts + 4 tablas de filtro</text>
+              <text x="526" y="120" fill="#A9A3C9" font-size="13">solo medidas aditivas</text>
+              <text x="526" y="160" fill="#7D779F" font-size="12">sql/04_marts.sql</text>
+              <text x="526" y="177" fill="#7D779F" font-size="12">sql/05_marts_web.sql</text>
+              <!-- caja 4 -->
+              <rect x="776" y="40" width="150" height="150" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(196,184,255,0.3)"/>
+              <text x="796" y="74" fill="#EDEAFB" font-size="17" font-weight="700">dw/*.csv</text>
+              <text x="796" y="100" fill="#A9A3C9" font-size="13">exportados por</text>
+              <text x="796" y="120" fill="#A9A3C9" font-size="13">run_sql.py</text>
+              <text x="796" y="160" fill="#7D779F" font-size="12">versionados</text>
+              <text x="796" y="177" fill="#7D779F" font-size="12">en Git</text>
+              <!-- caja 5 -->
+              <rect x="966" y="40" width="128" height="150" rx="14" fill="rgba(91,141,239,0.14)" stroke="#5B8DEF"/>
+              <text x="984" y="74" fill="#EDEAFB" font-size="17" font-weight="700">Sitio</text>
+              <text x="984" y="100" fill="#A9A3C9" font-size="13">filtra, suma</text>
+              <text x="984" y="120" fill="#A9A3C9" font-size="13">y divide</text>
+              <text x="984" y="160" fill="#7D779F" font-size="12">web/ en</text>
+              <text x="984" y="177" fill="#7D779F" font-size="12">GitHub Pages</text>
+              <!-- flechas -->
+              <g stroke="#A9A3C9" stroke-width="1.6" marker-end="url(#fl)">
+                <line x1="198" y1="115" x2="232" y2="115"/>
+                <line x1="468" y1="115" x2="502" y2="115"/>
+                <line x1="738" y1="115" x2="772" y2="115"/>
+                <line x1="928" y1="115" x2="962" y2="115"/>
+              </g>
+              <text x="6" y="22" fill="#7D779F" font-size="12.5">Se reconstruye todo con un solo comando: python run_sql.py (idempotente)</text>
+            </g>
+          </svg>
+        </article>
+
+        <article class="tarjeta ancho-6">
+          <h2>Tablas de hechos</h2>
+          <table class="tabla-simple">
+            <thead><tr><th>Tabla</th><th>Grano: una fila por…</th><th>Tipo</th></tr></thead>
+            <tbody>
+              <tr><td><code>fact_sales_order</code></td><td>pedido (order_id como dimensión degenerada)</td><td>Snapshot acumulativo: pago y envío en la misma fila</td></tr>
+              <tr><td><code>fact_sales_order_item</code></td><td>línea de pedido (producto dentro de un pedido)</td><td>Transaccional</td></tr>
+              <tr><td><code>fact_web_session</code></td><td>sesión web</td><td>Sin medidas (factless): se cuenta</td></tr>
+              <tr><td><code>fact_nps_response</code></td><td>respuesta a la encuesta NPS</td><td>Transaccional</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="tarjeta ancho-6">
+          <h2>Dimensiones</h2>
+          <table class="tabla-simple">
+            <thead><tr><th>Dimensión</th><th>Qué describe</th></tr></thead>
+            <tbody>
+              <tr><td><code>dim_date</code></td><td>Calendario: año, mes, día de la semana</td></tr>
+              <tr><td><code>dim_customer</code></td><td>Cliente y su cohorte de alta</td></tr>
+              <tr><td><code>dim_product</code></td><td>Producto, categoría y precio de lista</td></tr>
+              <tr><td><code>dim_channel</code></td><td>OFFLINE (tiendas) u ONLINE (web)</td></tr>
+              <tr><td><code>dim_store</code>, <code>dim_address</code></td><td>Tienda y dirección de envío (provincia)</td></tr>
+              <tr><td><code>dim_order_status</code>, <code>dim_shipment_status</code></td><td>Estado del pedido y del envío</td></tr>
+              <tr><td><code>dim_payment</code>, <code>dim_traffic</code></td><td>Dimensiones basura: medio y estado del pago; fuente y dispositivo</td></tr>
+            </tbody>
+          </table>
+          <p class="nota" style="margin-top:10px">Todas son conformadas (se comparten entre hechos) y tienen el miembro <strong>-1 Desconocido</strong> para no perder filas sin dato.</p>
+        </article>
+
+        <article class="tarjeta ancho-12">
+          <h2>Marts y filtros que responden</h2>
+          <p class="bajada">Cada mart es un hecho ya unido con sus dimensiones, a un grano fijo. Un filtro solo afecta a los marts que tienen esa columna.</p>
+          <div style="overflow-x:auto">
+          <table class="tabla-simple" id="tabla-marts">
+            <thead><tr><th>Mart</th><th>Grano</th><th>Filas</th><th>Período</th><th>Canal</th><th>Provincia</th><th>Producto</th><th>Páginas</th></tr></thead>
+            <tbody></tbody>
+          </table>
+          </div>
+        </article>
+
+        <article class="tarjeta ancho-6">
+          <h2>Qué calcula el navegador y qué no</h2>
+          <div class="prosa">
+            <p><strong>El ETL calcula</strong> todo lo que requiere recorrer las tablas de hechos: uniones, filtros de negocio (qué es una venta), conteos de clientes distintos, cohortes, días de entrega.</p>
+            <p><strong>El navegador solo</strong> filtra las filas del mart según los filtros elegidos, suma las medidas y divide al final. Es lo mismo que hacía Power BI con sus medidas DAX:</p>
+            <ul>
+              <li>Ticket promedio = suma de ventas ÷ suma de pedidos.</li>
+              <li>NPS = (promotores − detractores) ÷ respuestas × 100.</li>
+              <li>Usuarios activos = promedio de los conteos mensuales que trae el ETL.</li>
+              <li>Ranking mensual de productos: ordenar dos valores por mes (como RANKX).</li>
+            </ul>
+            <p>Nunca se promedian promedios: siempre se suma primero y se divide después, para que el resultado sea correcto con cualquier combinación de filtros.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta ancho-6">
+          <h2>Trabajo previo: tablero de Power BI</h2>
+          <div class="prosa">
+            <p>Antes de este sitio, el tablero se hizo en Power BI Desktop (<code>dashboard/ecobottle.pbix</code>). Leía los mismos <code>dw/*.csv</code>, con relaciones 1 a muchos de cada tabla de filtro a cada mart y medidas DAX para los cocientes.</p>
+            <p>Se conserva en el repositorio como trabajo previo. Es un archivo binario: Git no puede mostrar sus diferencias ni combinar cambios, y quien clona el repo lo descarga completo. El detalle está en <a href="https://github.com/ifylopez/practica-imond/tree/main/dashboard">dashboard/README.md</a>.</p>
+            <p>El sitio reemplaza a Power BI con la misma arquitectura: cualquiera lo abre desde el navegador, sin instalar nada ni tener Windows.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta ancho-12">
+          <h2>Fuentes y licencias</h2>
+          <div class="prosa" style="max-width:none">
+            <p>Datos: generados para el trabajo práctico (<code>generator/</code>), sin datos personales reales. Gráficos: <a href="https://echarts.apache.org/">Apache ECharts</a> 5.5.1 (Apache 2.0). Lectura de CSV: <a href="https://www.papaparse.com/">PapaParse</a> 5.4.1 (MIT). Mapa: provincias de <a href="https://www.naturalearthdata.com/">Natural Earth</a> (dominio público). Tipografías: Bricolage Grotesque y Manrope (SIL Open Font License). Todo se sirve desde el propio repositorio, sin depender de servicios externos.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="assets/vendor/papaparse.min.js"></script>
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/modelo.js"></script>
+</body>
+</html>

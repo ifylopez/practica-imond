@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operaciones | EcoBottle AR</title>
+  <meta name="description" content="Estados de los pedidos, cancelaciones, medios de pago y tiempos de entrega.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M13 3h8v4l3 4.5V28a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3V11.5L13 7z' fill='%2325A898'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside id="lateral" class="lateral"></aside>
+  <div class="contenido">
+    <div id="filtros" class="filtros" role="region" aria-label="Filtros"></div>
+    <main id="contenido-pagina" class="pagina">
+
+      <header class="encabezado">
+        <h1>Qué pasa con cada pedido después de la compra</h1>
+        <p>Estados del pedido, pagos rechazados y reembolsados, medios de pago y tiempos de entrega. Todo sale de la tabla de hechos de pedidos (fact_sales_order).</p>
+      </header>
+
+      <section class="kpis" aria-label="Indicadores de operaciones">
+        <div class="tarjeta kpi" id="k-pedidos">
+          <span class="kpi-nombre">Pedidos creados</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota">Todos los estados, vendidos o no.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-venta">
+          <span class="kpi-nombre">Terminan en venta</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota">Pagados o entregados ÷ pedidos creados.</span>
+        </div>
+        <div class="tarjeta kpi" id="k-cancel">
+          <span class="kpi-nombre">Cancelados con reembolso</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota" id="k-cancel-nota"></span>
+        </div>
+        <div class="tarjeta kpi" id="k-lentas">
+          <span class="kpi-nombre">Entregas de más de 7 días</span>
+          <span class="kpi-valor">…</span>
+          <span class="kpi-nota" id="k-lentas-nota"></span>
+        </div>
+      </section>
+
+      <div class="grilla" style="margin-top:18px">
+        <article class="tarjeta ancho-7" data-aplica="mes canal provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-estados">Cómo terminan los pedidos</h2>
+            <p class="bajada">Cantidad de pedidos según su estado final.</p>
+          </div></div>
+          <div class="grafico" id="g-estados" role="img" aria-label="Barras de pedidos por estado"></div>
+        </article>
+
+        <article class="tarjeta ancho-5" data-aplica="mes canal provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-cancel">Qué pasó con el pago de los cancelados</h2>
+            <p class="bajada">Pedidos cancelados según el estado de su pago.</p>
+          </div></div>
+          <div class="grafico" id="g-cancel" role="img" aria-label="Pedidos cancelados según el estado del pago"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes canal provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-medios">Medios de pago de cada canal</h2>
+            <p class="bajada">Porcentaje de los pagos concretados de cada canal.</p>
+          </div></div>
+          <div class="grafico" id="g-medios" role="img" aria-label="Barras 100% de medios de pago por canal"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes canal provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-rechazo">Pagos rechazados por medio</h2>
+            <p class="bajada">Porcentaje de los intentos de pago con cada medio que fueron rechazados.</p>
+          </div></div>
+          <div class="grafico" id="g-rechazo" role="img" aria-label="Barras de tasa de rechazo por medio de pago"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes canal" data-fijo="Muestra todas las provincias">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-prov">Días de entrega por provincia</h2>
+            <p class="bajada">Días promedio entre el pedido y la entrega.</p>
+          </div></div>
+          <div class="grafico" id="g-prov" role="img" aria-label="Barras de días promedio de entrega por provincia"></div>
+        </article>
+
+        <article class="tarjeta ancho-6" data-aplica="mes canal provincia">
+          <div class="tarjeta-cabeza"><div>
+            <h2 id="t-lentas">Entregas lentas por mes</h2>
+            <p class="bajada">Porcentaje de las entregas que tardaron más de 7 días.</p>
+          </div></div>
+          <div class="grafico" id="g-lentas" role="img" aria-label="Barras del porcentaje mensual de entregas de más de 7 días"></div>
+        </article>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="assets/vendor/papaparse.min.js"></script>
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/operaciones.js"></script>
+</body>
+</html>
