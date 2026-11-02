@@ -58,6 +58,9 @@ EB.pagina({
     const usuProm = EB.suma(usu, "usuarios_activos") / usu.length;
     const usuPrevProm = EB.suma(usuPrev, "usuarios_activos") / usuPrev.length;
     EB.kpi("k-usuarios", { valor: fmt.entero(usuProm), anterior: anterior(usuProm, usuPrevProm) });
+    // Total con sesiones anónimas: cada sesión anónima cuenta como un usuario (columna calculada en el ETL)
+    const altProm = EB.suma(usu, "usuarios_con_anonimos") / usu.length;
+    document.getElementById("k-usuarios-alt").innerHTML = "<strong>" + fmt.entero(altProm) + "</strong> en total por mes, sumando las sesiones anónimas";
     EB.chispa("k-usuarios-chispa", EB.serieMensual(usu, (f) => EB.suma(f, "usuarios_activos")), COLOR.marca);
 
     // ---- Ventas mensuales por canal (barras apiladas) ----

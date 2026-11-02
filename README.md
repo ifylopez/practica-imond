@@ -402,7 +402,7 @@ aunque alguno no tenga pedidos.
 |---|---|---|
 | `mart_ventas` | mes × canal × provincia | `pedidos`, `ventas` |
 | `mart_productos` | mes × canal × provincia × producto | `unidades`, `ventas_productos` |
-| `mart_usuarios` | mes | `usuarios_activos`, `sesiones`, `sesiones_anonimas` |
+| `mart_usuarios` | mes | `usuarios_activos`, `sesiones`, `sesiones_anonimas`, `usuarios_con_anonimos` |
 | `mart_nps` | mes × canal | `respuestas`, `promotores`, `detractores` |
 | `mart_dia_semana` | mes × canal × provincia × día de la semana (solo ventas) | `pedidos`, `ventas` |
 | `mart_estados` | mes × canal × provincia × estado del pedido | `pedidos`, `monto` |
@@ -437,9 +437,15 @@ exactamente los mismos CSV y el `git diff` muestra solo cambios reales.
 2. **Provincia de una venta:** se toma la de la **dirección de envío**. En compras en
    tienda, la dirección de envío es la de la tienda, así que la provincia es la de la
    tienda.
-3. **Usuarios activos:** `COUNT(DISTINCT customer_key)` de sesiones web por mes,
-   **excluyendo el miembro `-1`** (anónimos). Si no se excluyera, todas las sesiones
-   anónimas contarían como un único "usuario".
+3. **Usuarios activos:** el KPI principal es `COUNT(DISTINCT customer_key)` de
+   sesiones web por mes, **excluyendo el miembro `-1`** (anónimos), y la tarjeta muestra
+   el promedio mensual. Es una **estimación**: no incluye a los visitantes que navegan
+   sin identificarse. La consigna admite contar `session_id` para los anónimos, así que
+   el tablero muestra también ese total (`usuarios_con_anonimos` = identificados +
+   sesiones anónimas del mes). Ese número es una **cota superior**: una sesión no es una
+   persona, y quien entra varias veces sin identificarse cuenta una vez por sesión.
+   Por eso no es el KPI principal: con 3.369 sesiones anónimas por mes contra 771
+   clientes identificados, el total quedaría dominado por sesiones.
 4. **Ranking por producto:** por facturación de productos (`line_total`, sin IVA ni
    envío), filtrando `is_sale` para ser consistente con Ventas. Por eso la suma del
    ranking **no coincide** con Total Ventas (que incluye IVA y envío): es esperado.
@@ -491,7 +497,7 @@ Todas leen **solo del data warehouse**. Versión completa en `sql/03_consultas.s
 |---|---|---|
 | Total Ventas | `SUM(total_amount)` de pedidos `is_sale` | **$382,41M** |
 | Ticket Promedio | `SUM(total_amount) / COUNT(*)` de pedidos `is_sale` | **$34,8K** |
-| Usuarios Activos | `COUNT(DISTINCT customer_key)` por mes, sin `-1` | **771** (promedio mensual) |
+| Usuarios Activos | `COUNT(DISTINCT customer_key)` por mes, sin `-1` | **771** (promedio mensual estimado); **4.140** por mes contando las sesiones anónimas |
 | NPS | `(%9–10 − %0–6) × 100` | **30,0** (ONLINE 24,0 · OFFLINE 40,9) |
 | Ventas por Provincia | `total_amount` por provincia de envío | Ver hallazgos |
 | Ranking por Producto | `line_total` por producto y mes, `RANK()` | Ver hallazgos |
@@ -598,6 +604,7 @@ responde (reemplaza al botón ⓘ de Power BI) y tiene **Ver tabla** con los nú
 Ticket promedio  = suma(ventas) / suma(pedidos)
 NPS              = (suma(promotores) - suma(detractores)) / suma(respuestas) * 100
 Usuarios activos = promedio de mart_usuarios.usuarios_activos en los meses elegidos
+                   (y de usuarios_con_anonimos para el total con sesiones anónimas)
 Días de entrega  = suma(dias_entrega_suma) / suma(entregados)
 Ranking producto = ordenar la facturación de cada mes (como RANKX)
 Variación anual  = período elegido contra los mismos meses del año anterior
@@ -640,7 +647,8 @@ depende de servicios externos y siempre usa la misma versión.
    2024: Classic 570 u. contra Sport 472 u., y Sport es #1). El ranking del tablero es
    por facturación.
 8. **El 70% del tráfico web es anónimo** (70.751 de 100.363 sesiones). Usuarios
-   Activos mide solo al ~30% identificado.
+   Activos mide solo al ~30% identificado (771 por mes); contando cada sesión anónima
+   como un usuario serían 4.140 por mes, una cota superior.
 9. **91,9% de los pedidos termina en venta.** De 11.969 pedidos: 10.938 entregados
    y 60 pagados en curso (ventas), 658 cancelados (5,5%), 312 reembolsados (2,6%) y
    1 creado sin pagar. Los 312 reembolsados son devoluciones de compras ya entregadas
@@ -694,7 +702,8 @@ depende de servicios externos y siempre usa la misma versión.
   pedido puede tener varios productos. El filtro de producto aplica solo a la página
   Productos; el ranking mensual siempre compara los dos productos.
 - **Usuarios Activos** solo se filtra por fecha (las sesiones no tienen provincia ni
-  producto y siempre son del canal online) y cuenta solo clientes identificados.
+  producto y siempre son del canal online). El KPI principal cuenta solo clientes
+  identificados; el total con sesiones anónimas sobreestima porque cuenta sesiones.
 - **NPS con pocas respuestas:** algunos meses tienen menos de 30 respuestas por canal
   (ej. sep-25 OFFLINE: 29); en esos meses el NPS es poco estable.
 

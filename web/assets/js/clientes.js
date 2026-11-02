@@ -15,6 +15,10 @@ EB.pagina({
     const sesiones = EB.suma(traf, "sesiones");
     const ident = EB.suma(traf, "sesiones_identificadas");
     EB.kpi("k-usuarios", { valor: fmt.entero(EB.suma(usu, "usuarios_activos") / usu.length) });
+    // Total con sesiones anónimas: cada sesión anónima cuenta como un usuario (columna calculada en el ETL)
+    const altProm = EB.suma(usu, "usuarios_con_anonimos") / usu.length;
+    document.getElementById("k-usuarios-alt").innerHTML = "<strong>" + fmt.entero(altProm) + "</strong> en total por mes, sumando las sesiones anónimas";
+
     EB.kpi("k-sesiones", { valor: fmt.entero(sesiones) });
     EB.kpi("k-ident", { valor: fmt.pct(ident / sesiones) });
     EB.kpi("k-minutos", { valor: fmt.dec(EB.suma(traf, "minutos_suma") / EB.suma(traf, "sesiones_con_fin")) + "<small>min</small>" });

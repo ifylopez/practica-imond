@@ -255,6 +255,7 @@ erDiagram
         BIGINT usuarios_activos
         BIGINT sesiones
         BIGINT sesiones_anonimas
+        BIGINT usuarios_con_anonimos
     }
     mart_ventas {
         DATE mes

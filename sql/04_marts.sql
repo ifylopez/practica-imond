@@ -63,13 +63,19 @@ ORDER BY mes, canal, provincia, producto;
 -- COUNT(DISTINCT) NO es aditivo (un usuario activo en enero y febrero
 -- cuenta 1 en cada mes, pero 1 solo en el bimestre), por eso se calcula
 -- acá ya terminado y por mes. Las sesiones no tienen provincia ni producto.
+-- usuarios_activos cuenta solo clientes identificados (excluye el -1).
+-- usuarios_con_anonimos suma además cada sesión anónima como si fuera un
+-- usuario (la lectura literal de la consigna: "o session_id si anónimos").
+-- Es una cota superior: un mismo visitante anónimo cuenta una vez por sesión.
 -- ---------------------------------------------------------------------
 CREATE TABLE mart_usuarios AS
 SELECT
     CAST(DATE_TRUNC('month', d.date) AS DATE)       AS mes,
     COUNT(DISTINCT f.customer_key) FILTER (WHERE f.customer_key <> -1) AS usuarios_activos,
     COUNT(*)                                        AS sesiones,
-    COUNT(*) FILTER (WHERE f.customer_key = -1)                        AS sesiones_anonimas
+    COUNT(*) FILTER (WHERE f.customer_key = -1)                        AS sesiones_anonimas,
+    COUNT(DISTINCT f.customer_key) FILTER (WHERE f.customer_key <> -1)
+      + COUNT(*) FILTER (WHERE f.customer_key = -1)                    AS usuarios_con_anonimos
 FROM fact_web_session AS f
 JOIN dim_date AS d ON d.date_key = f.date_key
 GROUP BY CAST(DATE_TRUNC('month', d.date) AS DATE)
