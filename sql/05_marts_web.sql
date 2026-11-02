@@ -222,6 +222,53 @@ ORDER BY cohorte, meses_desde_alta;
 
 
 -- ---------------------------------------------------------------------
+-- mart_entregas_nps — NPS y tiempos de entrega, mes a mes
+-- Grano: mes x canal
+-- Junta dos procesos (encuestas NPS y entregas) con la técnica de Kimball
+-- llamada "drill-across": cada hecho se agrega por separado a las mismas
+-- dimensiones conformadas (mes y canal) y recién después se unen. Unir los
+-- hechos fila a fila no tendría sentido: la encuesta no tiene order_id.
+-- Así el gráfico de NPS contra días de entrega lee un solo mart.
+-- ---------------------------------------------------------------------
+CREATE TABLE mart_entregas_nps AS
+WITH nps AS (
+    SELECT
+        CAST(DATE_TRUNC('month', d.date) AS DATE) AS mes,
+        c.code                                    AS canal,
+        COUNT(*)                                  AS respuestas,
+        SUM(f.is_promoter)                        AS promotores,
+        SUM(f.is_detractor)                       AS detractores
+    FROM fact_nps_response AS f
+    JOIN dim_date    AS d ON d.date_key    = f.date_key
+    JOIN dim_channel AS c ON c.channel_key = f.channel_key
+    GROUP BY ALL
+),
+entregas AS (
+    SELECT
+        CAST(DATE_TRUNC('month', d.date) AS DATE)            AS mes,
+        c.code                                               AS canal,
+        COUNT(f.delivered_at)                                AS entregados,
+        SUM(date_diff('day', f.order_date, f.delivered_at))  AS dias_entrega_suma
+    FROM fact_sales_order AS f
+    JOIN dim_date    AS d ON d.date_key    = f.date_key
+    JOIN dim_channel AS c ON c.channel_key = f.channel_key
+    WHERE f.shipment_status_key <> -1
+    GROUP BY ALL
+)
+SELECT
+    COALESCE(n.mes, e.mes)          AS mes,
+    COALESCE(n.canal, e.canal)      AS canal,
+    COALESCE(n.respuestas, 0)       AS respuestas,
+    COALESCE(n.promotores, 0)       AS promotores,
+    COALESCE(n.detractores, 0)      AS detractores,
+    COALESCE(e.entregados, 0)       AS entregados,
+    COALESCE(e.dias_entrega_suma, 0) AS dias_entrega_suma
+FROM nps AS n
+FULL OUTER JOIN entregas AS e ON e.mes = n.mes AND e.canal = n.canal
+ORDER BY mes, canal;
+
+
+-- ---------------------------------------------------------------------
 -- CONTROLES: los marts nuevos tienen que cerrar con los anteriores
 -- ---------------------------------------------------------------------
 -- Ventas: dia_semana (ventas) = mart_ventas (ventas); estados: total de pedidos

@@ -1,7 +1,7 @@
 /* Experiencia: NPS por canal, puntajes y relación con los tiempos de entrega */
 EB.pagina({
   id: "experiencia",
-  marts: ["mart_nps", "mart_nps_puntajes", "mart_logistica"],
+  marts: ["mart_nps", "mart_nps_puntajes", "mart_entregas_nps"],
   filtros: ["mes", "canal"],
   render(d) {
     const { fmt, COLOR } = EB;
@@ -20,9 +20,10 @@ EB.pagina({
     EB.kpi("k-resp", { valor: fmt.entero(EB.suma(nps, "respuestas")) });
 
     // ---- NPS online vs días de entrega: dos paneles alineados (no doble eje) ----
-    const npsOn = EB.serieMensual(npsTodos.filter((f) => f.canal === "ONLINE"), (f) => (f.length ? npsDe(f) : null));
-    const log = EB.filtrar(d.mart_logistica, ["mes"]).filter((f) => f.canal === "ONLINE");
-    const dias = EB.serieMensual(log, (f) => { const e = EB.suma(f, "entregados"); return e ? EB.suma(f, "dias_entrega_suma") / e : null; });
+    // Un solo mart (mart_entregas_nps) que el ETL arma con drill-across por mes y canal
+    const entOn = EB.filtrar(d.mart_entregas_nps, ["mes"]).filter((f) => f.canal === "ONLINE");
+    const npsOn = EB.serieMensual(entOn, (f) => (EB.suma(f, "respuestas") ? npsDe(f) : null));
+    const dias = EB.serieMensual(entOn, (f) => { const e = EB.suma(f, "entregados"); return e ? EB.suma(f, "dias_entrega_suma") / e : null; });
     const diasOrden = dias.filter((x) => x != null).slice().sort((a, b) => a - b);
     const mediana = diasOrden[Math.floor(diasOrden.length / 2)];
     const lento = (v) => v != null && v > mediana * 1.5; // meses con entregas 50% más lentas que lo normal
