@@ -26,7 +26,7 @@
           trigger: "item",
           formatter: (p) => {
             const f = porProv.find((x) => x.provincia === p.name);
-            if (!f) return p.name + "<br><span style='color:#a9a3c9'>Sin pedidos</span>";
+            if (!f) return p.name + "<br><span style='color:#6B7875'>Sin pedidos</span>";
             return "<b>" + p.name + "</b><br>" + fmt.millones(f.ventas) + " (" + fmt.pct(f.ventas / totalProv) + ")<br>" + fmt.entero(f.pedidos) + " pedidos";
           },
         },
@@ -44,8 +44,8 @@
           textStyle: { color: COLOR.niebla, fontSize: 12 },
           calculable: false,
           // Secuencial de un solo tono: oscuro = poco, brillante = mucho
-          inRange: { color: ["#1E4A4C", "#25A898", "#8DE3D3"] },
-          outOfRange: { color: "rgba(255,255,255,0.06)" },
+          inRange: { color: ["#D9EEEA", "#5FB3A8", "#0B4A45"] },
+          outOfRange: { color: "#F1F3F2" },
         },
         series: [{
           type: "map",
@@ -54,15 +54,15 @@
           layoutCenter: ["50%", "46%"],
           layoutSize: "128%",
           selectedMode: false,
-          itemStyle: { areaColor: "rgba(255,255,255,0.06)", borderColor: "rgba(16,14,38,0.9)", borderWidth: 1 },
-          emphasis: { label: { show: false }, itemStyle: { areaColor: null, borderColor: "#C9BCFF", borderWidth: 2 } },
+          itemStyle: { areaColor: "#F1F3F2", borderColor: "#FFFFFF", borderWidth: 1 },
+          emphasis: { label: { show: false }, itemStyle: { areaColor: null, borderColor: COLOR.tinta, borderWidth: 1.5 } },
           label: { show: false },
           data: geo.features.map((f) => {
             const n = f.properties.name;
             const row = porProv.find((x) => x.provincia === n);
             const item = { name: n, value: row ? row.ventas : NaN };
-            if (!conDatos.has(n)) item.itemStyle = { areaColor: "rgba(255,255,255,0.06)" };
-            if (n === elegida) item.itemStyle = Object.assign({}, item.itemStyle, { borderColor: "#C9BCFF", borderWidth: 2.5 });
+            if (!conDatos.has(n)) item.itemStyle = { areaColor: "#F1F3F2" };
+            if (n === elegida) item.itemStyle = Object.assign({}, item.itemStyle, { borderColor: COLOR.tinta, borderWidth: 2 });
             return item;
           }),
         }],
@@ -77,7 +77,7 @@
       EB.grafico("g-provincias", {
         legend: { top: 0, left: 0 },
         grid: { top: 36, right: 70 },
-        tooltip: Object.assign(EB.tooltipEje(fmt.millones), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(196,184,255,0.06)" } } }),
+        tooltip: Object.assign(EB.tooltipEje(fmt.millones), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(19,32,31,0.05)" } } }),
         xAxis: { type: "value", axisLabel: { formatter: (v) => "$" + fmt.corto(v) } },
         yAxis: { type: "category", data: provs, axisLabel: { color: COLOR.tinta, fontSize: 13 } },
         series: canales.map((c, i) => ({
@@ -87,7 +87,7 @@
           barMaxWidth: 26,
           itemStyle: {
             color: COLOR[c], borderColor: COLOR.superficie, borderWidth: 1,
-            borderRadius: i === canales.length - 1 ? [0, 4, 4, 0] : 0,
+            borderRadius: 0,
             opacity: 1,
           },
           label: i === canales.length - 1 ? {
@@ -109,7 +109,7 @@
         series: [{
           type: "bar",
           barMaxWidth: 14,
-          itemStyle: { color: COLOR.azul, borderRadius: [0, 4, 4, 0] },
+          itemStyle: { color: COLOR.marca, borderRadius: 0 },
           label: { show: true, position: "right", color: COLOR.niebla, fontSize: 12, formatter: (p) => fmt.miles(p.value) },
           data: provs.map((p) => ticketProv.find((x) => x.provincia === p).ticket),
         }],
@@ -126,12 +126,12 @@
       EB.grafico("g-dias", {
         legend: { top: 0, left: 0 },
         grid: { top: 36 },
-        tooltip: Object.assign(EB.tooltipEje(fmt.millones), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(196,184,255,0.06)" } } }),
+        tooltip: Object.assign(EB.tooltipEje(fmt.millones), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(19,32,31,0.05)" } } }),
         xAxis: { type: "category", data: NOMBRES.map((n) => n.slice(0, 3)) },
         yAxis: { type: "value", axisLabel: { formatter: (v) => "$" + fmt.corto(v) } },
         series: canales.map((c) => ({
           name: c, type: "bar", barMaxWidth: 22, barGap: "12%",
-          itemStyle: { color: COLOR[c], borderRadius: [4, 4, 0, 0] },
+          itemStyle: { color: COLOR[c], borderRadius: 0 },
           data: NOMBRES.map((_, i) => valorDia(i + 1, c)),
         })),
       });
@@ -140,7 +140,8 @@
       // ---------------- Estacionalidad: mes del año, una línea por año ----------------
       const anios = [...new Set(meses.map((m) => m.slice(0, 4)))];
       const porMes = EB.agrupar(ventas, "mes", ["ventas"]);
-      const COLOR_ANIO = { 2024: COLOR.azul, 2025: COLOR.verde };
+      // El año anterior en gris y el actual en el color de marca
+      const COLOR_ANIO = { 2024: COLOR.gris, 2025: COLOR.marca };
       const MESES12 = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
       const serieAnio = (a) => MESES12.map((_, i) => {
         const m = a + "-" + String(i + 1).padStart(2, "0") + "-01";
@@ -154,8 +155,8 @@
         yAxis: { type: "value", axisLabel: { formatter: (v) => "$" + fmt.corto(v) } },
         series: anios.map((a) => ({
           name: a, type: "line", smooth: false, symbol: "circle", symbolSize: 8, connectNulls: false,
-          lineStyle: { width: 2, color: COLOR_ANIO[a] || COLOR.verde },
-          itemStyle: { color: COLOR_ANIO[a] || COLOR.verde, borderColor: COLOR.superficie, borderWidth: 2 },
+          lineStyle: { width: 2, color: COLOR_ANIO[a] || COLOR.tenue },
+          itemStyle: { color: COLOR_ANIO[a] || COLOR.tenue, borderColor: COLOR.superficie, borderWidth: 2 },
           data: serieAnio(a),
         })),
       });

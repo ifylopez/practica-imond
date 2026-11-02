@@ -36,15 +36,15 @@ EB.pagina({
 
     // Ventas
     EB.kpi("k-ventas", { valor: fmt.millones(totV), anterior: anterior(totV, EB.suma(ventasPrev, "ventas")) });
-    EB.chispa("k-ventas-chispa", EB.serieMensual(ventas, (f) => EB.suma(f, "ventas")), COLOR.ONLINE);
+    EB.chispa("k-ventas-chispa", EB.serieMensual(ventas, (f) => EB.suma(f, "ventas")), COLOR.marca);
     // Pedidos
     EB.kpi("k-pedidos", { valor: fmt.entero(totP), anterior: anterior(totP, EB.suma(ventasPrev, "pedidos")) });
-    EB.chispa("k-pedidos-chispa", EB.serieMensual(ventas, (f) => EB.suma(f, "pedidos")), COLOR.ONLINE);
+    EB.chispa("k-pedidos-chispa", EB.serieMensual(ventas, (f) => EB.suma(f, "pedidos")), COLOR.marca);
     // Ticket = ventas / pedidos (se divide después de sumar)
     const ticket = totV / totP;
     const ticketPrev = EB.suma(ventasPrev, "ventas") / EB.suma(ventasPrev, "pedidos");
     EB.kpi("k-ticket", { valor: fmt.miles(ticket), anterior: anterior(ticket, ticketPrev) });
-    EB.chispa("k-ticket-chispa", EB.serieMensual(ventas, (f) => EB.suma(f, "ventas") / EB.suma(f, "pedidos")), COLOR.azul);
+    EB.chispa("k-ticket-chispa", EB.serieMensual(ventas, (f) => EB.suma(f, "ventas") / EB.suma(f, "pedidos")), COLOR.marca);
     // NPS
     const npsVal = EB.nps(EB.suma(npsF, "promotores"), EB.suma(npsF, "detractores"), EB.suma(npsF, "respuestas"));
     const npsPrevVal = EB.nps(EB.suma(npsPrev, "promotores"), EB.suma(npsPrev, "detractores"), EB.suma(npsPrev, "respuestas"));
@@ -53,12 +53,12 @@ EB.pagina({
       anterior: anterior(npsVal, npsPrevVal),
       formatoDelta: (x) => fmt.dec(Math.abs(x)) + " puntos",
     });
-    EB.chispa("k-nps-chispa", EB.serieMensual(npsF, (f) => EB.nps(EB.suma(f, "promotores"), EB.suma(f, "detractores"), EB.suma(f, "respuestas"))), COLOR.OFFLINE);
+    EB.chispa("k-nps-chispa", EB.serieMensual(npsF, (f) => EB.nps(EB.suma(f, "promotores"), EB.suma(f, "detractores"), EB.suma(f, "respuestas"))), COLOR.marca);
     // Usuarios activos: promedio de los meses (el conteo distinto ya viene del ETL)
     const usuProm = EB.suma(usu, "usuarios_activos") / usu.length;
     const usuPrevProm = EB.suma(usuPrev, "usuarios_activos") / usuPrev.length;
     EB.kpi("k-usuarios", { valor: fmt.entero(usuProm), anterior: anterior(usuProm, usuPrevProm) });
-    EB.chispa("k-usuarios-chispa", EB.serieMensual(usu, (f) => EB.suma(f, "usuarios_activos")), COLOR.azul);
+    EB.chispa("k-usuarios-chispa", EB.serieMensual(usu, (f) => EB.suma(f, "usuarios_activos")), COLOR.marca);
 
     // ---- Ventas mensuales por canal (barras apiladas) ----
     const canales = EB.filtros.canal === EB.TODOS ? EB.opciones.canales : [EB.filtros.canal];
@@ -67,7 +67,7 @@ EB.pagina({
       type: "bar",
       stack: "v",
       barMaxWidth: 34,
-      itemStyle: { color: COLOR[c], borderColor: COLOR.superficie, borderWidth: 1, borderRadius: c === canales[canales.length - 1] ? [4, 4, 0, 0] : 0 },
+      itemStyle: { color: COLOR[c], borderColor: COLOR.superficie, borderWidth: 1, borderRadius: 0 },
       data: EB.serieMensual(ventas.filter((f) => f.canal === c), (f) => EB.suma(f, "ventas")),
     }));
     EB.grafico("g-mensual", {
@@ -84,18 +84,17 @@ EB.pagina({
     }));
 
     // ---- Participación por canal ----
-    const porCanal = EB.agruparLista(ventas, "canal", ["ventas", "pedidos"]).sort((a, b) => a.canal.localeCompare(b.canal));
+    const porCanal = EB.agruparLista(ventas, "canal", ["ventas", "pedidos"]).sort((a, b) => b.ventas - a.ventas);
     EB.grafico("g-canal", {
-      tooltip: { trigger: "item", formatter: (p) => p.marker + p.name + "<br><b>" + fmt.millones(p.value) + "</b> (" + p.percent.toLocaleString("es-AR") + "%)" },
-      legend: { bottom: 0, left: "center" },
+      grid: { top: 8, right: 64, bottom: 8 },
+      tooltip: { trigger: "item", formatter: (p) => p.name + "<br><b>" + fmt.millones(porCanal[p.dataIndex].ventas) + "</b> (" + fmt.pct(p.value) + ")" },
+      xAxis: { type: "value", max: 1, show: false },
+      yAxis: { type: "category", data: porCanal.map((c) => c.canal), inverse: true, axisLine: { show: false }, axisLabel: { color: COLOR.tinta, fontSize: 13 } },
       series: [{
-        type: "pie",
-        radius: ["50%", "80%"],
-        center: ["50%", "45%"],
-        padAngle: 2,
-        itemStyle: { borderRadius: 4, borderColor: COLOR.superficie, borderWidth: 2 },
-        label: { position: "inside", color: "#fff", fontSize: 14, fontWeight: 700, formatter: (p) => p.percent.toLocaleString("es-AR", { maximumFractionDigits: 1 }) + "%" },
-        data: porCanal.map((c) => ({ name: c.canal, value: c.ventas, itemStyle: { color: COLOR[c.canal] } })),
+        type: "bar", barWidth: 18,
+        showBackground: true, backgroundStyle: { color: COLOR.grilla },
+        label: { show: true, position: "right", color: COLOR.tinta, fontWeight: 600, formatter: (p) => fmt.pct(p.value) },
+        data: porCanal.map((c) => ({ value: c.ventas / totV, itemStyle: { color: COLOR[c.canal] } })),
       }],
     });
     EB.tabla("g-canal", ["Canal", "Ventas", "Pedidos", "Participación"], porCanal.map((c) => [c.canal, fmt.millones(c.ventas), fmt.entero(c.pedidos), fmt.pct(c.ventas / totV)]));
