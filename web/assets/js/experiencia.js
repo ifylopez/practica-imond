@@ -50,6 +50,12 @@ EB.pagina({
           markLine: { silent: true, symbol: "none", label: { color: COLOR.tenue, fontSize: 11, formatter: "Mediana " + fmt.dec(mediana || 0) + " días", position: "insideEndTop" }, lineStyle: { color: COLOR.tenue, type: "dashed" }, data: mediana ? [{ yAxis: mediana }] : [] } },
       ],
     });
+    // Título: qué pasó con el NPS online en los meses de entregas lentas
+    const idxLentos = dias.map((v, i) => (lento(v) ? i : -1)).filter((i) => i >= 0);
+    document.getElementById("t-relacion").textContent = idxLentos.length
+      ? "En " + (idxLentos.length === 1 ? "el mes" : "los " + idxLentos.length + " meses") + " con entregas lentas, el NPS online bajó a " +
+        idxLentos.map((i) => fmt.dec(npsOn[i]) + " (" + etiquetas[i] + ")").join(" y ")
+      : "NPS online y días de entrega por mes";
     EB.tabla("g-relacion", ["Mes", "NPS online", "Días promedio de entrega"], meses.map((m, i) => [etiquetas[i], npsOn[i] == null ? "sin datos" : fmt.dec(npsOn[i]), dias[i] == null ? "sin datos" : fmt.dec(dias[i])]));
 
     // ---- NPS mensual por canal ----
@@ -65,6 +71,17 @@ EB.pagina({
       yAxis: { type: "value" },
       series,
     });
+    // Título: en cuántos meses las tiendas superan a la web
+    if (canales.length === 2) {
+      const [sOff, sOn] = ["OFFLINE", "ONLINE"].map((c) => series.find((x) => x.name === c).data);
+      const conAmbos = meses.map((_, i) => i).filter((i) => sOff[i] != null && sOn[i] != null);
+      const gana = conAmbos.filter((i) => sOff[i] > sOn[i]).length;
+      document.getElementById("t-mensual").textContent = gana === conAmbos.length
+        ? "Las tiendas superan a la web en " + (conAmbos.length === 1 ? "el mes elegido" : "los " + conAmbos.length + " meses")
+        : "Las tiendas superan a la web en " + gana + " de " + conAmbos.length + " meses";
+    } else {
+      document.getElementById("t-mensual").textContent = "NPS mensual del canal " + canales[0];
+    }
     EB.tabla("g-mensual", ["Mes"].concat(canales), meses.map((m, i) => [etiquetas[i]].concat(series.map((s) => (s.data[i] == null ? "sin datos" : fmt.dec(s.data[i]))))));
 
     // ---- Distribución de puntajes ----
@@ -87,7 +104,8 @@ EB.pagina({
     });
     EB.tabla("g-puntajes", ["Puntaje", "Grupo", "Respuestas", "% del total"], valores.map((v, s) => [s, grupoDe(s), fmt.entero(v), fmt.pct(v / totResp)]));
     const moda = valores.indexOf(Math.max(...valores));
-    document.getElementById("t-puntajes").textContent = "El puntaje más frecuente es " + moda + ", pero hay una cola larga de detractores";
+    const pctDetr = valores.slice(0, 7).reduce((x, y) => x + y, 0) / totResp;
+    document.getElementById("t-puntajes").textContent = "El " + moda + " es el puntaje más frecuente; el " + fmt.pct(pctDetr, 0) + " de las respuestas son detractoras";
 
     // ---- Grupos por canal (100%) ----
     const grupos = EB.agruparLista(npsTodos, "canal", ["respuestas", "promotores", "detractores"]).sort((a, b) => a.canal.localeCompare(b.canal));
@@ -105,6 +123,13 @@ EB.pagina({
         data: grupos.map((c) => pctGrupo(c, g)),
       })),
     });
+    const gOn = grupos.find((c) => c.canal === "ONLINE"), gOff = grupos.find((c) => c.canal === "OFFLINE");
+    const dOn = gOn && pctGrupo(gOn, "Detractores"), dOff = gOff && pctGrupo(gOff, "Detractores");
+    document.getElementById("t-grupos").textContent = gOn && gOff
+      ? (dOn > dOff
+        ? "La web tiene más detractores (" + fmt.dec(dOn, 0) + "%) que las tiendas (" + fmt.dec(dOff, 0) + "%)"
+        : "Las tiendas tienen " + fmt.dec(dOff, 0) + "% de detractores y la web " + fmt.dec(dOn, 0) + "%")
+      : "Promotores, pasivos y detractores";
     EB.tabla("g-grupos", ["Canal", "Respuestas", "Promotores", "Pasivos", "Detractores", "NPS"], grupos.map((c) => [c.canal, fmt.entero(c.respuestas), fmt.dec(pctGrupo(c, "Promotores")) + "%", fmt.dec(pctGrupo(c, "Pasivos")) + "%", fmt.dec(pctGrupo(c, "Detractores")) + "%", fmt.dec(EB.nps(c.promotores, c.detractores, c.respuestas))]));
   },
 });
