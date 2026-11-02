@@ -47,10 +47,10 @@ Data warehouse (warehouse.duckdb)
    ├── 10 dimensiones  dim_date, dim_customer, dim_channel, dim_store, dim_address, dim_product,
    │                   dim_order_status, dim_payment, dim_shipment_status, dim_traffic
    ├── 4 hechos        fact_sales_order, fact_sales_order_item, fact_web_session, fact_nps_response
-   └── 12 marts        04_marts.sql:     mart_ventas, mart_productos, mart_usuarios, mart_nps
+   └── 13 marts        04_marts.sql:     mart_ventas, mart_productos, mart_usuarios, mart_nps
                        05_marts_web.sql: mart_estados, mart_pagos, mart_logistica, mart_trafico,
                                          mart_nps_puntajes, mart_dia_semana, mart_clientes_mes,
-                                         mart_cohortes                       (+ 4 tablas filtro_*)
+                                         mart_cohortes, mart_entregas_nps    (+ 4 tablas filtro_*)
    │   exportado a CSV
    ▼
 dw/*.csv  ──►  sitio web (web/, GitHub Pages)
@@ -412,6 +412,7 @@ aunque alguno no tenga pedidos.
 | `mart_nps_puntajes` | mes × canal × puntaje (0 a 10) | `respuestas` |
 | `mart_clientes_mes` | mes (fijo) | `compradores`, `compradores_nuevos`, `compradores_recurrentes` |
 | `mart_cohortes` | cohorte de alta × meses desde el alta (fijo) | `tamano_cohorte`, `clientes_compradores` |
+| `mart_entregas_nps` | mes × canal (NPS y entregas juntos, por drill-across) | `respuestas`, `promotores`, `detractores`, `entregados`, `dias_entrega_suma` |
 
 Los marts guardan solo **medidas aditivas** (sumas y conteos). Los KPIs que son
 cocientes (Ticket, NPS) se dividen en el tablero **después** de sumar: un promedio de
@@ -423,6 +424,11 @@ promedios (días de entrega, minutos por sesión) se guardan como **suma + canti
 para que el sitio divida después de sumar. Las tablas `filtro_mes`, `filtro_canal`,
 `filtro_provincia` y `filtro_producto` contienen los valores de cada filtro: el sitio
 arma con ellas los desplegables (en Power BI se relacionaban 1:\* con los marts).
+
+`mart_entregas_nps` junta dos procesos distintos (encuestas y entregas) con la técnica
+de Kimball llamada **drill-across**: cada hecho se agrega por separado a las mismas
+dimensiones conformadas (mes y canal) y recién después se unen. No se pueden unir fila a
+fila porque la encuesta no tiene `order_id`. Así cada gráfico del sitio lee un solo mart.
 
 Todos los marts terminan en `ORDER BY`, así cada corrida de `run_sql.py` produce
 exactamente los mismos CSV y el `git diff` muestra solo cambios reales.
@@ -583,7 +589,7 @@ muestra lo último que generó `run_sql.py` y se subió al repo.
 | Ventas | Mapa de provincias (clic para filtrar), ventas y ticket por provincia, día de la semana, estacionalidad 2024 vs 2025, pedidos y ticket mensual | ventas, dia_semana |
 | Productos | Facturación, unidades y precio medio; participación; unidades contra facturación; ranking mensual | productos |
 | Clientes y web | Usuarios activos, sesiones identificadas y anónimas, fuente y dispositivo, compradores nuevos y recurrentes, retención por cohorte | usuarios, trafico, clientes_mes, cohortes |
-| Experiencia (NPS) | NPS online contra días de entrega, NPS mensual por canal, distribución de puntajes, promotores/pasivos/detractores | nps, nps_puntajes, logistica |
+| Experiencia (NPS) | NPS online contra días de entrega, NPS mensual por canal, distribución de puntajes, promotores/pasivos/detractores | nps, nps_puntajes, entregas_nps |
 | Operaciones | Estados del pedido, pago de los cancelados, medios de pago por canal, rechazos por medio, días de entrega por provincia, entregas lentas | estados, pagos, logistica |
 | Acerca del modelo | Arquitectura, hechos, dimensiones, marts y qué calcula el navegador | todos |
 

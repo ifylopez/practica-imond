@@ -189,6 +189,15 @@ erDiagram
         BIGINT pedidos
         DECIMAL ventas
     }
+    mart_entregas_nps {
+        DATE mes
+        VARCHAR canal
+        BIGINT respuestas
+        HUGEINT promotores
+        HUGEINT detractores
+        BIGINT entregados
+        HUGEINT dias_entrega_suma
+    }
     mart_estados {
         DATE mes
         VARCHAR canal

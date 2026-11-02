@@ -1,7 +1,7 @@
 /* Resumen: KPIs principales, ventas mensuales y hallazgos */
 EB.pagina({
   id: "resumen",
-  marts: ["mart_ventas", "mart_nps", "mart_usuarios", "mart_logistica", "mart_clientes_mes", "mart_dia_semana"],
+  marts: ["mart_ventas", "mart_nps", "mart_usuarios", "mart_logistica", "mart_clientes_mes"],
   filtros: ["mes", "canal", "provincia"],
   render(d) {
     const { fmt, COLOR } = EB;
