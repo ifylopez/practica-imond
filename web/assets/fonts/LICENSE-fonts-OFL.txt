@@ -1,11 +1,12 @@
-Copyright 2019 The Manrope Project Authors (https://github.com/sharanda/manrope)
+Tipografías incluidas en esta carpeta, ambas bajo la SIL Open Font License 1.1:
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
+- Source Serif 4: Copyright Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+- Public Sans: Copyright 2015 The Public Sans Project Authors (https://github.com/uswds/public-sans).
 
+Archivos .woff2 tomados de los paquetes @fontsource/source-serif-4 y @fontsource/public-sans.
 
------------------------------------------------------------
+-----------------------------------------------------------------------
+
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 -----------------------------------------------------------
 

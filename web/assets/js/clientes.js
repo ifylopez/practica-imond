@@ -23,10 +23,10 @@ EB.pagina({
     const usuarios = EB.serieMensual(usu, (f) => EB.suma(f, "usuarios_activos"));
     EB.grafico("g-usuarios", {
       grid: { top: 16 },
-      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(196,184,255,0.06)" } } }),
+      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(19,32,31,0.05)" } } }),
       xAxis: ejeMeses,
       yAxis: { type: "value" },
-      series: [{ name: "Usuarios activos", type: "bar", barMaxWidth: 28, itemStyle: { color: COLOR.azul, borderRadius: [4, 4, 0, 0] }, data: usuarios }],
+      series: [{ name: "Usuarios activos", type: "bar", barMaxWidth: 28, itemStyle: { color: COLOR.marca, borderRadius: 0 }, data: usuarios }],
     });
     EB.tabla("g-usuarios", ["Mes", "Usuarios activos"], meses.map((m, i) => [EB.etiquetaMes(m), fmt.entero(usuarios[i])]));
     document.getElementById("t-usuarios").textContent = usuarios.length > 1 && usuarios[0]
@@ -38,12 +38,12 @@ EB.pagina({
     const sesAnon = EB.serieMensual(traf, (f) => EB.suma(f, "sesiones") - EB.suma(f, "sesiones_identificadas"));
     EB.grafico("g-anon", {
       legend: { top: 0, left: 0 }, grid: { top: 36 },
-      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(196,184,255,0.06)" } } }),
+      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(19,32,31,0.05)" } } }),
       xAxis: ejeMeses,
       yAxis: { type: "value", axisLabel: { formatter: fmt.corto } },
       series: [
-        { name: "Identificadas", type: "bar", stack: "s", barMaxWidth: 28, itemStyle: { color: COLOR.azul, borderColor: COLOR.superficie, borderWidth: 1 }, data: sesIdent },
-        { name: "Anónimas", type: "bar", stack: "s", barMaxWidth: 28, itemStyle: { color: COLOR.gris, borderColor: COLOR.superficie, borderWidth: 1, borderRadius: [4, 4, 0, 0] }, data: sesAnon },
+        { name: "Identificadas", type: "bar", stack: "s", barMaxWidth: 28, itemStyle: { color: COLOR.marca, borderColor: COLOR.superficie, borderWidth: 1 }, data: sesIdent },
+        { name: "Anónimas", type: "bar", stack: "s", barMaxWidth: 28, itemStyle: { color: COLOR.gris, borderColor: COLOR.superficie, borderWidth: 1, borderRadius: 0 }, data: sesAnon },
       ],
     });
     EB.tabla("g-anon", ["Mes", "Identificadas", "Anónimas", "% identificadas"], meses.map((m, i) => [EB.etiquetaMes(m), fmt.entero(sesIdent[i]), fmt.entero(sesAnon[i]), fmt.pct(sesIdent[i] / (sesIdent[i] + sesAnon[i]))]));
@@ -53,16 +53,16 @@ EB.pagina({
     const fuentes = EB.agruparLista(traf, ["fuente_desc"], ["sesiones", "sesiones_identificadas"]).sort((a, b) => a.sesiones - b.sesiones);
     const dispositivos = ["mobile", "desktop", "tablet"];
     const NOMBRE_DISP = { mobile: "Celular", desktop: "Computadora", tablet: "Tablet" };
-    const TONO = { mobile: "#5B8DEF", desktop: "#3C64B8", tablet: "#9DB9F5" };
+    const TONO = { mobile: "#0B4A45", desktop: "#4F8F86", tablet: "#A8D2CB" };
     const fd = EB.agrupar(traf, ["fuente_desc", "dispositivo"], ["sesiones"]);
     EB.grafico("g-fuente", {
       legend: { top: 0, left: 0 }, grid: { top: 36, right: 60 },
-      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(196,184,255,0.06)" } } }),
+      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(19,32,31,0.05)" } } }),
       xAxis: { type: "value", axisLabel: { formatter: fmt.corto } },
       yAxis: { type: "category", data: fuentes.map((f) => f.fuente_desc), axisLabel: { color: COLOR.tinta, fontSize: 12.5 } },
       series: dispositivos.map((dv, i) => ({
         name: NOMBRE_DISP[dv], type: "bar", stack: "f", barMaxWidth: 26,
-        itemStyle: { color: TONO[dv], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: i === dispositivos.length - 1 ? [0, 4, 4, 0] : 0 },
+        itemStyle: { color: TONO[dv], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: 0 },
         label: i === dispositivos.length - 1 ? { show: true, position: "right", color: COLOR.niebla, fontSize: 12, formatter: (p) => fmt.pct(fuentes[p.dataIndex].sesiones / sesiones, 0) } : undefined,
         data: fuentes.map((f) => (fd.get(f.fuente_desc + "|" + dv) || { sesiones: 0 }).sesiones),
       })),
@@ -77,12 +77,12 @@ EB.pagina({
     const recur = EB.serieMensual(cli, (f) => EB.suma(f, "compradores_recurrentes"));
     EB.grafico("g-recurrentes", {
       legend: { top: 0, left: 0 }, grid: { top: 36 },
-      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(196,184,255,0.06)" } } }),
+      tooltip: Object.assign(EB.tooltipEje(fmt.entero), { axisPointer: { type: "shadow", shadowStyle: { color: "rgba(19,32,31,0.05)" } } }),
       xAxis: ejeMeses,
       yAxis: { type: "value" },
       series: [
-        { name: "Recurrentes", type: "bar", stack: "c", barMaxWidth: 28, itemStyle: { color: COLOR.ONLINE, borderColor: COLOR.superficie, borderWidth: 1 }, data: recur },
-        { name: "Nuevos", type: "bar", stack: "c", barMaxWidth: 28, itemStyle: { color: COLOR.azul, borderColor: COLOR.superficie, borderWidth: 1, borderRadius: [4, 4, 0, 0] }, data: nuevos },
+        { name: "Recurrentes", type: "bar", stack: "c", barMaxWidth: 28, itemStyle: { color: COLOR.marca, borderColor: COLOR.superficie, borderWidth: 1 }, data: recur },
+        { name: "Nuevos", type: "bar", stack: "c", barMaxWidth: 28, itemStyle: { color: COLOR.marcaClara, borderColor: COLOR.superficie, borderWidth: 1, borderRadius: 0 }, data: nuevos },
       ],
     });
     EB.tabla("g-recurrentes", ["Mes", "Nuevos", "Recurrentes", "% recurrentes"], meses.map((m, i) => [EB.etiquetaMes(m), fmt.entero(nuevos[i]), fmt.entero(recur[i]), fmt.pct(recur[i] / (nuevos[i] + recur[i] || 1))]));
@@ -112,8 +112,8 @@ function cohortes(filas) {
     const f = idx.get(c + "|" + k);
     // Sin fila = nadie de esa cohorte compró ese mes (0%)
     const pct = f ? f.clientes_compradores / tam.get(c) * 100 : 0;
-    // Texto oscuro sobre celdas claras para que se lea
-    datos.push({ value: [k, y, pct, f ? f.clientes_compradores : 0], label: { color: pct >= 40 ? "#17152e" : "rgba(255,255,255,0.85)" } });
+    // Texto blanco sobre celdas oscuras y oscuro sobre claras, para que se lea
+    datos.push({ value: [k, y, pct, f ? f.clientes_compradores : 0], label: { color: pct >= 24 ? "#FFFFFF" : COLOR.tinta } });
   }));
   const etiquetaC = (c) => EB.etiquetaMes(c + "-01");
   EB.grafico("g-cohortes", {
@@ -124,13 +124,13 @@ function cohortes(filas) {
     visualMap: {
       min: 0, max: 60, calculable: false, orient: "horizontal", right: 16, bottom: 0, itemWidth: 12, itemHeight: 160,
       text: ["60% o más", "0%"], textStyle: { color: COLOR.niebla, fontSize: 12 },
-      inRange: { color: ["#1B2A40", "#2D5C8F", "#5B8DEF", "#B8CDF8"] },
+      inRange: { color: ["#EEF5F4", "#A8D2CB", "#3E8E83", "#0B4A45"] },
     },
     series: [{
       type: "heatmap", data: datos,
-      itemStyle: { borderColor: COLOR.superficie, borderWidth: 2, borderRadius: 3 },
+      itemStyle: { borderColor: COLOR.superficie, borderWidth: 2 },
       label: { show: true, fontSize: 10, formatter: (p) => Math.round(p.value[2]) },
-      emphasis: { itemStyle: { borderColor: "#C9BCFF", borderWidth: 2 } },
+      emphasis: { itemStyle: { borderColor: COLOR.tinta, borderWidth: 1.5 } },
     }],
   });
   EB.tabla("g-cohortes", ["Cohorte", "Clientes"].concat(ks.map((k) => "Mes " + k)), lista.map((c) => [etiquetaC(c), fmt.entero(tam.get(c))].concat(ks.map((k) => {

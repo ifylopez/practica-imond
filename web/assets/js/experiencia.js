@@ -29,7 +29,7 @@ EB.pagina({
     const etiquetas = meses.map(EB.etiquetaMes);
     EB.grafico("g-relacion", {
       axisPointer: { link: [{ xAxisIndex: "all" }] },
-      tooltip: { trigger: "axis", axisPointer: { type: "line", lineStyle: { color: "rgba(196,184,255,0.4)" } },
+      tooltip: { trigger: "axis", axisPointer: { type: "line", lineStyle: { color: COLOR.tenue } },
         formatter: (ps) => ps[0].axisValue + ps.map((p) => "<br>" + p.marker + p.seriesName + ": <b>" + (p.value == null ? "sin datos" : p.seriesIndex === 0 ? fmt.dec(p.value) + " puntos" : fmt.dec(p.value) + " días") + "</b>").join("") },
       grid: [{ left: 8, right: 16, top: 26, height: "38%", containLabel: true }, { left: 8, right: 16, top: "60%", bottom: 8, containLabel: true }],
       xAxis: [
@@ -45,7 +45,7 @@ EB.pagina({
           lineStyle: { width: 2, color: COLOR.ONLINE }, itemStyle: { color: COLOR.ONLINE, borderColor: COLOR.superficie, borderWidth: 2 },
           data: npsOn },
         { name: "Días promedio de entrega", type: "bar", xAxisIndex: 1, yAxisIndex: 1, barMaxWidth: 26,
-          data: dias.map((v) => ({ value: v, itemStyle: { color: lento(v) ? COLOR.alerta : "rgba(201,188,255,0.35)", borderRadius: [4, 4, 0, 0] } })),
+          data: dias.map((v) => ({ value: v, itemStyle: { color: lento(v) ? COLOR.alerta : "#C9D1CE", borderRadius: 0 } })),
           label: { show: true, position: "top", fontSize: 11, color: COLOR.niebla, formatter: (p) => (lento(p.value) ? fmt.dec(p.value) : "") },
           markLine: { silent: true, symbol: "none", label: { color: COLOR.tenue, fontSize: 11, formatter: "Mediana " + fmt.dec(mediana || 0) + " días", position: "insideEndTop" }, lineStyle: { color: COLOR.tenue, type: "dashed" }, data: mediana ? [{ yAxis: mediana }] : [] } },
       ],
@@ -81,7 +81,7 @@ EB.pagina({
       // Una serie por grupo para que la leyenda explique el color
       series: Object.keys(GRUPO).map((g) => ({
         name: g, type: "bar", stack: "p", barMaxWidth: 34,
-        itemStyle: { color: GRUPO[g], borderRadius: [4, 4, 0, 0] },
+        itemStyle: { color: GRUPO[g], borderRadius: 0 },
         data: valores.map((v, s) => (grupoDe(s) === g ? v : null)),
       })),
     });
@@ -100,8 +100,8 @@ EB.pagina({
       yAxis: { type: "category", data: grupos.map((c) => c.canal), axisLabel: { color: COLOR.tinta, fontSize: 13 } },
       series: orden.map((g, i) => ({
         name: g, type: "bar", stack: "g", barMaxWidth: 40,
-        itemStyle: { color: GRUPO[g], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: i === orden.length - 1 ? [0, 4, 4, 0] : i === 0 ? [4, 0, 0, 4] : 0 },
-        label: { show: true, color: "#fff", fontWeight: 700, formatter: (p) => fmt.dec(p.value, 0) + "%" },
+        itemStyle: { color: GRUPO[g], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: 0 },
+        label: { show: true, color: g === "Pasivos" ? COLOR.tinta : "#FFFFFF", fontWeight: 700, formatter: (p) => fmt.dec(p.value, 0) + "%" },
         data: grupos.map((c) => pctGrupo(c, g)),
       })),
     });

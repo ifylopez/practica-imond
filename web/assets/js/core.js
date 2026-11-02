@@ -15,27 +15,30 @@
   const CLAVE_FILTROS = "ecobottle-filtros-v1";
 
   // ------------------------------------------------------------------
-  // Paleta (validada para fondo oscuro). El color sigue a la entidad.
+  // Paleta sobre fondo blanco (validada para contraste y daltonismo).
+  // El color sigue a la entidad: cada canal y cada producto tiene el suyo
+  // en todas las páginas. Las series sueltas usan el color de marca.
   // ------------------------------------------------------------------
   const COLOR = {
-    OFFLINE: "#937DE0",
-    ONLINE: "#25A898",
-    "Classic A Bottle": "#C0811C",
-    "Sport B Bottle": "#DB6599",
-    azul: "#5B8DEF",
-    verde: "#4FA457",
-    gris: "#6E6890",
-    bien: "#4FA457",
-    alerta: "#C0811C",
-    critico: "#E0635F",
-    tinta: "#EDEAFB",
-    niebla: "#A9A3C9",
-    tenue: "#7D779F",
-    borde: "rgba(196,184,255,0.16)",
-    superficie: "#17152e",
+    OFFLINE: "#4A63C9",
+    ONLINE: "#008A7B",
+    "Classic A Bottle": "#B5701A",
+    "Sport B Bottle": "#9E3D8F",
+    marca: "#0B4A45",
+    marcaClara: "#7FBFB5",
+    gris: "#A3ADAA",
+    bien: "#2E7D4F",
+    alerta: "#D97706",
+    critico: "#B42318",
+    tinta: "#13201F",
+    niebla: "#4E5D5A",
+    tenue: "#6B7875",
+    borde: "#DADFDC",
+    grilla: "#ECEFED",
+    superficie: "#FFFFFF",
   };
   // Orden categórico fijo para categorías sin color propio
-  const CATEGORICO = ["#937DE0", "#25A898", "#C0811C", "#DB6599", "#5B8DEF", "#4FA457"];
+  const CATEGORICO = ["#008A7B", "#4A63C9", "#B5701A", "#9E3D8F", "#0B4A45", "#6B7875"];
 
   // ------------------------------------------------------------------
   // Formatos (es-AR)
@@ -181,32 +184,32 @@
   const tema = {
     color: CATEGORICO,
     backgroundColor: "transparent",
-    textStyle: { fontFamily: "Manrope, Segoe UI, system-ui, sans-serif", color: COLOR.niebla },
+    textStyle: { fontFamily: "Public Sans, Segoe UI, system-ui, sans-serif", color: COLOR.niebla },
     grid: { left: 8, right: 16, top: 28, bottom: 8, containLabel: true },
     categoryAxis: {
-      axisLine: { lineStyle: { color: "rgba(196,184,255,0.28)" } },
+      axisLine: { lineStyle: { color: COLOR.tinta } },
       axisTick: { show: false },
-      axisLabel: { color: COLOR.niebla, fontSize: 12 },
+      axisLabel: { color: COLOR.tenue, fontSize: 12 },
       splitLine: { show: false },
     },
     valueAxis: {
       axisLine: { show: false },
       axisTick: { show: false },
       axisLabel: { color: COLOR.tenue, fontSize: 12 },
-      splitLine: { lineStyle: { color: "rgba(196,184,255,0.09)" } },
+      splitLine: { lineStyle: { color: COLOR.grilla } },
       nameTextStyle: { color: COLOR.tenue, fontSize: 12 },
     },
-    legend: { textStyle: { color: COLOR.niebla, fontSize: 12.5 }, icon: "roundRect", itemWidth: 12, itemHeight: 12, itemGap: 18 },
+    legend: { textStyle: { color: COLOR.niebla, fontSize: 12.5 }, icon: "rect", itemWidth: 10, itemHeight: 10, itemGap: 18 },
     tooltip: {
-      backgroundColor: "rgba(23,21,46,0.96)",
-      borderColor: "rgba(196,184,255,0.32)",
+      backgroundColor: "#FFFFFF",
+      borderColor: COLOR.borde,
       borderWidth: 1,
       padding: [10, 12],
       textStyle: { color: COLOR.tinta, fontSize: 13 },
-      extraCssText: "border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.35);",
+      extraCssText: "border-radius:4px;box-shadow:0 4px 16px rgba(19,32,31,.12);",
     },
     line: { symbolSize: 8, lineStyle: { width: 2 } },
-    bar: { itemStyle: { borderRadius: [4, 4, 0, 0] } },
+    bar: { itemStyle: { borderRadius: 0 } },
   };
   echarts.registerTheme("ecobottle", tema);
 
@@ -233,7 +236,7 @@
   function tooltipEje(formato) {
     return {
       trigger: "axis",
-      axisPointer: { type: "line", lineStyle: { color: "rgba(196,184,255,0.4)" } },
+      axisPointer: { type: "line", lineStyle: { color: COLOR.tenue } },
       valueFormatter: (v) => (v == null || Number.isNaN(v) ? "sin datos" : formato(v)),
     };
   }
@@ -299,64 +302,60 @@
   }
 
   // ------------------------------------------------------------------
-  // Navegación lateral
+  // Barra superior: marca, pestañas de navegación y filtros
   // ------------------------------------------------------------------
-  const ICONOS = {
-    resumen: '<path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-6H3zM13 3v6h8V3z"/>',
-    ventas: '<path d="M3 20h18M6 16V10M11 16V6M16 16v-4M21 16V8"/>',
-    productos: '<path d="M9 2h6v3l2 3v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8l2-3z"/><path d="M7 12h10"/>',
-    clientes: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/>',
-    experiencia: '<path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6.3 5.3 5.3 0 0 1 21.3 12C19 16.6 12 21 12 21z"/>',
-    operaciones: '<path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>',
-    modelo: '<circle cx="12" cy="12" r="3"/><circle cx="4" cy="5" r="2"/><circle cx="20" cy="5" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="19" r="2"/><path d="M6 6.5l3.6 3.5M18 6.5l-3.6 3.5M6 17.5l3.6-3.5M18 17.5l-3.6-3.5"/>',
-  };
   const PAGINAS = [
     ["resumen", "index.html", "Resumen"],
     ["ventas", "ventas.html", "Ventas"],
     ["productos", "productos.html", "Productos"],
     ["clientes", "clientes.html", "Clientes y web"],
-    ["experiencia", "experiencia.html", "Experiencia (NPS)"],
+    ["experiencia", "experiencia.html", "Experiencia"],
     ["operaciones", "operaciones.html", "Operaciones"],
-    ["modelo", "modelo.html", "Acerca del modelo"],
+    ["modelo", "modelo.html", "Modelo"],
   ];
-  function armarLateral(actual) {
-    const el = document.getElementById("lateral");
+  function armarBarra(actual) {
+    const el = document.getElementById("barra");
     if (!el) return;
-    const icono = (k) => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONOS[k] + "</svg>";
     el.innerHTML =
-      '<a class="marca" href="index.html">' +
-      '<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><defs><linearGradient id="gm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#937DE0"/><stop offset="1" stop-color="#25A898"/></linearGradient></defs>' +
-      '<path d="M13 3h8v4l3 4.5V28a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3V11.5L13 7z" fill="url(#gm)"/><path d="M10 17h14" stroke="#100e26" stroke-width="2"/></svg>' +
-      '<span class="marca-nombre">EcoBottle AR<span class="marca-sub">Tablero comercial</span></span></a>' +
+      '<a class="marca" href="index.html">EcoBottle</a>' +
       '<nav class="nav" aria-label="Páginas del tablero">' +
-      PAGINAS.map(([k, href, txt]) => '<a href="' + href + '"' + (k === actual ? ' aria-current="page"' : "") + ">" + icono(k) + "<span>" + txt + "</span></a>").join("") +
-      "</nav>" +
-      '<div class="lateral-pie">Datos: <a href="https://github.com/ifylopez/practica-imond/tree/main/dw">dw/*.csv</a>, generados por <code>run_sql.py</code>.<br>Mateo Andrés López Valci</div>';
+      PAGINAS.map(([k, href, txt]) => '<a href="' + href + '"' + (k === actual ? ' aria-current="page"' : "") + ">" + txt + "</a>").join("") +
+      "</nav>";
+    // Pie de página con la fuente de los datos y la autoría
+    const main = document.getElementById("contenido-pagina");
+    if (main && !document.querySelector(".pie-pagina")) {
+      const pie = document.createElement("footer");
+      pie.className = "pie-pagina";
+      pie.innerHTML = 'Datos: <a href="https://github.com/ifylopez/practica-imond/tree/main/dw">dw/*.csv</a>, generados por <code>run_sql.py</code> a partir del modelo estrella. Mateo Andrés López Valci.';
+      main.appendChild(pie);
+    }
   }
 
   // ------------------------------------------------------------------
-  // Barra de filtros
+  // Filtros (se ubican en la barra superior, a la derecha de las pestañas)
   // ------------------------------------------------------------------
+  const TEXTO_TODOS = { canal: "Canal: todos", provincia: "Provincia: todas", producto: "Producto: todos" };
   function armarFiltros(usados, alCambiar) {
     const el = document.getElementById("filtros");
     if (!el) return;
     if (!usados.length) { el.remove(); return; }
+    const barra = document.getElementById("barra");
+    if (barra) barra.appendChild(el);
     const opt = (vals, sel, rotulo = (v) => v) => vals.map((v) => '<option value="' + v + '"' + (v === sel ? " selected" : "") + ">" + rotulo(v) + "</option>").join("");
     let html = "";
     if (usados.includes("mes")) {
       html +=
-        '<div class="filtro"><label for="f-desde">Período</label><div class="filtro-periodo">' +
-        '<select id="f-desde" aria-label="Desde">' + opt(opciones.meses, filtros.desde, etiquetaMes) + "</select>" +
-        "<span>a</span>" +
-        '<select id="f-hasta" aria-label="Hasta">' + opt(opciones.meses, filtros.hasta, etiquetaMes) + "</select></div></div>";
+        '<span class="filtro-periodo">' +
+        '<select id="f-desde" aria-label="Período desde">' + opt(opciones.meses, filtros.desde, etiquetaMes) + "</select>" +
+        '<span aria-hidden="true">–</span>' +
+        '<select id="f-hasta" aria-label="Período hasta">' + opt(opciones.meses, filtros.hasta, etiquetaMes) + "</select></span>";
     }
-    const simple = (dim, id, rotulo, vals) =>
-      '<div class="filtro"><label for="' + id + '">' + rotulo + '</label><select id="' + id + '">' + opt([TODOS].concat(vals), filtros[dim]) + "</select></div>";
-    if (usados.includes("canal")) html += simple("canal", "f-canal", "Canal", opciones.canales);
-    if (usados.includes("provincia")) html += simple("provincia", "f-provincia", "Provincia", opciones.provincias);
-    if (usados.includes("producto")) html += simple("producto", "f-producto", "Producto", opciones.productos);
+    const simple = (dim, rotulo, vals) =>
+      '<select id="f-' + dim + '" aria-label="' + rotulo + '">' + opt([TODOS].concat(vals), filtros[dim], (v) => (v === TODOS ? TEXTO_TODOS[dim] : v)) + "</select>";
+    if (usados.includes("canal")) html += simple("canal", "Canal", opciones.canales);
+    if (usados.includes("provincia")) html += simple("provincia", "Provincia", opciones.provincias);
+    if (usados.includes("producto")) html += simple("producto", "Producto", opciones.productos);
     html += '<button type="button" class="boton" id="f-limpiar">Quitar filtros</button>';
-    html += '<span class="filtros-estado" id="f-estado"></span>';
     el.innerHTML = html;
 
     const leer = () => {
@@ -380,11 +379,6 @@
     const set = (id, v) => { const s = document.getElementById(id); if (s) s.value = v; };
     set("f-desde", filtros.desde); set("f-hasta", filtros.hasta);
     set("f-canal", filtros.canal); set("f-provincia", filtros.provincia); set("f-producto", filtros.producto);
-    const est = document.getElementById("f-estado");
-    if (est) {
-      const n = mesesElegidos().length;
-      est.textContent = n + (n === 1 ? " mes" : " meses") + " seleccionados";
-    }
   }
   /** Cambia un filtro desde un gráfico (p. ej. clic en el mapa) */
   function fijarFiltro(dim, valor) {
@@ -414,7 +408,7 @@
    *  render:  función que dibuja todo con los datos ya filtrables
    */
   async function pagina(cfg) {
-    armarLateral(cfg.id);
+    armarBarra(cfg.id);
     const usados = cfg.filtros || [];
     const cont = document.getElementById("contenido-pagina");
     try {

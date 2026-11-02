@@ -11,7 +11,7 @@ EB.pagina({
     const pagos = EB.filtrar(d.mart_pagos, DIMS);
     const log = EB.filtrar(d.mart_logistica, DIMS);
     const canales = EB.filtros.canal === EB.TODOS ? EB.opciones.canales : [EB.filtros.canal];
-    const sombra = { type: "shadow", shadowStyle: { color: "rgba(196,184,255,0.06)" } };
+    const sombra = { type: "shadow", shadowStyle: { color: "rgba(19,32,31,0.05)" } };
 
     // ---- KPIs ----
     const totPed = EB.suma(estados, "pedidos");
@@ -28,7 +28,7 @@ EB.pagina({
     document.getElementById("k-lentas-nota").textContent = fmt.entero(lentas) + " de " + fmt.entero(entregados) + " entregas. Promedio: " + fmt.dec(entregados ? EB.suma(log, "dias_entrega_suma") / entregados : 0) + " días.";
 
     // ---- Estados del pedido ----
-    const COLOR_ESTADO = { CREATED: COLOR.gris, PAID: COLOR.azul, FULFILLED: COLOR.bien, CANCELLED: COLOR.critico, REFUNDED: COLOR.alerta };
+    const COLOR_ESTADO = { CREATED: COLOR.gris, PAID: COLOR.marcaClara, FULFILLED: COLOR.bien, CANCELLED: COLOR.critico, REFUNDED: COLOR.alerta };
     const porEstado = EB.agruparLista(estados, ["orden", "estado", "estado_desc"], ["pedidos", "monto"]).sort((a, b) => b.orden - a.orden);
     EB.grafico("g-estados", {
       grid: { top: 8, right: 90 },
@@ -38,7 +38,7 @@ EB.pagina({
       series: [{
         type: "bar", barMaxWidth: 28,
         label: { show: true, position: "right", color: COLOR.niebla, fontSize: 12, formatter: (p) => fmt.entero(p.value) + " (" + fmt.pct(p.value / totPed, 1) + ")" },
-        data: porEstado.map((e) => ({ value: e.pedidos, itemStyle: { color: COLOR_ESTADO[e.estado], borderRadius: [0, 4, 4, 0] } })),
+        data: porEstado.map((e) => ({ value: e.pedidos, itemStyle: { color: COLOR_ESTADO[e.estado], borderRadius: 0 } })),
       }],
     });
     EB.tabla("g-estados", ["Estado", "Pedidos", "% del total", "Monto"], porEstado.slice().reverse().map((e) => [e.estado_desc, fmt.entero(e.pedidos), fmt.pct(e.pedidos / totPed), fmt.millones(e.monto)]));
@@ -58,7 +58,7 @@ EB.pagina({
       series: [{
         type: "bar", barMaxWidth: 32,
         label: { show: true, position: "right", color: COLOR.niebla, formatter: (p) => fmt.entero(p.value) },
-        data: porPagoCancel.map((e) => ({ value: e.pagos, itemStyle: { color: COLOR_PAGO[e.estado_pago] || COLOR.gris, borderRadius: [0, 4, 4, 0] } })),
+        data: porPagoCancel.map((e) => ({ value: e.pagos, itemStyle: { color: COLOR_PAGO[e.estado_pago] || COLOR.gris, borderRadius: 0 } })),
       }],
     });
     EB.tabla("g-cancel", ["Estado del pago", "Pedidos cancelados", "Monto"], porPagoCancel.slice().reverse().map((e) => [e.estado_pago, fmt.entero(e.pagos), fmt.millones(e.monto)]));
@@ -70,7 +70,7 @@ EB.pagina({
     const concretados = pagos.filter((f) => f.estado_pago === "Pagado");
     const medios = EB.agruparLista(concretados, "medio", ["pagos"]).sort((a, b) => b.pagos - a.pagos).map((m) => m.medio);
     // Medios = categoría nominal sin color propio: un solo tono con etiquetas directas
-    const TONOS = ["#2F4F9A", "#6F9BF2", "#A9C2F7", "#DCE6FC"];
+    const TONOS = ["#13201F", "#4E625F", "#8FA19D", "#CBD5D2"];
     const mc = EB.agrupar(concretados, ["canal", "medio"], ["pagos"]);
     const totCanal = EB.agrupar(concretados, "canal", ["pagos"]);
     const pctMC = (c, m) => ((mc.get(c + "|" + m) || { pagos: 0 }).pagos / ((totCanal.get(c) || { pagos: 1 }).pagos || 1)) * 100;
@@ -81,8 +81,8 @@ EB.pagina({
       yAxis: { type: "category", data: canales, axisLabel: { color: COLOR.tinta, fontSize: 13 } },
       series: medios.map((m, i) => ({
         name: m, type: "bar", stack: "m", barMaxWidth: 44,
-        itemStyle: { color: TONOS[i % TONOS.length], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: i === medios.length - 1 ? [0, 4, 4, 0] : i === 0 ? [4, 0, 0, 4] : 0 },
-        label: { show: true, color: i >= 2 ? "#17152e" : "#fff", fontWeight: 700, formatter: (p) => (p.value >= 7 ? fmt.dec(p.value, 0) + "%" : "") },
+        itemStyle: { color: TONOS[i % TONOS.length], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: 0 },
+        label: { show: true, color: i >= 2 ? COLOR.tinta : "#FFFFFF", fontWeight: 700, formatter: (p) => (p.value >= 7 ? fmt.dec(p.value, 0) + "%" : "") },
         data: canales.map((c) => pctMC(c, m)),
       })),
     });
@@ -106,7 +106,7 @@ EB.pagina({
       yAxis: { type: "category", data: tasas.map((m) => m.medio), axisLabel: { color: COLOR.tinta, fontSize: 13 } },
       series: [{
         type: "bar", barMaxWidth: 26,
-        itemStyle: { color: COLOR.critico, borderRadius: [0, 4, 4, 0] },
+        itemStyle: { color: COLOR.critico, borderRadius: 0 },
         label: { show: true, position: "right", color: COLOR.niebla, formatter: (p) => fmt.dec(p.value) + "%" },
         data: tasas.map((m) => m.tasa * 100),
       }],
@@ -131,7 +131,7 @@ EB.pagina({
       series: [{
         type: "bar", barMaxWidth: 26,
         label: { show: true, position: "right", color: COLOR.niebla, formatter: (p) => fmt.dec(p.value) + " días" },
-        data: porProv.map((p) => ({ value: p.dias, itemStyle: { color: COLOR.azul, opacity: elegida !== EB.TODOS && p.provincia !== elegida ? 0.35 : 1, borderRadius: [0, 4, 4, 0] } })),
+        data: porProv.map((p) => ({ value: p.dias, itemStyle: { color: COLOR.marca, opacity: elegida !== EB.TODOS && p.provincia !== elegida ? 0.35 : 1, borderRadius: 0 } })),
       }],
     });
     EB.tabla("g-prov", ["Provincia", "Entregas", "Días promedio", "% más de 7 días"], porProv.slice().reverse().map((p) => [p.provincia, fmt.entero(p.entregados), fmt.dec(p.dias), fmt.pct(p.entregas_mas_7_dias / p.entregados)]));
@@ -150,7 +150,7 @@ EB.pagina({
       yAxis: { type: "value", axisLabel: { formatter: "{value}%" } },
       series: [{
         name: "Más de 7 días", type: "bar", barMaxWidth: 26,
-        data: pctLentas.map((v) => ({ value: v, itemStyle: { color: v != null && v >= max * 0.6 ? COLOR.alerta : "rgba(201,188,255,0.35)", borderRadius: [4, 4, 0, 0] } })),
+        data: pctLentas.map((v) => ({ value: v, itemStyle: { color: v != null && v >= max * 0.6 ? COLOR.alerta : "#C9D1CE", borderRadius: 0 } })),
       }],
     });
     EB.tabla("g-lentas", ["Mes", "% de entregas de más de 7 días"], meses.map((m, i) => [EB.etiquetaMes(m), pctLentas[i] == null ? "sin datos" : fmt.dec(pctLentas[i]) + "%"]));

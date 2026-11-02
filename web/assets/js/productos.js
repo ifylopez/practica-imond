@@ -16,9 +16,9 @@ EB.pagina({
     EB.kpi("k-fact", { valor: fmt.millones(fact) });
     EB.kpi("k-unid", { valor: fmt.entero(unid) });
     EB.kpi("k-precio", { valor: fmt.miles(fact / unid) });
-    EB.chispa("k-fact-chispa", EB.serieMensual(filas, (f) => EB.suma(f, "ventas_productos")), COLOR.ONLINE);
-    EB.chispa("k-unid-chispa", EB.serieMensual(filas, (f) => EB.suma(f, "unidades")), COLOR.ONLINE);
-    EB.chispa("k-precio-chispa", EB.serieMensual(filas, (f) => { const u = EB.suma(f, "unidades"); return u ? EB.suma(f, "ventas_productos") / u : null; }), COLOR.azul);
+    EB.chispa("k-fact-chispa", EB.serieMensual(filas, (f) => EB.suma(f, "ventas_productos")), COLOR.marca);
+    EB.chispa("k-unid-chispa", EB.serieMensual(filas, (f) => EB.suma(f, "unidades")), COLOR.marca);
+    EB.chispa("k-precio-chispa", EB.serieMensual(filas, (f) => { const u = EB.suma(f, "unidades"); return u ? EB.suma(f, "ventas_productos") / u : null; }), COLOR.marca);
 
     // ---- Facturación mensual por producto ----
     const series = productos.map((p) => ({
@@ -38,13 +38,15 @@ EB.pagina({
     // ---- Participación ----
     const porProd = EB.agruparLista(filas, "producto", ["ventas_productos", "unidades"]).sort((a, b) => a.producto.localeCompare(b.producto));
     EB.grafico("g-share", {
-      tooltip: { trigger: "item", formatter: (p) => p.marker + p.name + "<br><b>" + fmt.millones(p.value) + "</b> (" + p.percent.toLocaleString("es-AR") + "%)" },
-      legend: { bottom: 0, left: "center" },
+      grid: { top: 8, right: 64, bottom: 8 },
+      tooltip: { trigger: "item", formatter: (p) => p.name + "<br><b>" + fmt.millones(porProd[p.dataIndex].ventas_productos) + "</b> (" + fmt.pct(p.value) + ")" },
+      xAxis: { type: "value", max: 1, show: false },
+      yAxis: { type: "category", data: porProd.map((p) => p.producto), inverse: true, axisLine: { show: false }, axisLabel: { color: COLOR.tinta, fontSize: 13 } },
       series: [{
-        type: "pie", radius: ["50%", "80%"], center: ["50%", "45%"], padAngle: 2,
-        itemStyle: { borderRadius: 4, borderColor: COLOR.superficie, borderWidth: 2 },
-        label: { position: "inside", color: "#fff", fontSize: 14, fontWeight: 700, formatter: (p) => p.percent.toLocaleString("es-AR", { maximumFractionDigits: 1 }) + "%" },
-        data: porProd.map((p) => ({ name: p.producto, value: p.ventas_productos, itemStyle: { color: COLOR[p.producto] } })),
+        type: "bar", barWidth: 18,
+        showBackground: true, backgroundStyle: { color: COLOR.grilla },
+        label: { show: true, position: "right", color: COLOR.tinta, fontWeight: 600, formatter: (p) => fmt.pct(p.value) },
+        data: porProd.map((p) => ({ value: p.ventas_productos / fact, itemStyle: { color: COLOR[p.producto] } })),
       }],
     });
     EB.tabla("g-share", ["Producto", "Facturación", "Unidades", "Precio medio", "Participación"],
@@ -58,7 +60,7 @@ EB.pagina({
       yAxis: { type: "category", data: ["Unidades", "Facturación"], axisLabel: { color: COLOR.tinta, fontSize: 13 } },
       series: porProd.map((p, i) => ({
         name: p.producto, type: "bar", stack: "m", barMaxWidth: 40,
-        itemStyle: { color: COLOR[p.producto], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: i === porProd.length - 1 ? [0, 4, 4, 0] : 0 },
+        itemStyle: { color: COLOR[p.producto], borderColor: COLOR.superficie, borderWidth: 2, borderRadius: 0 },
         label: { show: true, color: "#fff", fontWeight: 700, formatter: (x) => fmt.pct(x.value / 100, 0) },
         data: [p.unidades / unid * 100, p.ventas_productos / fact * 100],
       })),
@@ -83,7 +85,7 @@ EB.pagina({
       yAxis: { type: "value", show: false, max: puestos.length, inverse: true },
       series: puestos.map((i) => ({
         type: "bar", stack: "r", barCategoryGap: "8%",
-        itemStyle: { borderColor: COLOR.superficie, borderWidth: 2, borderRadius: 4 },
+        itemStyle: { borderColor: COLOR.superficie, borderWidth: 2 },
         label: { show: meses.length <= 21, color: "#fff", fontSize: 11, fontWeight: 700, formatter: (p) => i + 1 + "º" },
         data: ranking.map((r) => ({ value: 1, itemStyle: { color: COLOR[r[i].producto] } })),
       })),
