@@ -51,8 +51,9 @@
           <span class="kpi-nombre">Usuarios activos por mes</span>
           <span class="kpi-valor">…</span>
           <span class="kpi-delta"></span>
+          <span class="kpi-alt" id="k-usuarios-alt"></span>
           <div class="kpi-chispa" id="k-usuarios-chispa"></div>
-          <span class="kpi-nota">Promedio mensual. Responde solo a período.</span>
+          <span class="kpi-nota">Promedio mensual estimado: solo clientes identificados. El segundo número suma cada sesión anónima como un usuario. Responde solo a período.</span>
         </div>
       </section>
       <p class="kpis-nota" id="kpis-nota"></p>
@@ -61,7 +62,7 @@
         <article class="tarjeta ancho-8" data-aplica="mes canal provincia">
           <div class="tarjeta-cabeza"><div>
             <h2 id="t-mensual">Ventas mensuales por canal</h2>
-            <p class="bajada">Millones de pesos por mes. Diciembre de 2024 es el pico del período.</p>
+            <p class="bajada">Millones de pesos por mes, separados por canal.</p>
           </div></div>
           <div class="grafico" id="g-mensual" role="img" aria-label="Barras apiladas de ventas mensuales por canal"></div>
         </article>
@@ -79,9 +80,9 @@
       <p class="seccion-bajada">Cuatro hallazgos sobre el período completo, sin filtros. Cada uno lleva a la página donde se analiza.</p>
       <div class="grilla">
         <article class="tarjeta hallazgo ancho-3">
-          <span class="hallazgo-cifra" id="h-entrega">…</span>
-          <p id="h-entrega-txt"></p>
-          <a href="experiencia.html">Ver la relación con el NPS</a>
+          <span class="hallazgo-cifra" id="h-crecimiento">…</span>
+          <p id="h-crecimiento-txt"></p>
+          <a href="ventas.html">Ver ventas por canal</a>
         </article>
         <article class="tarjeta hallazgo ancho-3">
           <span class="hallazgo-cifra" id="h-nps">…</span>
@@ -89,14 +90,14 @@
           <a href="experiencia.html">Ver el NPS por canal</a>
         </article>
         <article class="tarjeta hallazgo ancho-3">
+          <span class="hallazgo-cifra" id="h-entrega">…</span>
+          <p id="h-entrega-txt"></p>
+          <a href="experiencia.html">Ver entregas y NPS</a>
+        </article>
+        <article class="tarjeta hallazgo ancho-3">
           <span class="hallazgo-cifra" id="h-recurrentes">…</span>
           <p id="h-recurrentes-txt"></p>
           <a href="clientes.html">Ver clientes y cohortes</a>
-        </article>
-        <article class="tarjeta hallazgo ancho-3">
-          <span class="hallazgo-cifra" id="h-domingo">…</span>
-          <p id="h-domingo-txt"></p>
-          <a href="ventas.html">Ver ventas por día</a>
         </article>
       </div>
 

@@ -66,10 +66,21 @@ EB.pagina({
       })),
     });
     EB.tabla("g-mix", ["Producto", "% de unidades", "% de facturación"], porProd.map((p) => [p.producto, fmt.pct(p.unidades / unid), fmt.pct(p.ventas_productos / fact)]));
-    const caro = porProd.slice().sort((a, b) => b.ventas_productos / b.unidades - a.ventas_productos / a.unidades)[0];
-    document.getElementById("t-mix").textContent = porProd.length > 1
-      ? caro.producto + " pesa más en la facturación que en las unidades"
-      : "Unidades contra facturación";
+    // Titular de la página y título del gráfico: quién lidera en plata y quién en unidades
+    const porFact = porProd.slice().sort((a, b) => b.ventas_productos - a.ventas_productos);
+    const porUnid = porProd.slice().sort((a, b) => b.unidades - a.unidades);
+    const corto = (p) => p.replace(" Bottle", "");
+    if (porProd.length > 1) {
+      document.getElementById("titular").textContent = porFact[0].producto === porUnid[0].producto
+        ? corto(porFact[0].producto) + " lidera en facturación y en unidades"
+        : corto(porFact[0].producto) + " lidera la facturación aunque " + corto(porUnid[0].producto) + " vende más unidades";
+      const u = porUnid[0];
+      document.getElementById("t-mix").textContent =
+        corto(u.producto) + " aporta el " + fmt.pct(u.unidades / unid, 0) + " de las unidades y el " + fmt.pct(u.ventas_productos / fact, 0) + " de la facturación";
+    } else {
+      document.getElementById("titular").textContent = porProd.length ? corto(porProd[0].producto) + ": facturación y unidades" : "Facturación y unidades por producto";
+      document.getElementById("t-mix").textContent = "Unidades contra facturación";
+    }
 
     // ---- Ranking mensual (siempre con todos los productos, como RANKX) ----
     const todos = EB.filtrar(d.mart_productos, DIMS, { ignorar: ["producto"] });
@@ -92,7 +103,9 @@ EB.pagina({
     });
     document.getElementById("ley-ranking").innerHTML = EB.opciones.productos.map((p) => '<span><i style="background:' + COLOR[p] + '"></i>' + p + "</span>").join("");
     EB.tabla("g-ranking", ["Mes"].concat(puestos.map((i) => "Puesto " + (i + 1))), ranking.map((r, k) => [EB.etiquetaMes(meses[k])].concat(r.map((x) => x.producto + " (" + fmt.millones(x.ventas) + ")"))));
-    const lider = EB.opciones.productos.map((p) => ({ p, n: ranking.filter((r) => r[0].producto === p).length })).sort((a, b) => b.n - a.n)[0];
-    document.getElementById("t-ranking").textContent = lider.p + " fue el primero en " + lider.n + " de " + meses.length + " meses";
+    const primeros = EB.opciones.productos.map((p) => ({ p: corto(p), n: ranking.filter((r) => r[0].producto === p).length })).sort((a, b) => b.n - a.n);
+    document.getElementById("t-ranking").textContent = primeros[1] && primeros[1].n > 0
+      ? "El primer puesto se reparte: " + primeros[0].p + " ganó " + primeros[0].n + (primeros[0].n === 1 ? " mes" : " meses") + " y " + primeros[1].p + " " + primeros[1].n
+      : primeros[0].p + " fue el primero en " + (meses.length === 1 ? "el mes elegido" : "los " + meses.length + " meses");
   },
 });

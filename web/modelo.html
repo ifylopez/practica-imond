@@ -101,7 +101,7 @@
               <tr><td><code>dim_payment</code>, <code>dim_traffic</code></td><td>Dimensiones basura: medio y estado del pago; fuente y dispositivo</td></tr>
             </tbody>
           </table>
-          <p class="nota" style="margin-top:10px">Todas son conformadas (se comparten entre hechos) y tienen el miembro <strong>-1 Desconocido</strong> para no perder filas sin dato.</p>
+          <p class="nota" style="margin-top:10px">Fecha, cliente, canal y dirección son <strong>conformadas</strong>: las comparten varios hechos con el mismo significado. Las que pueden quedar sin dato (cliente, tienda, dirección, pago, envío, tráfico) tienen el miembro <strong>-1 Desconocido</strong>, así ninguna fila de los hechos queda sin su dimensión.</p>
         </article>
 
         <article class="tarjeta ancho-12">
@@ -142,7 +142,7 @@
         <article class="tarjeta ancho-12">
           <h2>Fuentes y licencias</h2>
           <div class="prosa" style="max-width:none">
-            <p>Datos: generados para el trabajo práctico (<code>generator/</code>), sin datos personales reales. Gráficos: <a href="https://echarts.apache.org/">Apache ECharts</a> 5.5.1 (Apache 2.0). Lectura de CSV: <a href="https://www.papaparse.com/">PapaParse</a> 5.4.1 (MIT). Mapa: provincias de <a href="https://www.naturalearthdata.com/">Natural Earth</a> (dominio público). Tipografías: Source Serif 4 y Public Sans (SIL Open Font License). Todo se sirve desde el propio repositorio, sin depender de servicios externos.</p>
+            <p>Datos: provistos por la cátedra (generados con <code>generator/</code>), sin datos personales reales. Gráficos: <a href="https://echarts.apache.org/">Apache ECharts</a> 5.5.1 (Apache 2.0). Lectura de CSV: <a href="https://www.papaparse.com/">PapaParse</a> 5.4.1 (MIT). Mapa: provincias de <a href="https://www.naturalearthdata.com/">Natural Earth</a> (dominio público). Tipografías: Source Serif 4 y Public Sans (SIL Open Font License). Todo se sirve desde el propio repositorio, sin depender de servicios externos.</p>
           </div>
         </article>
       </div>

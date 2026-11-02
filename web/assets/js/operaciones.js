@@ -44,7 +44,8 @@ EB.pagina({
     EB.tabla("g-estados", ["Estado", "Pedidos", "% del total", "Monto"], porEstado.slice().reverse().map((e) => [e.estado_desc, fmt.entero(e.pedidos), fmt.pct(e.pedidos / totPed), fmt.millones(e.monto)]));
     const ent = porEstado.find((e) => e.estado === "FULFILLED");
     document.getElementById("t-estados").textContent = ent
-      ? fmt.pct(ent.pedidos / totPed, 0) + " de los pedidos llegan a entregarse"
+      ? "El " + fmt.pct(ent.pedidos / totPed, 1) + " de los pedidos se entrega y el " +
+        fmt.pct(EB.suma(estados.filter((f) => f.estado === "CANCELLED"), "pedidos") / totPed, 1) + " se cancela"
       : "Cómo terminan los pedidos";
 
     // ---- Cancelados según el pago ----
@@ -113,6 +114,10 @@ EB.pagina({
     });
     EB.tabla("g-rechazo", ["Medio", "Intentos", "Rechazados", "% rechazado"], tasas.slice().reverse().map((m) => [m.medio, fmt.entero(m.intentos), fmt.entero(m.rechazados), fmt.pct(m.tasa)]));
     const peorMedio = tasas[tasas.length - 1];
+    // Monto de los pedidos con pago rechazado (no son ventas perdidas: el cliente pudo reintentar en otro pedido)
+    const montoRech = EB.suma(pagos.filter((f) => f.estado_pago === "Rechazado"), "monto");
+    document.getElementById("b-rechazo").textContent = "Porcentaje de los intentos de pago con cada medio que fueron rechazados. En el período suman " +
+      fmt.millones(montoRech) + " en pedidos no cobrados; no sabemos cuántos de esos clientes reintentaron en otro pedido.";
     document.getElementById("t-rechazo").textContent = peorMedio && peorMedio.tasa > 0
       ? peorMedio.medio + " es el medio con más rechazos (" + fmt.pct(peorMedio.tasa, 0) + ")"
       : "Pagos rechazados por medio";

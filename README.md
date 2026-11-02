@@ -159,8 +159,9 @@ con recargar la página.
 ## Modelo de datos
 
 Esquema estrella según Kimball: **4 tablas de hechos** y **10 dimensiones**.
-Las 6 principales (fecha, cliente, canal, tienda, dirección, producto) son
-**dimensiones conformadas**: las comparten varios hechos con el mismo significado.
+Fecha, cliente, canal y dirección son **dimensiones conformadas**: las comparten
+varios hechos con el mismo significado. Tienda y producto las usa un solo hecho cada
+una (pedido y línea de pedido).
 Las 4 de atributos (estado del pedido, pago, estado del envío, tráfico) sacan de los
 hechos los atributos descriptivos que antes quedaban como texto suelto. El diagrama
 completo se genera en [`dw/modelo_estrella.md`](dw/modelo_estrella.md).
@@ -401,7 +402,7 @@ aunque alguno no tenga pedidos.
 |---|---|---|
 | `mart_ventas` | mes × canal × provincia | `pedidos`, `ventas` |
 | `mart_productos` | mes × canal × provincia × producto | `unidades`, `ventas_productos` |
-| `mart_usuarios` | mes | `usuarios_activos`, `sesiones`, `sesiones_anonimas` |
+| `mart_usuarios` | mes | `usuarios_activos`, `sesiones`, `sesiones_anonimas`, `usuarios_con_anonimos` |
 | `mart_nps` | mes × canal | `respuestas`, `promotores`, `detractores` |
 | `mart_dia_semana` | mes × canal × provincia × día de la semana (solo ventas) | `pedidos`, `ventas` |
 | `mart_estados` | mes × canal × provincia × estado del pedido | `pedidos`, `monto` |
@@ -436,9 +437,15 @@ exactamente los mismos CSV y el `git diff` muestra solo cambios reales.
 2. **Provincia de una venta:** se toma la de la **dirección de envío**. En compras en
    tienda, la dirección de envío es la de la tienda, así que la provincia es la de la
    tienda.
-3. **Usuarios activos:** `COUNT(DISTINCT customer_key)` de sesiones web por mes,
-   **excluyendo el miembro `-1`** (anónimos). Si no se excluyera, todas las sesiones
-   anónimas contarían como un único "usuario".
+3. **Usuarios activos:** el KPI principal es `COUNT(DISTINCT customer_key)` de
+   sesiones web por mes, **excluyendo el miembro `-1`** (anónimos), y la tarjeta muestra
+   el promedio mensual. Es una **estimación**: no incluye a los visitantes que navegan
+   sin identificarse. La consigna admite contar `session_id` para los anónimos, así que
+   el tablero muestra también ese total (`usuarios_con_anonimos` = identificados +
+   sesiones anónimas del mes). Ese número es una **cota superior**: una sesión no es una
+   persona, y quien entra varias veces sin identificarse cuenta una vez por sesión.
+   Por eso no es el KPI principal: con 3.369 sesiones anónimas por mes contra 771
+   clientes identificados, el total quedaría dominado por sesiones.
 4. **Ranking por producto:** por facturación de productos (`line_total`, sin IVA ni
    envío), filtrando `is_sale` para ser consistente con Ventas. Por eso la suma del
    ranking **no coincide** con Total Ventas (que incluye IVA y envío): es esperado.
@@ -490,7 +497,7 @@ Todas leen **solo del data warehouse**. Versión completa en `sql/03_consultas.s
 |---|---|---|
 | Total Ventas | `SUM(total_amount)` de pedidos `is_sale` | **$382,41M** |
 | Ticket Promedio | `SUM(total_amount) / COUNT(*)` de pedidos `is_sale` | **$34,8K** |
-| Usuarios Activos | `COUNT(DISTINCT customer_key)` por mes, sin `-1` | **771** (promedio mensual) |
+| Usuarios Activos | `COUNT(DISTINCT customer_key)` por mes, sin `-1` | **771** (promedio mensual estimado); **4.140** por mes contando las sesiones anónimas |
 | NPS | `(%9–10 − %0–6) × 100` | **30,0** (ONLINE 24,0 · OFFLINE 40,9) |
 | Ventas por Provincia | `total_amount` por provincia de envío | Ver hallazgos |
 | Ranking por Producto | `line_total` por producto y mes, `RANK()` | Ver hallazgos |
@@ -597,6 +604,7 @@ responde (reemplaza al botón ⓘ de Power BI) y tiene **Ver tabla** con los nú
 Ticket promedio  = suma(ventas) / suma(pedidos)
 NPS              = (suma(promotores) - suma(detractores)) / suma(respuestas) * 100
 Usuarios activos = promedio de mart_usuarios.usuarios_activos en los meses elegidos
+                   (y de usuarios_con_anonimos para el total con sesiones anónimas)
 Días de entrega  = suma(dias_entrega_suma) / suma(entregados)
 Ranking producto = ordenar la facturación de cada mes (como RANKX)
 Variación anual  = período elegido contra los mismos meses del año anterior
@@ -613,18 +621,20 @@ depende de servicios externos y siempre usa la misma versión.
 
 ## Hallazgos
 
-1. **Crecimiento interanual del 16,6%.** Ventas ene–sep 2025: $170,6M contra
-   $146,3M en ene–sep 2024. El crecimiento viene del **volumen** (+16,9% de pedidos)
-   y no del ticket, que se mantuvo prácticamente igual (−0,2%).
+1. **Crecimiento interanual del 16,6%, que viene todo de la web.** Ventas ene–sep 2025:
+   $170,6M contra $146,3M en ene–sep 2024. ONLINE creció **+29,7%** ($81,2M → $105,3M)
+   y las tiendas quedaron casi iguales (+0,3%: $65,1M → $65,3M). El crecimiento viene
+   del **volumen** (+16,9% de pedidos) y no del ticket, que se mantuvo prácticamente
+   igual (−0,2%). Además, 2025 vendió más que 2024 en los nueve meses comparables.
 2. **Estacionalidad de fin de año.** Diciembre 2024 es el mejor mes del período:
-   $28,45M y 785 pedidos, casi el doble de un mes típico.
+   $28,45M y 785 pedidos, un 56% más que la mediana mensual del período ($18,27M y
+   513 pedidos).
 3. **Las tiendas generan mejor experiencia que la web.** NPS OFFLINE 40,9 contra
-   ONLINE 24,0 en el período completo, y OFFLINE supera a ONLINE en casi todos los
-   meses.
+   ONLINE 24,0 en el período completo, y OFFLINE supera a ONLINE en **los 21 meses**.
 4. **Crisis de satisfacción online en julio y agosto de 2024.** El NPS online cayó a
    **−6** en julio y **−26,5** en agosto (34 detractores contra 16 promotores),
-   mientras el canal offline se mantuvo estable. Al afectar solo al canal con envío,
-   la hipótesis principal es un problema logístico.
+   mientras el canal offline se mantuvo estable. Como afectó al canal que depende de
+   los envíos, la hipótesis principal es un problema logístico (ver hallazgo 12).
 5. **Más usuarios no se tradujo en más compras en la misma proporción.** Comparando
    ene–sep de cada año, los usuarios activos promedio crecieron **+71%** (566 → 966
    por mes), pero los pedidos solo **+17%**. Sugiere que la conversión de los
@@ -637,10 +647,12 @@ depende de servicios externos y siempre usa la misma versión.
    2024: Classic 570 u. contra Sport 472 u., y Sport es #1). El ranking del tablero es
    por facturación.
 8. **El 70% del tráfico web es anónimo** (70.751 de 100.363 sesiones). Usuarios
-   Activos mide solo al ~30% identificado.
+   Activos mide solo al ~30% identificado (771 por mes); contando cada sesión anónima
+   como un usuario serían 4.140 por mes, una cota superior.
 9. **91,9% de los pedidos termina en venta.** De 11.969 pedidos: 10.938 entregados
    y 60 pagados en curso (ventas), 658 cancelados (5,5%), 312 reembolsados (2,6%) y
-   1 creado sin pagar. **Las cancelaciones tienen dos orígenes distintos** (consulta
+   1 creado sin pagar. Los 312 reembolsados son devoluciones de compras ya entregadas
+   (230 por envío y 82 en tienda). **Las cancelaciones tienen dos orígenes distintos** (consulta
    A4): 565 son pagos **rechazados** (el pedido nunca se cobró ni se envió) y **93 son
    pedidos que se cobraron, cuyo envío se canceló y a los que se les devolvió el
    dinero**. Estos 93 son el caso más costoso para el negocio: hubo cobro, preparación
@@ -648,23 +660,34 @@ depende de servicios externos y siempre usa la misma versión.
 10. **Los medios de pago dependen del canal.** Online solo se paga con tarjeta (59%) o
     pasarela de pago (41%); en tiendas, con tarjeta (50%), efectivo (38%) o
     transferencia (12%). En total, la tarjeta concentra el 55% de los pagos.
-11. **La publicidad en redes trae tráfico casi solo desde el celular.** El 62% de las
+11. **La publicidad en redes trae tráfico sobre todo desde el celular.** El 62% de las
     sesiones son mobile, pero en `ads` la proporción sube al **80%** (20.157 de 25.165
     sesiones), contra ~56% en las demás fuentes. Por fuente: directo 30%, buscadores
     26%, publicidad en redes 25% y referidos 18%.
-12. **Las entregas lentas explican la crisis del NPS online (confirma el hallazgo 4).**
+12. **Las entregas lentas coinciden con la crisis del NPS online (respalda el hallazgo 4).**
     Los días promedio entre pedido y entrega rondan 4,7 en un mes normal, pero
     subieron a **9,3 en julio y 9,1 en agosto de 2024**: en esos meses tardó más de
     7 días el 77% y el 71% de las entregas, respectivamente. Son exactamente los meses
-    en que el NPS online cayó a −6 y −26,5.
-13. **Las tiendas no abren los domingos.** OFFLINE no registra ventas en domingo y su
-    mejor día es el sábado ($40,3M en el período). La web vende todos los días, con
-    pico el martes ($38,9M).
-14. **El negocio se sostiene en clientes que vuelven.** El 69% de los compradores de
-    cada mes ya había comprado antes. En las cohortes, alrededor de 1 de cada 5
-    clientes vuelve a comprar al mes siguiente del alta.
+    en que el NPS online cayó a −6 y −26,5. Es una coincidencia temporal, no una
+    prueba de causa: la encuesta no tiene `order_id`, así que no se puede cruzar cada
+    respuesta con la demora de su pedido. Además, sin esos dos meses el NPS online da
+    26,6, todavía lejos del 40,9 de las tiendas: la logística explica la caída de julio
+    y agosto, no la brecha entre canales.
+13. **En las tiendas, el sábado vende el doble que el lunes** ($40,3M contra $19,8M en
+    el período; los domingos no abren). La web, en cambio, tiene su pico el martes
+    ($38,9M) y su día más flojo es el sábado ($25,4M): los canales se complementan
+    a lo largo de la semana.
+14. **La mayoría de los compradores ya había comprado antes.** En 2025, el 76% de los
+    compradores de cada mes eran recurrentes (entre 73% y 78% según el mes). Se mide
+    sobre 2025 porque en los primeros meses de 2024 todos figuran como nuevos: los datos
+    empiezan en enero de 2024. En las cohortes, en promedio el 21% de cada cohorte
+    compra en el mes siguiente al alta.
 15. **Las entregas a Buenos Aires son las más rápidas** (4,0 días en promedio); a
     Córdoba (6,1), Santa Fe (5,8) y Mendoza (5,8) tardan casi dos días más.
+16. **$19,7M en pedidos con pago rechazado.** Son 565 pedidos (5% de las ventas del
+    período), casi todos online ($17,8M). La pasarela de pago rechaza el 9,8% de los
+    intentos, contra el 4% de la tarjeta. No son ventas perdidas seguras: los datos no
+    permiten saber si esos clientes reintentaron en otro pedido.
 
 ---
 
@@ -679,7 +702,8 @@ depende de servicios externos y siempre usa la misma versión.
   pedido puede tener varios productos. El filtro de producto aplica solo a la página
   Productos; el ranking mensual siempre compara los dos productos.
 - **Usuarios Activos** solo se filtra por fecha (las sesiones no tienen provincia ni
-  producto y siempre son del canal online) y cuenta solo clientes identificados.
+  producto y siempre son del canal online). El KPI principal cuenta solo clientes
+  identificados; el total con sesiones anónimas sobreestima porque cuenta sesiones.
 - **NPS con pocas respuestas:** algunos meses tienen menos de 30 respuestas por canal
   (ej. sep-25 OFFLINE: 29); en esos meses el NPS es poco estable.
 

@@ -58,6 +58,9 @@ EB.pagina({
     const usuProm = EB.suma(usu, "usuarios_activos") / usu.length;
     const usuPrevProm = EB.suma(usuPrev, "usuarios_activos") / usuPrev.length;
     EB.kpi("k-usuarios", { valor: fmt.entero(usuProm), anterior: anterior(usuProm, usuPrevProm) });
+    // Total con sesiones anónimas: cada sesión anónima cuenta como un usuario (columna calculada en el ETL)
+    const altProm = EB.suma(usu, "usuarios_con_anonimos") / usu.length;
+    document.getElementById("k-usuarios-alt").innerHTML = "<strong>" + fmt.entero(altProm) + "</strong> en total por mes, sumando las sesiones anónimas";
     EB.chispa("k-usuarios-chispa", EB.serieMensual(usu, (f) => EB.suma(f, "usuarios_activos")), COLOR.marca);
 
     // ---- Ventas mensuales por canal (barras apiladas) ----
@@ -110,40 +113,53 @@ function hallazgos(d) {
   hallazgosListos = true;
   const { fmt } = EB;
 
-  // 1) Mes con entregas más lentas contra la mediana de los meses
-  const porMes = EB.agruparLista(d.mart_logistica, "mes", ["entregados", "dias_entrega_suma"])
-    .map((m) => ({ mes: m.mes, dias: m.dias_entrega_suma / m.entregados }))
-    .sort((a, b) => b.dias - a.dias);
-  const peor = porMes[0];
-  const ord = porMes.map((m) => m.dias).sort((a, b) => a - b);
-  const mediana = ord[Math.floor(ord.length / 2)];
-  document.getElementById("h-entrega").textContent = fmt.dec(peor.dias) + " días";
-  document.getElementById("h-entrega-txt").textContent =
-    "tardaron en promedio las entregas de " + EB.etiquetaMesLarga(peor.mes) + ", contra " + fmt.dec(mediana) +
-    " de un mes normal. En esos meses cae el NPS del canal online.";
+  // 1) Crecimiento por canal: meses del último año contra los mismos meses del año anterior
+  const ultimoAnio = EB.opciones.meses[EB.opciones.meses.length - 1].slice(0, 4);
+  const mesesUlt = EB.opciones.meses.filter((m) => m.startsWith(ultimoAnio));
+  const mesesAnt = mesesUlt.map(EB.mesAnterior);
+  const ventasDe = (canal, meses) => EB.suma(d.mart_ventas.filter((f) => f.canal === canal && meses.includes(f.mes)), "ventas");
+  const crec = (canal) => ventasDe(canal, mesesUlt) / ventasDe(canal, mesesAnt) - 1;
+  const signo = (x, dec = 0) => (x >= 0 ? "+" : "−") + fmt.pct(Math.abs(x), dec);
+  const rango = EB.etiquetaMes(mesesUlt[0]).slice(0, 3) + "–" + EB.etiquetaMes(mesesUlt[mesesUlt.length - 1]).slice(0, 3);
+  document.getElementById("h-crecimiento").textContent = signo(crec("ONLINE"));
+  document.getElementById("h-crecimiento-txt").textContent =
+    "crecieron las ventas online en " + rango + " de " + ultimoAnio + " contra el mismo período de " + (+ultimoAnio - 1) + ". " +
+    "Las tiendas quedaron casi iguales (" + signo(crec("OFFLINE"), 1) + "): todo el crecimiento viene de la web.";
 
-  // 2) Brecha de NPS entre canales
+  // 2) Brecha de NPS entre canales y en cuántos meses las tiendas superan a la web
   const porCanal = EB.agruparLista(d.mart_nps, "canal", ["respuestas", "promotores", "detractores"]);
   const n = {};
   porCanal.forEach((c) => (n[c.canal] = EB.nps(c.promotores, c.detractores, c.respuestas)));
+  const porMesCanal = EB.agrupar(d.mart_nps, ["mes", "canal"], ["respuestas", "promotores", "detractores"]);
+  const npsMes = (m, c) => { const f = porMesCanal.get(m + "|" + c); return f ? EB.nps(f.promotores, f.detractores, f.respuestas) : NaN; };
+  const ganaTienda = EB.opciones.meses.filter((m) => npsMes(m, "OFFLINE") > npsMes(m, "ONLINE")).length;
   document.getElementById("h-nps").textContent = fmt.dec(n.OFFLINE - n.ONLINE) + " puntos";
   document.getElementById("h-nps-txt").textContent =
-    "de diferencia de NPS entre las tiendas (" + fmt.dec(n.OFFLINE) + ") y el sitio web (" + fmt.dec(n.ONLINE) + "). La experiencia online es el punto débil.";
+    "de diferencia de NPS entre las tiendas (" + fmt.dec(n.OFFLINE) + ") y el sitio web (" + fmt.dec(n.ONLINE) + "). " +
+    (ganaTienda === EB.opciones.meses.length
+      ? "Las tiendas superan a la web en todos los meses (" + ganaTienda + ")."
+      : "Las tiendas superan a la web en " + ganaTienda + " de los " + EB.opciones.meses.length + " meses.");
 
-  // 3) Compradores recurrentes
-  const nuevos = EB.suma(d.mart_clientes_mes, "compradores_nuevos");
-  const recur = EB.suma(d.mart_clientes_mes, "compradores_recurrentes");
-  document.getElementById("h-recurrentes").textContent = fmt.pct(recur / (nuevos + recur), 0);
+  // 3) Meses con entregas lentas (más de 1,5 veces la mediana mensual)
+  const porMes = EB.agruparLista(d.mart_logistica, "mes", ["entregados", "dias_entrega_suma"])
+    .map((m) => ({ mes: m.mes, dias: m.dias_entrega_suma / m.entregados }));
+  const ord = porMes.map((m) => m.dias).sort((a, b) => a - b);
+  const mediana = ord[Math.floor(ord.length / 2)];
+  const lentos = porMes.filter((m) => m.dias > mediana * 1.5).sort((a, b) => a.mes.localeCompare(b.mes));
+  const peor = porMes.slice().sort((a, b) => b.dias - a.dias)[0];
+  const nombres = lentos.map((m) => EB.etiquetaMesLarga(m.mes).replace(/ de \d{4}$/, ""));
+  document.getElementById("h-entrega").textContent = fmt.dec(peor.dias) + " días";
+  document.getElementById("h-entrega-txt").textContent =
+    "tardaron en promedio las entregas de " + EB.etiquetaMesLarga(peor.mes) + ", contra " + fmt.dec(mediana) + " en un mes normal. " +
+    (lentos.length > 1
+      ? "Los meses con entregas lentas (" + nombres.join(" y ") + " de " + peor.mes.slice(0, 4) + ") coinciden con la caída del NPS online."
+      : "Ese mes coincide con la caída del NPS online.");
+
+  // 4) Compradores recurrentes en el último año (los primeros meses no tienen historia previa)
+  const ult = d.mart_clientes_mes.filter((f) => String(f.mes).startsWith(ultimoAnio));
+  const pctMes = ult.map((f) => f.compradores_recurrentes / f.compradores);
+  document.getElementById("h-recurrentes").textContent = fmt.pct(EB.suma(ult, "compradores_recurrentes") / EB.suma(ult, "compradores"), 0);
   document.getElementById("h-recurrentes-txt").textContent =
-    "de los compradores de cada mes ya habían comprado antes. El negocio se sostiene en clientes que vuelven.";
-
-  // 4) Domingo en tiendas
-  const dias = EB.agruparLista(d.mart_dia_semana, ["canal", "dia_num", "dia"], ["ventas"]);
-  const off = dias.filter((x) => x.canal === "OFFLINE").sort((a, b) => b.ventas - a.ventas);
-  const on = dias.filter((x) => x.canal === "ONLINE").sort((a, b) => b.ventas - a.ventas);
-  const domingoOff = off.find((x) => x.dia_num === 7);
-  document.getElementById("h-domingo").textContent = domingoOff ? fmt.millones(domingoOff.ventas) : "$0";
-  document.getElementById("h-domingo-txt").textContent =
-    "vendieron las tiendas los domingos: no abren. Su mejor día es el " + off[0].dia.toLowerCase() +
-    "; la web, en cambio, vende todos los días y su pico es el " + on[0].dia.toLowerCase() + ".";
+    "de los compradores de cada mes de " + ultimoAnio + " ya habían comprado antes (entre " + fmt.pct(Math.min(...pctMes), 0) +
+    " y " + fmt.pct(Math.max(...pctMes), 0) + " según el mes). La mayoría de quienes compran cada mes son clientes que vuelven.";
 }

@@ -15,6 +15,10 @@ EB.pagina({
     const sesiones = EB.suma(traf, "sesiones");
     const ident = EB.suma(traf, "sesiones_identificadas");
     EB.kpi("k-usuarios", { valor: fmt.entero(EB.suma(usu, "usuarios_activos") / usu.length) });
+    // Total con sesiones anónimas: cada sesión anónima cuenta como un usuario (columna calculada en el ETL)
+    const altProm = EB.suma(usu, "usuarios_con_anonimos") / usu.length;
+    document.getElementById("k-usuarios-alt").innerHTML = "<strong>" + fmt.entero(altProm) + "</strong> en total por mes, sumando las sesiones anónimas";
+
     EB.kpi("k-sesiones", { valor: fmt.entero(sesiones) });
     EB.kpi("k-ident", { valor: fmt.pct(ident / sesiones) });
     EB.kpi("k-minutos", { valor: fmt.dec(EB.suma(traf, "minutos_suma") / EB.suma(traf, "sesiones_con_fin")) + "<small>min</small>" });
@@ -70,7 +74,10 @@ EB.pagina({
     EB.tabla("g-fuente", ["Fuente"].concat(dispositivos.map((x) => NOMBRE_DISP[x]), ["Total", "% identificadas"]),
       fuentes.slice().reverse().map((f) => [f.fuente_desc].concat(dispositivos.map((dv) => fmt.entero((fd.get(f.fuente_desc + "|" + dv) || { sesiones: 0 }).sesiones)), [fmt.entero(f.sesiones), fmt.pct(f.sesiones_identificadas / f.sesiones)])));
     const masIdent = fuentes.slice().sort((a, b) => b.sesiones_identificadas / b.sesiones - a.sesiones_identificadas / a.sesiones)[0];
-    document.getElementById("t-fuente").textContent = "La mayoría entra desde el celular; " + masIdent.fuente_desc.toLowerCase() + " trae más clientes identificados (" + fmt.pct(masIdent.sesiones_identificadas / masIdent.sesiones, 0) + ")";
+    const celular = EB.suma(traf.filter((f) => f.dispositivo === "mobile"), "sesiones") / sesiones;
+    document.getElementById("t-fuente").textContent =
+      "El " + fmt.pct(celular, 0) + " de las sesiones son desde el celular; las de " + masIdent.fuente_desc.toLowerCase() +
+      " son las que más se identifican (" + fmt.pct(masIdent.sesiones_identificadas / masIdent.sesiones, 0) + ")";
 
     // ---- Nuevos y recurrentes ----
     const nuevos = EB.serieMensual(cli, (f) => EB.suma(f, "compradores_nuevos"));
@@ -87,7 +94,9 @@ EB.pagina({
     });
     EB.tabla("g-recurrentes", ["Mes", "Nuevos", "Recurrentes", "% recurrentes"], meses.map((m, i) => [EB.etiquetaMes(m), fmt.entero(nuevos[i]), fmt.entero(recur[i]), fmt.pct(recur[i] / (nuevos[i] + recur[i] || 1))]));
     const totN = nuevos.reduce((a, b) => a + b, 0), totR = recur.reduce((a, b) => a + b, 0);
-    document.getElementById("t-recurrentes").textContent = "El " + fmt.pct(totR / (totN + totR), 0) + " de los compradores de cada mes ya había comprado antes";
+    document.getElementById("t-recurrentes").textContent = totN + totR
+      ? "En los meses elegidos, el " + fmt.pct(totR / (totN + totR), 0) + " de los compradores ya había comprado antes"
+      : "Compradores nuevos y recurrentes";
 
     cohortes(d.mart_cohortes);
   },
@@ -141,5 +150,5 @@ function cohortes(filas) {
   // Retención promedio al mes 1 (cohortes que ya lo cumplieron)
   const m1 = lista.filter((c) => mesesEntre(c, ultimo) >= 1).map((c) => { const f = idx.get(c + "|1"); return f ? f.clientes_compradores / tam.get(c) : 0; });
   document.getElementById("t-cohortes").textContent =
-    "El " + fmt.pct(m1.reduce((x, y) => x + y, 0) / m1.length, 0) + " de los clientes vuelve a comprar al mes siguiente del alta";
+    "En promedio, el " + fmt.pct(m1.reduce((x, y) => x + y, 0) / m1.length, 0) + " de cada cohorte compra en el mes siguiente al alta";
 }

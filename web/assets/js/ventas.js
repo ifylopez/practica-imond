@@ -188,6 +188,62 @@
       });
       EB.tabla("g-ticket", ["Mes"].concat(canales), meses.map((m, i) => [EB.etiquetaMes(m)].concat(ticketSeries.map((s) => (s.data[i] == null ? "sin datos" : fmt.miles(s.data[i]))))));
 
+      // ---------------- Títulos que describen lo que muestra cada gráfico con los filtros elegidos ----------------
+      // Día de la semana: mejor día de cada canal (y cuánto vende el sábado de las tiendas contra su lunes)
+      const mejorDia = (c) => NOMBRES.map((nom, i) => ({ nom, v: valorDia(i + 1, c) })).sort((x, y) => y.v - x.v)[0];
+      const partes = [];
+      if (canales.includes("OFFLINE") && valorDia(1, "OFFLINE") > 0) {
+        const r = valorDia(6, "OFFLINE") / valorDia(1, "OFFLINE");
+        partes.push(mejorDia("OFFLINE").nom === "Sábado" && r >= 1.5
+          ? "El sábado las tiendas venden " + (r >= 1.95 ? "el doble" : fmt.dec(r, 1) + " veces lo") + " que el lunes"
+          : "El mejor día de las tiendas es el " + mejorDia("OFFLINE").nom.toLowerCase());
+      }
+      if (canales.includes("ONLINE") && mejorDia("ONLINE").v > 0) partes.push("la web tiene su pico el " + mejorDia("ONLINE").nom.toLowerCase());
+      const tDias = partes.join("; ");
+      document.getElementById("t-dias").textContent = tDias ? tDias.charAt(0).toUpperCase() + tDias.slice(1) : "Ventas por día de la semana";
+
+      // Año contra año: en cuántos meses comparables el año más reciente vendió más
+      if (anios.length === 2) {
+        const [a0, a1] = anios.map(serieAnio);
+        const comparables = a1.map((v, i) => (v != null && a0[i] != null ? [a0[i], v] : null)).filter(Boolean);
+        const mas = comparables.filter(([x, y]) => y > x).length;
+        document.getElementById("t-estacion").textContent = comparables.length
+          ? (mas === comparables.length
+            ? anios[1] + " vendió más que " + anios[0] + " en " + (comparables.length === 1 ? "el mes comparable" : "los " + comparables.length + " meses comparables")
+            : anios[1] + " vendió más que " + anios[0] + " en " + mas + " de " + comparables.length + " meses comparables")
+          : "Ventas de cada mes, año contra año";
+      } else {
+        document.getElementById("t-estacion").textContent = "Ventas de cada mes, año contra año";
+      }
+
+      // Pedidos: crecimiento de cada canal en los meses comparables del período elegido
+      const mesesConAnterior = meses.filter((m) => meses.includes(EB.mesAnterior(m)));
+      const pedidosEn = (c, ms) => EB.suma(ventas.filter((f) => f.canal === c && ms.includes(f.mes)), "pedidos");
+      if (mesesConAnterior.length) {
+        const ant = mesesConAnterior.map(EB.mesAnterior);
+        const txt = canales.map((c) => {
+          const g = pedidosEn(c, mesesConAnterior) / pedidosEn(c, ant) - 1;
+          return (c === "ONLINE" ? "la web " : "las tiendas ") + (g >= 0 ? "+" : "−") + fmt.pct(Math.abs(g), 0);
+        }).join(" y ");
+        document.getElementById("t-pedidos").textContent = "Pedidos contra el mismo mes del año anterior: " + txt;
+      } else {
+        document.getElementById("t-pedidos").textContent = "Pedidos vendidos por mes";
+      }
+
+      // Ticket: rango del ticket mensual (todos los canales elegidos juntos)
+      const ticketMes = EB.serieMensual(ventas, (f) => { const p = EB.suma(f, "pedidos"); return p ? EB.suma(f, "ventas") / p : null; }).filter((v) => v != null);
+      document.getElementById("t-ticket").textContent = ticketMes.length > 1
+        ? "El ticket mensual se mantiene entre " + fmt.miles(Math.min(...ticketMes)) + " y " + fmt.miles(Math.max(...ticketMes))
+        : "Ticket promedio por mes";
+
+      // Provincias: rango del ticket entre provincias
+      const tks = ticketProv.map((t) => t.ticket);
+      document.getElementById("t-provincias").textContent = tks.length > 1
+        ? (Math.max(...tks) / Math.min(...tks) < 1.05
+          ? "El ticket casi no cambia entre provincias (" + fmt.miles(Math.min(...tks)) + " a " + fmt.miles(Math.max(...tks)) + ")"
+          : "El ticket va de " + fmt.miles(Math.min(...tks)) + " a " + fmt.miles(Math.max(...tks)) + " según la provincia")
+        : "Ventas y ticket por provincia";
+
       // Título dinámico del mapa
       const top = porProv[0];
       document.getElementById("t-mapa").textContent = top
