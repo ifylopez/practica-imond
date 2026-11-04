@@ -90,7 +90,7 @@ sql/
   05_marts_web.sql       Marts adicionales para las páginas nuevas del sitio
 dw/                      Data warehouse exportado a CSV + diagrama del modelo
 web/                     Sitio web del tablero (se publica con GitHub Pages)
-  index.html … modelo.html   Las 7 páginas
+  index.html … guia.html     Las 7 páginas
   assets/css/style.css   Estilos
   assets/js/core.js      Carga de CSV, filtros, formatos y tema de los gráficos
   assets/js/<página>.js  Gráficos de cada página
@@ -591,11 +591,16 @@ muestra lo último que generó `run_sql.py` y se subió al repo.
 | Clientes y web | Usuarios activos, sesiones identificadas y anónimas, fuente y dispositivo, compradores nuevos y recurrentes, retención por cohorte | usuarios, trafico, clientes_mes, cohortes |
 | Experiencia (NPS) | NPS online contra días de entrega, NPS mensual por canal, distribución de puntajes, promotores/pasivos/detractores | nps, nps_puntajes, entregas_nps |
 | Operaciones | Estados del pedido, pago de los cancelados, medios de pago por canal, rechazos por medio, días de entrega por provincia, entregas lentas | estados, pagos, logistica |
-| Acerca del modelo | Arquitectura, hechos, dimensiones, marts y qué calcula el navegador | todos |
+| Cómo leer | Definición de cada indicador, uso de los filtros y lo que los datos no permiten responder | — |
 
 **Filtros:** período (desde/hasta), canal, provincia y producto. Se guardan en el
 navegador y se mantienen al cambiar de página. Cada gráfico dice al pie a qué filtros
 responde (reemplaza al botón ⓘ de Power BI) y tiene **Ver tabla** con los números.
+
+**Audiencia:** el sitio está escrito para el área comercial. Los textos explican qué
+mide cada número en lenguaje de negocio, sin nombres de tablas ni términos del modelo;
+la arquitectura, el diccionario de datos y las consultas se documentan en este README,
+al que el sitio enlaza desde el pie de cada página y desde **Cómo leer**.
 
 | Filtro | Marts a los que aplica |
 |---|---|

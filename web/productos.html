@@ -15,7 +15,7 @@
 
       <header class="encabezado">
         <h1 id="titular">Facturación y unidades por producto</h1>
-        <p id="bajada">Facturación sin IVA ni envío de cada producto. Sale de las líneas de pedido (fact_sales_order_item), por eso es menor que el total de ventas, que incluye IVA y envío.</p>
+        <p id="bajada">Facturación sin IVA ni envío de cada producto. Por eso es menor que el total de ventas, que incluye IVA y envío.</p>
       </header>
 
       <section class="kpis" aria-label="Indicadores de productos">
@@ -35,7 +35,7 @@
           <span class="kpi-nombre">Precio medio por unidad</span>
           <span class="kpi-valor">…</span>
           <div class="kpi-chispa" id="k-precio-chispa"></div>
-          <span class="kpi-nota">Facturación ÷ unidades, después de sumar.</span>
+          <span class="kpi-nota">Facturación del período ÷ unidades vendidas.</span>
         </div>
       </section>
 
@@ -64,7 +64,7 @@
           <div class="grafico" id="g-mix" role="img" aria-label="Barras 100% de unidades y facturación por producto"></div>
         </article>
 
-        <article class="tarjeta ancho-6" data-aplica="mes canal provincia" data-fijo="Compara siempre todos los productos, igual que RANKX en Power BI">
+        <article class="tarjeta ancho-6" data-aplica="mes canal provincia" data-fijo="Compara siempre todos los productos, aunque filtres uno">
           <div class="tarjeta-cabeza"><div>
             <h2 id="t-ranking">Ranking mensual por facturación</h2>
             <p class="bajada">Cada columna es un mes: arriba el producto que más facturó, abajo el segundo.</p>
