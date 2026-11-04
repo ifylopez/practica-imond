@@ -274,7 +274,7 @@
       pie.className = "tarjeta-pie";
       const txt = dims.length
         ? "Responde a: <b>" + dims.map((d) => NOMBRE_DIM[d]).join(", ") + "</b>"
-        : "<b>No se filtra</b> (grano fijo en el ETL)";
+        : "<b>No cambia con los filtros</b>";
       pie.innerHTML = '<span class="aplica">' + txt + (fijo ? ". " + fijo : "") + "</span>";
       if (g && g.id) {
         const b = document.createElement("button");
@@ -311,7 +311,7 @@
     ["clientes", "clientes.html", "Clientes y web"],
     ["experiencia", "experiencia.html", "Experiencia"],
     ["operaciones", "operaciones.html", "Operaciones"],
-    ["modelo", "modelo.html", "Modelo"],
+    ["guia", "guia.html", "Cómo leer"],
   ];
   function armarBarra(actual) {
     const el = document.getElementById("barra");
@@ -326,7 +326,7 @@
     if (main && !document.querySelector(".pie-pagina")) {
       const pie = document.createElement("footer");
       pie.className = "pie-pagina";
-      pie.innerHTML = 'Datos: <a href="https://github.com/ifylopez/practica-imond/tree/main/dw">dw/*.csv</a>, generados por <code>run_sql.py</code> a partir del modelo estrella. Mateo Andrés López Valci.';
+      pie.innerHTML = 'Datos de EcoBottle AR, enero de 2024 a septiembre de 2025. <a href="https://github.com/ifylopez/practica-imond#readme">Documentación técnica</a>. Mateo Andrés López Valci.';
       main.appendChild(pie);
     }
   }

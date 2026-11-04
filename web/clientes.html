@@ -33,12 +33,12 @@
         <div class="tarjeta kpi" id="k-ident">
           <span class="kpi-nombre">Sesiones identificadas</span>
           <span class="kpi-valor">…</span>
-          <span class="kpi-nota">El resto son anónimas (cliente desconocido, clave -1).</span>
+          <span class="kpi-nota">El resto son visitas que no iniciaron sesión.</span>
         </div>
         <div class="tarjeta kpi" id="k-minutos">
           <span class="kpi-nombre">Duración media de la sesión</span>
           <span class="kpi-valor">…</span>
-          <span class="kpi-nota">Minutos ÷ sesiones con hora de fin.</span>
+          <span class="kpi-nota">Promedio de las sesiones con hora de salida registrada.</span>
         </div>
       </section>
 
@@ -46,7 +46,7 @@
         <article class="tarjeta ancho-6" data-aplica="mes">
           <div class="tarjeta-cabeza"><div>
             <h2 id="t-usuarios">Usuarios activos por mes</h2>
-            <p class="bajada">Conteo de clientes distintos, calculado en el ETL para cada mes.</p>
+            <p class="bajada">Clientes distintos que iniciaron sesión al menos una vez en el mes.</p>
           </div></div>
           <div class="grafico" id="g-usuarios" role="img" aria-label="Barras de usuarios activos por mes"></div>
         </article>
@@ -67,7 +67,7 @@
           <div class="grafico" id="g-fuente" role="img" aria-label="Barras horizontales de sesiones por fuente y dispositivo"></div>
         </article>
 
-        <article class="tarjeta ancho-6" data-aplica="mes" data-fijo="Cada mes se calcula en el ETL; no se puede abrir por canal ni provincia">
+        <article class="tarjeta ancho-6" data-aplica="mes" data-fijo="No cambia con los filtros de canal ni provincia">
           <div class="tarjeta-cabeza"><div>
             <h2 id="t-recurrentes">Compradores nuevos y recurrentes</h2>
             <p class="bajada">Nuevo: compra por primera vez ese mes. Recurrente: ya había comprado antes. En los primeros meses de 2024 casi todos figuran como nuevos porque los datos empiezan en enero de 2024.</p>
